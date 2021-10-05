@@ -1,0 +1,6 @@
+Hello. This is the master branch which is an incorrect configuration branch. You need to switch to the correct branch for your system. 
+
+To do so run "git branch" to see the list of available branches.
+After run "git checkout <branch>" replacing <branch> with your desired branch name
+
+This file should disappear meaning you did it correctly!!
