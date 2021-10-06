@@ -1,0 +1,17 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 10/6/2021 11:13:55 AM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace DECKLOADINGVCURRENT {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function DoDeckLoading( variable & LabwareArray[], variable & IsUsedArray[], variable & TipsArray[], variable & DesaltingArray[], variable VacuumPlate ) void { }
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2021-10-06 11:13$$checksum=c30fbca3$$length=082$$
