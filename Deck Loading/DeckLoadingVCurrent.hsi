@@ -13,6 +13,16 @@
 // {{{ 2 "LibraryNamespace" "Begin"
 namespace DECKLOADINGVCURRENT {
 // }} ""
+global variable Carrier38_Pos1;
+global variable Carrier38_Pos2;
+global variable Carrier38_Pos3;
+global variable Carrier38_Pos4;
+global variable Carrier14_Pos1;
+global variable Carrier38_Pos5;
+global variable Carrier14_Pos2;
+global variable Carrier14_Pos3;
+global variable Carrier14_Pos4;
+global variable Carrier14_Pos5;
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
 function DoDeckLoading( variable & LabwareArray[], variable & IsUsedArray[], variable & TipsArray[], variable & DesaltingArray[], variable VacuumPlate ) void ;
@@ -33,38 +43,22 @@ private variable CT;
 private variable Len;
 private variable RR;
 private variable Sets;
-private variable Carrier38_Pos1;
-private variable _PreRun_PipetteUsedIndex;
 private variable Tip50;
 private variable PlateName;
-private variable Carrier38_Pos2;
 private variable TipSlim300;
-private variable Carrier38_Pos3;
 private variable Plate;
 private variable NumLabware;
 private variable Counter;
 private variable Loading;
-private variable Carrier38_Pos4;
-private variable Carrier14_Pos1;
-private variable Carrier14_Pos2;
-private variable Carrier38_Pos5;
-private variable Carrier14_Pos3;
-private variable Carrier14_Pos4;
-private variable Carrier14_Pos5;
 private variable Volume;
 private variable FT_Ambient;
-private variable _Pipette_FTR1000Index;
 private variable Tip300;
 private variable Count;
 private variable FT_Cold;
-private variable _Pipette_FTR300SlimIndex;
 private variable EvalExpression;
 private variable Tip1000;
 private variable SizeX100_1;
-private variable _PreRun_DesaltUsedIndex;
 private variable SizeX100_2;
-private variable _Pipette_NTR300Index;
-private variable _Pipette_NTR50Index;
 private variable FindVal;
 private variable PlateList[];
 private variable Types[];
@@ -72,7 +66,6 @@ private variable VolumeList[];
 private variable PlateNameList[];
 private variable LoadingList[];
 private variable Volumes[];
-private variable _Desalt_LoadingArray[];
 // {{ 5 "DoDeckLoading" "InitLocals"
 // }} ""
 // {{ 1 1 0 "e4d9f153_dcc2_4c39_8819459960dc578c" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
@@ -126,15 +119,15 @@ SizeX100_1 = 0;
 // {{ 17 1 0 "15c1036b_5eda_4bb1_a8d98794577c1563" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 SizeX100_2 = 0;
 // }} ""
-// {{ 18 1 0 "0392a62a_0399_4b26_8e426e06774cad1b" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-if (IsUsedArray.ElementAt( _PreRun_DesaltUsedIndex -1) == "True")
+// {{ 18 1 0 "100a2ef7_2842_4e97_abaea08fd538975d" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (IsUsedArray.ElementAt( 3 -1) == "True")
 {
 // }} ""
-// {{{ 19 1 0 "bf0892a4_afb3_45cb_aed26a874b9a7a6e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-Types = HSLExtensions::Array2D::GetRow(_Desalt_LoadingArray, 1);
+// {{{ 19 1 0 "60d917b8_f8ef_43c0_bfc1c883e344df61" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+Types = HSLExtensions::Array2D::GetRow(DesaltingArray, 1);
 // }} ""
-// {{{ 20 1 0 "0bbd306c_bf3f_4c73_9c7809859b36589f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-Volumes = HSLExtensions::Array2D::GetRow(_Desalt_LoadingArray, 2);
+// {{{ 20 1 0 "a4b466f3_a56a_4be9_8cc02622da0b3425" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+Volumes = HSLExtensions::Array2D::GetRow(DesaltingArray, 2);
 // }} ""
 // {{{ 21 1 0 "bba5cc3b_6dc5_4a38_96cbcf2d7c969538" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 Util2::Debug::TraceArray(Translate(""), Types);
@@ -171,7 +164,7 @@ StrEvaluateExpr(EvalExpression);
 // {{ 30 1 0 "2f47179e_05c0_4580_9e511cb9b76cc88f" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{ 31 1 0 "0392a62a_0399_4b26_8e426e06774cad1b" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 31 1 0 "100a2ef7_2842_4e97_abaea08fd538975d" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
 // {{ 32 1 0 "791e63a2_4176_4f88_9257d2590b71a43d" "{586C3429-F931-405f-9938-928E22C90BFA}"
@@ -180,23 +173,23 @@ StrEvaluateExpr(EvalExpression);
 // {{ 33 1 0 "6faf21a1_5775_4bd7_b224ce1fcbcee16a" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
-// {{ 34 1 0 "87b8a7f7_68e1_47f6_bc36125986187666" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-if (IsUsedArray.ElementAt( _PreRun_PipetteUsedIndex -1) == "True")
+// {{ 34 1 0 "af5137cf_bae0_4860_b82df2bf23597444" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (IsUsedArray.ElementAt( 1 -1) == "True")
 {
 // }} ""
-// {{ 35 1 0 "2baaf800_5395_42fb_9fbb9e2272c020be" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-Tip50 = TipsArray.ElementAt( _Pipette_NTR50Index -1);
+// {{ 35 1 0 "35b36cdb_8731_46cf_8c9a05747f736df6" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+Tip50 = TipsArray.ElementAt( 1 -1);
 // }} ""
-// {{ 36 1 0 "10350fb0_fcfc_4e69_a6b0a66c8241b708" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-Tip300 = TipsArray.ElementAt( _Pipette_NTR300Index -1);
+// {{ 36 1 0 "9cf554b7_ec09_4488_bf309e8706e47844" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+Tip300 = TipsArray.ElementAt( 2 -1);
 // }} ""
-// {{ 37 1 0 "aec5789c_85d7_489d_a11d4f7d82c73f38" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-TipSlim300 = TipsArray.ElementAt( _Pipette_FTR300SlimIndex -1);
+// {{ 37 1 0 "dafac08b_a204_4398_b45c214ed4aeab0c" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+TipSlim300 = TipsArray.ElementAt( 3 -1);
 // }} ""
-// {{ 38 1 0 "cbb3bf73_54b6_4109_aea65b04d5977416" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-Tip1000 = TipsArray.ElementAt( _Pipette_FTR1000Index -1);
+// {{ 38 1 0 "326cb66c_21f9_46b7_be6f2d5910412224" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+Tip1000 = TipsArray.ElementAt( 4 -1);
 // }} ""
-// {{ 39 1 0 "87b8a7f7_68e1_47f6_bc36125986187666" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 39 1 0 "af5137cf_bae0_4860_b82df2bf23597444" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
 // {{ 40 1 0 "6faf21a1_5775_4bd7_b224ce1fcbcee16a" "{586C3429-F931-405f-9938-928E22C90BFA}"
@@ -459,4 +452,4 @@ customDialog2FEB4C1E4223424fABC5D9453A56E09D.ShowCustomDialog();
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2021-10-06 11:13$$checksum=298e2d3e$$length=084$$
+// $$author=BAREB$$valid=0$$time=2021-10-07 11:38$$checksum=5dc796e2$$length=084$$
