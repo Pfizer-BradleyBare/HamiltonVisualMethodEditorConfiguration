@@ -393,8 +393,8 @@ CT = 0;
 // {{ 101 1 0 "d467c99d_a873_4b8a_a412235646e40a4b" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
-// {{ 102 1 0 "3f969832_6760_4b7e_8becc9f481aa1d0e" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
-customDialog2FEB4C1E4223424fABC5D9453A56E09D.InitCustomDialog( "3f969832_6760_4b7e_8becc9f481aa1d0e" );
+// {{ 102 1 0 "5cef7e65_fa8d_4641_b6670871aeadb799" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
+customDialog2FEB4C1E4223424fABC5D9453A56E09D.InitCustomDialog( "5cef7e65_fa8d_4641_b6670871aeadb799" );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock1.IsVisible", Tip50 );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock3.IsVisible", Tip300 );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock5.IsVisible", Tip1000 );
@@ -452,4 +452,4 @@ customDialog2FEB4C1E4223424fABC5D9453A56E09D.ShowCustomDialog();
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2021-10-07 11:38$$checksum=5dc796e2$$length=084$$
+// $$author=FCNAMR-ADWMSBC$$valid=0$$time=2021-10-07 17:24$$checksum=9e1e8b51$$length=093$$

@@ -301,6 +301,16 @@ E8:
   Deck Position: E8
   Vacuum Compatible: False
 
+EA:
+  Max Supported Volume: 1500
+  Storage Condition: Cold
+  Labware Category: Reagent
+  Labware Type: FlipTube
+  Labware Name: Hamilton 1.5mL FlipTube
+  Lid Sequence: True
+  Deck Position: EA
+  Vacuum Compatible: False
+
 F1:
   Max Supported Volume: 1500
   Storage Condition: Ambient
