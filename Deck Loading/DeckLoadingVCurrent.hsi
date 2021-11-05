@@ -23,6 +23,8 @@ global variable Carrier14_Pos2;
 global variable Carrier14_Pos3;
 global variable Carrier14_Pos4;
 global variable Carrier14_Pos5;
+global variable SizeX100_1;
+global variable SizeX100_2;
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
 function DoDeckLoading( variable & LabwareArray[], variable & IsUsedArray[], variable & TipsArray[], variable & DesaltingArray[], variable VacuumPlate ) void ;
@@ -57,8 +59,6 @@ private variable Count;
 private variable FT_Cold;
 private variable EvalExpression;
 private variable Tip1000;
-private variable SizeX100_1;
-private variable SizeX100_2;
 private variable FindVal;
 private variable PlateList[];
 private variable Types[];
@@ -452,4 +452,4 @@ customDialog2FEB4C1E4223424fABC5D9453A56E09D.ShowCustomDialog();
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=FCNAMR-ADWMSBC$$valid=0$$time=2021-10-07 17:24$$checksum=9e1e8b51$$length=093$$
+// $$author=FCNAMR-ADWMSBC$$valid=0$$time=2021-11-05 12:01$$checksum=01378e78$$length=093$$

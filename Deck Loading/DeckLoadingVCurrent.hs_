@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 10/7/2021 5:24:05 PM
+// Generated at 11/5/2021 12:01:46 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -13,6 +13,8 @@ global variable Carrier38_Pos4;
 global variable Carrier38_Pos3;
 global variable Carrier38_Pos2;
 global variable Carrier38_Pos1;
+global variable SizeX100_2;
+global variable SizeX100_1;
 global variable Carrier14_Pos3;
 global variable Carrier14_Pos2;
 global variable Carrier14_Pos1;
@@ -24,4 +26,4 @@ global variable Carrier14_Pos4;
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=FCNAMR-ADWMSBC$$valid=0$$time=2021-10-07 17:24$$checksum=45227cea$$length=091$$
+// $$author=FCNAMR-ADWMSBC$$valid=0$$time=2021-11-05 12:01$$checksum=006409fd$$length=091$$
