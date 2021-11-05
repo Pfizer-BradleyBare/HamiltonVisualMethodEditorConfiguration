@@ -100,21 +100,27 @@ Steps:
     Lid:
       Open: 88
       Close: 81
+      Grip Height: 4
     Vacuum Manifold:
       Open: 97
       Close: 89
+      Grip Height: 4
     200uL Biorad 96 Well PCR Plate:
       Open: 85
       Close: 75
+      Grip Height: 4
     400uL Thermo 96 Well PCR Plate:
       Open: 85
       Close: 75
+      Grip Height: 4
     1200uL DeepWell 96 Well PCR Plate:
       Open: 85
       Close: 73
+      Grip Height: 4
     2000uL Corning 96 Well PCR Plate:
       Open: 85
       Close: 73
+      Grip Height: 10
 
   Desalt:
     Preferred Loading:
