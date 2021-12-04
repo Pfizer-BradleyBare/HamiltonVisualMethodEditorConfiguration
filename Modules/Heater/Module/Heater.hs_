@@ -1,0 +1,25 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 12/4/2021 9:18:59 AM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace HEATER {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function AcquireReservation( variable PlateName, variable PlateType, variable Temp, variable RPM ) variable {  return (0); }
+function CheckReservation( variable PlateName ) variable {  return (0); }
+function ConfirmReservation( variable PlateName, variable Temp ) variable {  return (0); }
+function EndReservation( variable PlateName ) void { }
+function GetReservationLidSequenceString( variable PlateName, variable PlateType ) variable {  return (0); }
+function GetReservationPlateSequenceString( variable PlateName, variable PlateType ) variable {  return (0); }
+function Init(  ) void { }
+function ReleaseReservation( variable PlateName ) void { }
+function StartReservation( variable PlateName, variable Temp, variable RPM ) void { }
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2021-12-04 09:18$$checksum=487a1e09$$length=082$$
