@@ -1,7 +1,7 @@
 // {{{ 2 "IncludeGuard" "PragmaOnce"
 #pragma once
 // }} ""
-#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration\\Modules\\HHS HHC\\Configuration\\HHS HHC Config.hs_"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration\\Modules\\Heater\\Configuration\\Heater Config.hs_"
 #include "HSLTrcLib.hsl"
 #include "HslHamHeaterShakerLib.hsl"
 #include "Hamilton HeaterCooler\\HamiltonHeaterCooler.hsl"
@@ -34,13 +34,13 @@ function StartReservation( variable PlateName, variable Temp, variable RPM ) voi
 // }} ""
 function _InitLibrary() {
 // {{ 2 "AutoInitBlock" ""
-HHS_HHC_CONFIG::_InitLibrary();
+HEATER_CONFIG::_InitLibrary();
 TOOLS::_InitLibrary();
 // }} ""
 }
 function _ExitLibrary() {
 // {{ 2 "AutoExitBlock" ""
-HHS_HHC_CONFIG::_ExitLibrary();
+HEATER_CONFIG::_ExitLibrary();
 TOOLS::_ExitLibrary();
 // }} ""
 }
@@ -59,20 +59,20 @@ private variable TempArray[];
 // {{ 174 1 0 "bb38b1a3_d18a_4e2a_baa15117e87f4c66" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 MECC::TraceComment(Translate("HHS HHC module initialization beginning"));
 // }} ""
-// {{{ 175 1 0 "0b5b74bb_10ae_4636_a52edb361fa10cb0" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::Init();
+// {{{ 175 1 0 "b62d8914_f6d0_4b69_b2a86b5db7d361eb" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::Init();
 // }} ""
-// {{{ 176 1 0 "ddd5a518_692c_4c1d_bede0a3f63c591f9" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetComPorts(ComPorts);
+// {{{ 176 1 0 "746571b2_1674_48b3_aa5da05885a15eb1" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetComPorts(ComPorts);
 // }} ""
-// {{{ 177 1 0 "98778c16_6b42_417f_aa7ab8a187182bf8" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetHeaterIDs(HeaterIDs);
+// {{{ 177 1 0 "76e8e9d1_a498_493c_9c6dc0fc31a6c58c" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetHeaterIDs(HeaterIDs);
 // }} ""
-// {{{ 178 1 0 "3ef8a835_17eb_4b69_8105ffc9475cb2a0" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetHeaterTypes(HeaterTypes);
+// {{{ 178 1 0 "42388de4_8f2d_4072_842148ccac0f7740" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetHeaterTypes(HeaterTypes);
 // }} ""
-// {{{ 179 1 0 "7cbd2d6a_3392_4516_94b4290fb0f22602" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-NumHeaters = HHS_HHC_CONFIG::GetNumHeaters();
+// {{{ 179 1 0 "aa687bc0_e580_44ee_b6d59a0116be937c" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+NumHeaters = HEATER_CONFIG::GetNumHeaters();
 // }} ""
 // {{{ 180 1 0 "58aa6e7d_a04b_4829_bc51f0a1a1ade4a3" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 TrcTrace4(Translate("There are "), NumHeaters, Translate(" Heaters to initialize."), Translate(""));
@@ -179,8 +179,6 @@ private variable HeaterIDs[];
 private variable Counter;
 private variable NumHeaters;
 private variable PlateTypes[];
-private variable Shake;
-private variable HeatCool;
 private variable AmbientTemp;
 private variable ReturnValue;
 private variable PlateTypesArray[];
@@ -190,17 +188,17 @@ private variable TempDifference;
 private variable HistoricalTempDifference;
 // {{ 5 "AcquireReservation" "InitLocals"
 // }} ""
-// {{{ 1 1 0 "bdec0b62_03ae_42d5_b4c7d037678175d1" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetHeaterIDs(HeaterIDs);
+// {{{ 1 1 0 "44f3bc2b_c9b4_4de9_88bd39c784fedace" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetHeaterIDs(HeaterIDs);
 // }} ""
-// {{{ 2 1 0 "49aea1ee_f1cc_45aa_9f809b8cc49f958d" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetHeaterTypes(HeaterTypes);
+// {{{ 2 1 0 "e6a93ab1_fe40_4d03_a1d0dd818dd3a76c" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetHeaterTypes(HeaterTypes);
 // }} ""
-// {{{ 3 1 0 "4508b148_441b_44bc_9b76ee9eca337e7b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetPlateTypes(PlateTypes);
+// {{{ 3 1 0 "1909b3e1_32ff_4649_888269d8aeacf7c0" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetPlateTypes(PlateTypes);
 // }} ""
-// {{{ 4 1 0 "ce48e748_8f04_4740_aff97d955c4caef9" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetAmbientTemp(AmbientTemp);
+// {{{ 4 1 0 "770b8a01_b6fc_4ee3_bcede2ee547324eb" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetAmbientTemp(AmbientTemp);
 // }} ""
 // {{ 5 1 0 "4a16a6ce_5c3f_4014_a6ad932adde24d24" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -255,8 +253,8 @@ HistoricalTempDifference = 9999;
 // {{ 20 1 0 "7716705f_18ce_4591_a37cb58fd11f9b8c" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 BestHeater = 0;
 // }} ""
-// {{{ 21 1 0 "566abb16_b200_4489_b025aab5a1f2fc74" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-NumHeaters = HHS_HHC_CONFIG::GetNumHeaters();
+// {{{ 21 1 0 "8c2833d3_d4d9_48df_bd8bd92fb32fe3c8" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+NumHeaters = HEATER_CONFIG::GetNumHeaters();
 // }} ""
 // {{ 22 1 0 "baf68e44_6a02_44ae_b7f28b8b90e9e5c3" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 {
@@ -465,14 +463,14 @@ private variable HeaterTypes[];
 private variable HeaterIDs[];
 // {{ 5 "ReleaseReservation" "InitLocals"
 // }} ""
-// {{{ 209 1 0 "9db6dad1_45ba_4686_8459b06772920bd3" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetHeaterTypes(HeaterTypes);
+// {{{ 209 1 0 "931b0d6a_98fd_4f59_972f8d2207e69816" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetHeaterTypes(HeaterTypes);
 // }} ""
-// {{{ 210 1 0 "802b12d2_6550_42b9_bd4402f33f60c3b2" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetHeaterIDs(HeaterIDs);
+// {{{ 210 1 0 "b33026d7_c437_450d_b3a845087324be46" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetHeaterIDs(HeaterIDs);
 // }} ""
-// {{{ 211 1 0 "bf4237c3_208e_416d_8f68e6bb8b11e089" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-NumHeaters = HHS_HHC_CONFIG::GetNumHeaters();
+// {{{ 211 1 0 "c6a2d3ff_57aa_4d0f_b2555b6c7c314781" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+NumHeaters = HEATER_CONFIG::GetNumHeaters();
 // }} ""
 // {{ 212 1 0 "4a30578f_d3e8_435f_a793f27b2b4a0fed" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 {
@@ -537,14 +535,14 @@ private variable PlateTypesArray[];
 private variable ReturnVal;
 // {{ 5 "GetReservationPlateSequenceString" "InitLocals"
 // }} ""
-// {{{ 156 1 0 "839710f2_5d9e_4e9a_b4baaa681e059da9" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetPlateTypes(PlateTypes);
+// {{{ 156 1 0 "496b8e12_0494_47a6_87ed54645f325351" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetPlateTypes(PlateTypes);
 // }} ""
-// {{{ 157 1 0 "f3397fe7_8cbe_4cfe_b5cf430332afb2d4" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetPlateSequenceStrings(PlateSequenceStrings);
+// {{{ 157 1 0 "033eaa9f_bf1a_4ef0_9e27e07b8e7d0de2" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetPlateSequenceStrings(PlateSequenceStrings);
 // }} ""
-// {{{ 158 1 0 "1b7dddcb_aa99_434c_8acc99b4fa02c32d" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-NumHeaters = HHS_HHC_CONFIG::GetNumHeaters();
+// {{{ 158 1 0 "28791390_3af6_406b_8f2ffb55b2845da3" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+NumHeaters = HEATER_CONFIG::GetNumHeaters();
 // }} ""
 // {{ 159 1 0 "e7b9ebcf_969f_4b54_99c8067480a69b20" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 {
@@ -615,14 +613,14 @@ private variable LidSequenceStrings[];
 private variable LidSequenceStringsArray[];
 // {{ 5 "GetReservationLidSequenceString" "InitLocals"
 // }} ""
-// {{{ 138 1 0 "f7c3d413_1dee_4b97_bf3c871a20ba398e" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetPlateTypes(PlateTypes);
+// {{{ 138 1 0 "8955ba73_a6f6_46e3_a0422bcef0baf8ce" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetPlateTypes(PlateTypes);
 // }} ""
-// {{{ 139 1 0 "e324cbfb_8b25_4822_a6c45093f6e68706" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetLidSequenceStrings(LidSequenceStrings);
+// {{{ 139 1 0 "3ba88354_5503_4d47_87b7973a0b1068a0" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetLidSequenceStrings(LidSequenceStrings);
 // }} ""
-// {{{ 140 1 0 "b1d0031f_7c1e_45fa_abde33478bac5249" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-NumHeaters = HHS_HHC_CONFIG::GetNumHeaters();
+// {{{ 140 1 0 "d19257d5_5c4f_4202_9a7233524537d879" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+NumHeaters = HEATER_CONFIG::GetNumHeaters();
 // }} ""
 // {{ 141 1 0 "b0d78aca_e668_403f_9ca12dec79e4d3c4" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 {
@@ -687,8 +685,8 @@ private variable NumHeaters;
 private variable HeaterTypes[];
 // {{ 5 "StartReservation" "InitLocals"
 // }} ""
-// {{{ 226 1 0 "1505a1ab_a66b_44fd_ae8377023ddec2d7" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetHeaterTypes(HeaterTypes);
+// {{{ 226 1 0 "485fc492_1d33_485b_89005db36025795b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetHeaterTypes(HeaterTypes);
 // }} ""
 // {{{ 227 1 0 "812cec2d_da32_44b7_9cdd69bc42604739" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 RPM = StrFVal(RPM);
@@ -696,8 +694,8 @@ RPM = StrFVal(RPM);
 // {{{ 228 1 0 "2cef5b5c_0af2_42e0_b35ec9a3a2720118" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 Temp = StrFVal(Temp);
 // }} ""
-// {{{ 229 1 0 "8092887f_8210_4e69_8f30a759c2d59635" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-NumHeaters = HHS_HHC_CONFIG::GetNumHeaters();
+// {{{ 229 1 0 "ef03c5fe_82ec_4920_833fffe1109c57a3" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+NumHeaters = HEATER_CONFIG::GetNumHeaters();
 // }} ""
 // {{ 230 1 0 "04b05b52_b107_4edd_88b74dc70c7273bd" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 {
@@ -766,11 +764,11 @@ private variable NumHeaters;
 private variable HeaterTypes[];
 // {{ 5 "EndReservation" "InitLocals"
 // }} ""
-// {{{ 123 1 0 "4620a485_9c3f_43a9_9791019be307486c" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetHeaterTypes(HeaterTypes);
+// {{{ 123 1 0 "61c842d5_11df_4830_9518fa392d435c65" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetHeaterTypes(HeaterTypes);
 // }} ""
-// {{{ 124 1 0 "26968124_196c_4e64_9880ed9714a34704" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-NumHeaters = HHS_HHC_CONFIG::GetNumHeaters();
+// {{{ 124 1 0 "67411a2f_bf53_4d4a_8310ab7283a43684" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+NumHeaters = HEATER_CONFIG::GetNumHeaters();
 // }} ""
 // {{ 125 1 0 "ee12a406_996a_4b25_aa02670adf690a23" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 {
@@ -828,11 +826,11 @@ private variable CurrentTemp;
 private variable HeaterTypes[];
 // {{ 5 "ConfirmReservation" "InitLocals"
 // }} ""
-// {{{ 88 1 0 "7130aced_0b70_48d0_bd6bbe2aa4de29f0" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-HHS_HHC_CONFIG::GetHeaterTypes(HeaterTypes);
+// {{{ 88 1 0 "b5050f62_6741_4a69_803ada6f988ceee3" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+HEATER_CONFIG::GetHeaterTypes(HeaterTypes);
 // }} ""
-// {{{ 89 1 0 "06033632_0c98_4b27_a3cfbddaad0246e9" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-NumHeaters = HHS_HHC_CONFIG::GetNumHeaters();
+// {{{ 89 1 0 "64c94416_7cf7_43e4_b666ddb200e3eb26" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+NumHeaters = HEATER_CONFIG::GetNumHeaters();
 // }} ""
 // {{ 90 1 0 "a01030d3_dd4f_4826_b70195c8c437571a" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 {
@@ -953,8 +951,8 @@ private variable Counter;
 private variable NumHeaters;
 // {{ 5 "CheckReservation" "InitLocals"
 // }} ""
-// {{{ 80 1 0 "4a6a74bd_b554_4996_85a88e0123b52d03" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-NumHeaters = HHS_HHC_CONFIG::GetNumHeaters();
+// {{{ 80 1 0 "3bab30af_77e4_4561_84a0fdaec8b09be4" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+NumHeaters = HEATER_CONFIG::GetNumHeaters();
 // }} ""
 // {{ 81 1 0 "5f8474a6_9296_4067_a206c22301d49fe9" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 {
@@ -986,4 +984,4 @@ return (Translate("False"));
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2021-12-04 09:18$$checksum=04463a85$$length=084$$
+// $$author=BAREB$$valid=0$$time=2021-12-04 09:33$$checksum=5bd0774a$$length=084$$
