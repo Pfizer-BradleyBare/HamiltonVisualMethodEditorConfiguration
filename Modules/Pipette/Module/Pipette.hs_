@@ -1,0 +1,21 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 12/6/2021 9:12:34 AM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace PIPETTE {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function DoTipLoading(  ) void { }
+function Init(  ) void { }
+function MeasureWellVolume(  ) void { }
+function TransferLiquid(  ) void { }
+global variable x;
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2021-12-06 09:12$$checksum=4eed6643$$length=082$$

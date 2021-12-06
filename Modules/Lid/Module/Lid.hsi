@@ -1,0 +1,204 @@
+// {{{ 2 "IncludeGuard" "PragmaOnce"
+#pragma once
+// }} ""
+#include "HSLTrcLib.hsl"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration\\Modules\\Lid\\Configuration\\Lid Config.hs_"
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+#include "HSLMETEDLib.hs_"
+#include "HSLMECCLib.hs_"
+// }} ""
+// {{{ 2 "LibraryNamespace" "Begin"
+namespace LID {
+// }} ""
+variable ReservedLids[];
+variable PreviousLidReservation[];
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{{ 2 "SubmethodForwardDeclaration" ""
+function AcquireReservation( variable PlateName ) variable ;
+function GetReservationLidSequenceString( variable PlateName ) variable ;
+function Init(  ) void ;
+function ReleaseReservation( variable PlateName ) variable ;
+// }} ""
+function _InitLibrary() {
+// {{ 2 "AutoInitBlock" ""
+LID_CONFIG::_InitLibrary();
+// }} ""
+}
+function _ExitLibrary() {
+// {{ 2 "AutoExitBlock" ""
+LID_CONFIG::_ExitLibrary();
+// }} ""
+}
+// {{{ 5 "Init" "Begin"
+function Init(  ) void {
+// }} ""
+private variable Counter;
+private variable NumLids;
+private variable LidIDs[];
+// {{ 5 "Init" "InitLocals"
+// }} ""
+// {{ 20 1 0 "e18a3e62_74e0_4159_aedc34db069605ab" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+MECC::TraceComment(Translate("Lid module initialization beginning"));
+// }} ""
+// {{{ 21 1 0 "700734c7_445a_4a10_93c78bb663f9273b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+LID_CONFIG::Init();
+// }} ""
+// {{{ 22 1 0 "23892e6e_0b69_4a4e_98e4a31d3de4b25c" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+NumLids = LID_CONFIG::GetNumLids();
+// }} ""
+// {{{ 23 1 0 "273f4c74_2d1e_4341_b71e06a286b20df3" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+LID_CONFIG::GetLidIDs(LidIDs);
+// }} ""
+// {{ 24 1 0 "892d0dab_af44_4a13_9a4038f958133f2f" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+ReservedLids.SetSize(0);
+// }} ""
+// {{ 25 1 0 "90da4924_ee06_40f7_949a2dfc8ba71de0" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+{
+for(Counter = 0; Counter < NumLids;)
+{
+Counter = Counter + 1;
+// }} ""
+// {{ 26 1 0 "b6bea67d_6722_48a3_a084b86521c5376c" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+ReservedLids.AddAsLast(Translate(""));
+// }} ""
+// {{{ 27 1 0 "986af221_4d01_4bd5_ad55cde1afd0bcec" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TrcTrace8(Translate("Lid # "), Counter, Translate(" with ID "), LidIDs.ElementAt( Counter -1), Translate(" was successfully intialized"), Translate(""), Translate(""), Translate(""));
+// }} ""
+// {{ 28 1 0 "90da4924_ee06_40f7_949a2dfc8ba71de0" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+}
+}
+// }} ""
+// {{ 29 1 0 "13385f7a_54de_42b6_a68c94c23ed38841" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+MECC::TraceComment(Translate("Lid module initialization succeeded"));
+// }} ""
+// {{{ 5 "Init" "End"
+}
+// }} ""
+// {{{ 5 "AcquireReservation" "Begin"
+function AcquireReservation( variable PlateName ) variable {
+// }} ""
+private variable Counter;
+private variable NumLids;
+// {{ 5 "AcquireReservation" "InitLocals"
+// }} ""
+// {{{ 1 1 0 "83267b30_a7b6_45ad_b8c649f3cc0e76eb" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+NumLids = LID_CONFIG::GetNumLids();
+// }} ""
+// {{ 2 1 0 "1a7c71f4_b088_45c9_81ac8d028d360b8f" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+{
+for(Counter = 0; Counter < NumLids;)
+{
+Counter = Counter + 1;
+// }} ""
+// {{ 3 1 0 "0140609d_cfaf_4184_b5145b085276f916" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (ReservedLids.ElementAt( Counter -1) == "")
+{
+// }} ""
+// {{ 4 1 0 "538a9676_0b58_4318_bc479f7b88746b4f" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+ReservedLids.SetAt(Counter-1, PlateName);
+// }} ""
+// {{{ 5 1 0 "435454cc_32a2_4f88_ab8413417365e987" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (Translate("True"));
+// }} ""
+// {{ 6 1 0 "0140609d_cfaf_4184_b5145b085276f916" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 7 1 0 "1a7c71f4_b088_45c9_81ac8d028d360b8f" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+}
+}
+// }} ""
+// {{{ 8 1 0 "b633f650_cd38_4c74_ba71cf380cccdcdc" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (Translate("False"));
+// }} ""
+// {{{ 5 "AcquireReservation" "End"
+}
+// }} ""
+// {{{ 5 "ReleaseReservation" "Begin"
+function ReleaseReservation( variable PlateName ) variable {
+// }} ""
+private variable Counter;
+private variable NumLids;
+// {{ 5 "ReleaseReservation" "InitLocals"
+// }} ""
+// {{{ 31 1 0 "1c604cf9_4970_4760_9d77873cf48230c2" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+NumLids = LID_CONFIG::GetNumLids();
+// }} ""
+// {{ 32 1 0 "aae0061d_b1c4_4810_ae798a91ed994d84" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+{
+for(Counter = 0; Counter < NumLids;)
+{
+Counter = Counter + 1;
+// }} ""
+// {{ 33 1 0 "58ee2c68_2d27_4d65_89e318b73cb484a4" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (ReservedLids.ElementAt( Counter -1) == PlateName)
+{
+// }} ""
+// {{ 34 1 0 "6c3be6e7_7b2e_4c02_8648b8fb3317b2f9" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+ReservedLids.SetAt(Counter-1, Translate(""));
+// }} ""
+// {{{ 35 1 0 "ad682867_7d09_4b8a_87e5846578239d1b" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (Translate("True"));
+// }} ""
+// {{ 36 1 0 "58ee2c68_2d27_4d65_89e318b73cb484a4" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 37 1 0 "aae0061d_b1c4_4810_ae798a91ed994d84" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+}
+}
+// }} ""
+// {{{ 38 1 0 "29653cd2_2b76_455c_b4e347fef86ff4c8" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (Translate("False"));
+// }} ""
+// {{{ 5 "ReleaseReservation" "End"
+}
+// }} ""
+// {{{ 5 "GetReservationLidSequenceString" "Begin"
+function GetReservationLidSequenceString( variable PlateName ) variable {
+// }} ""
+private variable Counter;
+private variable NumLids;
+private variable LidSequenceStrings[];
+private variable LidString;
+// {{ 5 "GetReservationLidSequenceString" "InitLocals"
+// }} ""
+// {{{ 10 1 0 "93cf1f78_052b_4496_a63d3052c874e515" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+NumLids = LID_CONFIG::GetNumLids();
+// }} ""
+// {{{ 11 1 0 "20e05a68_865c_4386_bf9a8c18e8bf8abf" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+LID_CONFIG::GetLidSequenceStrings(LidSequenceStrings);
+// }} ""
+// {{ 12 1 0 "27092286_df7b_4a10_8f1b935ba7c93d6d" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+{
+for(Counter = 0; Counter < NumLids;)
+{
+Counter = Counter + 1;
+// }} ""
+// {{ 13 1 0 "36f944f8_1be3_4742_ad0fe459726300ad" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (ReservedLids.ElementAt( Counter -1) == PlateName)
+{
+// }} ""
+// {{ 14 1 0 "18d002e0_7700_4d15_94ea07d867e349d7" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+LidString = LidSequenceStrings.ElementAt( Counter -1);
+// }} ""
+// {{{ 15 1 0 "b5f3df95_feed_43ef_870cfb356528f711" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (LidString);
+// }} ""
+// {{ 16 1 0 "36f944f8_1be3_4742_ad0fe459726300ad" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 17 1 0 "27092286_df7b_4a10_8f1b935ba7c93d6d" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+}
+}
+// }} ""
+// {{{ 18 1 0 "cb3af738_9e67_4443_9130eb9cbb2998fa" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (Translate("False"));
+// }} ""
+// {{{ 5 "GetReservationLidSequenceString" "End"
+}
+// }} ""
+/* {{ 2 "SubmethodInsertLine" "" */ // }} ""
+// {{{ 2 "LibraryNamespace" "End"
+} // library namespace
+// }} ""
+// $$author=BAREB$$valid=0$$time=2021-12-04 10:36$$checksum=3cfe28ae$$length=084$$

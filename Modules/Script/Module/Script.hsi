@@ -1,0 +1,499 @@
+// {{{ 2 "IncludeGuard" "PragmaOnce"
+#pragma once
+// }} ""
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration\\Modules\\Script\\Configuration\\Script Config.hs_"
+#include "HSLStrLib.hsl"
+#include "HSLUtilLib.hsl"
+#include "HSLTrcLib.hsl"
+#include "FileHandling_HSLFiLibEx\\HSLFilLibEx.hsl"
+#include "HSLFilLib.hsl"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\PfizerTools\\PfizerToolsVCurrent.hs_"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Tools\\Tools.hs_"
+#include "HSLUtilLib2.hsl"
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+#include "HSLMETEDLib.hs_"
+#include "HSLMECCLib.hs_"
+// }} ""
+// {{{ 2 "LibraryNamespace" "Begin"
+namespace SCRIPT {
+// }} ""
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{{ 2 "SubmethodForwardDeclaration" ""
+function GeneratePythonScriptCommand( variable ScriptPath, variable Parameters, variable CloseAfterExecution ) variable ;
+private function GetCommand( variable & CommandStringArray[] ) void ;
+function GetConfigurationRootPath(  ) variable ;
+function GetPythonRootPath(  ) variable ;
+function GetScriptRootPath(  ) variable ;
+function Init(  ) void ;
+private function StartSystem(  ) void ;
+private function WriteResponse( variable ResponseString ) void ;
+// }} ""
+function _InitLibrary() {
+// {{ 2 "AutoInitBlock" ""
+SCRIPT_CONFIG::_InitLibrary();
+PFIZERTOOLSVCURRENT::_InitLibrary();
+TOOLS::_InitLibrary();
+// }} ""
+}
+function _ExitLibrary() {
+// {{ 2 "AutoExitBlock" ""
+SCRIPT_CONFIG::_ExitLibrary();
+PFIZERTOOLSVCURRENT::_ExitLibrary();
+TOOLS::_ExitLibrary();
+// }} ""
+}
+// {{{ 5 "Init" "Begin"
+function Init(  ) void {
+// }} ""
+// {{ 5 "Init" "InitLocals"
+// }} ""
+// {{{ 61 1 0 "8a7f1fe2_3a76_4b8a_a22cfaa0516d4f77" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+SCRIPT_CONFIG::Init();
+// }} ""
+// {{{ 5 "Init" "End"
+}
+// }} ""
+// {{{ 5 "GetScriptRootPath" "Begin"
+function GetScriptRootPath(  ) variable {
+// }} ""
+private variable ret;
+// {{ 5 "GetScriptRootPath" "InitLocals"
+// }} ""
+// {{{ 58 1 0 "fb82ff2b_6358_4c79_bcf245129b3ce3f5" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ret = SCRIPT_CONFIG::GetScriptRootPath();
+// }} ""
+// {{{ 59 1 0 "d8078d25_91ac_4617_99c6ec97a1fa373f" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ret);
+// }} ""
+// {{{ 5 "GetScriptRootPath" "End"
+}
+// }} ""
+// {{{ 5 "GetPythonRootPath" "Begin"
+function GetPythonRootPath(  ) variable {
+// }} ""
+private variable ret;
+// {{ 5 "GetPythonRootPath" "InitLocals"
+// }} ""
+// {{{ 55 1 0 "fe879b05_2ea2_4d9c_b994125882c4ed4b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ret = SCRIPT_CONFIG::GetPythonRootPath();
+// }} ""
+// {{{ 56 1 0 "43e28b9e_5d9a_47dd_81430d5351f6a458" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ret);
+// }} ""
+// {{{ 5 "GetPythonRootPath" "End"
+}
+// }} ""
+// {{{ 5 "WriteResponse" "Begin"
+private function WriteResponse( variable ResponseString ) void {
+// }} ""
+private variable FilePath;
+private variable Command_Base;
+private variable ScriptRootPath;
+private variable PythonRootPath;
+private variable code;
+private file ResponseFile;
+// {{ 5 "WriteResponse" "InitLocals"
+// }} ""
+/* {{ 1 "" "0" */ if(0){  /* }} "" */
+// {{{ 95 1 0 "0e826099_6729_41dc_8aec221b9d46fd02" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TrcTrace(Translate("******************************************************************"), Translate(""));
+// }} ""
+// {{{ 96 1 0 "7fb10fd5_3f4b_4d2a_8e997c760f22959c" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TrcTrace(Translate("********************** Give Response ************************"), Translate(""));
+// }} ""
+// {{{ 97 1 0 "7f3e1c56_14e1_4f99_a95315f07c6fad8c" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TrcTrace(Translate("******************************************************************"), Translate(""));
+// }} ""
+/* {{ 1 "" "1" */ } /* }} "" */
+// {{{ 98 1 0 "9ed8d333_eaf7_4f59_84820d5439d6f887" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+FilePath = StrConcat2(ScriptRootPath, Translate("\\CommunicationFolder\\Temp_Response.txt"));
+// }} ""
+// {{ 99 1 0 "e4324e9e_cfa9_45b8_9cffe81f9756e96a" "{B31F3534-5D80-11d4-A5EB-0050DA737D89}"
+ResponseFile.AddField(1, ResponseString, hslString);
+ResponseFile.SetDelimiter(hslAsciiText);
+if( 0 == ResponseFile.Open(FilePath, hslWrite) )
+{
+    MECC::RaiseRuntimeErrorEx(-1523711743, MECC::IDS::stepNameFileOpen, MECC::IDS::errorStepFileOpenFailed, FilePath, "HxMetEdCompCmd");
+}
+// }} ""
+// {{ 100 1 0 "f1edb541_fef8_4143_bfbd112f6e891eea" "{B31F3537-5D80-11d4-A5EB-0050DA737D89}"
+if( 0 == ResponseFile.WriteRecord() )
+{
+    MECC::RaiseRuntimeErrorEx(-1473380096, MECC::IDS::stepNameFileWrite, MECC::IDS::errorStepFailed, "", "HxMetEdCompCmd");
+}
+// }} ""
+// {{ 101 1 0 "8e84e725_c4e2_485e_9891ee10573ec0e7" "{B31F3538-5D80-11d4-A5EB-0050DA737D89}"
+if( 0 != ResponseFile.Close() )
+{
+    MECC::RaiseRuntimeErrorEx(-1456602880, MECC::IDS::stepNameFileClose, MECC::IDS::errorStepFailed, "", "HxMetEdCompCmd");
+}
+ResponseFile.RemoveFields();
+// }} ""
+// {{{ 102 1 0 "2e52b037_d198_4092_ad5689ec237129ce" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+Command_Base = StrConcat12(Translate("C:\\windows\\system32\\cmd.exe /C "), Translate("\"\""), PythonRootPath, Translate("\\python.exe\" "), Translate(" \""), ScriptRootPath, Translate("\\RenameFile.py\""), Translate(""), Translate(""), Translate(""), Translate(""), Translate(""));
+// }} ""
+// {{{ 103 1 0 "20b46c4b_314c_4268_98eb9033092967da" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+Util::SyncShell(Command_Base, 1, code);
+// }} ""
+// {{{ 5 "WriteResponse" "End"
+}
+// }} ""
+// {{{ 5 "StartSystem" "Begin"
+private function StartSystem(  ) void {
+// }} ""
+private variable FilePath;
+private variable File;
+private variable ScriptRootPath;
+// {{ 5 "StartSystem" "InitLocals"
+// }} ""
+// {{{ 63 1 0 "e6811dd9_2ec3_4f61_af88f9707fd1cda5" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TrcTrace(Translate("******************************************************************"), Translate(""));
+// }} ""
+// {{{ 64 1 0 "d6cb38d8_a262_4277_925041368a9b4168" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TrcTrace(Translate("********************** Initialize System ************************"), Translate(""));
+// }} ""
+// {{{ 65 1 0 "ca03b4d7_fe2e_4214_a6ee10cabf625afe" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TrcTrace(Translate("******************************************************************"), Translate(""));
+// }} ""
+// {{ 66 1 0 "f5700d0c_09d5_4c1a_a9e6c372ed8903c6" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{{ 67 1 0 "4b266761_5d3a_422c_b3628f5260d8bc96" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+FilePath = StrConcat2(ScriptRootPath, Translate("\\CommunicationFolder\\Temp_Command.txt"));
+// }} ""
+// {{{ 68 1 0 "a32d0f8a_27cf_45c3_8e076a984a83a8bc" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+File = FilSearchPath(FilePath);
+// }} ""
+// {{ 69 1 0 "82e483cf_2944_4444_adcac72a0ddf8ec9" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (File != "")
+{
+// }} ""
+// {{{ 70 1 0 "ba6d70e0_e0bd_4246_b76f524822c26fcf" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+FilDeleteFileEx(FilePath);
+// }} ""
+// {{ 71 1 0 "82e483cf_2944_4444_adcac72a0ddf8ec9" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 72 1 0 "f5700d0c_09d5_4c1a_a9e6c372ed8903c6" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 73 1 0 "a6d52c16_aa23_40d1_b08b338783cb4e9d" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{{ 74 1 0 "b252a27d_7d2f_44fe_9ddab3b11278942e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+FilePath = StrConcat2(ScriptRootPath, Translate("\\CommunicationFolder\\Command.txt"));
+// }} ""
+// {{{ 75 1 0 "58d60ce0_2ba6_4e4f_b875255251eeb88d" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+File = FilSearchPath(FilePath);
+// }} ""
+// {{ 76 1 0 "8eeb5d00_417c_4887_96268d9c2b5c1e28" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (File != "")
+{
+// }} ""
+// {{{ 77 1 0 "6d499082_b641_41d1_8a6db2c4d0e965a1" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+FilDeleteFileEx(FilePath);
+// }} ""
+// {{ 78 1 0 "8eeb5d00_417c_4887_96268d9c2b5c1e28" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 79 1 0 "a6d52c16_aa23_40d1_b08b338783cb4e9d" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 80 1 0 "c2fcbf4c_3cff_4cec_836fa7fa6c9734e0" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{{ 81 1 0 "90a5ca61_713c_4a52_bad4ee1a90ac0ad9" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+FilePath = StrConcat2(ScriptRootPath, Translate("\\CommunicationFolder\\Temp_Response.txt"));
+// }} ""
+// {{{ 82 1 0 "583ba898_fd57_49d8_82c578f2540b05b5" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+File = FilSearchPath(FilePath);
+// }} ""
+// {{ 83 1 0 "a5306918_9691_4d48_abcb6194e8092cdc" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (File != "")
+{
+// }} ""
+// {{{ 84 1 0 "f02cc7e0_317e_477d_9bcea7597f1c310a" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+FilDeleteFileEx(FilePath);
+// }} ""
+// {{ 85 1 0 "a5306918_9691_4d48_abcb6194e8092cdc" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 86 1 0 "c2fcbf4c_3cff_4cec_836fa7fa6c9734e0" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 87 1 0 "ad33a449_aad6_43d3_8403f51773451883" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{{ 88 1 0 "8f62b2dd_44d9_4802_8d9cc8481f010a3d" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+FilePath = StrConcat2(ScriptRootPath, Translate("\\CommunicationFolder\\Response.txt"));
+// }} ""
+// {{{ 89 1 0 "fbf46ac6_f7ed_409a_93d78f3d97e08170" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+File = FilSearchPath(FilePath);
+// }} ""
+// {{ 90 1 0 "6937c43a_d5f6_4c0b_b64d52ae176a784f" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (File != "")
+{
+// }} ""
+// {{{ 91 1 0 "58860acc_3447_4ad2_a56727feb4268480" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+FilDeleteFileEx(FilePath);
+// }} ""
+// {{ 92 1 0 "6937c43a_d5f6_4c0b_b64d52ae176a784f" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 93 1 0 "ad33a449_aad6_43d3_8403f51773451883" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{{ 5 "StartSystem" "End"
+}
+// }} ""
+// {{{ 5 "GetCommand" "Begin"
+private function GetCommand( variable & CommandStringArray[] ) void {
+// }} ""
+private variable CommandString;
+private variable FilePath;
+private variable Elapsed;
+private variable loopCounter1;
+private variable File;
+private variable loopCounter2;
+private variable ScriptRootPath;
+private timer FileWaitTime;
+private timer CommandTimer;
+private file CommandFile;
+// {{ 5 "GetCommand" "InitLocals"
+CommandStringArray.SetSize( 0);
+// }} ""
+/* {{ 1 "" "0" */ if(0){  /* }} "" */
+// {{{ 18 1 0 "fa35c18f_c9f8_49da_be0ba7dd24535b02" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TrcTrace(Translate("******************************************************************"), Translate(""));
+// }} ""
+// {{{ 19 1 0 "e9b7c158_60d3_42b3_9c25b319f1ae5d61" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TrcTrace(Translate("********************** Get next command ********************"), Translate(""));
+// }} ""
+// {{{ 20 1 0 "23bb6026_c0e0_4419_84d23930ade3f838" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TrcTrace(Translate("******************************************************************"), Translate(""));
+// }} ""
+/* {{ 1 "" "1" */ } /* }} "" */
+// {{ 21 1 0 "ddd01205_583f_4680_8d3f5a193978a057" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{{ 22 1 0 "602b7a04_77da_4528_a38f03e37271e3e3" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+FilePath = StrConcat2(ScriptRootPath, Translate("\\CommunicationFolder\\Command.txt"));
+// }} ""
+// {{ 23 1 0 "ab84bd0b_5015_4757_8f0643d58ae54c4b" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+File = Translate("");
+// }} ""
+// {{ 24 1 0 "bc442898_e24c_49b7_bc074dd0c0763aa5" "{B31F353E-5D80-11d4-A5EB-0050DA737D89}"
+if( 0 == CommandTimer.SetTimer(300) )
+{
+    MECC::RaiseRuntimeErrorEx(-1355939584, MECC::IDS::stepNameTimerStart, MECC::IDS::errorStepFailed, "", "HxMetEdCompCmd");
+}
+// }} ""
+// {{ 25 1 0 "5797dd26_dc0c_400b_b51ddac5f3ae222b" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+{
+loopCounter1 = 0;
+while (File == "")
+{
+loopCounter1 = loopCounter1 + 1;
+// }} ""
+// {{ 26 1 0 "7f4e9fcd_8d32_4c4a_b6b1786f3187132d" "{B31F3540-5D80-11d4-A5EB-0050DA737D89}"
+Elapsed = CommandTimer.GetElapsedTime();
+// }} ""
+// {{ 27 1 0 "247d58df_d513_4527_aad807e0432a4204" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (Elapsed >= 270)
+{
+// }} ""
+// {{{ 28 1 0 "b2f41121_06a8_4555_bd64b6ad80c53f72" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+PFIZERTOOLSVCURRENT::NotifyContacts(Translate("Possible Script Error."), Translate("Hello, the scripts appear to have stop communicating with the Hamilton. This run is being aborted. Do not fret! You can resume the method normally. Remember to save the excel sheet before you restart method execution!"));
+// }} ""
+// {{ 29 1 0 "69495890_6dd4_42f0_8dadc10fb36307a8" "{930D6C31-8EFB-11d4-A3BA-002035848439}"
+abort;
+// }} ""
+// {{ 30 1 0 "247d58df_d513_4527_aad807e0432a4204" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{{ 31 1 0 "138a87a0_b5fc_4e06_b21ad3e122a2b7e8" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+File = FilSearchPath(FilePath);
+// }} ""
+// {{ 32 1 0 "5797dd26_dc0c_400b_b51ddac5f3ae222b" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+}
+}
+// }} ""
+// {{ 33 1 0 "ddd01205_583f_4680_8d3f5a193978a057" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 34 1 0 "71d07a3d_87f9_43b5_bdf1813ecffd22e2" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 35 1 0 "4c50b15f_313d_46cd_9a86d185ffabb33d" "{B31F353E-5D80-11d4-A5EB-0050DA737D89}"
+if( 0 == FileWaitTime.SetTimer(0.1) )
+{
+    MECC::RaiseRuntimeErrorEx(-1355939584, MECC::IDS::stepNameTimerStart, MECC::IDS::errorStepFailed, "", "HxMetEdCompCmd");
+}
+// }} ""
+// {{ 36 1 0 "0b83f974_ab73_4fb6_ad40b93a7118c44e" "{B31F353F-5D80-11d4-A5EB-0050DA737D89}"
+if( 0 == FileWaitTime.WaitTimer(hslFalse, hslFalse) )
+{
+    MECC::RaiseRuntimeErrorEx(-1339162368, MECC::IDS::stepNameTimerWait, MECC::IDS::errorStepFailed, "", "HxMetEdCompCmd");
+}
+// }} ""
+// {{ 37 1 0 "351d88a0_20c8_4247_b5edb03a3a720508" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+CommandStringArray.SetSize(0);
+// }} ""
+// {{ 38 1 0 "895fbc4e_ed8a_46e0_9493da7d5294524b" "{B31F3534-5D80-11d4-A5EB-0050DA737D89}"
+CommandFile.AddField(1, CommandString, hslString);
+CommandFile.SetDelimiter(hslAsciiText);
+if( 0 == CommandFile.Open(FilePath, hslRead) )
+{
+    MECC::RaiseRuntimeErrorEx(-1523711743, MECC::IDS::stepNameFileOpen, MECC::IDS::errorStepFileOpenFailed, FilePath, "HxMetEdCompCmd");
+}
+// }} ""
+// {{ 39 1 0 "37b0d02f_7352_440c_9fd37935d50e3a8b" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+{
+loopCounter2 = 0;
+while ("" == "")
+{
+loopCounter2 = loopCounter2 + 1;
+// }} ""
+// {{ 40 1 0 "e5dd9e41_0d97_4089_847b6add630dddbb" "{B31F3536-5D80-11d4-A5EB-0050DA737D89}"
+if( 0 == CommandFile.ReadRecord() )
+{
+    MECC::RaiseRuntimeErrorEx(-1490157312, MECC::IDS::stepNameFileRead, MECC::IDS::errorStepFailed, "", "HxMetEdCompCmd");
+}
+// }} ""
+// {{ 41 1 0 "a0eaeff1_9e9f_457f_b82b9f9f90293184" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (CommandString == "")
+{
+// }} ""
+// {{ 42 1 0 "c56890b5_d8c4_4d22_8e95939b906302f4" "{B31F3533-5D80-11d4-A5EB-0050DA737D89}"
+break;
+// }} ""
+// {{ 43 1 0 "a0eaeff1_9e9f_457f_b82b9f9f90293184" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 44 1 0 "6303d04b_5f46_4861_af856a1730f8e807" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+CommandStringArray.AddAsLast(CommandString);
+// }} ""
+// {{ 45 1 0 "37b0d02f_7352_440c_9fd37935d50e3a8b" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+}
+}
+// }} ""
+// {{ 46 1 0 "2ecf5a5c_032d_4075_9004109cba2ac172" "{B31F3538-5D80-11d4-A5EB-0050DA737D89}"
+if( 0 != CommandFile.Close() )
+{
+    MECC::RaiseRuntimeErrorEx(-1456602880, MECC::IDS::stepNameFileClose, MECC::IDS::errorStepFailed, "", "HxMetEdCompCmd");
+}
+CommandFile.RemoveFields();
+// }} ""
+// {{ 47 1 0 "71d07a3d_87f9_43b5_bdf1813ecffd22e2" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 48 1 0 "131d36ab_4166_4500_8058d9de3b795d64" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{{ 49 1 0 "d301fe13_0412_406c_83e21cfa04b7b9a3" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+FilDeleteFileEx(FilePath);
+// }} ""
+// {{ 50 1 0 "131d36ab_4166_4500_8058d9de3b795d64" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{{ 5 "GetCommand" "End"
+}
+// }} ""
+// {{{ 5 "GetConfigurationRootPath" "Begin"
+function GetConfigurationRootPath(  ) variable {
+// }} ""
+private variable ret;
+private variable Out[];
+// {{ 5 "GetConfigurationRootPath" "InitLocals"
+// }} ""
+// {{{ 52 1 0 "bcd41534_2e2c_4304_83de3cb5171bf61f" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ret = SCRIPT_CONFIG::GetConfigurationRootPath();
+// }} ""
+// {{{ 53 1 0 "d77c6178_7d9d_4805_8c8b83fba28da02a" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ret);
+// }} ""
+// {{{ 5 "GetConfigurationRootPath" "End"
+}
+// }} ""
+// {{{ 5 "GeneratePythonScriptCommand" "Begin"
+function GeneratePythonScriptCommand( variable ScriptPath, variable Parameters, variable CloseAfterExecution ) variable {
+// }} ""
+private variable Start_Pos;
+private variable RunType;
+private variable Excel_File_Path;
+private variable Command_Base;
+private variable ScriptRootPath;
+private variable PythonRootPath;
+private variable Counter;
+private variable PythonExecutablePath;
+private variable ParametersString;
+private variable NumParameters;
+private variable cmdCommand;
+private variable Out[];
+private variable FinalCommand;
+// {{ 5 "GeneratePythonScriptCommand" "InitLocals"
+// }} ""
+// {{{ 1 1 0 "d40b936e_9874_4194_9913b190ff073d47" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+TOOLS::ParseDelimitedList(Translate(","), Parameters, Out);
+// }} ""
+// {{ 2 1 0 "234fe3b8_a45a_4b40_b11c5f0b40c2cdd9" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+ParametersString = Translate("");
+// }} ""
+// {{ 3 1 0 "c4189bed_fa34_482c_bd60d33d2388c8af" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
+NumParameters=Out.GetSize();
+// }} ""
+// {{ 4 1 0 "72a9aa40_d3e6_495b_971dba64d7db75c1" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+{
+for(Counter = 0; Counter < NumParameters;)
+{
+Counter = Counter + 1;
+// }} ""
+// {{{ 5 1 0 "68506782_8725_43c1_aeebdf14e5254df8" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+ParametersString = StrConcat4(ParametersString, Translate("\""), Out.ElementAt( Counter -1), Translate("\" "));
+// }} ""
+// {{ 6 1 0 "72a9aa40_d3e6_495b_971dba64d7db75c1" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+}
+}
+// }} ""
+// {{ 7 1 0 "2ff4233f_254d_442f_a00221885d1f60b7" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+cmdCommand = Translate("");
+// }} ""
+// {{ 8 1 0 "769a14f6_581a_4606_95f8c05575eb6793" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (CloseAfterExecution == "True")
+{
+// }} ""
+// {{ 9 1 0 "ec757593_52a4_449c_8b778a99676dd332" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+cmdCommand = Translate("C:\\windows\\system32\\cmd.exe /C");
+// }} ""
+// {{ 10 1 0 "769a14f6_581a_4606_95f8c05575eb6793" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+else
+{
+// }} ""
+// {{ 11 1 0 "7e6942e8_c9fb_4d5b_9e1aac71bbb54faf" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+cmdCommand = Translate("C:\\windows\\system32\\cmd.exe /K");
+// }} ""
+// {{ 12 1 0 "769a14f6_581a_4606_95f8c05575eb6793" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{{ 13 1 0 "ff80efc1_46c7_4086_8d81a1b14590df9a" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+PythonExecutablePath = SCRIPT_CONFIG::GetPythonRootPath();
+// }} ""
+// {{{ 14 1 0 "ae42b05e_5d6a_4bdd_a5d3fadea9ba5437" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+PythonExecutablePath = StrConcat2(PythonExecutablePath, Translate("\\python.exe"));
+// }} ""
+// {{{ 15 1 0 "f9d46c9e_ed7f_44cf_ae1f778938a8df6f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+FinalCommand = StrConcat12(cmdCommand, Translate(" \"\""), PythonExecutablePath, Translate("\" "), Translate(" \""), ScriptPath, Translate("\" \""), Translate(""), Translate(""), ParametersString, Translate("\"\""), Translate(""));
+// }} ""
+// {{{ 16 1 0 "705b09aa_afee_4fe1_98a50432124a2431" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (FinalCommand);
+// }} ""
+// {{{ 5 "GeneratePythonScriptCommand" "End"
+}
+// }} ""
+/* {{ 2 "SubmethodInsertLine" "" */ // }} ""
+// {{{ 2 "LibraryNamespace" "End"
+} // library namespace
+// }} ""
+// $$author=BAREB$$valid=0$$time=2021-12-05 18:33$$checksum=15e7fb0e$$length=084$$

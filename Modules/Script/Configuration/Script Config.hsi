@@ -1,0 +1,100 @@
+// {{{ 2 "IncludeGuard" "PragmaOnce"
+#pragma once
+// }} ""
+#include "HSLTrcLib.hsl"
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+#include "HSLMETEDLib.hs_"
+#include "HSLMECCLib.hs_"
+// }} ""
+// {{{ 2 "LibraryNamespace" "Begin"
+namespace SCRIPT_CONFIG {
+// }} ""
+variable ScriptRootPath;
+variable PythonRootPath;
+variable ConfigurationRootPath;
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{{ 2 "SubmethodForwardDeclaration" ""
+function EDIT_Configuration(  ) void ;
+function GetConfigurationRootPath(  ) variable ;
+function GetPythonRootPath(  ) variable ;
+function GetScriptRootPath(  ) variable ;
+function Init(  ) void ;
+// }} ""
+function _InitLibrary() {
+// {{ 2 "AutoInitBlock" ""
+// }} ""
+}
+function _ExitLibrary() {
+// {{ 2 "AutoExitBlock" ""
+// }} ""
+}
+// {{{ 5 "EDIT_Configuration" "Begin"
+function EDIT_Configuration(  ) void {
+// }} ""
+// {{ 5 "EDIT_Configuration" "InitLocals"
+// }} ""
+// {{ 1 1 0 "5a44efd2_22fc_4a87_978d2d28f16040a4" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+ScriptRootPath = Translate("C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor");
+// }} ""
+// {{ 2 1 0 "fef2c1bc_996b_4732_a6254a91d6b06547" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+ConfigurationRootPath = Translate("C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration");
+// }} ""
+// {{ 3 1 0 "3b54a9aa_dbdc_4bc5_ae217a4e9a03ad4c" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+PythonRootPath = Translate("C:\\Program Files (x86)\\Python36-32");
+// }} ""
+// {{{ 4 1 0 "56b184a6_4009_4399_906117dd35ad18d6" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TrcTrace(ConfigurationRootPath, Translate(""));
+// }} ""
+// {{{ 5 "EDIT_Configuration" "End"
+}
+// }} ""
+// {{{ 5 "Init" "Begin"
+function Init(  ) void {
+// }} ""
+// {{ 5 "Init" "InitLocals"
+// }} ""
+// {{{ 12 1 0 "b2dc4ebc_1e5d_46bc_82c1f537c43c5020" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+EDIT_Configuration();
+// }} ""
+// {{{ 5 "Init" "End"
+}
+// }} ""
+// {{{ 5 "GetScriptRootPath" "Begin"
+function GetScriptRootPath(  ) variable {
+// }} ""
+// {{ 5 "GetScriptRootPath" "InitLocals"
+// }} ""
+// {{{ 10 1 0 "0945bad2_4cb0_4c53_9d5e24acf7537d09" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ScriptRootPath);
+// }} ""
+// {{{ 5 "GetScriptRootPath" "End"
+}
+// }} ""
+// {{{ 5 "GetPythonRootPath" "Begin"
+function GetPythonRootPath(  ) variable {
+// }} ""
+// {{ 5 "GetPythonRootPath" "InitLocals"
+// }} ""
+// {{{ 8 1 0 "dacf787c_1999_49fe_abaec5fadfda54b0" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (PythonRootPath);
+// }} ""
+// {{{ 5 "GetPythonRootPath" "End"
+}
+// }} ""
+// {{{ 5 "GetConfigurationRootPath" "Begin"
+function GetConfigurationRootPath(  ) variable {
+// }} ""
+// {{ 5 "GetConfigurationRootPath" "InitLocals"
+// }} ""
+// {{{ 6 1 0 "b8ae359e_26d2_4577_b73b7ebd6b311dbc" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ConfigurationRootPath);
+// }} ""
+// {{{ 5 "GetConfigurationRootPath" "End"
+}
+// }} ""
+/* {{ 2 "SubmethodInsertLine" "" */ // }} ""
+// {{{ 2 "LibraryNamespace" "End"
+} // library namespace
+// }} ""
+// $$author=BAREB$$valid=0$$time=2021-12-05 17:40$$checksum=500b4b07$$length=084$$

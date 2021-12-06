@@ -1,0 +1,21 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 12/5/2021 5:40:09 PM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace SCRIPT_CONFIG {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function EDIT_Configuration(  ) void { }
+function GetConfigurationRootPath(  ) variable {  return (0); }
+function GetPythonRootPath(  ) variable {  return (0); }
+function GetScriptRootPath(  ) variable {  return (0); }
+function Init(  ) void { }
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2021-12-05 17:40$$checksum=c5f902e4$$length=082$$
