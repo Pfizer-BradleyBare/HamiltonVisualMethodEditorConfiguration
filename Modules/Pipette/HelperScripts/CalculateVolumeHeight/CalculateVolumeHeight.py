@@ -53,7 +53,7 @@ while count < len(Volumes):
 
 			VolCalcHeight -= SegmentHeight
 
-			if VolCalcHeight < 0:
+			if VolCalcHeight <= 0:
 				break
 
 		if VolCalcHeight > 0:
@@ -65,6 +65,8 @@ while count < len(Volumes):
 				DispenseHeights[Index] = CalcHeight
 
 	CalcHeight = CalcHeight + CalcHeightIncrement
+
+print(DispenseHeights)
 
 file = open(os.path.join(os.path.dirname(__file__),"Output.txt"),"w")
 file.write(",".join(str(x) for x in DispenseHeights))

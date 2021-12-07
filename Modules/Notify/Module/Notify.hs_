@@ -1,0 +1,19 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 12/7/2021 3:56:28 PM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace NOTIFY {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function DoCommand( device & ML_STAR, variable CommandString, variable & i_CommandParameterStringsArray[] ) variable {  return (0); }
+function Init( device & ML_STAR, variable & i_CommandParameterStringsArray[] ) variable {  return (0); }
+function NotifyContacts( device & ML_STAR, variable & i_CommandParameterStringsArray[] ) variable {  return (0); }
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2021-12-07 15:56$$checksum=7f238263$$length=082$$

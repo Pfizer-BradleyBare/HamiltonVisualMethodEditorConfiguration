@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 12/5/2021 5:18:09 PM
+// Generated at 12/6/2021 1:56:51 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -8,6 +8,7 @@ namespace PIPETTE_CONFIG {
 function _InitLibrary() { }
 function _ExitLibrary() { }
 function EDIT_Configuration(  ) void { }
+function GetNumChannels(  ) variable {  return (0); }
 function GetNumSegments( variable & o_NumSegments[] ) void { }
 function GetPlateTypes( variable & o_PlateTypes[] ) void { }
 function GetSegmentEquations( variable & o_SegmentEquations[] ) void { }
@@ -19,4 +20,4 @@ function Init(  ) void { }
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2021-12-05 17:18$$checksum=5f36d2d7$$length=082$$
+// $$author=BAREB$$valid=0$$time=2021-12-06 13:56$$checksum=3bcbe3bc$$length=082$$

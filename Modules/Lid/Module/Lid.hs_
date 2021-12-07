@@ -1,20 +1,21 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 12/4/2021 10:36:39 AM
+// Generated at 12/7/2021 3:36:30 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
 namespace LID {
 function _InitLibrary() { }
 function _ExitLibrary() { }
-function AcquireReservation( variable PlateName ) variable {  return (0); }
-function GetReservationLidSequenceString( variable PlateName ) variable {  return (0); }
-function Init(  ) void { }
-function ReleaseReservation( variable PlateName ) variable {  return (0); }
+function AcquireReservation( device & ML_STAR, variable & i_CommandParameterStringsArray[] ) variable {  return (0); }
+function DoCommand( device & ML_STAR, variable CommandString, variable & i_CommandParameterStringsArray[] ) variable {  return (0); }
+function GetReservationLidSequenceString( device & ML_STAR, variable & i_CommandParameterStringsArray[] ) variable {  return (0); }
+function Init( device & ML_STAR, variable & i_CommandParameterStringsArray[] ) variable {  return (0); }
+function ReleaseReservation( device & ML_STAR, variable & i_CommandParameterStringsArray[] ) variable {  return (0); }
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2021-12-04 10:36$$checksum=052072bf$$length=082$$
+// $$author=BAREB$$valid=0$$time=2021-12-07 15:36$$checksum=2424f4a1$$length=082$$

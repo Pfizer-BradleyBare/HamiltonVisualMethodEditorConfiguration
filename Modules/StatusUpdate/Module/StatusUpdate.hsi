@@ -1,0 +1,189 @@
+// {{{ 2 "IncludeGuard" "PragmaOnce"
+#pragma once
+// }} ""
+#include "ASWStandardDialogs\\AswStatusDialog.hsl"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration\\Modules\\StatusUpdate\\Configuration\\StatusUpdate Config.hs_"
+#include "HSLStrLib.hsl"
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+#include "HSLMETEDLib.hs_"
+#include "HSLMECCLib.hs_"
+// }} ""
+// {{{ 2 "LibraryNamespace" "Begin"
+namespace STATUSUPDATE {
+// }} ""
+variable ProgressType;
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{{ 2 "SubmethodForwardDeclaration" ""
+function AddProgressDetail( variable DetailString ) void ;
+private function BarProgress( variable & InputParams[] ) void ;
+function Init( variable i_ProgressType ) void ;
+function SetProgress( variable & InputParams[] ) void ;
+// }} ""
+function _InitLibrary() {
+// {{ 2 "AutoInitBlock" ""
+STATUSUPDATE_CONFIG::_InitLibrary();
+// }} ""
+}
+function _ExitLibrary() {
+// {{ 2 "AutoExitBlock" ""
+STATUSUPDATE_CONFIG::_ExitLibrary();
+// }} ""
+}
+// {{{ 5 "Init" "Begin"
+function Init( variable i_ProgressType ) void {
+// }} ""
+// {{ 5 "Init" "InitLocals"
+// }} ""
+// {{{ 31 1 0 "f8997973_8322_4c17_91c9a2b647e62326" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+AswStatusDialog::Initialize(Translate("Visual Method Editor Status Updates"));
+// }} ""
+// {{ 32 1 0 "f15b9c0f_a832_4269_b959986c57f3fce6" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+ProgressType = i_ProgressType;
+// }} ""
+// {{{ 5 "Init" "End"
+}
+// }} ""
+// {{{ 5 "SetProgress" "Begin"
+function SetProgress( variable & InputParams[] ) void {
+// }} ""
+// {{ 5 "SetProgress" "InitLocals"
+// }} ""
+// {{ 34 1 0 "61e87e16_22de_42bf_8ba73d41a14e7dd0" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (ProgressType == "Bar")
+{
+// }} ""
+// {{{ 35 1 0 "6084bd67_e39d_4950_8a3f65d64790c5b9" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+BarProgress(InputParams);
+// }} ""
+// {{ 36 1 0 "61e87e16_22de_42bf_8ba73d41a14e7dd0" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{{ 5 "SetProgress" "End"
+}
+// }} ""
+// {{{ 5 "BarProgress" "Begin"
+private function BarProgress( variable & InputParams[] ) void {
+// }} ""
+private variable IncompleteSteps;
+private variable Counter;
+private variable Temp;
+private variable TotalSteps;
+private variable PercentComplete;
+private variable ProgressBar;
+private variable CompleteSteps;
+private variable ProgressPerStep;
+private variable ProgressText;
+private variable PercentIncomplete;
+// {{ 5 "BarProgress" "InitLocals"
+// }} ""
+// {{ 3 1 0 "104ea058_8c98_454e_a8a4bc843cc05fa3" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+ProgressPerStep = 10;
+// }} ""
+// {{{ 4 1 0 "268f3c73_327d_4f60_8dc4956f60ed68e6" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+PercentComplete = StrIVal(InputParams.ElementAt( 1 -1));
+// }} ""
+// {{ 5 1 0 "c63922c1_b421_4f33_b3f75a88f16e0720" "{B31F3544-5D80-11d4-A5EB-0050DA737D89}"
+PercentIncomplete = 100 - PercentComplete;
+// }} ""
+// {{{ 6 1 0 "ec96194f_9711_4d9a_b665c2ce55abdfdc" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+ProgressText = StrConcat4(Translate("Percent Complete: "), InputParams.ElementAt( 1 -1), Translate("%"), Translate(" "));
+// }} ""
+// {{ 7 1 0 "b44083c7_4d7b_409c_b531e4414a0d5152" "{B31F3544-5D80-11d4-A5EB-0050DA737D89}"
+CompleteSteps = PercentComplete / (ProgressPerStep * 1.0);
+// }} ""
+// {{{ 8 1 0 "a937c81c_2a22_4376_9bb64c2975d7b26f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+CompleteSteps = StrFStr(CompleteSteps);
+// }} ""
+// {{{ 9 1 0 "1b4292f4_93af_4eb5_82337af5d853bb05" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+CompleteSteps = StrIVal(CompleteSteps);
+// }} ""
+// {{ 10 1 0 "7ca18cfe_3cf2_4c92_9a12fe5410f32299" "{B31F3544-5D80-11d4-A5EB-0050DA737D89}"
+IncompleteSteps = PercentIncomplete / (ProgressPerStep * 1.0);
+// }} ""
+// {{{ 11 1 0 "7b29f526_4b90_41e3_88695ec6a344d710" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+IncompleteSteps = StrFStr(IncompleteSteps);
+// }} ""
+// {{{ 12 1 0 "7b8cb70b_9721_4ef1_8879123dd7013acb" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+IncompleteSteps = StrIVal(IncompleteSteps);
+// }} ""
+// {{ 13 1 0 "c74f3014_8845_4fd5_b5cb43b0ed627eb0" "{B31F3544-5D80-11d4-A5EB-0050DA737D89}"
+TotalSteps = CompleteSteps + IncompleteSteps;
+// }} ""
+// {{ 14 1 0 "b75384eb_8149_46ef_abce4786581268ac" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+ProgressBar = Translate("[");
+// }} ""
+// {{ 15 1 0 "436a1f30_f662_47d2_9d22c624728d685e" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+{
+for(Counter = 0; Counter < TotalSteps;)
+{
+Counter = Counter + 1;
+// }} ""
+// {{ 16 1 0 "805de7e9_ca3d_4c1f_ae4510baed73a4ec" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (Counter <= CompleteSteps)
+{
+// }} ""
+// {{{ 17 1 0 "a917811b_b34f_4de3_95c30c899ef65a5e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+ProgressBar = StrConcat2(ProgressBar, Translate("=="));
+// }} ""
+// {{ 18 1 0 "805de7e9_ca3d_4c1f_ae4510baed73a4ec" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+else
+{
+// }} ""
+// {{ 19 1 0 "670dc10a_33d2_4c24_a419e492e722bfc9" "{B31F3544-5D80-11d4-A5EB-0050DA737D89}"
+Temp = Counter % 2;
+// }} ""
+// {{ 20 1 0 "83be57b2_188e_487c_a53ec0989e105d22" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (Temp == 0)
+{
+// }} ""
+// {{{ 21 1 0 "9cdccbef_acaf_45f2_9ab863e491141f2e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+ProgressBar = StrConcat2(ProgressBar, Translate("      "));
+// }} ""
+// {{ 22 1 0 "83be57b2_188e_487c_a53ec0989e105d22" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+else
+{
+// }} ""
+// {{{ 23 1 0 "d7404f89_4ea0_4b49_90ca0a782da17e7a" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+ProgressBar = StrConcat2(ProgressBar, Translate("     "));
+// }} ""
+// {{ 24 1 0 "83be57b2_188e_487c_a53ec0989e105d22" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 25 1 0 "805de7e9_ca3d_4c1f_ae4510baed73a4ec" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 26 1 0 "436a1f30_f662_47d2_9d22c624728d685e" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+}
+}
+// }} ""
+// {{{ 27 1 0 "f98c0ea5_7f72_4e36_aaa76b67854bc206" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+ProgressBar = StrConcat2(ProgressBar, Translate("]"));
+// }} ""
+// {{{ 28 1 0 "9977439e_e56f_4517_9953b494f6fbe9e5" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+ProgressText = StrConcat2(ProgressText, ProgressBar);
+// }} ""
+// {{{ 29 1 0 "28a3dabe_8126_4fc7_80c4c6b65adcdf23" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+AswStatusDialog::SetStatusText(ProgressText);
+// }} ""
+// {{{ 5 "BarProgress" "End"
+}
+// }} ""
+// {{{ 5 "AddProgressDetail" "Begin"
+function AddProgressDetail( variable DetailString ) void {
+// }} ""
+// {{ 5 "AddProgressDetail" "InitLocals"
+// }} ""
+// {{{ 1 1 0 "e19450a0_1815_486c_89d3b2b4517cfe62" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+AswStatusDialog::AppendText(DetailString);
+// }} ""
+// {{{ 5 "AddProgressDetail" "End"
+}
+// }} ""
+/* {{ 2 "SubmethodInsertLine" "" */ // }} ""
+// {{{ 2 "LibraryNamespace" "End"
+} // library namespace
+// }} ""
+// $$author=BAREB$$valid=0$$time=2021-12-07 08:52$$checksum=196de171$$length=084$$
