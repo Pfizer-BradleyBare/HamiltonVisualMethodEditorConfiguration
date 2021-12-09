@@ -15,6 +15,8 @@
 #include "HSLSeqLib.hsl"
 #include "IMCS\\HSLTipCountingLib.hsl"
 #include "HSLDevLib.hsl"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Labware\\Labware.hs_"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Sequences\\Sequences.hs_"
 /* {{ 2 "LibraryInsertLine" "" */ // }} ""
 // {{ 2 "TemplateIncludeBlock" ""
 #include "HSLMETEDLib.hs_"
@@ -33,11 +35,11 @@ private function CalculateUsedTips( device & ML_STAR, variable UseCase, variable
 private function CalculateVolumeHeights( variable & i_PlateTypes[], variable & i_Volumes[], variable & o_CalculatedHeights[] ) variable ;
 function DoTipLoading( device & ML_STAR ) void ;
 private function Flip_Tube_Functions( variable int_FlipTubeFunction, sequence & seq_FlipTubeTool, sequence & seq_TubeSequence, variable str_ChannelPattern, variable var_PickUpTool, variable var_EjectTool, device & ML_STAR ) void ;
-function Init( device & ML_STAR, variable & i_PipettingVolumeCommandStrings[] ) void ;
+function Init( device & ML_STAR, variable i_CommandParameterStrings ) void ;
 function SaveTipLoading( device & ML_STAR ) void ;
 function SetDesaltingUseCase( variable DesaltingUseCase ) void ;
 function ShowTipsDialog(  ) void ;
-function TransferLiquid( device & ML_STAR, sequence & i_TipsSequences[], variable & DestinationSequenceStringsArray[], variable & DestinationSequencePositionsArray[], variable & SourceSequenceStringsArray[], variable & SourceSequencePositionsArray[], variable & TransferVolumesArray[], variable & CurrentVolumesArray[], variable & MixStringArray[] ) void ;
+function TransferLiquid( device & ML_STAR, variable i_CommandParameterStrings ) void ;
 // }} ""
 function _InitLibrary() {
 // {{ 2 "AutoInitBlock" ""
@@ -58,6 +60,8 @@ SCRIPT::_InitLibrary();
 TOOLS::_InitLibrary();
 COMMANDS::_InitLibrary();
 VISUAL_NTR_LIBRARY::_InitLibrary();
+LABWARE::_InitLibrary();
+SEQUENCES::_InitLibrary();
 // }} ""
 }
 function _ExitLibrary() {
@@ -67,10 +71,12 @@ SCRIPT::_ExitLibrary();
 TOOLS::_ExitLibrary();
 COMMANDS::_ExitLibrary();
 VISUAL_NTR_LIBRARY::_ExitLibrary();
+LABWARE::_ExitLibrary();
+SEQUENCES::_ExitLibrary();
 // }} ""
 }
 // {{{ 5 "Init" "Begin"
-function Init( device & ML_STAR, variable & i_PipettingVolumeCommandStrings[] ) void {
+function Init( device & ML_STAR, variable i_CommandParameterStrings ) void {
 // }} ""
 private variable Counter;
 private variable NumTypes;
@@ -78,11 +84,9 @@ private variable TipCounter;
 private variable TipSequenceTypes[];
 private variable Volume;
 private variable Dict[];
-private variable i_CommandParameterStringsArray[];
 private variable Delimiter;
 private variable VolumeStringArray[];
 private variable VolumeArray[];
-private variable PipettingVolumes[];
 // {{ 5 "Init" "InitLocals"
 // }} ""
 // {{{ 235 1 0 "1b9cf540_a547_4b8a_982d5d57cb484fb7" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
@@ -128,8 +132,8 @@ TipSequencesWasteSequence.AddAsLast(Translate("N/A"));
 }
 }
 // }} ""
-// {{{ 248 1 0 "66028282_6ad5_4301_83fa150ff8864b53" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-COMMANDS::ParseCommandParametersString(i_PipettingVolumeCommandStrings.ElementAt( 1 -1), Dict);
+// {{{ 248 1 0 "fa3c46b6_e8bd_48f3_841402aa665bce62" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::ParseCommandParametersString(i_CommandParameterStrings, Dict);
 // }} ""
 // {{{ 249 1 0 "0d85e2cc_c65e_4652_b31b71453225b4a9" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 COMMANDS::GetDictionaryItem(Dict, Translate("Volume"), Volume);
@@ -150,13 +154,126 @@ CalculateUsedTips(ML_STAR, Translate("General"), VolumeArray);
 }
 // }} ""
 // {{{ 5 "TransferLiquid" "Begin"
-function TransferLiquid( device & ML_STAR, sequence & i_TipsSequences[], variable & DestinationSequenceStringsArray[], variable & DestinationSequencePositionsArray[], variable & SourceSequenceStringsArray[], variable & SourceSequencePositionsArray[], variable & TransferVolumesArray[], variable & CurrentVolumesArray[], variable & MixStringArray[] ) void {
+function TransferLiquid( device & ML_STAR, variable i_CommandParameterStrings ) void {
 // }} ""
-private variable NumTransfers;
+private variable SourcePositionsString;
+private variable DestinationPositionsString;
+private variable SourcesString;
+private variable DestinationsString;
+private variable PreTransferDestinationWellVolumesString;
+private variable TransferVolumesString;
+private variable MaxParametersString;
+private variable Dict[];
+private variable Delimiter;
+private variable DestinationSequenceStringsArray[];
+private variable DestinationPositionStringsArray[];
+private variable SourceStringsArray[];
+private variable SourceSequenceStringsArray[];
+private variable PreTransferDestinationWellVolumeStringsArray[];
+private variable TransferVolumeStringsArray[];
+private variable MaxParameterStringsArray[];
+private variable SourcePositionStringsArray[];
+private variable DestinationStringsArray[];
+private variable SourcePositionsArray[];
+private variable DestinationPositionsArray[];
+private sequence DestinationSequencesArray[];
+private sequence SourceSequencesArray[];
+private variable MixParametersString;
+private variable MixParameterStringsArray[];
+private variable TransferVolumesArray[];
+private variable MixParametersArray[];
+private variable PreTransferDestinationWellVolumesArray[];
 // {{ 5 "TransferLiquid" "InitLocals"
 // }} ""
-// {{ 282 1 0 "a00eef9c_0c10_49ac_a88f33d5b6204a2a" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
-NumTransfers=DestinationSequenceStringsArray.GetSize();
+// {{ 282 1 0 "9b05cf50_3e1f_4acb_b1970521e554752f" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 283 1 0 "a88dbe81_122f_43ba_b9ffb21e07ea637e" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::ParseCommandParametersString(i_CommandParameterStrings, Dict);
+// }} ""
+// {{{ 284 1 0 "70640caf_af89_465a_a1ef7a9d46a6084e" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::GetDictionaryItem(Dict, Translate("Destination"), DestinationsString);
+// }} ""
+// {{{ 285 1 0 "a588b3b5_0fce_4afa_aad4f928f54ecd38" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::GetDictionaryItem(Dict, Translate("DestinationPosition"), DestinationPositionsString);
+// }} ""
+// {{{ 286 1 0 "dc1f13bb_13e7_4876_b89364693a5c6451" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::GetDictionaryItem(Dict, Translate("Source"), SourcesString);
+// }} ""
+// {{{ 287 1 0 "b1db054b_66a2_496b_98970dd026cb9c95" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::GetDictionaryItem(Dict, Translate("SourcePosition"), SourcePositionsString);
+// }} ""
+// {{{ 288 1 0 "d1fce665_65bc_4929_8e7faa120c3b025e" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::GetDictionaryItem(Dict, Translate("TransferVolume"), TransferVolumesString);
+// }} ""
+// {{{ 289 1 0 "2c8fb956_ac7f_411f_88f445a802ec0918" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::GetDictionaryItem(Dict, Translate("Total"), PreTransferDestinationWellVolumesString);
+// }} ""
+// {{{ 290 1 0 "33deafcd_7cd1_4382_bf3f5f51cd41f5e5" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::GetDictionaryItem(Dict, Translate("Mix"), MixParametersString);
+// }} ""
+// {{ 291 1 0 "2fe6fc01_0401_420b_a5c41f881f81e5ad" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 292 1 0 "6cc99ecd_56cb_40c3_bd346bd58e8c2118" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+Delimiter = COMMANDS::GetCommandStringDelimiter();
+// }} ""
+// {{{ 293 1 0 "6a050b36_ed34_4437_b9c798f4f83ac5c7" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+TOOLS::ParseDelimitedList(Delimiter, DestinationsString, DestinationStringsArray);
+// }} ""
+// {{{ 294 1 0 "e8ef5e63_abb9_41a7_8b0575210e50ff0d" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+TOOLS::ParseDelimitedList(Delimiter, DestinationPositionsString, DestinationPositionStringsArray);
+// }} ""
+// {{{ 295 1 0 "02391466_5972_42d5_852e19a3cb669d6e" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+TOOLS::ParseDelimitedList(Delimiter, SourcesString, SourceStringsArray);
+// }} ""
+// {{{ 296 1 0 "ff752225_10d6_4609_b0581defdea7868d" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+TOOLS::ParseDelimitedList(Delimiter, SourcePositionsString, SourcePositionStringsArray);
+// }} ""
+// {{{ 297 1 0 "14d50221_2310_4b9e_a59a97925152f99c" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+TOOLS::ParseDelimitedList(Delimiter, TransferVolumesString, TransferVolumeStringsArray);
+// }} ""
+// {{{ 298 1 0 "c98aef55_a1a6_420d_8d646d689722d31e" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+TOOLS::ParseDelimitedList(Delimiter, PreTransferDestinationWellVolumesString, PreTransferDestinationWellVolumeStringsArray);
+// }} ""
+// {{{ 299 1 0 "7b5d32b7_6ba3_4c48_bbe099921511edfd" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+TOOLS::ParseDelimitedList(Delimiter, MixParametersString, MixParameterStringsArray);
+// }} ""
+// {{ 300 1 0 "38f66a7c_76a5_4da3_b002330f5e0cf4cc" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 301 1 0 "cf93bf1f_020a_49cd_bf3dda76a5cbf3f3" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+LABWARE::GetPlateSequenceString(DestinationStringsArray, DestinationSequenceStringsArray);
+// }} ""
+// {{{ 302 1 0 "22b4b90b_9d51_49da_bbcdd99f275a4071" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+LABWARE::GetPlateSequenceString(SourceStringsArray, SourceSequenceStringsArray);
+// }} ""
+// {{ 303 1 0 "3bb6e780_6a62_445a_827c79ff953d6d5a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 304 1 0 "3cd3d7f0_669f_4624_b6ec7837ac25a384" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+SEQUENCES::StringToSequence(ML_STAR, DestinationSequenceStringsArray, DestinationSequencesArray);
+// }} ""
+// {{{ 305 1 0 "0d79b6ef_496b_47be_bf554da294ca1d09" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+TOOLS::StringArrayToIntArray(DestinationPositionStringsArray, DestinationPositionsArray);
+// }} ""
+// {{{ 306 1 0 "f2f54690_4108_49dc_b67cd58f466732d8" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+SEQUENCES::StringToSequence(ML_STAR, SourceSequenceStringsArray, SourceSequencesArray);
+// }} ""
+// {{{ 307 1 0 "1956c346_eea2_4ebc_a89d03761db7a54e" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+TOOLS::StringArrayToIntArray(SourcePositionStringsArray, SourcePositionsArray);
+// }} ""
+// {{{ 308 1 0 "67296597_8462_4b92_bacd02b7535ce059" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+TOOLS::StringArrayToFloatArray(TransferVolumeStringsArray, TransferVolumesArray);
+// }} ""
+// {{{ 309 1 0 "cfed696c_6084_478f_af146c7e7258b06c" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+TOOLS::StringArrayToFloatArray(PreTransferDestinationWellVolumeStringsArray, PreTransferDestinationWellVolumesArray);
+// }} ""
+// {{ 310 1 0 "0e40bc56_fe61_4b21_896e46faf34e2430" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+MixParametersArray=MixParameterStringsArray;
+// }} ""
+// {{ 311 1 0 "0696ebab_53fb_4802_8017743d2ea35b29" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
 // }} ""
 // {{{ 5 "TransferLiquid" "End"
 }
@@ -652,14 +769,12 @@ private variable NumTipVolumes;
 private variable TipVolumes[];
 private variable GeneralTipVolumeStrings[];
 private variable SortedGeneralTipIndices[];
-private variable Dict[];
 private variable GeneralTipVolumes[];
 private variable GeneralTipIndices[];
 private variable TipUseCases[];
 private variable SortedGeneralTipVolumes[];
 private variable TipUseCasesString;
 private variable NumUseCases;
-private variable UseCases[];
 private variable TipUseCasesArray[];
 // {{ 5 "CalculateUsedTips" "InitLocals"
 // }} ""
@@ -857,52 +972,30 @@ break;
 // {{{ 5 "DoTipLoading" "Begin"
 function DoTipLoading( device & ML_STAR ) void {
 // }} ""
-private dialog customDialogA9F360F7175547b6818BFB8128B2BC65;
-private dialog customDialog20DEDDDF838B4af4B5770DB788C742CB;
-private dialog customDialog3E0EED03BEEA4b798B564DDE1DC35277;
-private dialog customDialog87E9DFF6F76D4afeBE764F6444021E49;
-private variable Tip300Counter;
-private variable Tip50Counter;
-private variable FTR1000Tips;
 private variable Required;
-private variable NumTips;
-private variable Tip1000Counter;
 private variable NumTipsRequired;
 private variable TotalTips;
-private variable Tip300SlimCounter;
 private variable Remainder;
 private variable NumSetsRequired;
-private variable NTR300Tips;
 private variable loopCounter1;
-private variable NTR50Tips;
 private variable NumChannels;
 private variable Available;
-private variable FTR300SlimTips;
-private sequence TipSeq;
-private sequence Waste50NTR;
-private sequence NTRWasteSequence;
-private sequence Waste300NTR;
 private variable Counter;
-private variable TipSequenceString;
 private variable TipType;
 private variable NumTipSequences;
 private variable TipSequenceTypes[];
 private variable TipSequenceStrings[];
 private dialog customDialog1690537C7B6E46d0830DF07F006B240E;
-private dialog customDialogF5AF7BE22922401bA98AFA9844A68382;
 private dialog customDialog0CB61C4E311A48a78CDC5A4FA87647AC;
 private variable NumTipsLoaded;
 private variable WasteSequenceName;
 private variable NumUsed;
-private variable NumLoadedTips;
-private variable NumUesd;
 private variable LoadingString;
 private sequence Waste;
 private sequence TipSequenceWasteSequence;
 private sequence TipSequence;
 private variable TipSequenceVolumes[];
 private variable TipSequenceWasteSequenceStrings[];
-private variable FileCheckReturn;
 // {{ 5 "DoTipLoading" "InitLocals"
 // }} ""
 // {{{ 120 1 0 "1b7656d8_b6f8_4a29_a9d18c9ed74c206f" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
@@ -1122,11 +1215,7 @@ private variable Counter;
 private variable TipType;
 private variable NumTipSequences;
 private variable LoadingString;
-private sequence Slim1000Seq;
-private sequence NTR300Seq;
-private sequence GripperToolSeq;
 private sequence TipSequence;
-private sequence waste300NTR;
 private sequence TipWasteSequence;
 private sequence CoreGripToolSequence;
 private variable TipSequenceVolumes[];
@@ -1225,4 +1314,4 @@ PIPETTE_CONFIG::EDIT_SetDesaltingUseCase(DesaltingUseCase);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2021-12-09 10:17$$checksum=77c41757$$length=084$$
+// $$author=BAREB$$valid=0$$time=2021-12-09 12:53$$checksum=c0cab3e2$$length=084$$

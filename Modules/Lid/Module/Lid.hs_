@@ -1,21 +1,21 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 12/7/2021 5:13:48 PM
+// Generated at 12/9/2021 10:31:43 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
 namespace LID {
 function _InitLibrary() { }
 function _ExitLibrary() { }
-function AcquireReservation( device & ML_STAR, variable & i_CommandParameterStringsArray[] ) variable {  return (0); }
-function DoCommand( device & ML_STAR, variable CommandString, variable & i_CommandParameterStringsArray[] ) variable {  return (0); }
-function GetReservationLidSequenceString( device & ML_STAR, variable & i_CommandParameterStringsArray[] ) variable {  return (0); }
-function Init( device & ML_STAR, variable & i_CommandParameterStringsArray[] ) variable {  return (0); }
-function ReleaseReservation( device & ML_STAR, variable & i_CommandParameterStringsArray[] ) variable {  return (0); }
+function AcquireReservation( device & ML_STAR, variable i_CommandParameterStrings ) variable {  return (0); }
+function DoCommand( device & ML_STAR, variable CommandString, variable i_CommandParameterStrings ) variable {  return (0); }
+function GetReservationLidSequenceString( device & ML_STAR, variable i_CommandParameterStrings ) variable {  return (0); }
+function Init( device & ML_STAR, variable i_CommandParameterStrings ) variable {  return (0); }
+function ReleaseReservation( device & ML_STAR, variable i_CommandParameterStrings ) variable {  return (0); }
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2021-12-07 17:13$$checksum=98cbae21$$length=082$$
+// $$author=BAREB$$valid=0$$time=2021-12-09 10:31$$checksum=ce3d22bc$$length=082$$

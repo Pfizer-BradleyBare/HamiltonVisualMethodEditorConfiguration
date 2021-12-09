@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 12/7/2021 8:52:05 AM
+// Generated at 12/9/2021 2:16:38 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -8,7 +8,7 @@ namespace STATUSUPDATE {
 function _InitLibrary() { }
 function _ExitLibrary() { }
 function AddProgressDetail( variable DetailString ) void { }
-function Init( variable i_ProgressType ) void { }
+function Init(  ) void { }
 function SetProgress( variable & InputParams[] ) void { }
 } // namespace
 #endif
@@ -16,4 +16,4 @@ function SetProgress( variable & InputParams[] ) void { }
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2021-12-07 08:52$$checksum=287246de$$length=082$$
+// $$author=BAREB$$valid=0$$time=2021-12-09 14:16$$checksum=2ea810a9$$length=082$$

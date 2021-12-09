@@ -17,7 +17,7 @@ variable ProgressType;
 // {{{ 2 "SubmethodForwardDeclaration" ""
 function AddProgressDetail( variable DetailString ) void ;
 private function BarProgress( variable & InputParams[] ) void ;
-function Init( variable i_ProgressType ) void ;
+function Init(  ) void ;
 function SetProgress( variable & InputParams[] ) void ;
 // }} ""
 function _InitLibrary() {
@@ -31,15 +31,15 @@ STATUSUPDATE_CONFIG::_ExitLibrary();
 // }} ""
 }
 // {{{ 5 "Init" "Begin"
-function Init( variable i_ProgressType ) void {
+function Init(  ) void {
 // }} ""
 // {{ 5 "Init" "InitLocals"
 // }} ""
 // {{{ 31 1 0 "f8997973_8322_4c17_91c9a2b647e62326" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 AswStatusDialog::Initialize(Translate("Visual Method Editor Status Updates"));
 // }} ""
-// {{ 32 1 0 "f15b9c0f_a832_4269_b959986c57f3fce6" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-ProgressType = i_ProgressType;
+// {{ 32 1 0 "3f43a8f7_c563_43fd_b87165cc4feff615" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+ProgressType = Translate("Bar");
 // }} ""
 // {{{ 5 "Init" "End"
 }
@@ -186,4 +186,4 @@ AswStatusDialog::AppendText(DetailString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2021-12-07 08:52$$checksum=196de171$$length=084$$
+// $$author=BAREB$$valid=0$$time=2021-12-09 14:16$$checksum=75ba9720$$length=084$$
