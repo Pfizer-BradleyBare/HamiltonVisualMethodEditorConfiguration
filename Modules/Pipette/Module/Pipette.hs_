@@ -1,16 +1,16 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 12/7/2021 10:35:14 AM
+// Generated at 12/9/2021 10:17:26 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
 namespace PIPETTE {
 function _InitLibrary() { }
 function _ExitLibrary() { }
-function AddToUsedTips( variable TipType, variable & Volumes[] ) void { }
-function DoTipLoading( device & ML_STAR, sequence & i_TipsSequences[] ) void { }
-function Init( variable & i_PipettingVolumeCommandStrings[], sequence i_NTRWasteSequence, sequence i_CoreGripToolSequence ) void { }
-function MeasureWellVolume(  ) void { }
+function DoTipLoading( device & ML_STAR ) void { }
+function Init( device & ML_STAR, variable & i_PipettingVolumeCommandStrings[] ) void { }
+function SaveTipLoading( device & ML_STAR ) void { }
+function SetDesaltingUseCase( variable DesaltingUseCase ) void { }
 function ShowTipsDialog(  ) void { }
 function TransferLiquid( device & ML_STAR, sequence & i_TipsSequences[], variable & DestinationSequenceStringsArray[], variable & DestinationSequencePositionsArray[], variable & SourceSequenceStringsArray[], variable & SourceSequencePositionsArray[], variable & TransferVolumesArray[], variable & CurrentVolumesArray[], variable & MixStringArray[] ) void { }
 } // namespace
@@ -19,4 +19,4 @@ function TransferLiquid( device & ML_STAR, sequence & i_TipsSequences[], variabl
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2021-12-07 10:35$$checksum=34a53bf3$$length=082$$
+// $$author=BAREB$$valid=0$$time=2021-12-09 10:17$$checksum=b35b474e$$length=082$$

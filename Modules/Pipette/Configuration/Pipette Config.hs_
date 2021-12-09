@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 12/6/2021 1:56:51 PM
+// Generated at 12/8/2021 6:51:18 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -8,11 +8,21 @@ namespace PIPETTE_CONFIG {
 function _InitLibrary() { }
 function _ExitLibrary() { }
 function EDIT_Configuration(  ) void { }
+function EDIT_SetDesaltingUseCase( variable DesaltingUseCase ) void { }
+function EDIT_TipsDialog( variable & TipNumbersArray[] ) void { }
+function GetChannelString(  ) variable {  return (0); }
+function GetCoreGripToolSequenceString(  ) variable {  return (0); }
+function GetMaxPipettingVolume(  ) variable {  return (0); }
 function GetNumChannels(  ) variable {  return (0); }
 function GetNumSegments( variable & o_NumSegments[] ) void { }
 function GetPlateTypes( variable & o_PlateTypes[] ) void { }
 function GetSegmentEquations( variable & o_SegmentEquations[] ) void { }
 function GetSegmentHeights( variable & o_SegmentHeights[] ) void { }
+function GetTipSequenceStrings( variable & o_TipSequenceStringsArray[] ) void { }
+function GetTipSequenceTypes( variable & o_TipSequenceTypesArray[] ) void { }
+function GetTipSequenceUseCases( variable & o_TipSequenceUseCases[] ) void { }
+function GetTipSequenceVolumes( variable & o_TipSequenceVolumesArray[] ) void { }
+function GetTipSequenceWasteSequenceStrings( variable & o_TipSequenceWasteSequenceStrings[] ) void { }
 function Init(  ) void { }
 } // namespace
 #endif
@@ -20,4 +30,4 @@ function Init(  ) void { }
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2021-12-06 13:56$$checksum=3bcbe3bc$$length=082$$
+// $$author=BAREB$$valid=0$$time=2021-12-08 18:51$$checksum=e01119e8$$length=082$$

@@ -43,12 +43,13 @@ function _ExitLibrary() {
 // {{{ 5 "EDIT_Configuration" "Begin"
 private function EDIT_Configuration(  ) void {
 // }} ""
+private variable ConfirmHeaterTemperatureBeforeIncubation;
 // {{ 5 "EDIT_Configuration" "InitLocals"
 // }} ""
 // {{ 1 1 0 "aa202744_4857_477a_a7089d60b238765d" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 AmbientTemp = Translate("20");
 // }} ""
-// {{ 2 1 0 "be86d951_119d_4469_bd688e5a07bc19d9" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 2 1 0 "06d3dd78_0429_4095_83c9c8004fdca726" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 TempDelta = Translate("2");
 // }} ""
 // {{ 3 1 0 "90074e3c_8138_4a04_a8889e082ff9914f" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
@@ -295,4 +296,4 @@ return (TempDelta);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2021-12-04 13:07$$checksum=88ca540e$$length=084$$
+// $$author=BAREB$$valid=0$$time=2021-12-08 13:37$$checksum=7e39584d$$length=084$$
