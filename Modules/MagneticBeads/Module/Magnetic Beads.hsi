@@ -1,0 +1,180 @@
+// {{{ 2 "IncludeGuard" "PragmaOnce"
+#pragma once
+// }} ""
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration\\Modules\\MagneticBeads\\Configuration\\Magnetic Beads Config.hs_"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Commands\\Commands.hs_"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Tools\\Tools.hs_"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Return\\Return.hs_"
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+#include "HSLMETEDLib.hs_"
+#include "HSLMECCLib.hs_"
+#include "HSLPTLLib.hsl"
+// }} ""
+// {{{ 2 "LibraryNamespace" "Begin"
+namespace MAGNETIC_BEADS {
+// }} ""
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{{ 2 "SubmethodForwardDeclaration" ""
+function Init( device & ML_STAR, variable i_CommandString ) variable ;
+function MixBeadsOffRack( device & ML_STAR, variable i_CommandString ) variable ;
+// }} ""
+function _InitLibrary() {
+// {{ 2 "AutoInitBlock" ""
+PTL::SetWashingStateDefault("RinseTime1", 5);
+PTL::SetWashingStateDefault("SoakTime1", 5);
+PTL::SetWashingStateDefault("FlowRate1", 11);
+PTL::SetWashingStateDefault("RinseTime2", 0);
+PTL::SetWashingStateDefault("SoakTime2", 0);
+PTL::SetWashingStateDefault("FlowRate2", 11);
+PTL::SetWashingStateDefault("DrainingTime", 10);
+PTL::SetWashingStateDefault("StartWashLiquid", 0);
+PTL::SetLoadingStateDefault("RecoveryOptionContinue", hslTrue);
+PTL::SetLoadingStateDefault("RecoveryOptionExclude", hslTrue);
+PTL::SetLoadingStateDefault("RecoveryOptionDefault", 0);
+PTL::SetLoadingStateDefault("KitLotCheckEnabled", hslFalse);
+MAGNETIC_BEADS_CONFIG::_InitLibrary();
+COMMANDS::_InitLibrary();
+TOOLS::_InitLibrary();
+RETURN::_InitLibrary();
+// }} ""
+}
+function _ExitLibrary() {
+// {{ 2 "AutoExitBlock" ""
+MAGNETIC_BEADS_CONFIG::_ExitLibrary();
+COMMANDS::_ExitLibrary();
+TOOLS::_ExitLibrary();
+RETURN::_ExitLibrary();
+// }} ""
+}
+// {{{ 5 "Init" "Begin"
+function Init( device & ML_STAR, variable i_CommandString ) variable {
+// }} ""
+private variable PlateType;
+private variable Dict[];
+private variable NumPlateTypes;
+private variable Counter;
+private variable Delimiter;
+private variable PlateTypeArray[];
+private variable SupportedPlateTypesArray[];
+private variable ReturnValue;
+private variable Counter2;
+private variable NumSupportedPlateTypes;
+private variable NumNotSupported;
+private variable UnsupportedTypesString;
+private variable NotSupportedTypes[];
+// {{ 5 "Init" "InitLocals"
+// }} ""
+// {{ 1 1 0 "511981b7_4432_4177_84de5732eec1098a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 2 1 0 "3ce2ce7b_231d_43ca_88cba5536d1dccd8" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+MAGNETIC_BEADS_CONFIG::Init();
+// }} ""
+// {{{ 3 1 0 "18022091_b919_49fd_afb0af0c33b968c6" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::ParseCommandParametersString(i_CommandString, Dict);
+// }} ""
+// {{{ 4 1 0 "1c5fa2f7_fa2b_4d40_ac572ba32d53dac2" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::GetDictionaryItem(Dict, Translate("PlateType"), PlateType);
+// }} ""
+// {{{ 5 1 0 "b5b21bf0_2740_4a88_a15a2bb21341537a" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+Delimiter = COMMANDS::GetCommandStringDelimiter();
+// }} ""
+// {{{ 6 1 0 "f29a378b_84b5_472d_858f5884a3ee5b10" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+TOOLS::ParseDelimitedList(Delimiter, PlateType, PlateTypeArray);
+// }} ""
+// {{ 7 1 0 "770af277_ec1a_4e2f_960d253723e6a41a" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
+NumPlateTypes=PlateTypeArray.GetSize();
+// }} ""
+// {{{ 8 1 0 "e4dbf8c0_6dc1_44f8_9255ced8a3d1c4d1" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+MAGNETIC_BEADS_CONFIG::GetSupportedPlateTypesArray(SupportedPlateTypesArray);
+// }} ""
+// {{ 9 1 0 "76b4447a_7beb_477a_acac8eaa41379928" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
+NumSupportedPlateTypes=SupportedPlateTypesArray.GetSize();
+// }} ""
+// {{ 10 1 0 "c1ad1a17_0538_4319_817fd1a39ab28962" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+NotSupportedTypes.SetSize(0);
+// }} ""
+// {{ 11 1 0 "2c17ead0_4cfc_4d00_8cfdef17f2272340" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+{
+for(Counter = 0; Counter < NumPlateTypes;)
+{
+Counter = Counter + 1;
+// }} ""
+// {{ 12 1 0 "f7679211_50d6_4476_a17bbcd16d4490cc" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+{
+for(Counter2 = 0; Counter2 < NumSupportedPlateTypes;)
+{
+Counter2 = Counter2 + 1;
+// }} ""
+// {{ 13 1 0 "e0f3ef75_1fee_43e9_b11c705c0e3b04b5" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (PlateTypeArray.ElementAt( Counter -1) == SupportedPlateTypesArray.ElementAt( Counter2 -1))
+{
+// }} ""
+// {{ 14 1 0 "8cf68db6_e697_4c92_b1bd231102e6d46d" "{B31F3533-5D80-11d4-A5EB-0050DA737D89}"
+break;
+// }} ""
+// {{ 15 1 0 "e0f3ef75_1fee_43e9_b11c705c0e3b04b5" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 16 1 0 "ba8a251a_70f9_451d_bd24c8f0ea61d378" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (Counter2 == NumSupportedPlateTypes)
+{
+// }} ""
+// {{ 17 1 0 "0b9cbaff_7a42_4625_b83ec16ab31e378a" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+NotSupportedTypes.AddAsLast(PlateTypeArray.ElementAt( Counter -1));
+// }} ""
+// {{ 18 1 0 "ba8a251a_70f9_451d_bd24c8f0ea61d378" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 19 1 0 "f7679211_50d6_4476_a17bbcd16d4490cc" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+}
+}
+// }} ""
+// {{ 20 1 0 "2c17ead0_4cfc_4d00_8cfdef17f2272340" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+}
+}
+// }} ""
+// {{ 21 1 0 "843f2782_1983_4ecc_a3d72e646c9eaa76" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
+NumNotSupported=NotSupportedTypes.GetSize();
+// }} ""
+// {{ 22 1 0 "06106fac_bbaa_4eb7_acf9cd757e48f084" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (NumNotSupported == 0)
+{
+// }} ""
+// {{{ 23 1 0 "2e517801_08c0_404f_bb4e83164a4d4907" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnValue = RETURN::CreateReturnString(0, Translate("All Plate types were supported"), Translate(""), Translate(""));
+// }} ""
+// {{ 24 1 0 "06106fac_bbaa_4eb7_acf9cd757e48f084" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+else
+{
+// }} ""
+// {{{ 25 1 0 "f912c7e7_64c1_47cb_886fa438b3f52599" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+UnsupportedTypesString = TOOLS::ArrayToDelimitedList(Delimiter, NotSupportedTypes);
+// }} ""
+// {{{ 26 1 0 "b55f0ca0_8ed2_4110_b729ff1c8d709de7" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnValue = RETURN::CreateReturnString(-1, Translate("Found unsupported plate types AS UnsupportedPlateTypes."), Translate("UnsupportedPlateTypes"), UnsupportedTypesString);
+// }} ""
+// {{ 27 1 0 "06106fac_bbaa_4eb7_acf9cd757e48f084" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{{ 28 1 0 "f6a510f3_7b50_452b_8e6eefcfb1427413" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ReturnValue);
+// }} ""
+// {{{ 5 "Init" "End"
+}
+// }} ""
+// {{{ 5 "MixBeadsOffRack" "Begin"
+function MixBeadsOffRack( device & ML_STAR, variable i_CommandString ) variable {
+// }} ""
+// {{ 5 "MixBeadsOffRack" "InitLocals"
+// }} ""
+// {{{ 5 "MixBeadsOffRack" "End"
+}
+// }} ""
+/* {{ 2 "SubmethodInsertLine" "" */ // }} ""
+// {{{ 2 "LibraryNamespace" "End"
+} // library namespace
+// }} ""
+// $$author=BAREB$$valid=0$$time=2021-12-16 12:36$$checksum=3f3f6df2$$length=084$$

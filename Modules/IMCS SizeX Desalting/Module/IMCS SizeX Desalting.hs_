@@ -1,0 +1,17 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 12/13/2021 9:38:04 AM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace IMCS_SIZEX_DESALTING {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function Init( device & ML_STAR, variable i_CommandString ) void { }
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2021-12-13 09:38$$checksum=902a01c1$$length=082$$

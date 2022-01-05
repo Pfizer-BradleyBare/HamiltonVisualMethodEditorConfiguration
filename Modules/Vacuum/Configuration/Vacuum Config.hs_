@@ -1,0 +1,24 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 12/9/2021 5:38:56 PM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace VACUUM_CONFIG {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function GetSupportedVacuumCollectionPlateSequences( variable & o_SupportedVacuumCollectionPlateSequences[] ) void { }
+function GetSupportedVacuumPlateSequences( variable & o_SupportedVacuumPlateSequences[] ) void { }
+function GetSupportedVacuumPlates( variable & o_SupportedVacuumPlates[] ) void { }
+function GetVacuumComPorts( variable & o_VacuumComPorts[] ) void { }
+function GetVacuumManifoldSequenceStrings( variable & o_VacuumManifoldSequenceStrings[] ) void { }
+function GetVacuumParkSequenceStrings( variable & o_VacuumParkSequenceStrings[] ) void { }
+function GetVacuumPressureLevels( variable & o_VacuumPressureLevels[] ) void { }
+function Init(  ) void { }
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2021-12-09 17:38$$checksum=bd40f065$$length=082$$

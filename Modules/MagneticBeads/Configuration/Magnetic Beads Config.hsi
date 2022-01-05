@@ -1,0 +1,110 @@
+// {{{ 2 "IncludeGuard" "PragmaOnce"
+#pragma once
+// }} ""
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+#include "HSLMETEDLib.hs_"
+#include "HSLMECCLib.hs_"
+// }} ""
+// {{{ 2 "LibraryNamespace" "Begin"
+namespace MAGNETIC_BEADS_CONFIG {
+// }} ""
+variable MinimumCondenseTimeSeconds;
+variable SupportedPlateTypesSequenceString[];
+variable SupportedPlateTypes[];
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{{ 2 "SubmethodForwardDeclaration" ""
+function EDIT_Configuration(  ) void ;
+function GetMinimumCondenseTimeSeconds( variable o_MinimumCondenseTimeSeconds ) void ;
+function GetSupportedPlateTypesArray( variable & o_SupportedPlateTypesArray[] ) void ;
+function GetSupportedPlateTypesSequenceStringsArray( variable & o_SupportedPlateTypesSequenceStringsArray[] ) void ;
+function Init(  ) void ;
+// }} ""
+function _InitLibrary() {
+// {{ 2 "AutoInitBlock" ""
+// }} ""
+}
+function _ExitLibrary() {
+// {{ 2 "AutoExitBlock" ""
+// }} ""
+}
+// {{{ 5 "EDIT_Configuration" "Begin"
+function EDIT_Configuration(  ) void {
+// }} ""
+// {{ 5 "EDIT_Configuration" "InitLocals"
+// }} ""
+// {{ 1 1 0 "0eb00cfe_221f_4f50_b1d79d687e8fdbdf" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+MinimumCondenseTimeSeconds = Translate("0");
+// }} ""
+// {{ 2 1 0 "2b8047bd_df4d_4c82_b6aad35e3d7b0b5a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 3 1 0 "712de184_a2cb_4486_a03df0a58673c8c0" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+SupportedPlateTypes.SetSize(0);
+// }} ""
+// {{ 4 1 0 "59df8392_dccc_4c7d_96f6b9b534f81342" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+SupportedPlateTypes.AddAsLast(Translate("200uL Biorad 96 Well PCR Plate"));
+// }} ""
+// {{ 5 1 0 "f6031f04_7448_4ace_ba2d0fbde7de26be" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 6 1 0 "f05e0e53_7c84_440c_826437f1e30e7fb2" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+SupportedPlateTypesSequenceString.SetSize(0);
+// }} ""
+// {{ 7 1 0 "cf691fbb_dc99_47bd_b942a2bc35ac7a61" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+SupportedPlateTypesSequenceString.AddAsLast(Translate(""));
+// }} ""
+// {{{ 5 "EDIT_Configuration" "End"
+}
+// }} ""
+// {{{ 5 "Init" "Begin"
+function Init(  ) void {
+// }} ""
+// {{ 5 "Init" "InitLocals"
+// }} ""
+// {{{ 15 1 0 "843d04b6_d30b_4c3c_95e36a4173b5ec34" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+EDIT_Configuration();
+// }} ""
+// {{{ 5 "Init" "End"
+}
+// }} ""
+// {{{ 5 "GetSupportedPlateTypesArray" "Begin"
+function GetSupportedPlateTypesArray( variable & o_SupportedPlateTypesArray[] ) void {
+// }} ""
+// {{ 5 "GetSupportedPlateTypesArray" "InitLocals"
+o_SupportedPlateTypesArray.SetSize( 0);
+// }} ""
+// {{ 11 1 0 "edafe236_1a94_4bcc_9e016ed78d37f199" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_SupportedPlateTypesArray=SupportedPlateTypes;
+// }} ""
+// {{{ 5 "GetSupportedPlateTypesArray" "End"
+}
+// }} ""
+// {{{ 5 "GetMinimumCondenseTimeSeconds" "Begin"
+function GetMinimumCondenseTimeSeconds( variable o_MinimumCondenseTimeSeconds ) void {
+// }} ""
+// {{ 5 "GetMinimumCondenseTimeSeconds" "InitLocals"
+// }} ""
+// {{ 9 1 0 "afbff22d_d888_4a6e_a58df046831f3888" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+o_MinimumCondenseTimeSeconds = MinimumCondenseTimeSeconds;
+// }} ""
+// {{{ 5 "GetMinimumCondenseTimeSeconds" "End"
+}
+// }} ""
+// {{{ 5 "GetSupportedPlateTypesSequenceStringsArray" "Begin"
+function GetSupportedPlateTypesSequenceStringsArray( variable & o_SupportedPlateTypesSequenceStringsArray[] ) void {
+// }} ""
+// {{ 5 "GetSupportedPlateTypesSequenceStringsArray" "InitLocals"
+o_SupportedPlateTypesSequenceStringsArray.SetSize( 0);
+// }} ""
+// {{ 13 1 0 "0271c411_b9cd_4301_8920034ffdb51f70" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_SupportedPlateTypesSequenceStringsArray=SupportedPlateTypesSequenceString;
+// }} ""
+// {{{ 5 "GetSupportedPlateTypesSequenceStringsArray" "End"
+}
+// }} ""
+/* {{ 2 "SubmethodInsertLine" "" */ // }} ""
+// {{{ 2 "LibraryNamespace" "End"
+} // library namespace
+// }} ""
+// $$author=BAREB$$valid=0$$time=2021-12-16 12:27$$checksum=783dd3a1$$length=084$$

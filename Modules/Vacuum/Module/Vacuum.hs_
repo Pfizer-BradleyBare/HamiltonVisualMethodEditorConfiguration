@@ -1,0 +1,23 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 12/10/2021 9:45:26 AM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace VACUUM {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function GetVacuumCollectionPlateSequenceString( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+function GetVacuumManifoldParkSequenceString( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+function GetVacuumManifoldSequenceString( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+function GetVacuumPlateSequenceString( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+function Init( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+function StartVacuum( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+function StopVacuum( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2021-12-10 09:45$$checksum=58985bd2$$length=082$$

@@ -1,0 +1,25 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 12/13/2021 8:56:28 AM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace IMCS_SIZEX_DESALTING_CONFIG {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function EDIT_Configuration(  ) void { }
+function GetIMCSRackSequences( variable & i_IMCSRackSequences[] ) void { }
+function GetIMCSSampleSequenceStrings( variable & i_IMCSSampleSequences[] ) void { }
+function GetLiquidHandlingParameters( variable & i_LiquidHandlingParameters[] ) void { }
+function GetSupportedIMCSTipsPerRack( variable & i_SupportedIMCSTipsPerRack[] ) void { }
+function GetSupportedRackTipTypes( variable & i_SupportedRackTipTypes[] ) void { }
+function GetSupportedRackTipTypesSupportRackSequenceStrings( variable & i_SupportedRackTipTypesSupportRackSequenceStrings[] ) void { }
+function GetTipSupportRackSequenceString(  ) variable {  return (0); }
+function Init(  ) void { }
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2021-12-13 08:56$$checksum=7fa05e34$$length=082$$

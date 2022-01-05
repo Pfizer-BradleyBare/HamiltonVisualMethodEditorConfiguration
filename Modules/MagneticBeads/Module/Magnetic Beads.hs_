@@ -1,0 +1,18 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 12/16/2021 12:36:44 PM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace MAGNETIC_BEADS {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function Init( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+function MixBeadsOffRack( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2021-12-16 12:36$$checksum=f829cb1c$$length=082$$

@@ -1,0 +1,21 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 12/16/2021 12:27:31 PM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace MAGNETIC_BEADS_CONFIG {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function EDIT_Configuration(  ) void { }
+function GetMinimumCondenseTimeSeconds( variable o_MinimumCondenseTimeSeconds ) void { }
+function GetSupportedPlateTypesArray( variable & o_SupportedPlateTypesArray[] ) void { }
+function GetSupportedPlateTypesSequenceStringsArray( variable & o_SupportedPlateTypesSequenceStringsArray[] ) void { }
+function Init(  ) void { }
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2021-12-16 12:27$$checksum=74266cfb$$length=082$$
