@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 1/5/2022 9:56:04 AM
+// Generated at 1/5/2022 4:50:16 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -10,7 +10,6 @@ function _ExitLibrary() { }
 function DoTipLoading( device & ML_STAR ) void { }
 function Init( device & ML_STAR, variable i_CommandParameterStrings ) void { }
 function SaveTipLoading( device & ML_STAR ) void { }
-function SetDesaltingUseCase( variable DesaltingUseCase ) void { }
 function ShowTipsDialog(  ) void { }
 function TransferLiquid( device & ML_STAR, variable i_CommandParameterStrings ) void { }
 } // namespace
@@ -19,4 +18,4 @@ function TransferLiquid( device & ML_STAR, variable i_CommandParameterStrings ) 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-01-05 09:56$$checksum=ee50d862$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-01-05 16:50$$checksum=380a45b0$$length=082$$
