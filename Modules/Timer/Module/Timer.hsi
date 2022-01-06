@@ -18,8 +18,9 @@ timer Timer;
 variable IsInit;
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
+function DeInit( device & ML_STAR, variable i_CommandString ) variable ;
 function DoCommand( device & ML_STAR, variable i_CommandString ) variable ;
-private function Init( device & ML_STAR, variable i_CommandParameterStrings ) variable ;
+function Init( device & ML_STAR, variable i_CommandParameterStrings ) variable ;
 private function StartTimer( device & ML_STAR, variable i_CommandParameterStrings ) variable ;
 private function WaitOnTimer( device & ML_STAR, variable i_CommandParameterStrings ) variable ;
 // }} ""
@@ -50,7 +51,7 @@ COMMANDS::_ExitLibrary();
 // }} ""
 }
 // {{{ 5 "Init" "Begin"
-private function Init( device & ML_STAR, variable i_CommandParameterStrings ) variable {
+function Init( device & ML_STAR, variable i_CommandParameterStrings ) variable {
 // }} ""
 private variable ReturnString;
 // {{ 5 "Init" "InitLocals"
@@ -133,21 +134,8 @@ private variable ReturnString;
 private variable Command;
 // {{ 5 "DoCommand" "InitLocals"
 // }} ""
-// {{{ 1 1 0 "ff167fc4_abc3_4ded_a921e51bdbffa0a5" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 5 1 0 "ff167fc4_abc3_4ded_a921e51bdbffa0a5" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 Command = COMMANDS::GetCommandStringCommand(i_CommandString);
-// }} ""
-// {{ 2 1 0 "017bf031_e3c5_4daa_a0430139478606a0" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-if (Command == "Timer")
-{
-// }} ""
-// {{{ 3 1 0 "152ca683_20da_4ccc_879d405f6e6139c9" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-ReturnString = Init(ML_STAR, i_CommandString);
-// }} ""
-// {{{ 4 1 0 "0b62dbd7_faa2_47e0_b476b44a4173ec4f" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
-return (ReturnString);
-// }} ""
-// {{ 5 1 0 "017bf031_e3c5_4daa_a0430139478606a0" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-}
 // }} ""
 // {{ 6 1 0 "b4182c1d_df42_462c_adaa93d1f944b0d5" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 if (IsInit != "True")
@@ -197,8 +185,26 @@ return (ReturnString);
 // {{{ 5 "DoCommand" "End"
 }
 // }} ""
+// {{{ 5 "DeInit" "Begin"
+function DeInit( device & ML_STAR, variable i_CommandString ) variable {
+// }} ""
+// {{ 5 "DeInit" "InitLocals"
+// }} ""
+// {{ 1 1 0 "9b3dbe47_5462_4b70_b7769f29aa26bfc2" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (IsInit == "True")
+{
+// }} ""
+// {{ 2 1 0 "9b3dbe47_5462_4b70_b7769f29aa26bfc2" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{{ 3 1 0 "4b012bb1_a08d_4609_861a022d925474ae" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (Translate("True"));
+// }} ""
+// {{{ 5 "DeInit" "End"
+}
+// }} ""
 /* {{ 2 "SubmethodInsertLine" "" */ // }} ""
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-06 09:48$$checksum=0eb890e5$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-06 13:37$$checksum=ae8f08b3$$length=084$$

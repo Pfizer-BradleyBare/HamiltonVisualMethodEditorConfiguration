@@ -1,12 +1,13 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 12/4/2021 2:14:15 PM
+// Generated at 1/6/2022 11:47:32 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
 namespace TRANSPORT_CONFIG {
 function _InitLibrary() { }
 function _ExitLibrary() { }
+function GetCoreGripToolSequenceString(  ) variable {  return (0); }
 function GetISwapExists(  ) variable {  return (0); }
 function GetLabwareGripCloseWidths( variable & o_LabwareGripCloseWidths[] ) void { }
 function GetLabwareGripHeights( variable & o_LabwareGripHeights[] ) void { }
@@ -21,4 +22,4 @@ function Init(  ) void { }
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2021-12-04 14:14$$checksum=ee0bc72e$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-01-06 11:47$$checksum=a99821c5$$length=082$$

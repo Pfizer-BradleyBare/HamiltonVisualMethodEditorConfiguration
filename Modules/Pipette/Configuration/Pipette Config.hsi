@@ -68,13 +68,13 @@ ChannelString = Translate("11111111");
 // {{ 4 1 0 "f3382844_14a1_4c33_918364d075104de2" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 MaxPipettingVolume = 0;
 // }} ""
-// {{ 5 1 0 "bec8a3d6_f9c0_4aba_82ede268a10966ab" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 5 1 0 "8a01e4fd_a5e7_4850_9c49e5e3582c65af" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
 // {{ 6 1 0 "ddbd805f_46ee_4af5_b432bef57c851d16" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 CoreGripToolSequenceString = Translate("seq_COREGripTool");
 // }} ""
-// {{ 7 1 0 "f237a2e2_d3aa_4517_a11f73af0e14e796" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 7 1 0 "7db657cc_16cc_49ad_83ce18d93cdc8620" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
 // {{ 8 1 0 "42e8632b_3d24_4092_a02e575922282565" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
@@ -110,7 +110,7 @@ TipSequenceTypes.AddAsLast(Translate("NTR"));
 // {{ 18 1 0 "22b7a6eb_ae60_4493_9e34e4d698f0e0e2" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 TipSequenceTypes.AddAsLast(Translate("FTR"));
 // }} ""
-// {{ 19 1 0 "816084e7_0659_4c2d_bbaf7944268157af" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 19 1 0 "134aec52_bf44_45bd_988da77406debec7" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
 // {{ 20 1 0 "30d4409b_fa70_4ac7_8b393734f80aa9ae" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
@@ -122,8 +122,8 @@ TipSequenceWasteSequenceString.AddAsLast(Translate("Tip50_NTR_Waste"));
 // {{ 22 1 0 "52c45977_133b_4e66_91635b20d291edc7" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 TipSequenceWasteSequenceString.AddAsLast(Translate("Tip300_NTR_Waste"));
 // }} ""
-// {{ 23 1 0 "60b414a4_187a_4473_8385d5d128c4af39" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-TipSequenceWasteSequenceString.AddAsLast(Translate("N/A"));
+// {{ 23 1 0 "300c7f54_ed67_4ff9_a0b821e724416ca4" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+TipSequenceWasteSequenceString.AddAsLast(Translate("False"));
 // }} ""
 // {{ 24 1 0 "6b631845_7260_465d_b771d5666ab332bb" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -501,4 +501,4 @@ return (FlipTubeToolSequenceString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-05 16:50$$checksum=53b1f61e$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-06 12:06$$checksum=df114917$$length=084$$

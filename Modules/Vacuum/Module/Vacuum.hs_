@@ -1,17 +1,19 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 1/6/2022 10:48:12 AM
+// Generated at 1/6/2022 1:39:42 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
 namespace VACUUM {
 function _InitLibrary() { }
 function _ExitLibrary() { }
+function DeInit( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function DoCommand( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+function Init( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-01-06 10:48$$checksum=7524460e$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-01-06 13:39$$checksum=5f99ca8f$$length=082$$
