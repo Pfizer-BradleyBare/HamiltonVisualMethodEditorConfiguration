@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 1/5/2022 5:13:06 PM
+// Generated at 1/6/2022 9:22:50 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -8,15 +8,14 @@ namespace PIPETTE {
 function _InitLibrary() { }
 function _ExitLibrary() { }
 function AddUsedTips( variable TipSequenceString, variable TipSequenceType, variable TipSequenceVolume, variable TipSequenceWasteSequenceString, variable NumTips ) void { }
+function DoCommand( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function DoTipLoading( device & ML_STAR ) void { }
-function Init( device & ML_STAR, variable i_CommandParameterStrings ) void { }
 function SaveTipLoading( device & ML_STAR ) void { }
 function ShowTipsDialog(  ) void { }
-function TransferLiquid( device & ML_STAR, variable i_CommandParameterStrings ) void { }
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-01-05 17:13$$checksum=5319e241$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-01-06 09:22$$checksum=47ee2c52$$length=082$$
