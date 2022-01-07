@@ -1,0 +1,299 @@
+// {{{ 2 "IncludeGuard" "PragmaOnce"
+#pragma once
+// }} ""
+#include "HSLExtensions\\Array2D.hsl"
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+#include "HSLMETEDLib.hs_"
+#include "HSLMECCLib.hs_"
+// }} ""
+// {{{ 2 "LibraryNamespace" "Begin"
+namespace HEATER_CONFIG {
+// }} ""
+variable PlateTypes[];
+variable PlateSequences[];
+variable HeaterTypes[];
+variable LidSequences[];
+variable ComPorts[];
+variable HeaterIDs[];
+variable AmbientTemp;
+variable TempDelta;
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{{ 2 "SubmethodForwardDeclaration" ""
+private function EDIT_Configuration(  ) void ;
+function GetAmbientTemp(  ) variable ;
+function GetComPorts( variable & o_ComPorts[] ) void ;
+function GetHeaterIDs( variable & o_HeaterIDs[] ) void ;
+function GetHeaterTypes( variable & o_HeaterTypes[] ) void ;
+function GetLidSequenceStrings( variable & o_LidSequenceStrings[] ) void ;
+function GetNumHeaters(  ) variable ;
+function GetPlateSequenceStrings( variable & o_PlateSequenceStrings[] ) void ;
+function GetPlateTypes( variable & o_PlateTypes[] ) void ;
+function GetTempDelta(  ) variable ;
+function Init(  ) void ;
+// }} ""
+function _InitLibrary() {
+// {{ 2 "AutoInitBlock" ""
+// }} ""
+}
+function _ExitLibrary() {
+// {{ 2 "AutoExitBlock" ""
+// }} ""
+}
+// {{{ 5 "EDIT_Configuration" "Begin"
+private function EDIT_Configuration(  ) void {
+// }} ""
+private variable ConfirmHeaterTemperatureBeforeIncubation;
+// {{ 5 "EDIT_Configuration" "InitLocals"
+// }} ""
+// {{ 1 1 0 "aa202744_4857_477a_a7089d60b238765d" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+AmbientTemp = Translate("20");
+// }} ""
+// {{ 2 1 0 "06d3dd78_0429_4095_83c9c8004fdca726" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+TempDelta = Translate("2");
+// }} ""
+// {{ 3 1 0 "90074e3c_8138_4a04_a8889e082ff9914f" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 4 1 0 "007f94c3_d815_4800_af99fd9f12838d19" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+ComPorts.SetSize(0);
+// }} ""
+// {{ 5 1 0 "0bee1f11_deb5_4384_80187923360e501a" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+ComPorts.AddAsLast(Translate("1"));
+// }} ""
+// {{ 6 1 0 "b2afdf5c_d01a_465f_bcaafbce77c98590" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+ComPorts.AddAsLast(Translate("2"));
+// }} ""
+// {{ 7 1 0 "312645a6_7f61_4ae2_830070353ad555ef" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 8 1 0 "6d4e8d7c_5b34_48bb_9078ac731d982985" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+HeaterIDs.SetSize(0);
+// }} ""
+// {{ 9 1 0 "83043429_33ab_46d0_80bc357a67d12c7f" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+HeaterIDs.AddAsLast(Translate("Heater 1"));
+// }} ""
+// {{ 10 1 0 "35fe254e_b30b_4571_804e301c13a30d33" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+HeaterIDs.AddAsLast(Translate("Heater 2"));
+// }} ""
+// {{ 11 1 0 "16263212_acd2_4eb1_8956e1b2641db08a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 12 1 0 "45d50e65_8ae0_42f1_88c87afaee280641" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+HeaterTypes.SetSize(0);
+// }} ""
+// {{ 13 1 0 "462e0326_83bc_4143_b91b83e4984e749e" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+HeaterTypes.AddAsLast(Translate("HeaterShaker"));
+// }} ""
+// {{ 14 1 0 "3fe846bc_821d_4dea_851a53ce90808609" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+HeaterTypes.AddAsLast(Translate("HeaterShaker"));
+// }} ""
+// {{ 15 1 0 "f8b80797_7fa7_40e6_b841674855895473" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 16 1 0 "15bc06df_9733_40ff_90ab06ff99da1a99" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+PlateTypes = HSLExtensions::Array2D::Create(2, 3);
+// }} ""
+// {{{ 17 1 0 "257d63d4_255e_44a2_b2319aa671704622" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::InitializeAllValues(PlateTypes, Translate(""));
+// }} ""
+// {{{ 18 1 0 "f0a0613c_e210_45ed_a7a3ec035db49c58" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(PlateTypes, 1, 1, Translate("200uL Biorad 96 Well PCR Plate"));
+// }} ""
+// {{{ 19 1 0 "fa4a4f9d_e3b0_4c7d_af3e0a8ec8a2668c" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(PlateTypes, 1, 2, Translate("400uL Thermo 96 Well PCR Plate"));
+// }} ""
+// {{{ 20 1 0 "d3dc61d0_ac46_47e8_84d11d87aa236f65" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(PlateTypes, 1, 3, Translate("1200uL DeepWell 96 Well PCR Plate"));
+// }} ""
+// {{{ 21 1 0 "075283dd_e0fd_48ff_96822a0e31c33ed3" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(PlateTypes, 2, 1, Translate("200uL Biorad 96 Well PCR Plate"));
+// }} ""
+// {{{ 22 1 0 "09fd8075_8582_4f2b_9473f19e4c8a7fa4" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(PlateTypes, 2, 2, Translate("400uL Thermo 96 Well PCR Plate"));
+// }} ""
+// {{{ 23 1 0 "852423b9_79b9_41c3_bcbf2efa9c4ea7f7" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(PlateTypes, 2, 3, Translate("1200uL DeepWell 96 Well PCR Plate"));
+// }} ""
+// {{ 24 1 0 "4e0629ab_9f19_4505_b0dd9d7b8f7e82d1" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 25 1 0 "0c0ee3cd_3df9_4f15_8542ef31cca417ca" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+LidSequences = HSLExtensions::Array2D::Create(2, 3);
+// }} ""
+// {{{ 26 1 0 "b830154a_5695_4bd8_aba6a5081ac0bc2e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::InitializeAllValues(LidSequences, Translate(""));
+// }} ""
+// {{{ 27 1 0 "8a0c22d6_b793_41ca_a04104a0a6b37213" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(LidSequences, 1, 1, Translate("_HHS1_Lid_200uL"));
+// }} ""
+// {{{ 28 1 0 "e9872b62_9709_47b4_a8057e40d0004ac6" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(LidSequences, 1, 2, Translate("_HHS1_Lid_400uL"));
+// }} ""
+// {{{ 29 1 0 "90c863cf_06d8_4c95_b71bab95d0d57850" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(LidSequences, 1, 3, Translate("_HHS1_Lid_1200uL"));
+// }} ""
+// {{{ 30 1 0 "c56fc159_e3e5_4641_bbc15e375b573a8e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(LidSequences, 2, 1, Translate("_HHS2_Lid_200uL"));
+// }} ""
+// {{{ 31 1 0 "dcc445bd_7f1a_4f78_980c92adefbf3c60" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(LidSequences, 2, 2, Translate("_HHS2_Lid_400uL"));
+// }} ""
+// {{{ 32 1 0 "36d96e68_66a5_40ae_99362132a5b8c248" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(LidSequences, 2, 3, Translate("_HHS2_Lid_1200uL"));
+// }} ""
+// {{ 33 1 0 "26e3946e_c273_4aa0_b5a027450f6a413a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 34 1 0 "ce2f6a81_866d_4ce5_97d2c2e53dd37765" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+PlateSequences = HSLExtensions::Array2D::Create(2, 3);
+// }} ""
+// {{{ 35 1 0 "86b886f1_637f_4456_82b7d71c6a804481" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::InitializeAllValues(PlateSequences, Translate(""));
+// }} ""
+// {{{ 36 1 0 "82247e1d_3b2b_4179_a579286653ac5880" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(PlateSequences, 1, 1, Translate("_HHS1_96WellPCRPlate200uL"));
+// }} ""
+// {{{ 37 1 0 "fab6e88a_2247_4330_80f357a4ac23b1da" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(PlateSequences, 1, 2, Translate("_HHS1_96WellPCRPlate400uL"));
+// }} ""
+// {{{ 38 1 0 "32d6ff85_b18a_4cd0_a4acab583466d03a" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(PlateSequences, 1, 3, Translate("_HHS1_96WellPCRPlate1200uL"));
+// }} ""
+// {{{ 39 1 0 "e171bbe6_ad83_4df1_a2e04d9cebf655a1" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(PlateSequences, 2, 1, Translate("_HHS2_96WellPCRPlate200uL"));
+// }} ""
+// {{{ 40 1 0 "ca056a3d_21a5_43f9_b49971d6dfed30bd" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(PlateSequences, 2, 2, Translate("_HHS2_96WellPCRPlate400uL"));
+// }} ""
+// {{{ 41 1 0 "928a9058_8cef_4a9c_9bee51e2d766aff9" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(PlateSequences, 2, 3, Translate("_HHS2_96WellPCRPlate1200uL"));
+// }} ""
+// {{{ 5 "EDIT_Configuration" "End"
+}
+// }} ""
+// {{{ 5 "GetComPorts" "Begin"
+function GetComPorts( variable & o_ComPorts[] ) void {
+// }} ""
+// {{ 5 "GetComPorts" "InitLocals"
+o_ComPorts.SetSize( 0);
+// }} ""
+// {{ 45 1 0 "2a85ce9e_56ba_45a1_9090c2b6d0d63015" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_ComPorts=ComPorts;
+// }} ""
+// {{{ 5 "GetComPorts" "End"
+}
+// }} ""
+// {{{ 5 "GetHeaterTypes" "Begin"
+function GetHeaterTypes( variable & o_HeaterTypes[] ) void {
+// }} ""
+// {{ 5 "GetHeaterTypes" "InitLocals"
+o_HeaterTypes.SetSize( 0);
+// }} ""
+// {{ 49 1 0 "ff71265b_b9b3_4857_b2ef829101a65a59" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_HeaterTypes=HeaterTypes;
+// }} ""
+// {{{ 5 "GetHeaterTypes" "End"
+}
+// }} ""
+// {{{ 5 "GetPlateTypes" "Begin"
+function GetPlateTypes( variable & o_PlateTypes[] ) void {
+// }} ""
+// {{ 5 "GetPlateTypes" "InitLocals"
+o_PlateTypes.SetSize( 0);
+// }} ""
+// {{ 58 1 0 "d4d24deb_d860_4494_a81de43a265ea3a6" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_PlateTypes=PlateTypes;
+// }} ""
+// {{{ 5 "GetPlateTypes" "End"
+}
+// }} ""
+// {{{ 5 "GetPlateSequenceStrings" "Begin"
+function GetPlateSequenceStrings( variable & o_PlateSequenceStrings[] ) void {
+// }} ""
+// {{ 5 "GetPlateSequenceStrings" "InitLocals"
+o_PlateSequenceStrings.SetSize( 0);
+// }} ""
+// {{ 56 1 0 "1b935ff9_560f_48bd_96367de81e2c57a2" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_PlateSequenceStrings=PlateSequences;
+// }} ""
+// {{{ 5 "GetPlateSequenceStrings" "End"
+}
+// }} ""
+// {{{ 5 "GetLidSequenceStrings" "Begin"
+function GetLidSequenceStrings( variable & o_LidSequenceStrings[] ) void {
+// }} ""
+// {{ 5 "GetLidSequenceStrings" "InitLocals"
+o_LidSequenceStrings.SetSize( 0);
+// }} ""
+// {{ 51 1 0 "590a5d53_41c4_4e10_96634a5454ee9bb9" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_LidSequenceStrings=LidSequences;
+// }} ""
+// {{{ 5 "GetLidSequenceStrings" "End"
+}
+// }} ""
+// {{{ 5 "GetHeaterIDs" "Begin"
+function GetHeaterIDs( variable & o_HeaterIDs[] ) void {
+// }} ""
+// {{ 5 "GetHeaterIDs" "InitLocals"
+o_HeaterIDs.SetSize( 0);
+// }} ""
+// {{ 47 1 0 "384f1960_953d_40d4_924e28c7226710e1" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_HeaterIDs=HeaterIDs;
+// }} ""
+// {{{ 5 "GetHeaterIDs" "End"
+}
+// }} ""
+// {{{ 5 "Init" "Begin"
+function Init(  ) void {
+// }} ""
+// {{ 5 "Init" "InitLocals"
+// }} ""
+// {{{ 62 1 0 "80836925_c3f4_4078_bd827465168b107a" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+EDIT_Configuration();
+// }} ""
+// {{{ 5 "Init" "End"
+}
+// }} ""
+// {{{ 5 "GetAmbientTemp" "Begin"
+function GetAmbientTemp(  ) variable {
+// }} ""
+// {{ 5 "GetAmbientTemp" "InitLocals"
+// }} ""
+// {{{ 43 1 0 "5f2229cb_7d2f_47eb_851c2de06464af77" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (AmbientTemp);
+// }} ""
+// {{{ 5 "GetAmbientTemp" "End"
+}
+// }} ""
+// {{{ 5 "GetNumHeaters" "Begin"
+function GetNumHeaters(  ) variable {
+// }} ""
+private variable NumHeaters;
+// {{ 5 "GetNumHeaters" "InitLocals"
+// }} ""
+// {{ 53 1 0 "a2905994_eed8_44cd_ac89881d33360b67" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
+NumHeaters=HeaterIDs.GetSize();
+// }} ""
+// {{{ 54 1 0 "15f37c46_ef91_4206_a07718cba11bf360" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (NumHeaters);
+// }} ""
+// {{{ 5 "GetNumHeaters" "End"
+}
+// }} ""
+// {{{ 5 "GetTempDelta" "Begin"
+function GetTempDelta(  ) variable {
+// }} ""
+// {{ 5 "GetTempDelta" "InitLocals"
+// }} ""
+// {{{ 60 1 0 "7773e850_8620_4bbf_bcf3d61340614a97" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (TempDelta);
+// }} ""
+// {{{ 5 "GetTempDelta" "End"
+}
+// }} ""
+/* {{ 2 "SubmethodInsertLine" "" */ // }} ""
+// {{{ 2 "LibraryNamespace" "End"
+} // library namespace
+// }} ""
+// $$author=BAREB$$valid=0$$time=2021-12-08 13:37$$checksum=7e39584d$$length=084$$

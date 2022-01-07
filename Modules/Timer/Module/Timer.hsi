@@ -5,6 +5,7 @@
 #include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Return\\Return.hs_"
 #include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Commands\\Commands.hs_"
 #include "HSLStrLib.hsl"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Return\\ReturnIDs.hs_"
 /* {{ 2 "LibraryInsertLine" "" */ // }} ""
 // {{ 2 "TemplateIncludeBlock" ""
 #include "HSLMETEDLib.hs_"
@@ -41,6 +42,7 @@ PTL::SetLoadingStateDefault("KitLotCheckEnabled", hslFalse);
 TIMER_CONFIG::_InitLibrary();
 RETURN::_InitLibrary();
 COMMANDS::_InitLibrary();
+RETURNIDS::_InitLibrary();
 // }} ""
 }
 function _ExitLibrary() {
@@ -48,27 +50,48 @@ function _ExitLibrary() {
 TIMER_CONFIG::_ExitLibrary();
 RETURN::_ExitLibrary();
 COMMANDS::_ExitLibrary();
+RETURNIDS::_ExitLibrary();
 // }} ""
 }
 // {{{ 5 "Init" "Begin"
 function Init( device & ML_STAR, variable i_CommandParameterStrings ) variable {
 // }} ""
 private variable ReturnString;
+private variable ID;
 // {{ 5 "Init" "InitLocals"
 // }} ""
-// {{ 21 1 0 "55f7757f_fd15_4971_9ed3b3ffd2c1ada7" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 28 1 0 "eb237134_3718_4f33_b7b5b48b6403bc5b" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (IsInit == "True")
+{
+// }} ""
+// {{{ 29 1 0 "04418201_ee32_489e_8a238e16ec072d0a" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::SuccessRequestSkipped();
+// }} ""
+// {{{ 30 1 0 "496727b5_4764_4ee9_8299e22cbdad982e" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Already Initialized"), Translate(""), Translate(""));
+// }} ""
+// {{{ 31 1 0 "c72f8559_cfc3_4302_b508820068ad2b2f" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ReturnString);
+// }} ""
+// {{ 32 1 0 "eb237134_3718_4f33_b7b5b48b6403bc5b" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 33 1 0 "55f7757f_fd15_4971_9ed3b3ffd2c1ada7" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 22 1 0 "e8180efb_7b63_4d6a_921125a6b91f1770" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 34 1 0 "e8180efb_7b63_4d6a_921125a6b91f1770" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 TIMER_CONFIG::Init();
 // }} ""
-// {{ 23 1 0 "a009b6b2_e9f5_406f_89992ddd0fb80919" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 35 1 0 "a009b6b2_e9f5_406f_89992ddd0fb80919" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 IsInit = Translate("True");
 // }} ""
-// {{{ 24 1 0 "45033b9e_afba_4069_bd8c5ca2eb8baeed" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-ReturnString = RETURN::CreateReturnString(0, Translate("Init always succeeds"), Translate(""), Translate(""));
+// {{{ 36 1 0 "7fe6d99f_6590_4eb8_aa0ed904dc769010" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::SuccessNoErrors();
 // }} ""
-// {{{ 25 1 0 "e87ee620_3863_4d23_b3039a65c4ff5ce8" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 37 1 0 "3cdd669b_eb87_4669_994e2dd3bd9bdd5d" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Init always succeeds"), Translate(""), Translate(""));
+// }} ""
+// {{{ 38 1 0 "19240841_2da0_4b72_9294d9fa40217ea6" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
 // {{{ 5 "Init" "End"
@@ -80,27 +103,31 @@ private function StartTimer( device & ML_STAR, variable i_CommandParameterString
 private variable ReturnString;
 private variable WaitTime;
 private variable Dict[];
+private variable ID;
 // {{ 5 "StartTimer" "InitLocals"
 // }} ""
-// {{{ 27 1 0 "b4e1c84f_383e_4a24_92357348fa2ba40b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 40 1 0 "b4e1c84f_383e_4a24_92357348fa2ba40b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 COMMANDS::ParseCommandParametersString(i_CommandParameterStrings, Dict);
 // }} ""
-// {{{ 28 1 0 "b22caa43_ffb6_4d96_aa245856ece62202" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 41 1 0 "b22caa43_ffb6_4d96_aa245856ece62202" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 COMMANDS::GetDictionaryItem(Dict, Translate("WaitTime"), WaitTime);
 // }} ""
-// {{{ 29 1 0 "d5cad357_a4d7_4d18_b31c9942ae371f39" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 42 1 0 "d5cad357_a4d7_4d18_b31c9942ae371f39" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 WaitTime = StrFVal(WaitTime);
 // }} ""
-// {{ 30 1 0 "5690b2c4_6f03_4f24_ba020071a13b47b7" "{B31F353E-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 43 1 0 "5690b2c4_6f03_4f24_ba020071a13b47b7" "{B31F353E-5D80-11d4-A5EB-0050DA737D89}"
 if( 0 == Timer.SetTimer(WaitTime) )
 {
     MECC::RaiseRuntimeErrorEx(-1355939584, MECC::IDS::stepNameTimerStart, MECC::IDS::errorStepFailed, "", "HxMetEdCompCmd");
 }
 // }} ""
-// {{{ 31 1 0 "fe82a308_b4da_4903_96df77f8b3210b05" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-ReturnString = RETURN::CreateReturnString(0, Translate("Start always succeeds"), Translate(""), Translate(""));
+// {{{ 44 1 0 "61a8377d_be58_460a_846991dbd7ff6812" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::SuccessNoErrors();
 // }} ""
-// {{{ 32 1 0 "be52b11b_46b3_46eb_ad1e6477d7e3bfcb" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 45 1 0 "48676036_faff_4033_afad0956ee2bcb3c" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Start always succeeds"), Translate(""), Translate(""));
+// }} ""
+// {{{ 46 1 0 "be52b11b_46b3_46eb_ad1e6477d7e3bfcb" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
 // {{{ 5 "StartTimer" "End"
@@ -110,18 +137,22 @@ return (ReturnString);
 private function WaitOnTimer( device & ML_STAR, variable i_CommandParameterStrings ) variable {
 // }} ""
 private variable ReturnString;
+private variable ID;
 // {{ 5 "WaitOnTimer" "InitLocals"
 // }} ""
-// {{ 34 1 0 "a8950afe_f77f_4125_a9da870fa203c9f2" "{B31F353F-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 48 1 0 "a8950afe_f77f_4125_a9da870fa203c9f2" "{B31F353F-5D80-11d4-A5EB-0050DA737D89}"
 if( 0 == Timer.WaitTimer(hslTrue, hslTrue) )
 {
     MECC::RaiseRuntimeErrorEx(-1339162368, MECC::IDS::stepNameTimerWait, MECC::IDS::errorStepFailed, "", "HxMetEdCompCmd");
 }
 // }} ""
-// {{{ 35 1 0 "0945d5ff_56b3_44f1_85e5f37b564eb73d" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-ReturnString = RETURN::CreateReturnString(0, Translate("Wait always succeeds"), Translate(""), Translate(""));
+// {{{ 49 1 0 "24c21261_a130_4819_aea9e512fe120664" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::SuccessNoErrors();
 // }} ""
-// {{{ 36 1 0 "1552084d_23b9_445d_b5019c8a95d89924" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 50 1 0 "2fb978ab_64c2_4f2d_9399963d633b7537" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Wait always succeeds"), Translate(""), Translate(""));
+// }} ""
+// {{{ 51 1 0 "1552084d_23b9_445d_b5019c8a95d89924" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
 // {{{ 5 "WaitOnTimer" "End"
@@ -132,54 +163,61 @@ function DoCommand( device & ML_STAR, variable i_CommandString ) variable {
 // }} ""
 private variable ReturnString;
 private variable Command;
+private variable ID;
 // {{ 5 "DoCommand" "InitLocals"
 // }} ""
-// {{{ 5 1 0 "ff167fc4_abc3_4ded_a921e51bdbffa0a5" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 10 1 0 "ff167fc4_abc3_4ded_a921e51bdbffa0a5" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 Command = COMMANDS::GetCommandStringCommand(i_CommandString);
 // }} ""
-// {{ 6 1 0 "b4182c1d_df42_462c_adaa93d1f944b0d5" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 11 1 0 "b4182c1d_df42_462c_adaa93d1f944b0d5" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 if (IsInit != "True")
 {
 // }} ""
-// {{{ 7 1 0 "ad476c31_83c6_40b2_8cc29a07139d0021" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-ReturnString = RETURN::CreateReturnString(-2, Translate("Module not initialized"), Translate(""), Translate(""));
+// {{{ 12 1 0 "396d7937_9c39_4c05_88587f47dd51fbf6" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::FailCritical();
 // }} ""
-// {{{ 8 1 0 "e35ebe09_2bfa_423b_9817138231b4f7f5" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 13 1 0 "9ca41a97_71ac_468f_a2c1c1129e09633b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Module not initialized"), Translate(""), Translate(""));
+// }} ""
+// {{{ 14 1 0 "e35ebe09_2bfa_423b_9817138231b4f7f5" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{ 9 1 0 "b4182c1d_df42_462c_adaa93d1f944b0d5" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 15 1 0 "b4182c1d_df42_462c_adaa93d1f944b0d5" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{ 10 1 0 "83b8ecd6_b159_44d5_8704f65dd9b878cc" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 16 1 0 "83b8ecd6_b159_44d5_8704f65dd9b878cc" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 if (Command == "StartTimer")
 {
 // }} ""
-// {{{ 11 1 0 "b27f3b26_9a88_4b57_86e06b487de00cd5" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 17 1 0 "b27f3b26_9a88_4b57_86e06b487de00cd5" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ReturnString = StartTimer(ML_STAR, i_CommandString);
 // }} ""
-// {{{ 12 1 0 "274e00f4_dfcb_4cee_92b9c7e9c2e30691" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 18 1 0 "274e00f4_dfcb_4cee_92b9c7e9c2e30691" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{ 13 1 0 "83b8ecd6_b159_44d5_8704f65dd9b878cc" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 19 1 0 "83b8ecd6_b159_44d5_8704f65dd9b878cc" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{ 14 1 0 "0bba171b_f5d9_412f_8447f9b1918a4559" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 20 1 0 "0bba171b_f5d9_412f_8447f9b1918a4559" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 if (Command == "WaitOnTimer")
 {
 // }} ""
-// {{{ 15 1 0 "3ec1117d_80f6_4f4a_9a26c7f78bef1cf8" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 21 1 0 "3ec1117d_80f6_4f4a_9a26c7f78bef1cf8" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ReturnString = WaitOnTimer(ML_STAR, i_CommandString);
 // }} ""
-// {{{ 16 1 0 "7c747611_ad5f_4d78_990d74233719304e" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 22 1 0 "7c747611_ad5f_4d78_990d74233719304e" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{ 17 1 0 "0bba171b_f5d9_412f_8447f9b1918a4559" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 23 1 0 "0bba171b_f5d9_412f_8447f9b1918a4559" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{{ 18 1 0 "3fd33399_f286_4c8e_98990256190293e9" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-ReturnString = RETURN::CreateReturnString(-1, Translate("Command not found"), Translate(""), Translate(""));
+// {{{ 24 1 0 "abfbd69f_8e6a_42a5_bb909fd2f5b8f0cf" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::FailCritical();
 // }} ""
-// {{{ 19 1 0 "3a21a6da_e9c8_4b14_96fd827deac7605f" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 25 1 0 "6c1dfd49_fc18_4450_aaa5a2a42d603ffa" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Command not found"), Translate(""), Translate(""));
+// }} ""
+// {{{ 26 1 0 "3a21a6da_e9c8_4b14_96fd827deac7605f" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
 // {{{ 5 "DoCommand" "End"
@@ -188,17 +226,34 @@ return (ReturnString);
 // {{{ 5 "DeInit" "Begin"
 function DeInit( device & ML_STAR, variable i_CommandString ) variable {
 // }} ""
+private variable ID;
+private variable ReturnString;
 // {{ 5 "DeInit" "InitLocals"
 // }} ""
-// {{ 1 1 0 "9b3dbe47_5462_4b70_b7769f29aa26bfc2" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 1 1 0 "d53f6e55_12e0_4119_a4460476ffc57dbe" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 if (IsInit == "True")
 {
 // }} ""
-// {{ 2 1 0 "9b3dbe47_5462_4b70_b7769f29aa26bfc2" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{{ 2 1 0 "46700a55_0a36_4947_988d1108975e4547" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::SuccessNoErrors();
+// }} ""
+// {{{ 3 1 0 "b9d48855_23a2_4b32_b3a47bab98180430" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Deinit Successful"), Translate(""), Translate(""));
+// }} ""
+// {{{ 4 1 0 "d29878b3_229b_4b7c_ad783305536d1468" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ReturnString);
+// }} ""
+// {{ 5 1 0 "d53f6e55_12e0_4119_a4460476ffc57dbe" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{{ 3 1 0 "4b012bb1_a08d_4609_861a022d925474ae" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
-return (Translate("True"));
+// {{{ 6 1 0 "fb12ec22_58d3_4094_9494270d4995372f" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::SuccessRequestSkipped();
+// }} ""
+// {{{ 7 1 0 "5bed481a_d1d4_4b2b_9586d0da6a20bf45" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Deinit not required"), Translate(""), Translate(""));
+// }} ""
+// {{{ 8 1 0 "baadc94c_f01f_4a98_98e77c092048699b" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ReturnString);
 // }} ""
 // {{{ 5 "DeInit" "End"
 }
@@ -207,4 +262,4 @@ return (Translate("True"));
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-06 13:37$$checksum=ae8f08b3$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-07 11:03$$checksum=6b75bcdb$$length=084$$
