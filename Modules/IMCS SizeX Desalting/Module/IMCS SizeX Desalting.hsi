@@ -49,4 +49,4 @@ function Init( device & ML_STAR, variable i_CommandString ) void {
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2021-12-13 09:38$$checksum=89a31b7c$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-07 16:42$$checksum=0c65bf1c$$length=084$$
