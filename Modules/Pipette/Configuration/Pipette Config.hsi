@@ -299,7 +299,7 @@ FlipTubeToolSequenceString = Translate("Ham_4_FlipTubeTools_OnWaste_0001");
 // {{ 10 1 0 "b9df9828_9e7b_4290_9398a234d5d237a2" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 TipSequenceStrings.SetSize(0);
 // }} ""
-// {{ 11 1 0 "fb1f02e0_5a50_448e_a0eff69210efcce8" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+// {{ 11 1 0 "69e0e3b2_d17b_4b37_9e4c5e281a3bd2ec" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 TipSequenceStrings.AddAsLast(Translate("seq_Tips_NTR_50ul"));
 // }} ""
 // {{ 12 1 0 "fea19c37_84a3_4df0_affd9b92bc8d9779" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
@@ -360,4 +360,4 @@ TipSequenceVolumes.AddAsLast(1000);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-07 16:42$$checksum=e0b5b790$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-10 15:15$$checksum=5a238dbe$$length=084$$

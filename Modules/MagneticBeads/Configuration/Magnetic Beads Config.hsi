@@ -1,6 +1,7 @@
 // {{{ 2 "IncludeGuard" "PragmaOnce"
 #pragma once
 // }} ""
+#include "HSLExtensions\\Array2D.hsl"
 /* {{ 2 "LibraryInsertLine" "" */ // }} ""
 // {{ 2 "TemplateIncludeBlock" ""
 #include "HSLMETEDLib.hs_"
@@ -12,10 +13,16 @@ namespace MAGNETIC_BEADS_CONFIG {
 variable MinimumCondenseTimeSeconds;
 variable SupportedPlateTypesSequenceString[];
 variable SupportedPlateTypes[];
+variable GeneralLiquidTransferLiquidClassStrings[];
+variable CondensedBeadsLiquidClassStrings[];
+variable SupportedLiquidClassVolumes[];
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
 function EDIT_Configuration(  ) void ;
+function GetCondensedBeadsLiquidClassStrings( variable & o_CondensedBeadsLiquidClassStrings[] ) void ;
+function GetGeneralLiquidTransferLiquidClassStrings( variable & o_GeneralLiquidTransferLiquidClassStrings[] ) void ;
 function GetMinimumCondenseTimeSeconds( variable o_MinimumCondenseTimeSeconds ) void ;
+function GetSupportedLiquidClassVolumes( variable & o_SupportedLiquidClassVolumes[] ) void ;
 function GetSupportedPlateTypesArray( variable & o_SupportedPlateTypesArray[] ) void ;
 function GetSupportedPlateTypesSequenceStringsArray( variable & o_SupportedPlateTypesSequenceStringsArray[] ) void ;
 function Init(  ) void ;
@@ -54,6 +61,33 @@ SupportedPlateTypesSequenceString.SetSize(0);
 // {{ 7 1 0 "cf691fbb_dc99_47bd_b942a2bc35ac7a61" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 SupportedPlateTypesSequenceString.AddAsLast(Translate(""));
 // }} ""
+// {{ 8 1 0 "efecb9ff_e27c_4d3d_99c27f78929fa827" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 9 1 0 "c7908b59_1c05_4b31_b4cb9b342290bc18" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+SupportedLiquidClassVolumes.SetSize(0);
+// }} ""
+// {{ 10 1 0 "3be04786_0573_4a89_bcd3670340e1eaf9" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+SupportedLiquidClassVolumes.AddAsLast(300);
+// }} ""
+// {{ 11 1 0 "33b8370d_4805_45d9_85d822b217e1cc6a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 12 1 0 "e7157081_5fff_4ecb_98f86dabe4d25062" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+CondensedBeadsLiquidClassStrings = HSLExtensions::Array2D::Create(1, 1);
+// }} ""
+// {{{ 13 1 0 "b07d5f8f_cd79_4071_ab7bda68e1a655c2" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(CondensedBeadsLiquidClassStrings, 1, 1, Translate("MagneticBeads_300uL_CondensedBeadsLiquidRemovalClass"));
+// }} ""
+// {{ 14 1 0 "a2b5f559_caa9_4616_8b39e515f67027ac" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 15 1 0 "efe40c5a_81f8_4d79_bc6d9ed268155992" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+GeneralLiquidTransferLiquidClassStrings = HSLExtensions::Array2D::Create(1, 1);
+// }} ""
+// {{{ 16 1 0 "6dc1425d_55ae_4586_bf5cffdaa7584632" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(GeneralLiquidTransferLiquidClassStrings, 1, 1, Translate("MagneticBeads_300uL_GeneralLiquidTransferClass"));
+// }} ""
 // {{{ 5 "EDIT_Configuration" "End"
 }
 // }} ""
@@ -62,7 +96,7 @@ function Init(  ) void {
 // }} ""
 // {{ 5 "Init" "InitLocals"
 // }} ""
-// {{{ 15 1 0 "843d04b6_d30b_4c3c_95e36a4173b5ec34" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 30 1 0 "843d04b6_d30b_4c3c_95e36a4173b5ec34" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 EDIT_Configuration();
 // }} ""
 // {{{ 5 "Init" "End"
@@ -74,7 +108,7 @@ function GetSupportedPlateTypesArray( variable & o_SupportedPlateTypesArray[] ) 
 // {{ 5 "GetSupportedPlateTypesArray" "InitLocals"
 o_SupportedPlateTypesArray.SetSize( 0);
 // }} ""
-// {{ 11 1 0 "edafe236_1a94_4bcc_9e016ed78d37f199" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 26 1 0 "edafe236_1a94_4bcc_9e016ed78d37f199" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_SupportedPlateTypesArray=SupportedPlateTypes;
 // }} ""
 // {{{ 5 "GetSupportedPlateTypesArray" "End"
@@ -85,7 +119,7 @@ function GetMinimumCondenseTimeSeconds( variable o_MinimumCondenseTimeSeconds ) 
 // }} ""
 // {{ 5 "GetMinimumCondenseTimeSeconds" "InitLocals"
 // }} ""
-// {{ 9 1 0 "afbff22d_d888_4a6e_a58df046831f3888" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 22 1 0 "afbff22d_d888_4a6e_a58df046831f3888" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 o_MinimumCondenseTimeSeconds = MinimumCondenseTimeSeconds;
 // }} ""
 // {{{ 5 "GetMinimumCondenseTimeSeconds" "End"
@@ -97,14 +131,50 @@ function GetSupportedPlateTypesSequenceStringsArray( variable & o_SupportedPlate
 // {{ 5 "GetSupportedPlateTypesSequenceStringsArray" "InitLocals"
 o_SupportedPlateTypesSequenceStringsArray.SetSize( 0);
 // }} ""
-// {{ 13 1 0 "0271c411_b9cd_4301_8920034ffdb51f70" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 28 1 0 "0271c411_b9cd_4301_8920034ffdb51f70" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_SupportedPlateTypesSequenceStringsArray=SupportedPlateTypesSequenceString;
 // }} ""
 // {{{ 5 "GetSupportedPlateTypesSequenceStringsArray" "End"
+}
+// }} ""
+// {{{ 5 "GetGeneralLiquidTransferLiquidClassStrings" "Begin"
+function GetGeneralLiquidTransferLiquidClassStrings( variable & o_GeneralLiquidTransferLiquidClassStrings[] ) void {
+// }} ""
+// {{ 5 "GetGeneralLiquidTransferLiquidClassStrings" "InitLocals"
+o_GeneralLiquidTransferLiquidClassStrings.SetSize( 0);
+// }} ""
+// {{ 20 1 0 "f7a50d2f_a3b8_4e09_80ce2037515c0461" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_GeneralLiquidTransferLiquidClassStrings=GeneralLiquidTransferLiquidClassStrings;
+// }} ""
+// {{{ 5 "GetGeneralLiquidTransferLiquidClassStrings" "End"
+}
+// }} ""
+// {{{ 5 "GetCondensedBeadsLiquidClassStrings" "Begin"
+function GetCondensedBeadsLiquidClassStrings( variable & o_CondensedBeadsLiquidClassStrings[] ) void {
+// }} ""
+// {{ 5 "GetCondensedBeadsLiquidClassStrings" "InitLocals"
+o_CondensedBeadsLiquidClassStrings.SetSize( 0);
+// }} ""
+// {{ 18 1 0 "293eabd2_fd04_429c_b38ab60c7cf3bf6f" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_CondensedBeadsLiquidClassStrings=CondensedBeadsLiquidClassStrings;
+// }} ""
+// {{{ 5 "GetCondensedBeadsLiquidClassStrings" "End"
+}
+// }} ""
+// {{{ 5 "GetSupportedLiquidClassVolumes" "Begin"
+function GetSupportedLiquidClassVolumes( variable & o_SupportedLiquidClassVolumes[] ) void {
+// }} ""
+// {{ 5 "GetSupportedLiquidClassVolumes" "InitLocals"
+o_SupportedLiquidClassVolumes.SetSize( 0);
+// }} ""
+// {{ 24 1 0 "0bd468ed_55fe_46f2_8f7aa855d8cbe220" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_SupportedLiquidClassVolumes=SupportedLiquidClassVolumes;
+// }} ""
+// {{{ 5 "GetSupportedLiquidClassVolumes" "End"
 }
 // }} ""
 /* {{ 2 "SubmethodInsertLine" "" */ // }} ""
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2021-12-16 12:27$$checksum=783dd3a1$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-10 15:15$$checksum=f859883d$$length=084$$

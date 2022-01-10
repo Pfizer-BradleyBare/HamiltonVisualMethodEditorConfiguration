@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 1/7/2022 4:42:25 PM
+// Generated at 1/10/2022 3:15:52 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -25,4 +25,4 @@ function Init(  ) void { }
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-01-07 16:42$$checksum=56d5a192$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-01-10 15:15$$checksum=422e9f7d$$length=082$$
