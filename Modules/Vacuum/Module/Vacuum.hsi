@@ -22,7 +22,7 @@ namespace VACUUM {
 // }} ""
 variable VacuumHandles[];
 variable VacuumReservations[];
-variable IsInit;
+variable IsInit("False");
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
 function DeInit( device & ML_STAR, variable i_CommandString ) variable ;
@@ -32,8 +32,8 @@ private function GetVacuumManifoldParkSequenceString( device & ML_STAR, variable
 private function GetVacuumManifoldSequenceString( device & ML_STAR, variable i_CommandString ) variable ;
 private function GetVacuumPlateSequenceString( device & ML_STAR, variable i_CommandString ) variable ;
 function Init( device & ML_STAR, variable i_CommandString ) variable ;
-private function StartVacuum( device & ML_STAR, variable i_CommandString ) variable ;
-private function StopVacuum( device & ML_STAR, variable i_CommandString ) variable ;
+private function Start( device & ML_STAR, variable i_CommandString ) variable ;
+private function Stop( device & ML_STAR, variable i_CommandString ) variable ;
 // }} ""
 function _InitLibrary() {
 // {{ 2 "AutoInitBlock" ""
@@ -336,7 +336,6 @@ private variable Dict[];
 private variable NumVacuums;
 private variable Counter;
 private variable VacuumParkSequenceStrings[];
-private variable Ret;
 private variable ReturnVal;
 private variable ID;
 private variable ReturnString;
@@ -401,7 +400,6 @@ private function GetVacuumManifoldSequenceString( device & ML_STAR, variable i_C
 private variable NumVacuums;
 private variable VacuumPlateNameString;
 private variable Counter;
-private variable Ret;
 private variable Dict[];
 private variable VacuumManifoldSequenceStrings[];
 private variable ReturnVal;
@@ -470,7 +468,6 @@ private variable NumVacuumPlates;
 private variable VacuumPlateNameString;
 private variable Counter;
 private variable Counter2;
-private variable Ret;
 private variable Dict[];
 private variable VacuumCollectionPlatesArray[];
 private variable VacuumPlatesArray[];
@@ -571,7 +568,6 @@ private variable NumVacuumPlates;
 private variable VacuumPlateNameString;
 private variable Counter;
 private variable Counter2;
-private variable Ret;
 private variable Dict[];
 private variable VacuumPlatesArray[];
 private variable VacuumPlates[];
@@ -664,8 +660,8 @@ return (ReturnString);
 // {{{ 5 "GetVacuumPlateSequenceString" "End"
 }
 // }} ""
-// {{{ 5 "StartVacuum" "Begin"
-private function StartVacuum( device & ML_STAR, variable i_CommandString ) variable {
+// {{{ 5 "Start" "Begin"
+private function Start( device & ML_STAR, variable i_CommandString ) variable {
 // }} ""
 private variable NumVacuums;
 private variable VacuumPlateNameString;
@@ -681,7 +677,7 @@ private variable VacuumPressure;
 private variable AmbientPressure;
 private variable ID;
 private variable ReturnString;
-// {{ 5 "StartVacuum" "InitLocals"
+// {{ 5 "Start" "InitLocals"
 // }} ""
 // {{{ 199 1 0 "b228d970_46e2_48d5_8037d68d885e4bec" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 COMMANDS::ParseCommandParametersString(i_CommandString, Dict);
@@ -814,11 +810,11 @@ ReturnString = RETURN::CreateReturnString(ID, Translate("Reservation not found")
 // {{{ 237 1 0 "d8450357_a7fa_488a_92363cbee9e18a7b" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{{ 5 "StartVacuum" "End"
+// {{{ 5 "Start" "End"
 }
 // }} ""
-// {{{ 5 "StopVacuum" "Begin"
-private function StopVacuum( device & ML_STAR, variable i_CommandString ) variable {
+// {{{ 5 "Stop" "Begin"
+private function Stop( device & ML_STAR, variable i_CommandString ) variable {
 // }} ""
 private variable NumVacuums;
 private variable VacuumPlateNameString;
@@ -827,7 +823,7 @@ private timer VacuumStopTimer;
 private variable Dict[];
 private variable ID;
 private variable ReturnString;
-// {{ 5 "StopVacuum" "InitLocals"
+// {{ 5 "Stop" "InitLocals"
 // }} ""
 // {{{ 239 1 0 "e5a3fe4b_a25c_4296_92962c907df2ae23" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 COMMANDS::ParseCommandParametersString(i_CommandString, Dict);
@@ -891,7 +887,7 @@ ReturnString = RETURN::CreateReturnString(ID, Translate("Reservation not found")
 // {{{ 255 1 0 "133b8838_7c34_424f_8d46762b6a539d88" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{{ 5 "StopVacuum" "End"
+// {{{ 5 "Stop" "End"
 }
 // }} ""
 // {{{ 5 "DoCommand" "Begin"
@@ -973,30 +969,30 @@ return (ReturnString);
 // {{ 35 1 0 "fdfec1c6_2724_4fac_9bea11fdb7f58c09" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{ 36 1 0 "4b556ee0_5e73_4dda_b7f2106c91c1ca87" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-if (Command == "StartVacuum")
+// {{ 36 1 0 "9bc76202_2287_4b4e_8581360bff4888e0" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (Command == "Start")
 {
 // }} ""
-// {{{ 37 1 0 "5fe26c75_9185_439b_b66594df09bbd646" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-ReturnString = StartVacuum(ML_STAR, i_CommandString);
+// {{{ 37 1 0 "c244b19b_2ce1_47a6_81d856b844aa5635" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = Start(ML_STAR, i_CommandString);
 // }} ""
 // {{{ 38 1 0 "c49efafe_1f60_4717_84de55d1985c7d38" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{ 39 1 0 "4b556ee0_5e73_4dda_b7f2106c91c1ca87" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 39 1 0 "9bc76202_2287_4b4e_8581360bff4888e0" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{ 40 1 0 "82f58bd8_4e0c_4763_a9d753c453af671f" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-if (Command == "StopVacuum")
+// {{ 40 1 0 "66950d24_9af5_4bd9_841f5b439d04ad86" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (Command == "Stop")
 {
 // }} ""
-// {{{ 41 1 0 "072dcdb8_6407_4f94_8c13a2be7f4672e4" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-ReturnString = StopVacuum(ML_STAR, i_CommandString);
+// {{{ 41 1 0 "983fad10_9be6_4ea4_8bc8b88b14ed5091" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = Stop(ML_STAR, i_CommandString);
 // }} ""
 // {{{ 42 1 0 "d031e65e_41b6_44b5_a8ea13aa6e9fa200" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{ 43 1 0 "82f58bd8_4e0c_4763_a9d753c453af671f" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 43 1 0 "66950d24_9af5_4bd9_841f5b439d04ad86" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
 // {{{ 44 1 0 "1f82b87c_11c0_4d4e_8d5e23f261b4e3e6" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
@@ -1068,4 +1064,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-07 11:13$$checksum=63fdd053$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-19 18:03$$checksum=869674df$$length=084$$

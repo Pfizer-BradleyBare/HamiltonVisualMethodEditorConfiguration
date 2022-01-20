@@ -16,7 +16,7 @@
 // {{{ 2 "LibraryNamespace" "Begin"
 namespace MAGNETIC_BEADS {
 // }} ""
-variable IsInit;
+variable IsInit("False");
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
 function DeInit( device & ML_STAR, variable i_CommandString ) variable ;
@@ -209,9 +209,7 @@ private variable Delimiter;
 private variable SupportedPlateIndex;
 private variable NumSupportedPlateTypes;
 private variable TransferVolumesString;
-private variable PlateTypesString;
 private variable PlateTypeString;
-private variable CondensedBeadsLiquidClassesArray[];
 private variable SupportPlateTypesArray[];
 private variable Dict[];
 private variable TransferVolumeStringsArray[];
@@ -221,7 +219,6 @@ private variable GeneralLiquidTransferLiquidClassesArray[];
 private variable Counter2;
 private variable NumTransferVolumes;
 private variable NumSupportedVolumes;
-private variable SupportLiquidClassVolumes[];
 private variable SupportedLiquidClassVolumes[];
 private variable LiquidClass;
 private variable OutputString;
@@ -370,7 +367,6 @@ private variable TransferVolumeStringsArray[];
 private variable TransferVolumesArray[];
 private variable SupportedLiquidClassVolumes[];
 private variable GeneratedLiquidClassesArray[];
-private variable GeneralLiquidTransferLiquidClassesArray[];
 private variable CondensedBeadsLiquidClassesArray[];
 // {{ 5 "GetCondensedBeadsLiquidClassStrings" "InitLocals"
 // }} ""
@@ -496,18 +492,14 @@ return (ReturnString);
 // {{{ 5 "GetMagneticRackPlateSequenceString" "Begin"
 private function GetMagneticRackPlateSequenceString( device & ML_STAR, variable i_CommandParametersString ) variable {
 // }} ""
-private variable OutputString;
 private variable Counter;
-private variable Delimiter;
 private variable PlateSequenceString;
-private variable SupportedPlateIndex;
 private variable NumSupportedPlateTypes;
 private variable ID;
 private variable ReturnString;
 private variable PlateTypeString;
 private variable SupportPlateTypesArray[];
 private variable Dict[];
-private variable GeneratedLiquidClassesArray[];
 private variable SupportPlateTypeSequenceStringArray[];
 // {{ 5 "GetMagneticRackPlateSequenceString" "InitLocals"
 // }} ""
@@ -687,4 +679,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-10 15:11$$checksum=aa03bb6d$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-18 11:22$$checksum=1266d081$$length=084$$

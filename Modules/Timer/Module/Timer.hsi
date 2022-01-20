@@ -16,14 +16,14 @@
 namespace TIMER {
 // }} ""
 timer Timer;
-variable IsInit;
+variable IsInit("False");
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
 function DeInit( device & ML_STAR, variable i_CommandString ) variable ;
 function DoCommand( device & ML_STAR, variable i_CommandString ) variable ;
 function Init( device & ML_STAR, variable i_CommandParameterStrings ) variable ;
-private function StartTimer( device & ML_STAR, variable i_CommandParameterStrings ) variable ;
-private function WaitOnTimer( device & ML_STAR, variable i_CommandParameterStrings ) variable ;
+private function Start( device & ML_STAR, variable i_CommandParameterStrings ) variable ;
+private function Wait( device & ML_STAR, variable i_CommandParameterStrings ) variable ;
 // }} ""
 function _InitLibrary() {
 // {{ 2 "AutoInitBlock" ""
@@ -97,14 +97,14 @@ return (ReturnString);
 // {{{ 5 "Init" "End"
 }
 // }} ""
-// {{{ 5 "StartTimer" "Begin"
-private function StartTimer( device & ML_STAR, variable i_CommandParameterStrings ) variable {
+// {{{ 5 "Start" "Begin"
+private function Start( device & ML_STAR, variable i_CommandParameterStrings ) variable {
 // }} ""
 private variable ReturnString;
 private variable WaitTime;
 private variable Dict[];
 private variable ID;
-// {{ 5 "StartTimer" "InitLocals"
+// {{ 5 "Start" "InitLocals"
 // }} ""
 // {{{ 40 1 0 "b4e1c84f_383e_4a24_92357348fa2ba40b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 COMMANDS::ParseCommandParametersString(i_CommandParameterStrings, Dict);
@@ -130,15 +130,15 @@ ReturnString = RETURN::CreateReturnString(ID, Translate("Start always succeeds")
 // {{{ 46 1 0 "be52b11b_46b3_46eb_ad1e6477d7e3bfcb" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{{ 5 "StartTimer" "End"
+// {{{ 5 "Start" "End"
 }
 // }} ""
-// {{{ 5 "WaitOnTimer" "Begin"
-private function WaitOnTimer( device & ML_STAR, variable i_CommandParameterStrings ) variable {
+// {{{ 5 "Wait" "Begin"
+private function Wait( device & ML_STAR, variable i_CommandParameterStrings ) variable {
 // }} ""
 private variable ReturnString;
 private variable ID;
-// {{ 5 "WaitOnTimer" "InitLocals"
+// {{ 5 "Wait" "InitLocals"
 // }} ""
 // {{ 48 1 0 "a8950afe_f77f_4125_a9da870fa203c9f2" "{B31F353F-5D80-11d4-A5EB-0050DA737D89}"
 if( 0 == Timer.WaitTimer(hslTrue, hslTrue) )
@@ -155,7 +155,7 @@ ReturnString = RETURN::CreateReturnString(ID, Translate("Wait always succeeds"),
 // {{{ 51 1 0 "1552084d_23b9_445d_b5019c8a95d89924" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{{ 5 "WaitOnTimer" "End"
+// {{{ 5 "Wait" "End"
 }
 // }} ""
 // {{{ 5 "DoCommand" "Begin"
@@ -185,30 +185,30 @@ return (ReturnString);
 // {{ 15 1 0 "b4182c1d_df42_462c_adaa93d1f944b0d5" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{ 16 1 0 "83b8ecd6_b159_44d5_8704f65dd9b878cc" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-if (Command == "StartTimer")
+// {{ 16 1 0 "771ad347_7cbf_4e8e_bc93fc4a86e55894" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (Command == "Start")
 {
 // }} ""
-// {{{ 17 1 0 "b27f3b26_9a88_4b57_86e06b487de00cd5" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-ReturnString = StartTimer(ML_STAR, i_CommandString);
+// {{{ 17 1 0 "34213dc0_7c45_4e6a_a1c3ff94be04e5e1" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = Start(ML_STAR, i_CommandString);
 // }} ""
 // {{{ 18 1 0 "274e00f4_dfcb_4cee_92b9c7e9c2e30691" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{ 19 1 0 "83b8ecd6_b159_44d5_8704f65dd9b878cc" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 19 1 0 "771ad347_7cbf_4e8e_bc93fc4a86e55894" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{ 20 1 0 "0bba171b_f5d9_412f_8447f9b1918a4559" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-if (Command == "WaitOnTimer")
+// {{ 20 1 0 "5cc370c5_22fb_47cb_9bb42cb3397e7113" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (Command == "Wait")
 {
 // }} ""
-// {{{ 21 1 0 "3ec1117d_80f6_4f4a_9a26c7f78bef1cf8" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-ReturnString = WaitOnTimer(ML_STAR, i_CommandString);
+// {{{ 21 1 0 "ce05e5cd_ed2d_4a83_86bb92265f71c55a" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = Wait(ML_STAR, i_CommandString);
 // }} ""
 // {{{ 22 1 0 "7c747611_ad5f_4d78_990d74233719304e" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{ 23 1 0 "0bba171b_f5d9_412f_8447f9b1918a4559" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 23 1 0 "5cc370c5_22fb_47cb_9bb42cb3397e7113" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
 // {{{ 24 1 0 "abfbd69f_8e6a_42a5_bb909fd2f5b8f0cf" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
@@ -262,4 +262,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-07 11:03$$checksum=6b75bcdb$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-19 14:35$$checksum=7afebe93$$length=084$$
