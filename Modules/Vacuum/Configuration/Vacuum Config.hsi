@@ -16,13 +16,14 @@ variable VacuumComPorts[];
 variable VacuumManifoldParkSequences[];
 variable VacuumManifoldSequences[];
 variable SupportedVacuumPlateNames[];
-variable VacuumCollectionPlateSequences[];
 variable SupportedVacuumCollectionPlateSequences[];
 variable VacuumPressureLevels[];
+variable SupportedVacuumCollectionPlateTypes[];
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
 private function EDIT_Configuration(  ) void ;
 function GetSupportedVacuumCollectionPlateSequences( variable & o_SupportedVacuumCollectionPlateSequences[] ) void ;
+function GetSupportedVacuumCollectionPlateTypes( variable & o_SupportedVacuumCollectionPlateTypes[] ) void ;
 function GetSupportedVacuumPlateSequences( variable & o_SupportedVacuumPlateSequences[] ) void ;
 function GetSupportedVacuumPlates( variable & o_SupportedVacuumPlates[] ) void ;
 function GetVacuumComPorts( variable & o_VacuumComPorts[] ) void ;
@@ -98,19 +99,28 @@ SupportedVacuumCollectionPlateSequences = HSLExtensions::Array2D::Create(1, 1);
 // {{{ 18 1 0 "004620df_0a87_435c_93ea5fd00963e1d3" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(SupportedVacuumCollectionPlateSequences, 1, 1, Translate("_Vacuum_96WellPCRPlate2000uL"));
 // }} ""
-// {{ 19 1 0 "f0933274_68d3_48f1_8e8ce19aa0af05b6" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 19 1 0 "6beb02b6_1192_4b45_9856c59c76f2359d" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 20 1 0 "85265e6a_c064_4df6_9414566305d49d3b" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 20 1 0 "936c0d30_0b17_4191_99573d18045e683b" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+SupportedVacuumCollectionPlateTypes = HSLExtensions::Array2D::Create(1, 1);
+// }} ""
+// {{{ 21 1 0 "9f093fab_1143_4a70_a5b2f44e0411bb41" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(SupportedVacuumCollectionPlateTypes, 1, 1, Translate("2000uL Corning 96 Well PCR Plate Vacuum"));
+// }} ""
+// {{ 22 1 0 "f0933274_68d3_48f1_8e8ce19aa0af05b6" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 23 1 0 "85265e6a_c064_4df6_9414566305d49d3b" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 VacuumPressureLevels = HSLExtensions::Array3D::Create(1, 1, 3);
 // }} ""
-// {{{ 21 1 0 "69deecca_98af_4691_a7157a98426d4d90" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 24 1 0 "69deecca_98af_4691_a7157a98426d4d90" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array3D::SetValue(VacuumPressureLevels, 1, 1, 1, Translate("300"));
 // }} ""
-// {{{ 22 1 0 "85b28478_242f_47e1_befc6ecae375fecd" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 25 1 0 "85b28478_242f_47e1_befc6ecae375fecd" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array3D::SetValue(VacuumPressureLevels, 1, 1, 2, Translate("350"));
 // }} ""
-// {{{ 23 1 0 "2676d48f_ac81_41b1_be64e6246347766f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 26 1 0 "2676d48f_ac81_41b1_be64e6246347766f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array3D::SetValue(VacuumPressureLevels, 1, 1, 3, Translate("400"));
 // }} ""
 // {{{ 5 "EDIT_Configuration" "End"
@@ -121,7 +131,7 @@ function Init(  ) void {
 // }} ""
 // {{ 5 "Init" "InitLocals"
 // }} ""
-// {{{ 39 1 0 "84ee15ff_093d_48db_879e9a26427ad7bf" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 44 1 0 "84ee15ff_093d_48db_879e9a26427ad7bf" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 EDIT_Configuration();
 // }} ""
 // {{{ 5 "Init" "End"
@@ -133,7 +143,7 @@ function GetVacuumComPorts( variable & o_VacuumComPorts[] ) void {
 // {{ 5 "GetVacuumComPorts" "InitLocals"
 o_VacuumComPorts.SetSize( 0);
 // }} ""
-// {{ 31 1 0 "ef969e8c_1efa_47c8_835a590c8a0639d7" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 36 1 0 "ef969e8c_1efa_47c8_835a590c8a0639d7" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_VacuumComPorts=VacuumComPorts;
 // }} ""
 // {{{ 5 "GetVacuumComPorts" "End"
@@ -145,7 +155,7 @@ function GetVacuumParkSequenceStrings( variable & o_VacuumParkSequenceStrings[] 
 // {{ 5 "GetVacuumParkSequenceStrings" "InitLocals"
 o_VacuumParkSequenceStrings.SetSize( 0);
 // }} ""
-// {{ 35 1 0 "cf9dde8f_4116_48c4_aa5b035dee041a84" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 40 1 0 "cf9dde8f_4116_48c4_aa5b035dee041a84" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_VacuumParkSequenceStrings=VacuumManifoldParkSequences;
 // }} ""
 // {{{ 5 "GetVacuumParkSequenceStrings" "End"
@@ -157,7 +167,7 @@ function GetVacuumManifoldSequenceStrings( variable & o_VacuumManifoldSequenceSt
 // {{ 5 "GetVacuumManifoldSequenceStrings" "InitLocals"
 o_VacuumManifoldSequenceStrings.SetSize( 0);
 // }} ""
-// {{ 33 1 0 "2833c6d7_3f8c_4fc0_8df0f29ea44b1667" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 38 1 0 "2833c6d7_3f8c_4fc0_8df0f29ea44b1667" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_VacuumManifoldSequenceStrings=VacuumManifoldSequences;
 // }} ""
 // {{{ 5 "GetVacuumManifoldSequenceStrings" "End"
@@ -169,7 +179,7 @@ function GetSupportedVacuumPlates( variable & o_SupportedVacuumPlates[] ) void {
 // {{ 5 "GetSupportedVacuumPlates" "InitLocals"
 o_SupportedVacuumPlates.SetSize( 0);
 // }} ""
-// {{ 29 1 0 "3580c970_9382_4789_b7b878c46038fc8e" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 34 1 0 "3580c970_9382_4789_b7b878c46038fc8e" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_SupportedVacuumPlates=SupportedVacuumPlateNames;
 // }} ""
 // {{{ 5 "GetSupportedVacuumPlates" "End"
@@ -181,7 +191,7 @@ function GetSupportedVacuumPlateSequences( variable & o_SupportedVacuumPlateSequ
 // {{ 5 "GetSupportedVacuumPlateSequences" "InitLocals"
 o_SupportedVacuumPlateSequences.SetSize( 0);
 // }} ""
-// {{ 27 1 0 "28db3437_6e57_4f84_84a1f2ccc711a683" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 32 1 0 "28db3437_6e57_4f84_84a1f2ccc711a683" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_SupportedVacuumPlateSequences=SupportedVacuumPlateSequences;
 // }} ""
 // {{{ 5 "GetSupportedVacuumPlateSequences" "End"
@@ -193,7 +203,7 @@ function GetSupportedVacuumCollectionPlateSequences( variable & o_SupportedVacuu
 // {{ 5 "GetSupportedVacuumCollectionPlateSequences" "InitLocals"
 o_SupportedVacuumCollectionPlateSequences.SetSize( 0);
 // }} ""
-// {{ 25 1 0 "0d0da40d_b861_43fc_9dc07a4828b8c358" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 28 1 0 "0d0da40d_b861_43fc_9dc07a4828b8c358" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_SupportedVacuumCollectionPlateSequences=SupportedVacuumCollectionPlateSequences;
 // }} ""
 // {{{ 5 "GetSupportedVacuumCollectionPlateSequences" "End"
@@ -205,14 +215,26 @@ function GetVacuumPressureLevels( variable & o_VacuumPressureLevels[] ) void {
 // {{ 5 "GetVacuumPressureLevels" "InitLocals"
 o_VacuumPressureLevels.SetSize( 0);
 // }} ""
-// {{ 37 1 0 "4a49c491_2078_495a_80c084f99a3b15ba" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 42 1 0 "4a49c491_2078_495a_80c084f99a3b15ba" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_VacuumPressureLevels=VacuumPressureLevels;
 // }} ""
 // {{{ 5 "GetVacuumPressureLevels" "End"
+}
+// }} ""
+// {{{ 5 "GetSupportedVacuumCollectionPlateTypes" "Begin"
+function GetSupportedVacuumCollectionPlateTypes( variable & o_SupportedVacuumCollectionPlateTypes[] ) void {
+// }} ""
+// {{ 5 "GetSupportedVacuumCollectionPlateTypes" "InitLocals"
+o_SupportedVacuumCollectionPlateTypes.SetSize( 0);
+// }} ""
+// {{ 30 1 0 "9a734f86_0725_43ce_af03588471e48388" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_SupportedVacuumCollectionPlateTypes=SupportedVacuumCollectionPlateTypes;
+// }} ""
+// {{{ 5 "GetSupportedVacuumCollectionPlateTypes" "End"
 }
 // }} ""
 /* {{ 2 "SubmethodInsertLine" "" */ // }} ""
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2021-12-09 17:38$$checksum=11d1c224$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-21 15:19$$checksum=b6f9eb81$$length=084$$

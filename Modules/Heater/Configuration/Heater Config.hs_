@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 1/19/2022 6:03:19 PM
+// Generated at 1/21/2022 2:52:28 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -8,7 +8,6 @@ namespace HEATER_CONFIG {
 function _InitLibrary() { }
 function _ExitLibrary() { }
 function GetAmbientTemp(  ) variable {  return (0); }
-function GetAssociatedPlateTypes( variable & o_AssociatedPlateTypes[] ) void { }
 function GetComPorts( variable & o_ComPorts[] ) void { }
 function GetHeaterIDs( variable & o_HeaterIDs[] ) void { }
 function GetHeaterTypes( variable & o_HeaterTypes[] ) void { }
@@ -24,4 +23,4 @@ function Init(  ) void { }
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-01-19 18:03$$checksum=f206ba9c$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-01-21 14:52$$checksum=e6f97662$$length=082$$

@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 12/9/2021 5:38:56 PM
+// Generated at 1/21/2022 3:19:36 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -8,6 +8,7 @@ namespace VACUUM_CONFIG {
 function _InitLibrary() { }
 function _ExitLibrary() { }
 function GetSupportedVacuumCollectionPlateSequences( variable & o_SupportedVacuumCollectionPlateSequences[] ) void { }
+function GetSupportedVacuumCollectionPlateTypes( variable & o_SupportedVacuumCollectionPlateTypes[] ) void { }
 function GetSupportedVacuumPlateSequences( variable & o_SupportedVacuumPlateSequences[] ) void { }
 function GetSupportedVacuumPlates( variable & o_SupportedVacuumPlates[] ) void { }
 function GetVacuumComPorts( variable & o_VacuumComPorts[] ) void { }
@@ -21,4 +22,4 @@ function Init(  ) void { }
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2021-12-09 17:38$$checksum=bd40f065$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-01-21 15:19$$checksum=a31369bc$$length=082$$

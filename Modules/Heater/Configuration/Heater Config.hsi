@@ -23,7 +23,6 @@ variable SupportedPlateTypes[];
 // {{{ 2 "SubmethodForwardDeclaration" ""
 private function EDIT_Configuration(  ) void ;
 function GetAmbientTemp(  ) variable ;
-function GetAssociatedPlateTypes( variable & o_AssociatedPlateTypes[] ) void ;
 function GetComPorts( variable & o_ComPorts[] ) void ;
 function GetHeaterIDs( variable & o_HeaterIDs[] ) void ;
 function GetHeaterTypes( variable & o_HeaterTypes[] ) void ;
@@ -116,85 +115,58 @@ HSLExtensions::Array2D::SetValue(SupportedPlateTypes, 2, 2, Translate("400uL The
 // {{{ 23 1 0 "76626377_c137_473f_816f8461b480d081" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(SupportedPlateTypes, 2, 3, Translate("1200uL DeepWell 96 Well PCR Plate"));
 // }} ""
-// {{ 24 1 0 "7eee1b19_f726_4e77_9100d366763ff6c0" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 24 1 0 "4e0629ab_9f19_4505_b0dd9d7b8f7e82d1" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 25 1 0 "87589309_eda7_4227_9b9e3851bc19a4ca" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-AssociatedPlateTypes = HSLExtensions::Array2D::Create(2, 3);
-// }} ""
-// {{{ 26 1 0 "cc0c886a_383e_4201_b0c1e00b41f6053f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::InitializeAllValues(AssociatedPlateTypes, Translate(""));
-// }} ""
-// {{{ 27 1 0 "398bcf1c_2561_469c_88dad07cde77b449" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(AssociatedPlateTypes, 1, 1, Translate("200uL Biorad 96 Well PCR Plate Heater"));
-// }} ""
-// {{{ 28 1 0 "5c240970_617b_475d_aef48a3bc907c273" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(AssociatedPlateTypes, 1, 2, Translate("400uL Thermo 96 Well PCR Plate Heater"));
-// }} ""
-// {{{ 29 1 0 "785e30ef_4a97_4be9_903e81b093e00056" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(AssociatedPlateTypes, 1, 3, Translate("1200uL DeepWell 96 Well PCR Plate Heater"));
-// }} ""
-// {{{ 30 1 0 "17d9e091_5994_4ff5_92bb9e319d33488a" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(AssociatedPlateTypes, 2, 1, Translate("200uL Biorad 96 Well PCR Plate Heater"));
-// }} ""
-// {{{ 31 1 0 "c0736154_ad1d_4060_95ee992226ee7e01" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(AssociatedPlateTypes, 2, 2, Translate("400uL Thermo 96 Well PCR Plate Heater"));
-// }} ""
-// {{{ 32 1 0 "1f290726_0c67_4e34_859902596c3fcf74" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(AssociatedPlateTypes, 2, 3, Translate("1200uL DeepWell 96 Well PCR Plate Heater"));
-// }} ""
-// {{ 33 1 0 "4e0629ab_9f19_4505_b0dd9d7b8f7e82d1" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
-
-// }} ""
-// {{{ 34 1 0 "0c0ee3cd_3df9_4f15_8542ef31cca417ca" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 25 1 0 "0c0ee3cd_3df9_4f15_8542ef31cca417ca" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 LidSequences = HSLExtensions::Array2D::Create(2, 3);
 // }} ""
-// {{{ 35 1 0 "b830154a_5695_4bd8_aba6a5081ac0bc2e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 26 1 0 "b830154a_5695_4bd8_aba6a5081ac0bc2e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::InitializeAllValues(LidSequences, Translate(""));
 // }} ""
-// {{{ 36 1 0 "8a0c22d6_b793_41ca_a04104a0a6b37213" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 27 1 0 "8a0c22d6_b793_41ca_a04104a0a6b37213" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(LidSequences, 1, 1, Translate("_HHS1_Lid_200uL"));
 // }} ""
-// {{{ 37 1 0 "e9872b62_9709_47b4_a8057e40d0004ac6" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 28 1 0 "e9872b62_9709_47b4_a8057e40d0004ac6" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(LidSequences, 1, 2, Translate("_HHS1_Lid_400uL"));
 // }} ""
-// {{{ 38 1 0 "90c863cf_06d8_4c95_b71bab95d0d57850" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 29 1 0 "90c863cf_06d8_4c95_b71bab95d0d57850" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(LidSequences, 1, 3, Translate("_HHS1_Lid_1200uL"));
 // }} ""
-// {{{ 39 1 0 "c56fc159_e3e5_4641_bbc15e375b573a8e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 30 1 0 "c56fc159_e3e5_4641_bbc15e375b573a8e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(LidSequences, 2, 1, Translate("_HHS2_Lid_200uL"));
 // }} ""
-// {{{ 40 1 0 "dcc445bd_7f1a_4f78_980c92adefbf3c60" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 31 1 0 "dcc445bd_7f1a_4f78_980c92adefbf3c60" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(LidSequences, 2, 2, Translate("_HHS2_Lid_400uL"));
 // }} ""
-// {{{ 41 1 0 "36d96e68_66a5_40ae_99362132a5b8c248" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 32 1 0 "36d96e68_66a5_40ae_99362132a5b8c248" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(LidSequences, 2, 3, Translate("_HHS2_Lid_1200uL"));
 // }} ""
-// {{ 42 1 0 "26e3946e_c273_4aa0_b5a027450f6a413a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 33 1 0 "26e3946e_c273_4aa0_b5a027450f6a413a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 43 1 0 "ce2f6a81_866d_4ce5_97d2c2e53dd37765" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 34 1 0 "ce2f6a81_866d_4ce5_97d2c2e53dd37765" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 PlateSequences = HSLExtensions::Array2D::Create(2, 3);
 // }} ""
-// {{{ 44 1 0 "86b886f1_637f_4456_82b7d71c6a804481" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 35 1 0 "86b886f1_637f_4456_82b7d71c6a804481" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::InitializeAllValues(PlateSequences, Translate(""));
 // }} ""
-// {{{ 45 1 0 "82247e1d_3b2b_4179_a579286653ac5880" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 36 1 0 "82247e1d_3b2b_4179_a579286653ac5880" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(PlateSequences, 1, 1, Translate("_HHS1_96WellPCRPlate200uL"));
 // }} ""
-// {{{ 46 1 0 "fab6e88a_2247_4330_80f357a4ac23b1da" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 37 1 0 "fab6e88a_2247_4330_80f357a4ac23b1da" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(PlateSequences, 1, 2, Translate("_HHS1_96WellPCRPlate400uL"));
 // }} ""
-// {{{ 47 1 0 "32d6ff85_b18a_4cd0_a4acab583466d03a" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 38 1 0 "32d6ff85_b18a_4cd0_a4acab583466d03a" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(PlateSequences, 1, 3, Translate("_HHS1_96WellPCRPlate1200uL"));
 // }} ""
-// {{{ 48 1 0 "e171bbe6_ad83_4df1_a2e04d9cebf655a1" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 39 1 0 "e171bbe6_ad83_4df1_a2e04d9cebf655a1" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(PlateSequences, 2, 1, Translate("_HHS2_96WellPCRPlate200uL"));
 // }} ""
-// {{{ 49 1 0 "ca056a3d_21a5_43f9_b49971d6dfed30bd" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 40 1 0 "ca056a3d_21a5_43f9_b49971d6dfed30bd" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(PlateSequences, 2, 2, Translate("_HHS2_96WellPCRPlate400uL"));
 // }} ""
-// {{{ 50 1 0 "928a9058_8cef_4a9c_9bee51e2d766aff9" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 41 1 0 "928a9058_8cef_4a9c_9bee51e2d766aff9" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(PlateSequences, 2, 3, Translate("_HHS2_96WellPCRPlate1200uL"));
 // }} ""
 // {{{ 5 "EDIT_Configuration" "End"
@@ -206,7 +178,7 @@ function GetComPorts( variable & o_ComPorts[] ) void {
 // {{ 5 "GetComPorts" "InitLocals"
 o_ComPorts.SetSize( 0);
 // }} ""
-// {{ 56 1 0 "2a85ce9e_56ba_45a1_9090c2b6d0d63015" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 45 1 0 "2a85ce9e_56ba_45a1_9090c2b6d0d63015" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_ComPorts=ComPorts;
 // }} ""
 // {{{ 5 "GetComPorts" "End"
@@ -218,7 +190,7 @@ function GetHeaterTypes( variable & o_HeaterTypes[] ) void {
 // {{ 5 "GetHeaterTypes" "InitLocals"
 o_HeaterTypes.SetSize( 0);
 // }} ""
-// {{ 60 1 0 "ff71265b_b9b3_4857_b2ef829101a65a59" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 49 1 0 "ff71265b_b9b3_4857_b2ef829101a65a59" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_HeaterTypes=HeaterTypes;
 // }} ""
 // {{{ 5 "GetHeaterTypes" "End"
@@ -230,7 +202,7 @@ function GetSupportedPlateTypes( variable & o_SupportedPlateTypes[] ) void {
 // {{ 5 "GetSupportedPlateTypes" "InitLocals"
 o_SupportedPlateTypes.SetSize( 0);
 // }} ""
-// {{ 69 1 0 "5a8a4988_fbd0_44aa_b4cba0582a98ef6f" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 58 1 0 "5a8a4988_fbd0_44aa_b4cba0582a98ef6f" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_SupportedPlateTypes=SupportedPlateTypes;
 // }} ""
 // {{{ 5 "GetSupportedPlateTypes" "End"
@@ -242,7 +214,7 @@ function GetPlateSequenceStrings( variable & o_PlateSequenceStrings[] ) void {
 // {{ 5 "GetPlateSequenceStrings" "InitLocals"
 o_PlateSequenceStrings.SetSize( 0);
 // }} ""
-// {{ 67 1 0 "1b935ff9_560f_48bd_96367de81e2c57a2" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 56 1 0 "1b935ff9_560f_48bd_96367de81e2c57a2" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_PlateSequenceStrings=PlateSequences;
 // }} ""
 // {{{ 5 "GetPlateSequenceStrings" "End"
@@ -254,7 +226,7 @@ function GetLidSequenceStrings( variable & o_LidSequenceStrings[] ) void {
 // {{ 5 "GetLidSequenceStrings" "InitLocals"
 o_LidSequenceStrings.SetSize( 0);
 // }} ""
-// {{ 62 1 0 "590a5d53_41c4_4e10_96634a5454ee9bb9" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 51 1 0 "590a5d53_41c4_4e10_96634a5454ee9bb9" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_LidSequenceStrings=LidSequences;
 // }} ""
 // {{{ 5 "GetLidSequenceStrings" "End"
@@ -266,7 +238,7 @@ function GetHeaterIDs( variable & o_HeaterIDs[] ) void {
 // {{ 5 "GetHeaterIDs" "InitLocals"
 o_HeaterIDs.SetSize( 0);
 // }} ""
-// {{ 58 1 0 "384f1960_953d_40d4_924e28c7226710e1" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 47 1 0 "384f1960_953d_40d4_924e28c7226710e1" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_HeaterIDs=HeaterIDs;
 // }} ""
 // {{{ 5 "GetHeaterIDs" "End"
@@ -277,7 +249,7 @@ function Init(  ) void {
 // }} ""
 // {{ 5 "Init" "InitLocals"
 // }} ""
-// {{{ 73 1 0 "80836925_c3f4_4078_bd827465168b107a" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 62 1 0 "80836925_c3f4_4078_bd827465168b107a" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 EDIT_Configuration();
 // }} ""
 // {{{ 5 "Init" "End"
@@ -288,7 +260,7 @@ function GetAmbientTemp(  ) variable {
 // }} ""
 // {{ 5 "GetAmbientTemp" "InitLocals"
 // }} ""
-// {{{ 52 1 0 "5f2229cb_7d2f_47eb_851c2de06464af77" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 43 1 0 "5f2229cb_7d2f_47eb_851c2de06464af77" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (AmbientTemp);
 // }} ""
 // {{{ 5 "GetAmbientTemp" "End"
@@ -300,10 +272,10 @@ function GetNumHeaters(  ) variable {
 private variable NumHeaters;
 // {{ 5 "GetNumHeaters" "InitLocals"
 // }} ""
-// {{ 64 1 0 "a2905994_eed8_44cd_ac89881d33360b67" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
+// {{ 53 1 0 "a2905994_eed8_44cd_ac89881d33360b67" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
 NumHeaters=HeaterIDs.GetSize();
 // }} ""
-// {{{ 65 1 0 "15f37c46_ef91_4206_a07718cba11bf360" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 54 1 0 "15f37c46_ef91_4206_a07718cba11bf360" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (NumHeaters);
 // }} ""
 // {{{ 5 "GetNumHeaters" "End"
@@ -314,26 +286,14 @@ function GetTempDelta(  ) variable {
 // }} ""
 // {{ 5 "GetTempDelta" "InitLocals"
 // }} ""
-// {{{ 71 1 0 "7773e850_8620_4bbf_bcf3d61340614a97" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 60 1 0 "7773e850_8620_4bbf_bcf3d61340614a97" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (TempDelta);
 // }} ""
 // {{{ 5 "GetTempDelta" "End"
-}
-// }} ""
-// {{{ 5 "GetAssociatedPlateTypes" "Begin"
-function GetAssociatedPlateTypes( variable & o_AssociatedPlateTypes[] ) void {
-// }} ""
-// {{ 5 "GetAssociatedPlateTypes" "InitLocals"
-o_AssociatedPlateTypes.SetSize( 0);
-// }} ""
-// {{ 54 1 0 "b95a89ea_b650_4a24_b3fe553457b3066a" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
-o_AssociatedPlateTypes=AssociatedPlateTypes;
-// }} ""
-// {{{ 5 "GetAssociatedPlateTypes" "End"
 }
 // }} ""
 /* {{ 2 "SubmethodInsertLine" "" */ // }} ""
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-19 18:03$$checksum=8c618813$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-21 14:52$$checksum=0bb0a26d$$length=084$$
