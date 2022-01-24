@@ -328,8 +328,8 @@ LidString = LidSequenceStrings.ElementAt( Counter -1);
 // {{{ 60 1 0 "b9398a39_7917_45f7_afbf78b93f22f011" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ID = RETURNIDS::SuccessItemsReturned();
 // }} ""
-// {{{ 61 1 0 "31b2dcab_f50a_4762_b01ef44f89cab05b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-ReturnString = RETURN::CreateReturnString(ID, Translate("LidSequenceString Returned"), Translate("LidSequenceString"), ReturnVal);
+// {{{ 61 1 0 "5c2fff13_0af9_4c99_9196ccdf61317838" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("LidSequenceString Returned"), Translate("Response"), ReturnVal);
 // }} ""
 // {{{ 62 1 0 "ce6e05ad_7c61_4344_b0c98309722d370d" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
@@ -489,8 +489,8 @@ private variable ReturnString;
 // {{{ 69 1 0 "1ada32c5_c19e_4ad2_8ace48d1881d1792" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ID = RETURNIDS::SuccessItemsReturned();
 // }} ""
-// {{{ 70 1 0 "9864ea6e_8c69_4412_93f5db3bb6f73b0d" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-ReturnString = RETURN::CreateReturnString(ID, Translate("LidTransportType Returned"), Translate("LidTransportType"), Translate("Lid"));
+// {{{ 70 1 0 "1c0d30ae_c2c1_4044_a95c0b7ba1b3bf0c" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("LidTransportType Returned"), Translate("Response"), Translate("Lid"));
 // }} ""
 // {{{ 71 1 0 "bb1530d9_9ddf_4895_88ddd3b6109f290f" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
@@ -502,4 +502,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-21 15:34$$checksum=517a6c76$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-24 11:42$$checksum=b7051e9c$$length=084$$

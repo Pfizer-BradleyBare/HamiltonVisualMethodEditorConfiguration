@@ -17,7 +17,6 @@ variable ComPorts[];
 variable HeaterIDs[];
 variable AmbientTemp;
 variable TempDelta;
-variable AssociatedPlateTypes[];
 variable SupportedPlateTypes[];
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
@@ -46,11 +45,11 @@ private function EDIT_Configuration(  ) void {
 // }} ""
 // {{ 5 "EDIT_Configuration" "InitLocals"
 // }} ""
-// {{ 1 1 0 "aa202744_4857_477a_a7089d60b238765d" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-AmbientTemp = Translate("20");
+// {{ 1 1 0 "d99b1d97_515b_4a8a_adf0499f5c582ab8" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+AmbientTemp = 20;
 // }} ""
-// {{ 2 1 0 "06d3dd78_0429_4095_83c9c8004fdca726" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-TempDelta = Translate("2");
+// {{ 2 1 0 "deb5e9db_f991_4383_a27eb42c8604291b" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+TempDelta = 2;
 // }} ""
 // {{ 3 1 0 "90074e3c_8138_4a04_a8889e082ff9914f" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -58,11 +57,11 @@ TempDelta = Translate("2");
 // {{ 4 1 0 "007f94c3_d815_4800_af99fd9f12838d19" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 ComPorts.SetSize(0);
 // }} ""
-// {{ 5 1 0 "0bee1f11_deb5_4384_80187923360e501a" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-ComPorts.AddAsLast(Translate("1"));
+// {{ 5 1 0 "724a222a_9894_4689_a8fe8f0a1e3ebc96" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+ComPorts.AddAsLast(1);
 // }} ""
-// {{ 6 1 0 "b2afdf5c_d01a_465f_bcaafbce77c98590" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-ComPorts.AddAsLast(Translate("2"));
+// {{ 6 1 0 "bf87f68e_df03_4574_96c005d064e8ba36" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+ComPorts.AddAsLast(2);
 // }} ""
 // {{ 7 1 0 "312645a6_7f61_4ae2_830070353ad555ef" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -296,4 +295,4 @@ return (TempDelta);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-21 14:52$$checksum=0bb0a26d$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-24 11:43$$checksum=2efce920$$length=084$$
