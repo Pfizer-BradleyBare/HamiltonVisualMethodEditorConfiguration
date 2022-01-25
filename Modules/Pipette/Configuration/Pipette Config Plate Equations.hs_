@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 1/7/2022 3:11:09 PM
+// Generated at 1/25/2022 2:56:43 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -18,4 +18,4 @@ function GetSegmentHeights( variable & o_SegmentHeights[] ) void { }
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-01-07 15:11$$checksum=7882ca68$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-01-25 14:56$$checksum=e209fdac$$length=082$$

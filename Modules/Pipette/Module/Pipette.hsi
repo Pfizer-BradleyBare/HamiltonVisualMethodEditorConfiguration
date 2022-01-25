@@ -2025,8 +2025,6 @@ private variable Volume;
 private variable NumVolumes;
 private variable NumTipSequences;
 private variable TrackedIndex;
-private variable TrackedIndexString;
-private variable TipCounterString;
 // {{ 5 "CalculateUsedTips" "InitLocals"
 // }} ""
 // {{ 20 1 0 "cb7411bc_de02_4f92_bce6f6152af2a13b" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
@@ -2798,8 +2796,8 @@ ReturnVal = TOOLS::ArrayToDelimitedList(Delimiter, GeneratedSequenceStrings);
 // {{{ 348 1 0 "3f9cb3a6_1384_4f83_b1c9614116ac2504" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ID = RETURNIDS::SuccessItemsReturned();
 // }} ""
-// {{{ 349 1 0 "44518524_d6f0_4dc6_b84f35a295518a3e" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-ReturnString = RETURN::CreateReturnString(ID, Translate("TipSequenceStrings delimited list returned"), Translate("TipSequenceStrings"), ReturnVal);
+// {{{ 349 1 0 "79b53a59_c4a1_4f8e_bba9906c0673b744" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("TipSequenceStrings delimited list returned"), Translate("Response"), ReturnVal);
 // }} ""
 // {{{ 350 1 0 "06d48346_1639_45fc_b9eab09c8bf6481c" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
@@ -2934,8 +2932,8 @@ ReturnVal = TOOLS::ArrayToDelimitedList(Delimiter, GeneratedLiquidClasses);
 // {{{ 313 1 0 "edca9486_df33_4c05_948f18c8a886fcd6" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ID = RETURNIDS::SuccessItemsReturned();
 // }} ""
-// {{{ 314 1 0 "134650a6_5f72_45e6_b357935899412ab5" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-ReturnString = RETURN::CreateReturnString(ID, Translate("LiquidClassStrings delimited list returned"), Translate("LiquidClassStrings"), ReturnVal);
+// {{{ 314 1 0 "2980b5ec_cbfc_4552_b1d1c7d06d6b4128" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("LiquidClassStrings delimited list returned"), Translate("Response"), ReturnVal);
 // }} ""
 // {{{ 315 1 0 "00886f6e_2fc8_4edb_9c88bec00c6ee6a1" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
@@ -2991,4 +2989,4 @@ HSLExtensions::Array2D::SetValue(o_Dict, 2, Counter, TrackedTipSequencesNumUsed.
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-25 10:05$$checksum=059e2b92$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-25 15:25$$checksum=9542b6e6$$length=084$$
