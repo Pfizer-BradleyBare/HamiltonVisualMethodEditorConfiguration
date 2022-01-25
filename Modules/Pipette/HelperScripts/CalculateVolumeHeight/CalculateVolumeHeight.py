@@ -72,8 +72,6 @@ file = open(os.path.join(os.path.dirname(__file__),"Output.txt"),"w")
 file.write(",".join(str(x) for x in DispenseHeights))
 file.close()
 
-time.sleep(10)
-
 
 
 

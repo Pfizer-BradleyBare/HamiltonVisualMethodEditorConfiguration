@@ -1556,8 +1556,8 @@ private variable Out[];
 // {{ 275 1 0 "8b863d19_258e_4924_b85a0f496b0e30bf" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 276 1 0 "47efa863_46f3_455a_bdab40c9de229259" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-COMMANDS::ParseCommandParametersString(i_CommandParameterStrings, Dict);
+// {{{ 276 1 0 "b55cb25e_d91b_4365_ae6618be22e9f7b8" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::ParseCommandParametersString(i_CommandString, Dict);
 // }} ""
 // {{{ 277 1 0 "33d0acc0_9505_4655_8ae27f6a29ed4d65" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 COMMANDS::GetDictionaryItem(Dict, Translate("PlateName"), PlateName);
@@ -1727,4 +1727,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-24 12:26$$checksum=ead79565$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-25 08:12$$checksum=772c7c87$$length=084$$
