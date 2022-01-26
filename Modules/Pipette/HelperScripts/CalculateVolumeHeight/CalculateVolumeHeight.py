@@ -40,7 +40,7 @@ while count < len(Volumes):
 
 		VolCalcHeight = CalcHeight
 
-		for EquationsIndex in range(0,len(Equations)):
+		for EquationsIndex in range(0,len(Equations[Index])):
 			SegmentHeight = Heights[Index][EquationsIndex]
 			SegmentEquation = Equations[Index][EquationsIndex]
 
