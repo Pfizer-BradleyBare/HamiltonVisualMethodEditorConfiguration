@@ -90,7 +90,6 @@ private variable Counter3;
 private variable BreakFlag;
 private variable VacuumPlateNamesString;
 private variable VacuumPlateNameStringsArray[];
-private variable ComPort;
 private variable SSA[];
 private variable SS2A[];
 private variable ID;
@@ -239,8 +238,8 @@ Counter2 = Counter2 + 1;
 if (VPA.ElementAt( Counter2 -1) != "")
 {
 // }} ""
-// {{{ 212 1 0 "d38895db_b4db_47a2_aadc3f0b3f0baf2c" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-LABWARE::AddSingleLabware(VPSA.ElementAt( Counter2 -1), VPSA.ElementAt( Counter2 -1), Translate(""), Translate(""), VPA.ElementAt( Counter2 -1), Translate(""), Translate(""), Translate(""));
+// {{{ 212 1 0 "0dbb8e86_6f97_4e71_b3730a4f36a7e693" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+LABWARE::AddSingleLabware(VPSA.ElementAt( Counter2 -1), VPSA.ElementAt( Counter2 -1), Translate(""), Translate("96 Well PCR Plate"), VPA.ElementAt( Counter2 -1), Translate(""), Translate(""), Translate(""));
 // }} ""
 // {{ 213 1 0 "a9daa014_f0c3_45b7_ba6cb06f9d24f691" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
@@ -1310,4 +1309,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-25 15:07$$checksum=cb0aeb05$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-25 17:02$$checksum=c6191630$$length=084$$
