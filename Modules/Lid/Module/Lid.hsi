@@ -322,14 +322,14 @@ Counter = Counter + 1;
 if (ReservedLids.ElementAt( Counter -1) == PlateName)
 {
 // }} ""
-// {{ 59 1 0 "18d002e0_7700_4d15_94ea07d867e349d7" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 59 1 0 "67e28b33_2b52_4cab_86438dd4961119ff" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 LidString = LidSequenceStrings.ElementAt( Counter -1);
 // }} ""
 // {{{ 60 1 0 "b9398a39_7917_45f7_afbf78b93f22f011" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ID = RETURNIDS::SuccessItemsReturned();
 // }} ""
-// {{{ 61 1 0 "5c2fff13_0af9_4c99_9196ccdf61317838" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-ReturnString = RETURN::CreateReturnString(ID, Translate("LidSequenceString Returned"), Translate("Response"), ReturnVal);
+// {{{ 61 1 0 "a41a8172_1f62_472d_bd6d7dca49f29b99" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("LidSequenceString Returned"), Translate("Response"), LidString);
 // }} ""
 // {{{ 62 1 0 "ce6e05ad_7c61_4344_b0c98309722d370d" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
@@ -502,4 +502,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-24 11:42$$checksum=b7051e9c$$length=084$$
+// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-01-26 15:13$$checksum=fbfb3393$$length=094$$

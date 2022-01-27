@@ -843,8 +843,8 @@ AmbientPressure = HSLVacuuBrandPump::ReqActualPressure(VacuumHandles.ElementAt( 
 // {{ 285 1 0 "3f37047e_8c29_4582_942ef14f7f690230" "{B31F3544-5D80-11d4-A5EB-0050DA737D89}"
 VacuumPressure = AmbientPressure - VacuumPressure;
 // }} ""
-// {{{ 286 1 0 "83c6f42a_eb2c_4b17_afd29a7b24c77e34" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLVacuuBrandPump::StartPressureControl(VacuumHandles.ElementAt( Counter -1), VacuumPressure, 99999, 1, 1);
+// {{{ 286 1 0 "8ec62568_1a17_427f_b96553ec30300368" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLVacuuBrandPump::StartPressureControl(VacuumHandles.ElementAt( Counter -1), VacuumPressure, 99999, Translate("y"), 1);
 // }} ""
 // {{{ 287 1 0 "d5f90af5_3342_4435_85a4870c1bbd77bd" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ID = RETURNIDS::SuccessNoErrors();
@@ -1309,4 +1309,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-25 17:02$$checksum=c6191630$$length=084$$
+// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-01-26 17:11$$checksum=dc074cb4$$length=094$$

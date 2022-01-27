@@ -414,11 +414,11 @@ LabwareGripHeightsArray = HSLExtensions::Array2D::GetColumn(LabwareGripHeights, 
 // {{ 28 1 0 "81cea122_7109_439d_b19cff4fb6efb239" "{67A8F1C9-6546-41e9-AD2F-3C54F7818853}"
 CloseWidth=LabwareGripCloseWidthsArray.GetAt(LabwareType-1);
 // }} ""
-// {{ 29 1 0 "3b566941_6bba_4431_b049f6be16cfc00c" "{67A8F1C9-6546-41e9-AD2F-3C54F7818853}"
-OpenWidth=LabwareGripCloseWidthsArray.GetAt(LabwareType-1);
+// {{ 29 1 0 "7104de16_e3c5_4dc5_854a2ac1ad51a860" "{67A8F1C9-6546-41e9-AD2F-3C54F7818853}"
+OpenWidth=LabwareGripOpenWidthsArray.GetAt(LabwareType-1);
 // }} ""
-// {{ 30 1 0 "b07788fa_5df4_4144_86129d040730d37c" "{67A8F1C9-6546-41e9-AD2F-3C54F7818853}"
-GripHeight=LabwareGripOpenWidthsArray.GetAt(LabwareType-1);
+// {{ 30 1 0 "ef615f48_f000_4726_a6cbce92d3964d30" "{67A8F1C9-6546-41e9-AD2F-3C54F7818853}"
+GripHeight=LabwareGripHeightsArray.GetAt(LabwareType-1);
 // }} ""
 // {{ 31 1 0 "6e245032_9470_4f74_9c4bff422130c8e0" "ML_Star:{A108628C-BEB7-4CB6-99FD-8523302C700F}"
 {
@@ -526,4 +526,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-26 13:27$$checksum=43c0c7c7$$length=084$$
+// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-01-26 15:28$$checksum=44d075a2$$length=094$$
