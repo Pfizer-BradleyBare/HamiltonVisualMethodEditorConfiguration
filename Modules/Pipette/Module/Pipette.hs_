@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 1/27/2022 4:23:57 PM
+// Generated at 1/27/2022 4:38:43 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -20,4 +20,4 @@ function ShowTipsDialog(  ) void { }
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-01-27 16:23$$checksum=65c8162b$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-01-27 16:38$$checksum=d5990d8b$$length=082$$
