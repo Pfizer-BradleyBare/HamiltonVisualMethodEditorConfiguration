@@ -64,7 +64,7 @@ Carrier14_Pos5_96WellPCRPlate200uL_1mLChannel:
 #
 
 Carrier14_Pos3_96WellPCRPlate400uL_1mLChannel:
-  Max Supported Volume: 400
+  Max Supported Volume: 450
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -74,7 +74,7 @@ Carrier14_Pos3_96WellPCRPlate400uL_1mLChannel:
   Vacuum Compatible: False
 
 Carrier14_Pos4_96WellPCRPlate400uL_1mLChannel:
-  Max Supported Volume: 400
+  Max Supported Volume: 450
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -84,7 +84,7 @@ Carrier14_Pos4_96WellPCRPlate400uL_1mLChannel:
   Vacuum Compatible: False
 
 Carrier14_Pos5_96WellPCRPlate400uL_1mLChannel:
-  Max Supported Volume: 400
+  Max Supported Volume: 450
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate

@@ -99,8 +99,8 @@ HSLExtensions::Array2D::SetValue(SupportedVacuumPlateSequences, 1, 2, Translate(
 // {{ 18 1 0 "e226a1b2_81fd_4690_9e69b9cd7f103fb3" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 19 1 0 "7092a3d2_ec10_4eba_ac7ed934cef0922f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-SupportedVacuumCollectionPlateSequences = HSLExtensions::Array2D::Create(1, 1);
+// {{{ 19 1 0 "c7f6d2ab_45e4_4686_85b541a06012552f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+SupportedVacuumCollectionPlateSequences = HSLExtensions::Array2D::Create(1, 2);
 // }} ""
 // {{{ 20 1 0 "3ab8072f_2c35_4e69_8a96f8163ea4dc61" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(SupportedVacuumCollectionPlateSequences, 1, 1, Translate("_Vacuum_96WellPCRPlate2000uL"));
@@ -111,8 +111,8 @@ HSLExtensions::Array2D::SetValue(SupportedVacuumCollectionPlateSequences, 1, 2, 
 // {{ 22 1 0 "6beb02b6_1192_4b45_9856c59c76f2359d" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 23 1 0 "936c0d30_0b17_4191_99573d18045e683b" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-SupportedVacuumCollectionPlateTypes = HSLExtensions::Array2D::Create(1, 1);
+// {{{ 23 1 0 "cf347b6c_55fc_4f5b_8e4568f45a686f5d" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+SupportedVacuumCollectionPlateTypes = HSLExtensions::Array2D::Create(1, 2);
 // }} ""
 // {{{ 24 1 0 "3dfc45e0_452d_47b6_887f2611e0602c91" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(SupportedVacuumCollectionPlateTypes, 1, 1, Translate("2000uL Corning 96 Well PCR Plate"));
@@ -123,8 +123,8 @@ HSLExtensions::Array2D::SetValue(SupportedVacuumCollectionPlateTypes, 1, 2, Tran
 // {{ 26 1 0 "f0933274_68d3_48f1_8e8ce19aa0af05b6" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 27 1 0 "85265e6a_c064_4df6_9414566305d49d3b" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-VacuumPressureLevels = HSLExtensions::Array3D::Create(1, 1, 3);
+// {{{ 27 1 0 "eec691fe_dacc_4098_aff20b0f4069f870" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+VacuumPressureLevels = HSLExtensions::Array3D::Create(1, 2, 3);
 // }} ""
 // {{{ 28 1 0 "00f50826_df22_4635_9a0eb52af111cacf" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array3D::SetValue(VacuumPressureLevels, 1, 1, 1, 300);
@@ -258,4 +258,4 @@ o_SupportedVacuumCollectionPlateTypes=SupportedVacuumCollectionPlateTypes;
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-28 11:58$$checksum=3e4ce249$$length=084$$
+// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-01-28 14:01$$checksum=dc30294c$$length=094$$
