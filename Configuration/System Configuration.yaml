@@ -58,9 +58,9 @@ VolumeEquations:
 
 Dead Volume:
   200uL Biorad 96 Well PCR Plate: 10
-  400uL Thermo 96 Well PCR Plate: 50
+  400uL Thermo 96 Well PCR Plate: 25
   1200uL DeepWell 96 Well PCR Plate: 50
-  2000uL Corning 96 Well PCR Plate: 50
+  2000uL Corning 96 Well PCR Plate: 100
   200uL Starstedt Tube Plate: 25
   2000uL Starstedt Tube Plate: 150
   2000uL Water Total Recovery Vial Plate: 50

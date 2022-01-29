@@ -78,7 +78,7 @@ VacuumManifoldSequences.AddAsLast(Translate("_Vacuum_Manifold"));
 // {{{ 11 1 0 "b72b1610_2ded_49c8_a0b6e160859344f4" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 SupportedVacuumPlateNames = HSLExtensions::Array2D::Create(1, 2);
 // }} ""
-// {{{ 12 1 0 "79be708c_885d_45b1_b9424f64d1886542" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 12 1 0 "214d2b26_4421_4e3b_a4bb1bd4390f2b4e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(SupportedVacuumPlateNames, 1, 1, Translate("0.45um Self Poured ProA Plate"));
 // }} ""
 // {{{ 13 1 0 "b808b9e7_b475_4479_a87961edd5104712" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
@@ -99,14 +99,14 @@ HSLExtensions::Array2D::SetValue(SupportedVacuumPlateSequences, 1, 2, Translate(
 // {{ 18 1 0 "e226a1b2_81fd_4690_9e69b9cd7f103fb3" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 19 1 0 "c7f6d2ab_45e4_4686_85b541a06012552f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 19 1 0 "eab10780_567c_47ba_b35f81c3b0943aba" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 SupportedVacuumCollectionPlateSequences = HSLExtensions::Array2D::Create(1, 2);
 // }} ""
 // {{{ 20 1 0 "3ab8072f_2c35_4e69_8a96f8163ea4dc61" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(SupportedVacuumCollectionPlateSequences, 1, 1, Translate("_Vacuum_96WellPCRPlate2000uL"));
 // }} ""
-// {{{ 21 1 0 "3be401f7_8042_445d_8060187b76c3af63" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(SupportedVacuumCollectionPlateSequences, 1, 2, Translate("_Vacuum_96WellPCRPlate2000uL"));
+// {{{ 21 1 0 "952bed0c_0bf1_4db8_8d0a8c360c139bd3" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(SupportedVacuumCollectionPlateSequences, 1, 2, Translate("_Vacuum_96WellPCRPlate1200uL"));
 // }} ""
 // {{ 22 1 0 "6beb02b6_1192_4b45_9856c59c76f2359d" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -117,8 +117,8 @@ SupportedVacuumCollectionPlateTypes = HSLExtensions::Array2D::Create(1, 2);
 // {{{ 24 1 0 "3dfc45e0_452d_47b6_887f2611e0602c91" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(SupportedVacuumCollectionPlateTypes, 1, 1, Translate("2000uL Corning 96 Well PCR Plate"));
 // }} ""
-// {{{ 25 1 0 "4e561983_40ca_4965_b241cdd751c0a79b" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(SupportedVacuumCollectionPlateTypes, 1, 2, Translate("2000uL Corning 96 Well PCR Plate"));
+// {{{ 25 1 0 "1045d7d0_9818_4375_a94956b9ae764529" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(SupportedVacuumCollectionPlateTypes, 1, 2, Translate("1200uL DeepWell 96 Well PCR Plate"));
 // }} ""
 // {{ 26 1 0 "f0933274_68d3_48f1_8e8ce19aa0af05b6" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -258,4 +258,4 @@ o_SupportedVacuumCollectionPlateTypes=SupportedVacuumCollectionPlateTypes;
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-01-28 14:01$$checksum=dc30294c$$length=094$$
+// $$author=BAREB$$valid=0$$time=2022-01-28 18:31$$checksum=cc8aa05c$$length=084$$

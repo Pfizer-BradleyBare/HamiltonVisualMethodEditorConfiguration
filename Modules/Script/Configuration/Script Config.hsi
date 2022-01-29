@@ -40,8 +40,8 @@ ScriptRootPath = Translate("C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\Ha
 // {{ 2 1 0 "fef2c1bc_996b_4732_a6254a91d6b06547" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 ConfigurationRootPath = Translate("C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration");
 // }} ""
-// {{ 3 1 0 "4a99fb3f_ea85_45fc_ab5bdda648623cd6" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-PythonRootPath = Translate("C:\\Program Files\\Python36");
+// {{ 3 1 0 "d239f386_aaaa_43b9_b144f5efcce64e5c" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+PythonRootPath = Translate("C:\\Program Files (x86)\\Python36-32");
 // }} ""
 // {{{ 4 1 0 "56b184a6_4009_4399_906117dd35ad18d6" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 TrcTrace(ConfigurationRootPath, Translate(""));
@@ -97,4 +97,4 @@ return (ConfigurationRootPath);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-01-28 13:59$$checksum=e66e7d70$$length=094$$
+// $$author=BAREB$$valid=0$$time=2022-01-28 18:13$$checksum=43f41258$$length=084$$
