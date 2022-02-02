@@ -403,6 +403,7 @@ RPM = StrFVal(RPM);
 // {{{ 17 1 0 "8f77c079_53d6_4958_961110ca4cee049f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 Temp = StrFVal(Temp);
 // }} ""
+/* {{ 1 "" "0" */ if(0){  /* }} "" */
 // {{ 18 1 0 "fe7d9209_4822_4c15_8c3bcde20003cff0" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 if (RPM == 0)
 {
@@ -444,6 +445,7 @@ Temp = AmbientTemp;
 // {{ 29 1 0 "fe7d9209_4822_4c15_8c3bcde20003cff0" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
+/* {{ 1 "" "1" */ } /* }} "" */
 // {{ 30 1 0 "2b8d0735_bdcc_40c6_93abdcf600cf8ad3" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 HistoricalTempDifference = 9999;
 // }} ""
@@ -1546,7 +1548,6 @@ function GetReservationHeaterTransportType( device & ML_STAR, variable i_Command
 private variable ID;
 private variable ReturnString;
 private variable PlateName;
-private variable i_CommandParameterStrings;
 private variable PlateType;
 private variable LabwareTypeGetterTemp[];
 private variable Dict[];
@@ -1727,4 +1728,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-25 08:12$$checksum=772c7c87$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-01-28 18:33$$checksum=a7bd1941$$length=084$$
