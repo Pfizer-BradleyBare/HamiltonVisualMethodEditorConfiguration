@@ -907,8 +907,8 @@ COMMANDS::GetDictionaryItem(Dict, Translate("RPM"), RPM);
 // {{{ 417 1 0 "485fc492_1d33_485b_89005db36025795b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 HEATER_CONFIG::GetHeaterTypes(HeaterTypes);
 // }} ""
-// {{{ 418 1 0 "812cec2d_da32_44b7_9cdd69bc42604739" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-RPM = StrFVal(RPM);
+// {{{ 418 1 0 "aa5693b2_b422_4734_9b02200e8626e981" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+RPM = StrIVal(RPM);
 // }} ""
 // {{{ 419 1 0 "2cef5b5c_0af2_42e0_b35ec9a3a2720118" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 Temp = StrFVal(Temp);
@@ -1728,4 +1728,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-28 18:33$$checksum=a7bd1941$$length=084$$
+// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-02-03 13:51$$checksum=e3845fc9$$length=094$$
