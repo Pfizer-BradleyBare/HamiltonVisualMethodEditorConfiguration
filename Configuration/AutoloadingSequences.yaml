@@ -169,7 +169,7 @@ Carrier38_Pos5_96WellPCRPlate1200uL_1mLChannel:
 
 #2000
 Carrier38_Pos1_96WellPCRPlate2000uL_1mLChannel:
-  Max Supported Volume: 2200
+  Max Supported Volume: 2300
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -179,7 +179,7 @@ Carrier38_Pos1_96WellPCRPlate2000uL_1mLChannel:
   Vacuum Compatible: 0.45um Self Poured ProA Plate
 
 Carrier14_Pos1_96WellPCRPlate2000uL_1mLChannel:
-  Max Supported Volume: 2200
+  Max Supported Volume: 2300
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -189,7 +189,7 @@ Carrier14_Pos1_96WellPCRPlate2000uL_1mLChannel:
   Vacuum Compatible: 0.45um Self Poured ProA Plate
 
 Carrier14_Pos2_96WellPCRPlate2000uL_1mLChannel:
-  Max Supported Volume: 2200
+  Max Supported Volume: 2300
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -199,7 +199,7 @@ Carrier14_Pos2_96WellPCRPlate2000uL_1mLChannel:
   Vacuum Compatible: 0.45um Self Poured ProA Plate
 
 Carrier14_Pos3_96WellPCRPlate2000uL_1mLChannel:
-  Max Supported Volume: 2200
+  Max Supported Volume: 2300
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -209,7 +209,7 @@ Carrier14_Pos3_96WellPCRPlate2000uL_1mLChannel:
   Vacuum Compatible: 0.45um Self Poured ProA Plate
 
 Carrier14_Pos4_96WellPCRPlate2000uL_1mLChannel:
-  Max Supported Volume: 2200
+  Max Supported Volume: 2300
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -219,7 +219,7 @@ Carrier14_Pos4_96WellPCRPlate2000uL_1mLChannel:
   Vacuum Compatible: 0.45um Self Poured ProA Plate
 
 Carrier14_Pos5_96WellPCRPlate2000uL_1mLChannel:
-  Max Supported Volume: 2200
+  Max Supported Volume: 2300
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
