@@ -350,6 +350,8 @@ private variable ReturnString;
 private variable ID;
 private variable LabwareTypeGetterTemp[];
 private variable Out[];
+private variable TempGreater;
+private variable HistoricalTempGreater;
 // {{ 5 "AcquireReservation" "InitLocals"
 // }} ""
 // {{ 1 1 0 "4bcebda7_6f9c_4025_9e0459f18b4459f5" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
@@ -446,7 +448,7 @@ Temp = AmbientTemp;
 }
 // }} ""
 /* {{ 1 "" "1" */ } /* }} "" */
-// {{ 30 1 0 "2b8d0735_bdcc_40c6_93abdcf600cf8ad3" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 30 1 0 "47f1b759_41e3_4911_913a89d7bff1256b" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 HistoricalTempDifference = 9999;
 // }} ""
 // {{ 31 1 0 "7716705f_18ce_4591_a37cb58fd11f9b8c" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
@@ -1728,4 +1730,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-02-03 13:51$$checksum=e3845fc9$$length=094$$
+// $$author=BAREB$$valid=0$$time=2022-02-08 11:08$$checksum=5522517d$$length=084$$

@@ -45,8 +45,8 @@ private function EDIT_Configuration(  ) void {
 // }} ""
 // {{ 5 "EDIT_Configuration" "InitLocals"
 // }} ""
-// {{ 1 1 0 "d99b1d97_515b_4a8a_adf0499f5c582ab8" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-AmbientTemp = 20;
+// {{ 1 1 0 "bbcd6ee1_99ad_4693_a483140c0832fea7" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+AmbientTemp = 0;
 // }} ""
 // {{ 2 1 0 "deb5e9db_f991_4383_a27eb42c8604291b" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 TempDelta = 2;
@@ -295,4 +295,4 @@ return (TempDelta);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-24 11:43$$checksum=2efce920$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-02-08 11:04$$checksum=57818657$$length=084$$
