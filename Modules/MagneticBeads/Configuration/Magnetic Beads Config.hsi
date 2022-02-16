@@ -49,7 +49,7 @@ MinimumCondenseTimeSeconds = Translate("0");
 // {{ 3 1 0 "712de184_a2cb_4486_a03df0a58673c8c0" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 SupportedPlateTypes.SetSize(0);
 // }} ""
-// {{ 4 1 0 "59df8392_dccc_4c7d_96f6b9b534f81342" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+// {{ 4 1 0 "65480005_56ef_437d_b79427e016762c48" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 SupportedPlateTypes.AddAsLast(Translate("200uL Biorad 96 Well PCR Plate"));
 // }} ""
 // {{ 5 1 0 "f6031f04_7448_4ace_ba2d0fbde7de26be" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
@@ -58,8 +58,8 @@ SupportedPlateTypes.AddAsLast(Translate("200uL Biorad 96 Well PCR Plate"));
 // {{ 6 1 0 "f05e0e53_7c84_440c_826437f1e30e7fb2" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 SupportedPlateTypesSequenceString.SetSize(0);
 // }} ""
-// {{ 7 1 0 "eae94473_b29b_4f2f_a9be249080692579" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-SupportedPlateTypesSequenceString.AddAsLast(Translate("Carrier14_Pos4_96WellPCRPlate200uL_1mLChannel"));
+// {{ 7 1 0 "cf7a3473_7f90_4257_9fcb33ffcaa3c36e" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+SupportedPlateTypesSequenceString.AddAsLast(Translate("_MagneticRack1_BioRad200uL96WellPCRPlate"));
 // }} ""
 // {{ 8 1 0 "efecb9ff_e27c_4d3d_99c27f78929fa827" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -67,16 +67,16 @@ SupportedPlateTypesSequenceString.AddAsLast(Translate("Carrier14_Pos4_96WellPCRP
 // {{ 9 1 0 "c7908b59_1c05_4b31_b4cb9b342290bc18" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 SupportedLiquidClassVolumes.SetSize(0);
 // }} ""
-// {{ 10 1 0 "3be04786_0573_4a89_bcd3670340e1eaf9" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+// {{ 10 1 0 "b7ee13cc_96cb_47d7_a7a5a1693c6c0820" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 SupportedLiquidClassVolumes.AddAsLast(300);
 // }} ""
 // {{ 11 1 0 "33b8370d_4805_45d9_85d822b217e1cc6a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 12 1 0 "e7157081_5fff_4ecb_98f86dabe4d25062" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 12 1 0 "11153a04_8ba6_4812_b834acf3dda989a1" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 CondensedBeadsLiquidClassStrings = HSLExtensions::Array2D::Create(1, 1);
 // }} ""
-// {{{ 13 1 0 "b07d5f8f_cd79_4071_ab7bda68e1a655c2" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 13 1 0 "edac95ac_eea3_4b66_a0c3cc1581e6b823" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(CondensedBeadsLiquidClassStrings, 1, 1, Translate("MagneticBeads_300uL_CondensedBeadsLiquidRemovalClass"));
 // }} ""
 // {{ 14 1 0 "a2b5f559_caa9_4616_8b39e515f67027ac" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
@@ -177,4 +177,4 @@ o_SupportedLiquidClassVolumes=SupportedLiquidClassVolumes;
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-02-03 12:24$$checksum=edb1d8bf$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-02-16 16:44$$checksum=31f0c957$$length=084$$

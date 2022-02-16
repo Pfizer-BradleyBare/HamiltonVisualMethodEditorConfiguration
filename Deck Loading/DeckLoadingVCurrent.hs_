@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 1/25/2022 2:43:19 PM
+// Generated at 2/16/2022 4:34:10 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -8,22 +8,19 @@ namespace DECKLOADINGVCURRENT {
 function _InitLibrary() { }
 function _ExitLibrary() { }
 function DoDeckLoading(  ) void { }
-global variable Carrier38_Pos5;
-global variable Carrier38_Pos4;
-global variable Carrier38_Pos3;
-global variable Carrier38_Pos2;
-global variable Carrier38_Pos1;
 global variable SizeX100_2;
 global variable SizeX100_1;
-global variable Carrier14_Pos3;
-global variable Carrier14_Pos2;
-global variable Carrier14_Pos1;
-global variable Carrier14_Pos5;
-global variable Carrier14_Pos4;
+global variable Carrier5_Pos4;
+global variable Carrier35_Pos4;
+global variable Carrier35_Pos3;
+global variable Carrier5_Pos3;
+global variable Carrier35_Pos5;
+global variable Carrier5_Pos2;
+global variable Carrier5_Pos1;
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-01-25 14:43$$checksum=e661e7da$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-02-16 16:34$$checksum=79639efa$$length=082$$
