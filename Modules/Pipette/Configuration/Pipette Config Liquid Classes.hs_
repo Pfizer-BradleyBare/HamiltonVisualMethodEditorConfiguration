@@ -1,0 +1,20 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 2/18/2022 12:54:32 PM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace PIPETTE_CONFIG_LIQUID_CLASSES {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function EDIT_ConfigurationLiquidClasses(  ) void { }
+function GetLiquidClassCategories( variable & o_LiquidClassCategories[] ) void { }
+function GetLiquidClassClasses( variable & o_LiquidClassClasses[] ) void { }
+function GetLiquidClassVolumes( variable & o_LiquidClassVolumes[] ) void { }
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2022-02-18 12:54$$checksum=7e3517f0$$length=082$$

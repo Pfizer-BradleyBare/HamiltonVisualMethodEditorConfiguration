@@ -1,0 +1,48 @@
+// {{{ 2 "IncludeGuard" "PragmaOnce"
+#pragma once
+// }} ""
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+#include "HSLMETEDLib.hs_"
+#include "HSLMECCLib.hs_"
+// }} ""
+// {{{ 2 "LibraryNamespace" "Begin"
+namespace STATUSUPDATE_CONFIG {
+// }} ""
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{{ 2 "SubmethodForwardDeclaration" ""
+function EDIT_Configuration(  ) void ;
+function Init(  ) void ;
+// }} ""
+function _InitLibrary() {
+// {{ 2 "AutoInitBlock" ""
+// }} ""
+}
+function _ExitLibrary() {
+// {{ 2 "AutoExitBlock" ""
+// }} ""
+}
+// {{{ 5 "EDIT_Configuration" "Begin"
+function EDIT_Configuration(  ) void {
+// }} ""
+// {{ 5 "EDIT_Configuration" "InitLocals"
+// }} ""
+// {{{ 5 "EDIT_Configuration" "End"
+}
+// }} ""
+// {{{ 5 "Init" "Begin"
+function Init(  ) void {
+// }} ""
+// {{ 5 "Init" "InitLocals"
+// }} ""
+// {{{ 2 1 0 "467be094_2e17_40ce_bb8bf5280296d158" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+EDIT_Configuration();
+// }} ""
+// {{{ 5 "Init" "End"
+}
+// }} ""
+/* {{ 2 "SubmethodInsertLine" "" */ // }} ""
+// {{{ 2 "LibraryNamespace" "End"
+} // library namespace
+// }} ""
+// $$author=BAREB$$valid=0$$time=2021-12-06 16:35$$checksum=5e0b9b64$$length=084$$

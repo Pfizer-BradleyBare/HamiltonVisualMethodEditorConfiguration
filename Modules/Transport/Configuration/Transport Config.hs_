@@ -1,0 +1,25 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 2/18/2022 12:29:21 PM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace TRANSPORT_CONFIG {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function GetCoreGripToolSequenceString(  ) variable {  return (0); }
+function GetISwapExists(  ) variable {  return (0); }
+function GetLabwareGripCloseWidths( variable & o_LabwareGripCloseWidths[] ) void { }
+function GetLabwareGripHeights( variable & o_LabwareGripHeights[] ) void { }
+function GetLabwareGripOpenWidths( variable & o_LabwareGripOpenWidths[] ) void { }
+function GetNumTransportTypes(  ) variable {  return (0); }
+function GetTransportTypes( variable & o_TransportTypes[] ) void { }
+function GetTransportableLabwares( variable & o_TransportableLabwares[] ) void { }
+function Init(  ) void { }
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2022-02-18 12:29$$checksum=d0405393$$length=082$$

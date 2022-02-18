@@ -1,0 +1,117 @@
+// {{{ 2 "IncludeGuard" "PragmaOnce"
+#pragma once
+// }} ""
+#include "HSLExtensions\\Array2D.hsl"
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+#include "HSLMETEDLib.hs_"
+#include "HSLMECCLib.hs_"
+// }} ""
+// {{{ 2 "LibraryNamespace" "Begin"
+namespace LID_CONFIG {
+// }} ""
+variable LidSequenceString[];
+variable LidIDs[];
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{{ 2 "SubmethodForwardDeclaration" ""
+private function EDIT_Configuration(  ) void ;
+function GetLidIDs( variable & o_LidIDs[] ) void ;
+function GetLidSequenceStrings( variable & o_LidSequenceStrings[] ) void ;
+function GetNumLids(  ) variable ;
+function Init(  ) void ;
+// }} ""
+function _InitLibrary() {
+// {{ 2 "AutoInitBlock" ""
+// }} ""
+}
+function _ExitLibrary() {
+// {{ 2 "AutoExitBlock" ""
+// }} ""
+}
+// {{{ 5 "EDIT_Configuration" "Begin"
+private function EDIT_Configuration(  ) void {
+// }} ""
+// {{ 5 "EDIT_Configuration" "InitLocals"
+// }} ""
+// {{ 1 1 0 "5712c9b6_c1e6_4f31_b132a8c5e22b648c" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 2 1 0 "2a2b6925_7252_4347_bf79163e040deccf" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+LidIDs.SetSize(0);
+// }} ""
+// {{ 3 1 0 "72891be0_0e49_410b_800600a4cdb8cd81" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+LidIDs.AddAsLast(Translate("Lid 1"));
+// }} ""
+// {{ 4 1 0 "ba834c14_aff2_4a1a_bf45c8aa6e0c6903" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+LidIDs.AddAsLast(Translate("Lid 2"));
+// }} ""
+// {{ 5 1 0 "41b41bae_bdef_4484_94506b8e9a18807e" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 6 1 0 "aaabfe26_e211_4bc0_a9decbf4e13a0b87" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+LidSequenceString.SetSize(0);
+// }} ""
+// {{ 7 1 0 "c65d17e1_ae55_4f1e_a982cca7119098eb" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+LidSequenceString.AddAsLast(Translate("_Lid1_Home"));
+// }} ""
+// {{ 8 1 0 "560f5e85_274c_44a5_9dc90ffb5fe3dcc8" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+LidSequenceString.AddAsLast(Translate("_Lid2_Home"));
+// }} ""
+// {{{ 5 "EDIT_Configuration" "End"
+}
+// }} ""
+// {{{ 5 "Init" "Begin"
+function Init(  ) void {
+// }} ""
+// {{ 5 "Init" "InitLocals"
+// }} ""
+// {{{ 17 1 0 "330b873b_d44a_437f_acc55448174eebac" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+EDIT_Configuration();
+// }} ""
+// {{{ 5 "Init" "End"
+}
+// }} ""
+// {{{ 5 "GetLidIDs" "Begin"
+function GetLidIDs( variable & o_LidIDs[] ) void {
+// }} ""
+// {{ 5 "GetLidIDs" "InitLocals"
+o_LidIDs.SetSize( 0);
+// }} ""
+// {{ 10 1 0 "02e6e614_681e_4418_8d67bd1a2f5e0be9" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_LidIDs=LidIDs;
+// }} ""
+// {{{ 5 "GetLidIDs" "End"
+}
+// }} ""
+// {{{ 5 "GetLidSequenceStrings" "Begin"
+function GetLidSequenceStrings( variable & o_LidSequenceStrings[] ) void {
+// }} ""
+// {{ 5 "GetLidSequenceStrings" "InitLocals"
+o_LidSequenceStrings.SetSize( 0);
+// }} ""
+// {{ 12 1 0 "54feadeb_3c68_4c72_b06135b2c008b822" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_LidSequenceStrings=LidSequenceString;
+// }} ""
+// {{{ 5 "GetLidSequenceStrings" "End"
+}
+// }} ""
+// {{{ 5 "GetNumLids" "Begin"
+function GetNumLids(  ) variable {
+// }} ""
+private variable NumLids;
+// {{ 5 "GetNumLids" "InitLocals"
+// }} ""
+// {{ 14 1 0 "ccd027b6_a2fe_401c_a4cfbfdcd8306b20" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
+NumLids=LidIDs.GetSize();
+// }} ""
+// {{{ 15 1 0 "ae7d516c_01d8_4821_81c4e83a8003dd30" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (NumLids);
+// }} ""
+// {{{ 5 "GetNumLids" "End"
+}
+// }} ""
+/* {{ 2 "SubmethodInsertLine" "" */ // }} ""
+// {{{ 2 "LibraryNamespace" "End"
+} // library namespace
+// }} ""
+// $$author=BAREB$$valid=0$$time=2022-02-18 12:24$$checksum=e73948ac$$length=084$$

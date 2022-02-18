@@ -1,0 +1,240 @@
+// {{{ 2 "IncludeGuard" "PragmaOnce"
+#pragma once
+// }} ""
+#include "HSLExtensions\\Array2D.hsl"
+#include "HSLExtensions\\Array3D.hsl"
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+#include "HSLMETEDLib.hs_"
+#include "HSLMECCLib.hs_"
+// }} ""
+// {{{ 2 "LibraryNamespace" "Begin"
+namespace VACUUM_CONFIG {
+// }} ""
+variable SupportedVacuumPlateSequences[];
+variable VacuumComPorts[];
+variable VacuumManifoldParkSequences[];
+variable VacuumManifoldSequences[];
+variable SupportedVacuumPlateNames[];
+variable SupportedVacuumCollectionPlateSequences[];
+variable VacuumPressureLevels[];
+variable SupportedVacuumCollectionPlateTypes[];
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{{ 2 "SubmethodForwardDeclaration" ""
+private function EDIT_Configuration(  ) void ;
+function GetSupportedVacuumCollectionPlateSequences( variable & o_SupportedVacuumCollectionPlateSequences[] ) void ;
+function GetSupportedVacuumCollectionPlateTypes( variable & o_SupportedVacuumCollectionPlateTypes[] ) void ;
+function GetSupportedVacuumPlateSequences( variable & o_SupportedVacuumPlateSequences[] ) void ;
+function GetSupportedVacuumPlates( variable & o_SupportedVacuumPlates[] ) void ;
+function GetVacuumComPorts( variable & o_VacuumComPorts[] ) void ;
+function GetVacuumManifoldSequenceStrings( variable & o_VacuumManifoldSequenceStrings[] ) void ;
+function GetVacuumParkSequenceStrings( variable & o_VacuumParkSequenceStrings[] ) void ;
+function GetVacuumPressureLevels( variable & o_VacuumPressureLevels[] ) void ;
+function Init(  ) void ;
+// }} ""
+function _InitLibrary() {
+// {{ 2 "AutoInitBlock" ""
+// }} ""
+}
+function _ExitLibrary() {
+// {{ 2 "AutoExitBlock" ""
+// }} ""
+}
+// {{{ 5 "EDIT_Configuration" "Begin"
+private function EDIT_Configuration(  ) void {
+// }} ""
+// {{ 5 "EDIT_Configuration" "InitLocals"
+// }} ""
+// {{ 1 1 0 "d3fe256c_e3fe_47bb_87291244000ba298" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 2 1 0 "4055fdc1_cbee_4738_b27698b32ea7a78f" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+VacuumComPorts.SetSize(0);
+// }} ""
+// {{ 3 1 0 "9b499bf0_c55e_4bdb_9c4a9f43bdc11188" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+VacuumComPorts.AddAsLast(1);
+// }} ""
+// {{ 4 1 0 "a6e073fa_da34_44be_b834016afe1df523" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 5 1 0 "8e41bda0_2770_4455_8b5e40c0a45f1fc2" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+VacuumManifoldParkSequences.SetSize(0);
+// }} ""
+// {{ 6 1 0 "66dc4a06_db8f_45a9_b23a838cfca46e8c" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+VacuumManifoldParkSequences.AddAsLast(Translate("_Vacuum_ManifoldHome"));
+// }} ""
+// {{ 7 1 0 "ec4f683b_be99_4627_91fdbcd7c708ce04" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 8 1 0 "85c24eef_d2f6_47ab_bc0eb56ae3f044c7" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+VacuumManifoldSequences.SetSize(0);
+// }} ""
+// {{ 9 1 0 "f9053d2e_8dea_4f64_bab5df02588fa72b" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+VacuumManifoldSequences.AddAsLast(Translate("_Vacuum_Manifold"));
+// }} ""
+// {{ 10 1 0 "dbe49a49_3e9a_4734_b576de218cbca22b" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 11 1 0 "509c57fb_a374_448c_baf2f005a1a9aa46" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+SupportedVacuumPlateNames = HSLExtensions::Array2D::Create(1, 1);
+// }} ""
+// {{{ 12 1 0 "214d2b26_4421_4e3b_a4bb1bd4390f2b4e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(SupportedVacuumPlateNames, 1, 1, Translate("0.45um Self Poured ProA Plate"));
+// }} ""
+// {{ 13 1 0 "128bdbf3_db91_417b_b1cefd825e0e8c5e" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 14 1 0 "51e97445_9027_4c07_981feae79609f9a0" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+SupportedVacuumPlateSequences = HSLExtensions::Array2D::Create(1, 1);
+// }} ""
+// {{{ 15 1 0 "40049b2c_e44f_4eb4_9ad621f7b6622955" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(SupportedVacuumPlateSequences, 1, 1, Translate("_Vacuum_ProASelfPoured045um"));
+// }} ""
+// {{ 16 1 0 "e226a1b2_81fd_4690_9e69b9cd7f103fb3" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 17 1 0 "6b058dd8_ea2d_475f_9578e9bf2503d373" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+SupportedVacuumCollectionPlateSequences = HSLExtensions::Array2D::Create(1, 1);
+// }} ""
+// {{{ 18 1 0 "3ab8072f_2c35_4e69_8a96f8163ea4dc61" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(SupportedVacuumCollectionPlateSequences, 1, 1, Translate("_Vacuum_96WellPCRPlate2000uL"));
+// }} ""
+// {{ 19 1 0 "6beb02b6_1192_4b45_9856c59c76f2359d" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 20 1 0 "4486c9cb_a4e4_48c9_ae29605bb6d7c217" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+SupportedVacuumCollectionPlateTypes = HSLExtensions::Array2D::Create(1, 1);
+// }} ""
+// {{{ 21 1 0 "3dfc45e0_452d_47b6_887f2611e0602c91" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(SupportedVacuumCollectionPlateTypes, 1, 1, Translate("2000uL Corning 96 Well PCR Plate"));
+// }} ""
+// {{ 22 1 0 "f0933274_68d3_48f1_8e8ce19aa0af05b6" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{{ 23 1 0 "76fed36b_93d0_49da_85baff8b8bca3600" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+VacuumPressureLevels = HSLExtensions::Array3D::Create(1, 1, 3);
+// }} ""
+// {{{ 24 1 0 "00f50826_df22_4635_9a0eb52af111cacf" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array3D::SetValue(VacuumPressureLevels, 1, 1, 1, 300);
+// }} ""
+// {{{ 25 1 0 "234fe152_f435_4a36_b2c5d799526a6336" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array3D::SetValue(VacuumPressureLevels, 1, 1, 2, 350);
+// }} ""
+// {{{ 26 1 0 "9f839a3d_c434_4077_a21c15694d71e095" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array3D::SetValue(VacuumPressureLevels, 1, 1, 3, 400);
+// }} ""
+// {{{ 5 "EDIT_Configuration" "End"
+}
+// }} ""
+// {{{ 5 "Init" "Begin"
+function Init(  ) void {
+// }} ""
+// {{ 5 "Init" "InitLocals"
+// }} ""
+// {{{ 44 1 0 "84ee15ff_093d_48db_879e9a26427ad7bf" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+EDIT_Configuration();
+// }} ""
+// {{{ 5 "Init" "End"
+}
+// }} ""
+// {{{ 5 "GetVacuumComPorts" "Begin"
+function GetVacuumComPorts( variable & o_VacuumComPorts[] ) void {
+// }} ""
+// {{ 5 "GetVacuumComPorts" "InitLocals"
+o_VacuumComPorts.SetSize( 0);
+// }} ""
+// {{ 36 1 0 "ef969e8c_1efa_47c8_835a590c8a0639d7" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_VacuumComPorts=VacuumComPorts;
+// }} ""
+// {{{ 5 "GetVacuumComPorts" "End"
+}
+// }} ""
+// {{{ 5 "GetVacuumParkSequenceStrings" "Begin"
+function GetVacuumParkSequenceStrings( variable & o_VacuumParkSequenceStrings[] ) void {
+// }} ""
+// {{ 5 "GetVacuumParkSequenceStrings" "InitLocals"
+o_VacuumParkSequenceStrings.SetSize( 0);
+// }} ""
+// {{ 40 1 0 "cf9dde8f_4116_48c4_aa5b035dee041a84" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_VacuumParkSequenceStrings=VacuumManifoldParkSequences;
+// }} ""
+// {{{ 5 "GetVacuumParkSequenceStrings" "End"
+}
+// }} ""
+// {{{ 5 "GetVacuumManifoldSequenceStrings" "Begin"
+function GetVacuumManifoldSequenceStrings( variable & o_VacuumManifoldSequenceStrings[] ) void {
+// }} ""
+// {{ 5 "GetVacuumManifoldSequenceStrings" "InitLocals"
+o_VacuumManifoldSequenceStrings.SetSize( 0);
+// }} ""
+// {{ 38 1 0 "2833c6d7_3f8c_4fc0_8df0f29ea44b1667" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_VacuumManifoldSequenceStrings=VacuumManifoldSequences;
+// }} ""
+// {{{ 5 "GetVacuumManifoldSequenceStrings" "End"
+}
+// }} ""
+// {{{ 5 "GetSupportedVacuumPlates" "Begin"
+function GetSupportedVacuumPlates( variable & o_SupportedVacuumPlates[] ) void {
+// }} ""
+// {{ 5 "GetSupportedVacuumPlates" "InitLocals"
+o_SupportedVacuumPlates.SetSize( 0);
+// }} ""
+// {{ 34 1 0 "3580c970_9382_4789_b7b878c46038fc8e" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_SupportedVacuumPlates=SupportedVacuumPlateNames;
+// }} ""
+// {{{ 5 "GetSupportedVacuumPlates" "End"
+}
+// }} ""
+// {{{ 5 "GetSupportedVacuumPlateSequences" "Begin"
+function GetSupportedVacuumPlateSequences( variable & o_SupportedVacuumPlateSequences[] ) void {
+// }} ""
+// {{ 5 "GetSupportedVacuumPlateSequences" "InitLocals"
+o_SupportedVacuumPlateSequences.SetSize( 0);
+// }} ""
+// {{ 32 1 0 "28db3437_6e57_4f84_84a1f2ccc711a683" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_SupportedVacuumPlateSequences=SupportedVacuumPlateSequences;
+// }} ""
+// {{{ 5 "GetSupportedVacuumPlateSequences" "End"
+}
+// }} ""
+// {{{ 5 "GetSupportedVacuumCollectionPlateSequences" "Begin"
+function GetSupportedVacuumCollectionPlateSequences( variable & o_SupportedVacuumCollectionPlateSequences[] ) void {
+// }} ""
+// {{ 5 "GetSupportedVacuumCollectionPlateSequences" "InitLocals"
+o_SupportedVacuumCollectionPlateSequences.SetSize( 0);
+// }} ""
+// {{ 28 1 0 "0d0da40d_b861_43fc_9dc07a4828b8c358" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_SupportedVacuumCollectionPlateSequences=SupportedVacuumCollectionPlateSequences;
+// }} ""
+// {{{ 5 "GetSupportedVacuumCollectionPlateSequences" "End"
+}
+// }} ""
+// {{{ 5 "GetVacuumPressureLevels" "Begin"
+function GetVacuumPressureLevels( variable & o_VacuumPressureLevels[] ) void {
+// }} ""
+// {{ 5 "GetVacuumPressureLevels" "InitLocals"
+o_VacuumPressureLevels.SetSize( 0);
+// }} ""
+// {{ 42 1 0 "4a49c491_2078_495a_80c084f99a3b15ba" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_VacuumPressureLevels=VacuumPressureLevels;
+// }} ""
+// {{{ 5 "GetVacuumPressureLevels" "End"
+}
+// }} ""
+// {{{ 5 "GetSupportedVacuumCollectionPlateTypes" "Begin"
+function GetSupportedVacuumCollectionPlateTypes( variable & o_SupportedVacuumCollectionPlateTypes[] ) void {
+// }} ""
+// {{ 5 "GetSupportedVacuumCollectionPlateTypes" "InitLocals"
+o_SupportedVacuumCollectionPlateTypes.SetSize( 0);
+// }} ""
+// {{ 30 1 0 "9a734f86_0725_43ce_af03588471e48388" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_SupportedVacuumCollectionPlateTypes=SupportedVacuumCollectionPlateTypes;
+// }} ""
+// {{{ 5 "GetSupportedVacuumCollectionPlateTypes" "End"
+}
+// }} ""
+/* {{ 2 "SubmethodInsertLine" "" */ // }} ""
+// {{{ 2 "LibraryNamespace" "End"
+} // library namespace
+// }} ""
+// $$author=BAREB$$valid=0$$time=2022-02-18 12:34$$checksum=52340e14$$length=084$$

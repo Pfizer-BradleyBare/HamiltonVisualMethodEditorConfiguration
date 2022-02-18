@@ -1,0 +1,29 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 2/18/2022 12:42:40 PM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace PIPETTE_CONFIG {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function EDIT_Configuration(  ) void { }
+function EDIT_TipsDialog( variable & TipNumbers2DArray[] ) void { }
+function GetChannelString(  ) variable {  return (0); }
+function GetCoreGripToolSequenceString(  ) variable {  return (0); }
+function GetFlipTubeToolSequenceString(  ) variable {  return (0); }
+function GetMaxPipettingVolume(  ) variable {  return (0); }
+function GetNumChannels(  ) variable {  return (0); }
+function GetTipSequenceCounterStrings( variable & o_TipCounterStrings[] ) void { }
+function GetTipSequenceStrings( variable & o_TipSequenceStringsArray[] ) void { }
+function GetTipSequenceTypes( variable & o_TipSequenceTypesArray[] ) void { }
+function GetTipSequenceVolumes( variable & o_TipSequenceVolumesArray[] ) void { }
+function GetTipSequenceWasteSequenceStrings( variable & o_TipSequenceWasteSequenceStrings[] ) void { }
+function Init(  ) void { }
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2022-02-18 12:42$$checksum=f4e23c17$$length=082$$

@@ -1,0 +1,173 @@
+// {{{ 2 "IncludeGuard" "PragmaOnce"
+#pragma once
+// }} ""
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration\\Modules\\Script\\Configuration\\Script Config.hs_"
+#include "HSLStrLib.hsl"
+#include "HSLUtilLib.hsl"
+#include "HSLTrcLib.hsl"
+#include "FileHandling_HSLFiLibEx\\HSLFilLibEx.hsl"
+#include "HSLFilLib.hsl"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\PfizerTools\\PfizerToolsVCurrent.hs_"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Tools\\Tools.hs_"
+#include "HSLUtilLib2.hsl"
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+#include "HSLMETEDLib.hs_"
+#include "HSLMECCLib.hs_"
+// }} ""
+// {{{ 2 "LibraryNamespace" "Begin"
+namespace SCRIPT {
+// }} ""
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{{ 2 "SubmethodForwardDeclaration" ""
+function GeneratePythonScriptCommand( variable ScriptPath, variable Parameters, variable CloseAfterExecution ) variable ;
+function GetConfigurationRootPath(  ) variable ;
+function GetPythonRootPath(  ) variable ;
+function GetScriptRootPath(  ) variable ;
+function Init(  ) void ;
+// }} ""
+function _InitLibrary() {
+// {{ 2 "AutoInitBlock" ""
+SCRIPT_CONFIG::_InitLibrary();
+PFIZERTOOLSVCURRENT::_InitLibrary();
+TOOLS::_InitLibrary();
+// }} ""
+}
+function _ExitLibrary() {
+// {{ 2 "AutoExitBlock" ""
+SCRIPT_CONFIG::_ExitLibrary();
+PFIZERTOOLSVCURRENT::_ExitLibrary();
+TOOLS::_ExitLibrary();
+// }} ""
+}
+// {{{ 5 "Init" "Begin"
+function Init(  ) void {
+// }} ""
+// {{ 5 "Init" "InitLocals"
+// }} ""
+// {{{ 27 1 0 "8a7f1fe2_3a76_4b8a_a22cfaa0516d4f77" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+SCRIPT_CONFIG::Init();
+// }} ""
+// {{{ 5 "Init" "End"
+}
+// }} ""
+// {{{ 5 "GetScriptRootPath" "Begin"
+function GetScriptRootPath(  ) variable {
+// }} ""
+private variable ret;
+// {{ 5 "GetScriptRootPath" "InitLocals"
+// }} ""
+// {{{ 24 1 0 "fb82ff2b_6358_4c79_bcf245129b3ce3f5" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ret = SCRIPT_CONFIG::GetScriptRootPath();
+// }} ""
+// {{{ 25 1 0 "d8078d25_91ac_4617_99c6ec97a1fa373f" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ret);
+// }} ""
+// {{{ 5 "GetScriptRootPath" "End"
+}
+// }} ""
+// {{{ 5 "GetPythonRootPath" "Begin"
+function GetPythonRootPath(  ) variable {
+// }} ""
+private variable ret;
+// {{ 5 "GetPythonRootPath" "InitLocals"
+// }} ""
+// {{{ 21 1 0 "fe879b05_2ea2_4d9c_b994125882c4ed4b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ret = SCRIPT_CONFIG::GetPythonRootPath();
+// }} ""
+// {{{ 22 1 0 "43e28b9e_5d9a_47dd_81430d5351f6a458" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ret);
+// }} ""
+// {{{ 5 "GetPythonRootPath" "End"
+}
+// }} ""
+// {{{ 5 "GetConfigurationRootPath" "Begin"
+function GetConfigurationRootPath(  ) variable {
+// }} ""
+private variable ret;
+// {{ 5 "GetConfigurationRootPath" "InitLocals"
+// }} ""
+// {{{ 18 1 0 "bcd41534_2e2c_4304_83de3cb5171bf61f" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ret = SCRIPT_CONFIG::GetConfigurationRootPath();
+// }} ""
+// {{{ 19 1 0 "d77c6178_7d9d_4805_8c8b83fba28da02a" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ret);
+// }} ""
+// {{{ 5 "GetConfigurationRootPath" "End"
+}
+// }} ""
+// {{{ 5 "GeneratePythonScriptCommand" "Begin"
+function GeneratePythonScriptCommand( variable ScriptPath, variable Parameters, variable CloseAfterExecution ) variable {
+// }} ""
+private variable FinalCommand;
+private variable Counter;
+private variable PythonExecutablePath;
+private variable NumParameters;
+private variable ParametersString;
+private variable cmdCommand;
+private variable Out[];
+// {{ 5 "GeneratePythonScriptCommand" "InitLocals"
+// }} ""
+// {{{ 1 1 0 "0f5789e8_5894_4d22_924801ab365cb2d9" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+TOOLS::ParseDelimitedList(Translate(","), Parameters, Out);
+// }} ""
+// {{ 2 1 0 "485c557a_51fa_422a_9aa7208aee8f6bd7" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+ParametersString = Translate("");
+// }} ""
+// {{ 3 1 0 "d442a22f_5bf1_4f85_92c091f675534ba7" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
+NumParameters=Out.GetSize();
+// }} ""
+// {{ 4 1 0 "762b08bf_119d_4532_8494e5533853751d" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+{
+for(Counter = 0; Counter < NumParameters;)
+{
+Counter = Counter + 1;
+// }} ""
+// {{{ 5 1 0 "e1030b0b_747f_4328_b7b5b25b9dfa893b" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+ParametersString = StrConcat4(ParametersString, Translate("\""), Out.ElementAt( Counter -1), Translate("\" "));
+// }} ""
+// {{ 6 1 0 "762b08bf_119d_4532_8494e5533853751d" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+}
+}
+// }} ""
+// {{ 7 1 0 "ebcba519_f3ef_4dbe_a33151bbb53181c9" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+cmdCommand = Translate("");
+// }} ""
+// {{ 8 1 0 "84f98ead_7b3c_4d0e_924c55a422b5f1c2" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (CloseAfterExecution == "True")
+{
+// }} ""
+// {{ 9 1 0 "3e9e4a13_c203_4186_9e9ed9be16a9bb41" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+cmdCommand = Translate("C:\\windows\\system32\\cmd.exe /C");
+// }} ""
+// {{ 10 1 0 "84f98ead_7b3c_4d0e_924c55a422b5f1c2" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+else
+{
+// }} ""
+// {{ 11 1 0 "89034ca4_a4aa_4d71_a871a4724a43ae99" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+cmdCommand = Translate("C:\\windows\\system32\\cmd.exe /K");
+// }} ""
+// {{ 12 1 0 "84f98ead_7b3c_4d0e_924c55a422b5f1c2" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{{ 13 1 0 "98168b6f_a6fd_4ef8_a41e8f10fe818ebb" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+PythonExecutablePath = SCRIPT_CONFIG::GetPythonRootPath();
+// }} ""
+// {{{ 14 1 0 "a93c7225_84ad_4a80_9decec5217445e9b" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+PythonExecutablePath = StrConcat2(PythonExecutablePath, Translate("\\python.exe"));
+// }} ""
+// {{{ 15 1 0 "e4b5fa17_1a55_4658_a75d3324d23c4a5d" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+FinalCommand = StrConcat12(cmdCommand, Translate(" \"\""), PythonExecutablePath, Translate("\" "), Translate(" \""), ScriptPath, Translate("\" \""), Translate(""), Translate(""), ParametersString, Translate("\"\""), Translate(""));
+// }} ""
+// {{{ 16 1 0 "e6fce456_8a6f_47e4_bb4ac34dec819875" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (FinalCommand);
+// }} ""
+// {{{ 5 "GeneratePythonScriptCommand" "End"
+}
+// }} ""
+/* {{ 2 "SubmethodInsertLine" "" */ // }} ""
+// {{{ 2 "LibraryNamespace" "End"
+} // library namespace
+// }} ""
+// $$author=BAREB$$valid=0$$time=2021-12-07 15:49$$checksum=e6f961af$$length=084$$

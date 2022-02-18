@@ -1,0 +1,385 @@
+// {{{ 2 "IncludeGuard" "PragmaOnce"
+#pragma once
+// }} ""
+#include "ASWStandardDialogs\\AswStatusDialog.hsl"
+#include "HSLStrLib.hsl"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Commands\\Commands.hs_"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Return\\Return.hs_"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Return\\ReturnIDs.hs_"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration\\Modules\\StatusUpdate\\Configuration\\StatusUpdate Config.hs_"
+#include "HSLTrcLib.hsl"
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+#include "HSLMETEDLib.hs_"
+#include "HSLMECCLib.hs_"
+#include "HSLPTLLib.hsl"
+// }} ""
+// {{{ 2 "LibraryNamespace" "Begin"
+namespace STATUSUPDATE {
+// }} ""
+variable ProgressType;
+variable IsInit("False");
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{{ 2 "SubmethodForwardDeclaration" ""
+private function AddProgressDetail( device & ML_STAR, variable i_CommandString ) variable ;
+private function BarProgress( device & ML_STAR, variable i_CommandString ) void ;
+function DeInit( device & ML_STAR, variable i_CommandString ) variable ;
+function DoCommand( device & ML_STAR, variable i_CommandString ) variable ;
+function Init( device & ML_STAR, variable i_CommandString ) variable ;
+private function SetProgress( device & ML_STAR, variable i_CommandString ) variable ;
+// }} ""
+function _InitLibrary() {
+// {{ 2 "AutoInitBlock" ""
+PTL::SetWashingStateDefault("RinseTime1", 5);
+PTL::SetWashingStateDefault("SoakTime1", 5);
+PTL::SetWashingStateDefault("FlowRate1", 11);
+PTL::SetWashingStateDefault("RinseTime2", 0);
+PTL::SetWashingStateDefault("SoakTime2", 0);
+PTL::SetWashingStateDefault("FlowRate2", 11);
+PTL::SetWashingStateDefault("DrainingTime", 10);
+PTL::SetWashingStateDefault("StartWashLiquid", 0);
+PTL::SetLoadingStateDefault("RecoveryOptionContinue", hslTrue);
+PTL::SetLoadingStateDefault("RecoveryOptionExclude", hslTrue);
+PTL::SetLoadingStateDefault("RecoveryOptionDefault", 0);
+PTL::SetLoadingStateDefault("KitLotCheckEnabled", hslFalse);
+COMMANDS::_InitLibrary();
+RETURN::_InitLibrary();
+RETURNIDS::_InitLibrary();
+STATUSUPDATE_CONFIG::_InitLibrary();
+// }} ""
+}
+function _ExitLibrary() {
+// {{ 2 "AutoExitBlock" ""
+COMMANDS::_ExitLibrary();
+RETURN::_ExitLibrary();
+RETURNIDS::_ExitLibrary();
+STATUSUPDATE_CONFIG::_ExitLibrary();
+// }} ""
+}
+// {{{ 5 "Init" "Begin"
+function Init( device & ML_STAR, variable i_CommandString ) variable {
+// }} ""
+private variable ID;
+private variable ReturnString;
+// {{ 5 "Init" "InitLocals"
+// }} ""
+// {{ 66 1 0 "a12717b3_4128_402f_873999fdf886ffb6" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (IsInit == "True")
+{
+// }} ""
+// {{{ 67 1 0 "6ce380e4_e170_4a56_b12f634a96d39dfd" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::SuccessRequestSkipped();
+// }} ""
+// {{{ 68 1 0 "f2a46c82_e758_499c_9a41459ecc8ee4b9" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Already Initialized"), Translate(""), Translate(""));
+// }} ""
+// {{{ 69 1 0 "9a404031_ef7e_482b_bd71e26d9fe48316" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ReturnString);
+// }} ""
+// {{ 70 1 0 "a12717b3_4128_402f_873999fdf886ffb6" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{{ 71 1 0 "f8997973_8322_4c17_91c9a2b647e62326" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+AswStatusDialog::Initialize(Translate("Visual Method Editor Status Updates"));
+// }} ""
+// {{ 72 1 0 "3f43a8f7_c563_43fd_b87165cc4feff615" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+ProgressType = Translate("Bar");
+// }} ""
+// {{ 73 1 0 "b112df98_805d_4276_ba86db2cdaf515cf" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+IsInit = Translate("True");
+// }} ""
+// {{{ 74 1 0 "2702c627_00c0_4ac0_9067399000293e52" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::SuccessNoErrors();
+// }} ""
+// {{{ 75 1 0 "96fe572a_f11e_479f_a249ec4738108bbc" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Init always succeeds"), Translate(""), Translate(""));
+// }} ""
+// {{{ 76 1 0 "f7b615a9_85a5_4357_b367e22ba84bf5d4" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ReturnString);
+// }} ""
+// {{{ 5 "Init" "End"
+}
+// }} ""
+// {{{ 5 "SetProgress" "Begin"
+private function SetProgress( device & ML_STAR, variable i_CommandString ) variable {
+// }} ""
+private variable ID;
+private variable ReturnString;
+// {{ 5 "SetProgress" "InitLocals"
+// }} ""
+// {{ 78 1 0 "61e87e16_22de_42bf_8ba73d41a14e7dd0" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (ProgressType == "Bar")
+{
+// }} ""
+// {{{ 79 1 0 "bfbcc0b9_0356_408e_be027c9c88083528" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+BarProgress(ML_STAR, i_CommandString);
+// }} ""
+// {{ 80 1 0 "61e87e16_22de_42bf_8ba73d41a14e7dd0" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{{ 81 1 0 "88a083b9_36e9_4b92_a4862d675689874f" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::SuccessNoErrors();
+// }} ""
+// {{{ 82 1 0 "997c7bca_973b_410f_bfcfb54800999296" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Set progress always succeeds"), Translate(""), Translate(""));
+// }} ""
+// {{{ 83 1 0 "f7e87e5d_55c5_4bdb_b4cc6b1876d59456" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ReturnString);
+// }} ""
+// {{{ 5 "SetProgress" "End"
+}
+// }} ""
+// {{{ 5 "BarProgress" "Begin"
+private function BarProgress( device & ML_STAR, variable i_CommandString ) void {
+// }} ""
+private variable IncompleteSteps;
+private variable Counter;
+private variable Temp;
+private variable TotalSteps;
+private variable PercentComplete;
+private variable ProgressBar;
+private variable CompleteSteps;
+private variable ProgressPerStep;
+private variable ProgressText;
+private variable PercentIncomplete;
+private variable Dict[];
+// {{ 5 "BarProgress" "InitLocals"
+// }} ""
+// {{{ 8 1 0 "3cadead9_57cd_458a_b03f513b4a1f0c65" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::ParseCommandParametersString(i_CommandString, Dict);
+// }} ""
+// {{{ 9 1 0 "85367549_cb71_4b0f_8f009e62c12b03fa" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::GetDictionaryItem(Dict, Translate("PercentComplete"), PercentComplete);
+// }} ""
+// {{ 10 1 0 "104ea058_8c98_454e_a8a4bc843cc05fa3" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+ProgressPerStep = 10;
+// }} ""
+// {{{ 11 1 0 "03ee5e4c_2d13_4450_914c01beff820f13" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+ProgressText = StrConcat4(Translate("Percent Complete: "), PercentComplete, Translate("%"), Translate(" "));
+// }} ""
+// {{{ 12 1 0 "a3286fb3_0b50_4693_b72df7ed1238ea92" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+PercentComplete = StrIVal(PercentComplete);
+// }} ""
+// {{ 13 1 0 "77c2e8df_f3d5_45a9_9221b25e02759896" "{B31F3544-5D80-11d4-A5EB-0050DA737D89}"
+PercentIncomplete = 100 - PercentComplete;
+// }} ""
+// {{ 14 1 0 "b44083c7_4d7b_409c_b531e4414a0d5152" "{B31F3544-5D80-11d4-A5EB-0050DA737D89}"
+CompleteSteps = PercentComplete / (ProgressPerStep * 1.0);
+// }} ""
+// {{{ 15 1 0 "a937c81c_2a22_4376_9bb64c2975d7b26f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+CompleteSteps = StrFStr(CompleteSteps);
+// }} ""
+// {{{ 16 1 0 "1b4292f4_93af_4eb5_82337af5d853bb05" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+CompleteSteps = StrIVal(CompleteSteps);
+// }} ""
+// {{ 17 1 0 "7ca18cfe_3cf2_4c92_9a12fe5410f32299" "{B31F3544-5D80-11d4-A5EB-0050DA737D89}"
+IncompleteSteps = PercentIncomplete / (ProgressPerStep * 1.0);
+// }} ""
+// {{{ 18 1 0 "7b29f526_4b90_41e3_88695ec6a344d710" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+IncompleteSteps = StrFStr(IncompleteSteps);
+// }} ""
+// {{{ 19 1 0 "7b8cb70b_9721_4ef1_8879123dd7013acb" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+IncompleteSteps = StrIVal(IncompleteSteps);
+// }} ""
+// {{ 20 1 0 "c74f3014_8845_4fd5_b5cb43b0ed627eb0" "{B31F3544-5D80-11d4-A5EB-0050DA737D89}"
+TotalSteps = CompleteSteps + IncompleteSteps;
+// }} ""
+// {{ 21 1 0 "b75384eb_8149_46ef_abce4786581268ac" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+ProgressBar = Translate("[");
+// }} ""
+// {{ 22 1 0 "436a1f30_f662_47d2_9d22c624728d685e" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+{
+for(Counter = 0; Counter < TotalSteps;)
+{
+Counter = Counter + 1;
+// }} ""
+// {{ 23 1 0 "805de7e9_ca3d_4c1f_ae4510baed73a4ec" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (Counter <= CompleteSteps)
+{
+// }} ""
+// {{{ 24 1 0 "a917811b_b34f_4de3_95c30c899ef65a5e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+ProgressBar = StrConcat2(ProgressBar, Translate("=="));
+// }} ""
+// {{ 25 1 0 "805de7e9_ca3d_4c1f_ae4510baed73a4ec" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+else
+{
+// }} ""
+// {{ 26 1 0 "670dc10a_33d2_4c24_a419e492e722bfc9" "{B31F3544-5D80-11d4-A5EB-0050DA737D89}"
+Temp = Counter % 2;
+// }} ""
+// {{ 27 1 0 "83be57b2_188e_487c_a53ec0989e105d22" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (Temp == 0)
+{
+// }} ""
+// {{{ 28 1 0 "9cdccbef_acaf_45f2_9ab863e491141f2e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+ProgressBar = StrConcat2(ProgressBar, Translate("      "));
+// }} ""
+// {{ 29 1 0 "83be57b2_188e_487c_a53ec0989e105d22" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+else
+{
+// }} ""
+// {{{ 30 1 0 "d7404f89_4ea0_4b49_90ca0a782da17e7a" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+ProgressBar = StrConcat2(ProgressBar, Translate("     "));
+// }} ""
+// {{ 31 1 0 "83be57b2_188e_487c_a53ec0989e105d22" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 32 1 0 "805de7e9_ca3d_4c1f_ae4510baed73a4ec" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 33 1 0 "436a1f30_f662_47d2_9d22c624728d685e" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+}
+}
+// }} ""
+// {{{ 34 1 0 "f98c0ea5_7f72_4e36_aaa76b67854bc206" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+ProgressBar = StrConcat2(ProgressBar, Translate("]"));
+// }} ""
+// {{{ 35 1 0 "9977439e_e56f_4517_9953b494f6fbe9e5" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+ProgressText = StrConcat2(ProgressText, ProgressBar);
+// }} ""
+// {{{ 36 1 0 "28a3dabe_8126_4fc7_80c4c6b65adcdf23" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+AswStatusDialog::SetStatusText(ProgressText);
+// }} ""
+// {{{ 5 "BarProgress" "End"
+}
+// }} ""
+// {{{ 5 "AddProgressDetail" "Begin"
+private function AddProgressDetail( device & ML_STAR, variable i_CommandString ) variable {
+// }} ""
+private variable DetailString;
+private variable Dict[];
+private variable ID;
+private variable ReturnString;
+// {{ 5 "AddProgressDetail" "InitLocals"
+// }} ""
+// {{{ 1 1 0 "f5858eb8_ed89_4ffe_8daa4a44693c3cd3" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::ParseCommandParametersString(i_CommandString, Dict);
+// }} ""
+// {{{ 2 1 0 "265b1e21_253d_4d81_93af861e4b4bd30b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+COMMANDS::GetDictionaryItem(Dict, Translate("DetailMessage"), DetailString);
+// }} ""
+// {{{ 3 1 0 "e19450a0_1815_486c_89d3b2b4517cfe62" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+AswStatusDialog::AppendText(DetailString);
+// }} ""
+// {{{ 4 1 0 "33e33ae7_1bfc_4319_89a5ceda9040f884" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::SuccessNoErrors();
+// }} ""
+// {{{ 5 1 0 "95bcfb89_4c9b_4971_85a81e28543dcc90" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Add Progress always succeeds."), Translate(""), Translate(""));
+// }} ""
+// {{{ 6 1 0 "1e74b05b_5bbc_416d_9f1161270e1e850e" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ReturnString);
+// }} ""
+// {{{ 5 "AddProgressDetail" "End"
+}
+// }} ""
+// {{{ 5 "DoCommand" "Begin"
+function DoCommand( device & ML_STAR, variable i_CommandString ) variable {
+// }} ""
+private variable Command;
+private variable ReturnString;
+private variable ID;
+// {{ 5 "DoCommand" "InitLocals"
+// }} ""
+// {{{ 48 1 0 "ebf2f2e7_4de8_4bab_82c26a3547004a8e" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+Command = COMMANDS::GetCommandStringCommand(i_CommandString);
+// }} ""
+// {{ 49 1 0 "87e34687_9164_4b1a_92bfa77f769c54cd" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (IsInit != "True")
+{
+// }} ""
+// {{{ 50 1 0 "bcdb3f96_5520_4967_89258457b3c1331b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::FailCritical();
+// }} ""
+// {{{ 51 1 0 "b02b48c3_a178_4225_9ff3f95bcefc4a7e" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Module not initialized"), Translate(""), Translate(""));
+// }} ""
+// {{{ 52 1 0 "f171bfa7_985f_4bf7_9a831907be7857c7" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ReturnString);
+// }} ""
+// {{ 53 1 0 "87e34687_9164_4b1a_92bfa77f769c54cd" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 54 1 0 "b6c707f1_cc41_4444_947140ba653bcc4c" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (Command == "SetProgress")
+{
+// }} ""
+// {{{ 55 1 0 "aa9066bd_6ea6_4531_a5ef44113260033d" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = SetProgress(ML_STAR, i_CommandString);
+// }} ""
+// {{{ 56 1 0 "0e742450_b3f7_4c8c_a2e1fdb65546eaa8" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ReturnString);
+// }} ""
+// {{ 57 1 0 "b6c707f1_cc41_4444_947140ba653bcc4c" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 58 1 0 "489b7a64_bc66_40c6_803c7905b57c8a54" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (Command == "AddProgressDetail")
+{
+// }} ""
+// {{{ 59 1 0 "cd9d9eca_dd17_43d4_8be528a2c8ce7b17" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = AddProgressDetail(ML_STAR, i_CommandString);
+// }} ""
+// {{{ 60 1 0 "823c990b_3f3c_48ba_ac45c1f2b98239b7" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ReturnString);
+// }} ""
+// {{ 61 1 0 "489b7a64_bc66_40c6_803c7905b57c8a54" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{{ 62 1 0 "22f2b4b4_34a8_4c7d_859c06131b7278a4" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::FailCritical();
+// }} ""
+// {{{ 63 1 0 "8db04376_1b49_41e5_b8f51c75d588aa9c" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Command not found"), Translate(""), Translate(""));
+// }} ""
+// {{{ 64 1 0 "fbe2a9d6_daa6_4569_9e1b51cd906f0c9d" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ReturnString);
+// }} ""
+// {{{ 5 "DoCommand" "End"
+}
+// }} ""
+// {{{ 5 "DeInit" "Begin"
+function DeInit( device & ML_STAR, variable i_CommandString ) variable {
+// }} ""
+private variable ID;
+private variable ReturnString;
+// {{ 5 "DeInit" "InitLocals"
+// }} ""
+// {{ 38 1 0 "dd9a9dad_4995_4c0f_bf6f4d02b6d76c58" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (IsInit == "True")
+{
+// }} ""
+// {{{ 39 1 0 "1f1e461b_9a38_409b_8e240a45b97938c7" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+AswStatusDialog::Terminate();
+// }} ""
+// {{{ 40 1 0 "cf2536a0_ed29_4be2_a2234c83943e1e5e" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::SuccessNoErrors();
+// }} ""
+// {{{ 41 1 0 "9351d68a_5729_42e4_9deded4d8da3d4dd" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Deinit Successful"), Translate(""), Translate(""));
+// }} ""
+// {{{ 42 1 0 "e81082b3_2a3e_4953_bec677d25d80a052" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ReturnString);
+// }} ""
+// {{ 43 1 0 "dd9a9dad_4995_4c0f_bf6f4d02b6d76c58" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{{ 44 1 0 "0aa18642_a8f3_40bb_9da748a4e3d7e5a6" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ID = RETURNIDS::SuccessRequestSkipped();
+// }} ""
+// {{{ 45 1 0 "01c6325a_5615_415b_b876fc4e16e2297f" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = RETURN::CreateReturnString(ID, Translate("Deinit not required"), Translate(""), Translate(""));
+// }} ""
+// {{{ 46 1 0 "5488a0c1_fe62_48a9_89fa523d1eeee98e" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+return (ReturnString);
+// }} ""
+// {{{ 5 "DeInit" "End"
+}
+// }} ""
+/* {{ 2 "SubmethodInsertLine" "" */ // }} ""
+// {{{ 2 "LibraryNamespace" "End"
+} // library namespace
+// }} ""
+// $$author=BAREB$$valid=0$$time=2022-01-19 14:32$$checksum=fbbaf74c$$length=084$$

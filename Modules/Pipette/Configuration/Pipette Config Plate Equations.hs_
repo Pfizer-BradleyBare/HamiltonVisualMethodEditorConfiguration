@@ -1,0 +1,21 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 2/18/2022 12:51:30 PM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace PIPETTE_CONFIG_PLATE_EQUATIONS {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function EDIT_ConfigurationPlateEquations(  ) void { }
+function GetNumSegments( variable & o_NumSegments[] ) void { }
+function GetPlateTypes( variable & o_PlateTypes[] ) void { }
+function GetSegmentEquations( variable & o_SegmentEquations[] ) void { }
+function GetSegmentHeights( variable & o_SegmentHeights[] ) void { }
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2022-02-18 12:51$$checksum=54ef68c9$$length=082$$

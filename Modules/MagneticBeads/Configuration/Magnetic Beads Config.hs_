@@ -1,0 +1,24 @@
+
+// this ALWAYS GENERATED file contains the sub-method library header
+// Generated at 2/3/2022 12:24:26 PM
+
+#pragma once
+#ifndef HSL_RUNTIME
+namespace MAGNETIC_BEADS_CONFIG {
+function _InitLibrary() { }
+function _ExitLibrary() { }
+function EDIT_Configuration(  ) void { }
+function GetCondensedBeadsLiquidClassStrings( variable & o_CondensedBeadsLiquidClassStrings[] ) void { }
+function GetGeneralLiquidTransferLiquidClassStrings( variable & o_GeneralLiquidTransferLiquidClassStrings[] ) void { }
+function GetMinimumCondenseTimeSeconds( variable o_MinimumCondenseTimeSeconds ) void { }
+function GetSupportedLiquidClassVolumes( variable & o_SupportedLiquidClassVolumes[] ) void { }
+function GetSupportedPlateTypesArray( variable & o_SupportedPlateTypesArray[] ) void { }
+function GetSupportedPlateTypesSequenceStringsArray( variable & o_SupportedPlateTypesSequenceStringsArray[] ) void { }
+function Init(  ) void { }
+} // namespace
+#endif
+
+#ifdef HSL_RUNTIME
+#include __filename__ ".hsi"
+#endif
+// $$author=BAREB$$valid=0$$time=2022-02-03 12:24$$checksum=07d8affb$$length=082$$
