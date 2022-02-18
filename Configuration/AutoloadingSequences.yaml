@@ -95,6 +95,20 @@ Carrier5_Pos1_BioRad200uL96WellPCRPlate:
   Lid Sequence: False
   Deck Position: Carrier5_Pos1
   Vacuum Compatible: False
+
+
+#2000uL plates
+Carrier5_Pos1_BioRad200uL96WellPCRPlate:
+  Max Supported Volume: 2500
+  Dead Volume: 50
+  Storage Condition: False
+  Labware Category: Plate
+  Labware Type: 96 Well PCR Plate
+  Labware Name: 2000uL Corning 96 Well PCR Plate
+  Lid Sequence: False
+  Deck Position: Carrier5_Pos1
+  Vacuum Compatible: False
+
 #Reagents
 
 SampleVial1500uL_1:
@@ -106,6 +120,17 @@ SampleVial1500uL_1:
   Labware Name: Open 1.5mL Flip Top Tube
   Lid Sequence: False
   Deck Position: SampleVial1500uL_1
+  Vacuum Compatible: False
+
+SampleVial1500uL_2:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: SampleVial1500uL_2
   Vacuum Compatible: False
 
 #C1:
