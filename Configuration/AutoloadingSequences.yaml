@@ -21,6 +21,7 @@
 
 Carrier38_Pos3_96WellPCRPlate200uL_1mLChannel:
   Max Supported Volume: 225
+  Dead Volume: 10
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -31,6 +32,7 @@ Carrier38_Pos3_96WellPCRPlate200uL_1mLChannel:
 
 Carrier14_Pos3_96WellPCRPlate200uL_1mLChannel:
   Max Supported Volume: 225
+  Dead Volume: 10
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -41,6 +43,7 @@ Carrier14_Pos3_96WellPCRPlate200uL_1mLChannel:
 
 Carrier14_Pos4_96WellPCRPlate200uL_1mLChannel:
   Max Supported Volume: 225
+  Dead Volume: 10
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -51,6 +54,7 @@ Carrier14_Pos4_96WellPCRPlate200uL_1mLChannel:
 
 Carrier14_Pos5_96WellPCRPlate200uL_1mLChannel:
   Max Supported Volume: 225
+  Dead Volume: 10
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -64,7 +68,8 @@ Carrier14_Pos5_96WellPCRPlate200uL_1mLChannel:
 #
 
 Carrier14_Pos3_96WellPCRPlate400uL_1mLChannel:
-  Max Supported Volume: 400
+  Max Supported Volume: 440
+  Dead Volume: 20
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -74,7 +79,8 @@ Carrier14_Pos3_96WellPCRPlate400uL_1mLChannel:
   Vacuum Compatible: False
 
 Carrier14_Pos4_96WellPCRPlate400uL_1mLChannel:
-  Max Supported Volume: 400
+  Max Supported Volume: 440
+  Dead Volume: 20
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -84,7 +90,8 @@ Carrier14_Pos4_96WellPCRPlate400uL_1mLChannel:
   Vacuum Compatible: False
 
 Carrier14_Pos5_96WellPCRPlate400uL_1mLChannel:
-  Max Supported Volume: 400
+  Max Supported Volume: 440
+  Dead Volume: 20
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -98,7 +105,8 @@ Carrier14_Pos5_96WellPCRPlate400uL_1mLChannel:
 #
 
 Carrier14_Pos4_96WellPCRPlate1200uL_1mLChannel:
-  Max Supported Volume: 1200
+  Max Supported Volume: 1300
+  Dead Volume: 50
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -109,6 +117,7 @@ Carrier14_Pos4_96WellPCRPlate1200uL_1mLChannel:
 
 Carrier14_Pos5_96WellPCRPlate1200uL_1mLChannel:
   Max Supported Volume: 1200
+  Dead Volume: 50
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -119,6 +128,7 @@ Carrier14_Pos5_96WellPCRPlate1200uL_1mLChannel:
 
 Carrier38_Pos5_96WellPCRPlate1200uL_1mLChannel:
   Max Supported Volume: 1200
+  Dead Volume: 50
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -130,6 +140,7 @@ Carrier38_Pos5_96WellPCRPlate1200uL_1mLChannel:
 #2000
 Carrier38_Pos1_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2000
+  Dead Volume: 100
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -140,6 +151,7 @@ Carrier38_Pos1_96WellPCRPlate2000uL_1mLChannel:
 
 Carrier14_Pos1_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2000
+  Dead Volume: 100
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -150,6 +162,7 @@ Carrier14_Pos1_96WellPCRPlate2000uL_1mLChannel:
 
 Carrier14_Pos2_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2000
+  Dead Volume: 100
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -160,6 +173,7 @@ Carrier14_Pos2_96WellPCRPlate2000uL_1mLChannel:
 
 Carrier14_Pos3_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2000
+  Dead Volume: 100
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -170,6 +184,7 @@ Carrier14_Pos3_96WellPCRPlate2000uL_1mLChannel:
 
 Carrier14_Pos4_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2000
+  Dead Volume: 100
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -180,6 +195,7 @@ Carrier14_Pos4_96WellPCRPlate2000uL_1mLChannel:
 
 Carrier14_Pos5_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2000
+  Dead Volume: 100
   Storage Condition: False
   Labware Category: Plate
   Labware Type: 96 Well PCR Plate
@@ -223,6 +239,7 @@ Carrier14_Pos5_96WellPCRPlate2000uL_1mLChannel:
 
 E1:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Cold
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -233,6 +250,7 @@ E1:
 
 E2:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Cold
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -243,6 +261,7 @@ E2:
 
 E3:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Cold
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -253,6 +272,7 @@ E3:
 
 E4:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Cold
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -263,6 +283,7 @@ E4:
 
 E5:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Cold
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -273,6 +294,7 @@ E5:
 
 E6:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Cold
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -283,6 +305,7 @@ E6:
 
 E7:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Cold
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -293,6 +316,7 @@ E7:
 
 E8:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Cold
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -303,6 +327,7 @@ E8:
 
 EA:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Cold
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -313,6 +338,7 @@ EA:
 
 F1:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -323,6 +349,7 @@ F1:
 
 F2:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -333,6 +360,7 @@ F2:
 
 F3:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -343,6 +371,7 @@ F3:
 
 F4:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -353,6 +382,7 @@ F4:
 
 F5:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -363,6 +393,7 @@ F5:
 
 F6:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -373,6 +404,7 @@ F6:
 
 F7:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -383,6 +415,7 @@ F7:
 
 F8:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -393,6 +426,7 @@ F8:
 
 F9:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -403,6 +437,7 @@ F9:
 
 F10:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -413,6 +448,7 @@ F10:
 
 F11:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -423,6 +459,7 @@ F11:
 
 F12:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -433,6 +470,7 @@ F12:
 
 F13:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -443,6 +481,7 @@ F13:
 
 F14:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -453,6 +492,7 @@ F14:
 
 F15:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -463,6 +503,7 @@ F15:
 
 F16:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -473,6 +514,7 @@ F16:
 
 F17:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -483,6 +525,7 @@ F17:
 
 F18:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -493,6 +536,7 @@ F18:
 
 F19:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -503,6 +547,7 @@ F19:
 
 F20:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -513,6 +558,7 @@ F20:
 
 F21:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -523,6 +569,7 @@ F21:
 
 F22:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -533,6 +580,7 @@ F22:
 
 F23:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -543,6 +591,7 @@ F23:
 
 F24:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -553,6 +602,7 @@ F24:
 
 F25:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -563,6 +613,7 @@ F25:
 
 F26:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -573,6 +624,7 @@ F26:
 
 F27:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -583,6 +635,7 @@ F27:
 
 F28:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -593,6 +646,7 @@ F28:
 
 F29:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -603,6 +657,7 @@ F29:
 
 F30:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -613,6 +668,7 @@ F30:
 
 F31:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -623,6 +679,7 @@ F31:
 
 F32:
   Max Supported Volume: 1500
+  Dead Volume: 150
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: FlipTube
@@ -633,6 +690,7 @@ F32:
 
 C1:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -643,6 +701,7 @@ C1:
 
 C2:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -653,6 +712,7 @@ C2:
 
 C3:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -663,6 +723,7 @@ C3:
 
 C4:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -673,6 +734,7 @@ C4:
 
 C5:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -683,6 +745,7 @@ C5:
 
 C6:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -693,6 +756,7 @@ C6:
 
 C7:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -703,6 +767,7 @@ C7:
 
 C8:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -713,6 +778,7 @@ C8:
 
 C9:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -723,6 +789,7 @@ C9:
 
 C10:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -733,6 +800,7 @@ C10:
 
 C11:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -743,6 +811,7 @@ C11:
 
 C12:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -753,6 +822,7 @@ C12:
 
 C13:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -763,6 +833,7 @@ C13:
 
 C14:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -773,6 +844,7 @@ C14:
 
 C15:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -783,6 +855,7 @@ C15:
 
 C16:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -793,6 +866,7 @@ C16:
 
 C17:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -803,6 +877,7 @@ C17:
 
 C18:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -813,6 +888,7 @@ C18:
 
 C19:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -823,6 +899,7 @@ C19:
 
 C20:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -833,6 +910,7 @@ C20:
 
 C21:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -843,6 +921,7 @@ C21:
 
 C22:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -853,6 +932,7 @@ C22:
 
 C23:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -863,6 +943,7 @@ C23:
 
 C24:
   Max Supported Volume: 14000
+  Dead Volume: 1000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 15mL Centrifuge Tube
@@ -873,6 +954,7 @@ C24:
 
 R1:
   Max Supported Volume: 50000
+  Dead Volume: 5000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 60mL Reagent Reservior
@@ -883,6 +965,7 @@ R1:
 
 R2:
   Max Supported Volume: 50000
+  Dead Volume: 5000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 60mL Reagent Reservior
@@ -893,6 +976,7 @@ R2:
 
 R3:
   Max Supported Volume: 50000
+  Dead Volume: 5000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 60mL Reagent Reservior
@@ -903,6 +987,7 @@ R3:
 
 R4:
   Max Supported Volume: 50000
+  Dead Volume: 5000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 60mL Reagent Reservior
@@ -913,6 +998,7 @@ R4:
 
 R5:
   Max Supported Volume: 50000
+  Dead Volume: 5000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 60mL Reagent Reservior
@@ -923,6 +1009,7 @@ R5:
 
 T5:
   Max Supported Volume: 200000
+  Dead Volume: 10000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 200mL Reagent Trough
@@ -933,6 +1020,7 @@ T5:
 
 T4:
   Max Supported Volume: 200000
+  Dead Volume: 10000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 200mL Reagent Trough
@@ -943,6 +1031,7 @@ T4:
 
 T10:
   Max Supported Volume: 200000
+  Dead Volume: 10000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 200mL Reagent Trough
@@ -953,6 +1042,7 @@ T10:
 
 T9:
   Max Supported Volume: 200000
+  Dead Volume: 10000
   Storage Condition: Ambient
   Labware Category: Reagent
   Labware Type: 200mL Reagent Trough
