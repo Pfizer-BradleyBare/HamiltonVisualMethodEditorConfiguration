@@ -111,7 +111,7 @@ Carrier5_Pos1_BioRad200uL96WellPCRPlate:
 
 #Reagents
 
-SampleVial1500uL_1:
+T1:
   Max Supported Volume: 1500
   Dead Volume: 150
   Storage Condition: Ambient
@@ -119,10 +119,10 @@ SampleVial1500uL_1:
   Labware Type: Flip Top Tube
   Labware Name: Open 1.5mL Flip Top Tube
   Lid Sequence: False
-  Deck Position: SampleVial1500uL_1
+  Deck Position: T1
   Vacuum Compatible: False
 
-SampleVial1500uL_2:
+T2:
   Max Supported Volume: 1500
   Dead Volume: 150
   Storage Condition: Ambient
@@ -130,7 +130,7 @@ SampleVial1500uL_2:
   Labware Type: Flip Top Tube
   Labware Name: Open 1.5mL Flip Top Tube
   Lid Sequence: False
-  Deck Position: SampleVial1500uL_2
+  Deck Position: T2
   Vacuum Compatible: False
 
 #C1:
@@ -145,7 +145,7 @@ SampleVial1500uL_2:
 #  Vacuum Compatible: False
 
 
-ReagentReservoir55mL_1:
+R1:
   Max Supported Volume: 50000
   Dead Volume: 2500
   Storage Condition: Ambient
@@ -153,10 +153,10 @@ ReagentReservoir55mL_1:
   Labware Type: 60mL Reagent Reservior
   Labware Name: 60mL Reagent Reservior
   Lid Sequence: False
-  Deck Position: ReagentReservoir55mL_1
+  Deck Position: R1
   Vacuum Compatible: False
 
-ReagentReservoir55mL_2:
+R2:
   Max Supported Volume: 50000
   Dead Volume: 2500
   Storage Condition: Ambient
@@ -164,10 +164,10 @@ ReagentReservoir55mL_2:
   Labware Type: 60mL Reagent Reservior
   Labware Name: 60mL Reagent Reservior
   Lid Sequence: False
-  Deck Position: ReagentReservoir55mL_2
+  Deck Position: R2
   Vacuum Compatible: False
 
-ReagentReservoir55mL_3:
+R3:
   Max Supported Volume: 50000
   Dead Volume: 2500
   Storage Condition: Ambient
@@ -175,10 +175,10 @@ ReagentReservoir55mL_3:
   Labware Type: 60mL Reagent Reservior
   Labware Name: 60mL Reagent Reservior
   Lid Sequence: False
-  Deck Position: ReagentReservoir55mL_3
+  Deck Position: R3
   Vacuum Compatible: False
 
-ReagentReservoir55mL_4:
+R4:
   Max Supported Volume: 50000
   Dead Volume: 2500
   Storage Condition: Ambient
@@ -186,10 +186,10 @@ ReagentReservoir55mL_4:
   Labware Type: 60mL Reagent Reservior
   Labware Name: 60mL Reagent Reservior
   Lid Sequence: False
-  Deck Position: ReagentReservoir55mL_4
+  Deck Position: R4
   Vacuum Compatible: False
 
-ReagentReservoir55mL_5:
+R5:
   Max Supported Volume: 50000
   Dead Volume: 2500
   Storage Condition: Ambient
@@ -197,10 +197,10 @@ ReagentReservoir55mL_5:
   Labware Type: 60mL Reagent Reservior
   Labware Name: 60mL Reagent Reservior
   Lid Sequence: False
-  Deck Position: ReagentReservoir55mL_5
+  Deck Position: R5
   Vacuum Compatible: False
 
-ReagentReservoir55mL_6:
+R6:
   Max Supported Volume: 50000
   Dead Volume: 2500
   Storage Condition: Ambient
@@ -208,10 +208,10 @@ ReagentReservoir55mL_6:
   Labware Type: 60mL Reagent Reservior
   Labware Name: 60mL Reagent Reservior
   Lid Sequence: False
-  Deck Position: ReagentReservoir55mL_6
+  Deck Position: R6
   Vacuum Compatible: False
 
-ReagentReservoir55mL_7:
+R7:
   Max Supported Volume: 50000
   Dead Volume: 2500
   Storage Condition: Ambient
@@ -219,7 +219,7 @@ ReagentReservoir55mL_7:
   Labware Type: 60mL Reagent Reservior
   Labware Name: 60mL Reagent Reservior
   Lid Sequence: False
-  Deck Position: ReagentReservoir55mL_7
+  Deck Position: R7
   Vacuum Compatible: False
 
 

@@ -42,20 +42,14 @@ LidIDs.SetSize(0);
 // {{ 3 1 0 "72891be0_0e49_410b_800600a4cdb8cd81" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 LidIDs.AddAsLast(Translate("Lid 1"));
 // }} ""
-// {{ 4 1 0 "ba834c14_aff2_4a1a_bf45c8aa6e0c6903" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-LidIDs.AddAsLast(Translate("Lid 2"));
-// }} ""
-// {{ 5 1 0 "41b41bae_bdef_4484_94506b8e9a18807e" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 4 1 0 "41b41bae_bdef_4484_94506b8e9a18807e" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 6 1 0 "aaabfe26_e211_4bc0_a9decbf4e13a0b87" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+// {{ 5 1 0 "aaabfe26_e211_4bc0_a9decbf4e13a0b87" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 LidSequenceString.SetSize(0);
 // }} ""
-// {{ 7 1 0 "03e4ca85_d65a_4ca9_a8ed7a1172d989d6" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+// {{ 6 1 0 "03e4ca85_d65a_4ca9_a8ed7a1172d989d6" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 LidSequenceString.AddAsLast(Translate("Lid1_Home"));
-// }} ""
-// {{ 8 1 0 "d7fda8f0_bc40_4c20_ad85745038ab6988" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-LidSequenceString.AddAsLast(Translate("Lid2_Home"));
 // }} ""
 // {{{ 5 "EDIT_Configuration" "End"
 }
@@ -65,7 +59,7 @@ function Init(  ) void {
 // }} ""
 // {{ 5 "Init" "InitLocals"
 // }} ""
-// {{{ 17 1 0 "330b873b_d44a_437f_acc55448174eebac" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 15 1 0 "330b873b_d44a_437f_acc55448174eebac" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 EDIT_Configuration();
 // }} ""
 // {{{ 5 "Init" "End"
@@ -77,7 +71,7 @@ function GetLidIDs( variable & o_LidIDs[] ) void {
 // {{ 5 "GetLidIDs" "InitLocals"
 o_LidIDs.SetSize( 0);
 // }} ""
-// {{ 10 1 0 "02e6e614_681e_4418_8d67bd1a2f5e0be9" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 8 1 0 "02e6e614_681e_4418_8d67bd1a2f5e0be9" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_LidIDs=LidIDs;
 // }} ""
 // {{{ 5 "GetLidIDs" "End"
@@ -89,7 +83,7 @@ function GetLidSequenceStrings( variable & o_LidSequenceStrings[] ) void {
 // {{ 5 "GetLidSequenceStrings" "InitLocals"
 o_LidSequenceStrings.SetSize( 0);
 // }} ""
-// {{ 12 1 0 "54feadeb_3c68_4c72_b06135b2c008b822" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 10 1 0 "54feadeb_3c68_4c72_b06135b2c008b822" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_LidSequenceStrings=LidSequenceString;
 // }} ""
 // {{{ 5 "GetLidSequenceStrings" "End"
@@ -101,10 +95,10 @@ function GetNumLids(  ) variable {
 private variable NumLids;
 // {{ 5 "GetNumLids" "InitLocals"
 // }} ""
-// {{ 14 1 0 "ccd027b6_a2fe_401c_a4cfbfdcd8306b20" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
+// {{ 12 1 0 "ccd027b6_a2fe_401c_a4cfbfdcd8306b20" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
 NumLids=LidIDs.GetSize();
 // }} ""
-// {{{ 15 1 0 "ae7d516c_01d8_4821_81c4e83a8003dd30" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 13 1 0 "ae7d516c_01d8_4821_81c4e83a8003dd30" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (NumLids);
 // }} ""
 // {{{ 5 "GetNumLids" "End"
@@ -114,4 +108,4 @@ return (NumLids);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2021-12-04 09:54$$checksum=b8316a04$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-02-22 09:33$$checksum=ae94f299$$length=084$$
