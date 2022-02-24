@@ -58,8 +58,8 @@ SupportedPlateTypes.AddAsLast(Translate("200uL Biorad 96 Well PCR Plate"));
 // {{ 6 1 0 "f05e0e53_7c84_440c_826437f1e30e7fb2" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 SupportedPlateTypesSequenceString.SetSize(0);
 // }} ""
-// {{ 7 1 0 "eae94473_b29b_4f2f_a9be249080692579" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-SupportedPlateTypesSequenceString.AddAsLast(Translate("Carrier14_Pos4_96WellPCRPlate200uL_1mLChannel"));
+// {{ 7 1 0 "7ec58064_42c7_479c_9a4b8e41f1bc3458" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+SupportedPlateTypesSequenceString.AddAsLast(Translate("_MagneticBeads_200uL"));
 // }} ""
 // {{ 8 1 0 "efecb9ff_e27c_4d3d_99c27f78929fa827" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -177,4 +177,4 @@ o_SupportedLiquidClassVolumes=SupportedLiquidClassVolumes;
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-02-03 12:24$$checksum=edb1d8bf$$length=084$$
+// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-02-22 15:06$$checksum=e5c638a7$$length=094$$
