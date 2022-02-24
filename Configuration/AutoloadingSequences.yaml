@@ -113,7 +113,7 @@ Carrier14_Pos4_96WellPCRPlate1200uL_1mLChannel:
   Labware Name: 1200uL DeepWell 96 Well PCR Plate
   Lid Sequence: Carrier14_Pos4_Lid_1200uL
   Deck Position: Carrier14_Pos4
-  Vacuum Compatible: False
+  Vacuum Compatible: Waters Glycoworks HILIC Plate
 
 Carrier14_Pos5_96WellPCRPlate1200uL_1mLChannel:
   Max Supported Volume: 1200
@@ -124,7 +124,7 @@ Carrier14_Pos5_96WellPCRPlate1200uL_1mLChannel:
   Labware Name: 1200uL DeepWell 96 Well PCR Plate
   Lid Sequence: False
   Deck Position: Carrier14_Pos5
-  Vacuum Compatible: False
+  Vacuum Compatible: Waters Glycoworks HILIC Plate
 
 Carrier38_Pos5_96WellPCRPlate1200uL_1mLChannel:
   Max Supported Volume: 1200
@@ -135,7 +135,18 @@ Carrier38_Pos5_96WellPCRPlate1200uL_1mLChannel:
   Labware Name: 1200uL DeepWell 96 Well PCR Plate
   Lid Sequence: False
   Deck Position: Carrier38_Pos5
-  Vacuum Compatible: False
+  Vacuum Compatible: Waters Glycoworks HILIC Plate
+
+Carrier14_Pos1_96WellPCRPlate1200uL_1mLChannel:
+  Max Supported Volume: 1300
+  Dead Volume: 50
+  Storage Condition: False
+  Labware Category: Plate
+  Labware Type: 96 Well PCR Plate
+  Labware Name: 1200uL DeepWell 96 Well PCR Plate
+  Lid Sequence: False
+  Deck Position: Carrier14_Pos1
+  Vacuum Compatible: Waters Glycoworks HILIC Plate
 
 #2000
 Carrier38_Pos1_96WellPCRPlate2000uL_1mLChannel:
@@ -147,7 +158,7 @@ Carrier38_Pos1_96WellPCRPlate2000uL_1mLChannel:
   Labware Name: 2000uL Corning 96 Well PCR Plate
   Lid Sequence: False
   Deck Position: Carrier38_Pos1
-  Vacuum Compatible: True
+  Vacuum Compatible: 0.45um Self Poured ProA Plate
 
 Carrier14_Pos1_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2000
@@ -158,7 +169,7 @@ Carrier14_Pos1_96WellPCRPlate2000uL_1mLChannel:
   Labware Name: 2000uL Corning 96 Well PCR Plate
   Lid Sequence: False
   Deck Position: Carrier14_Pos1
-  Vacuum Compatible: True
+  Vacuum Compatible: 0.45um Self Poured ProA Plate
 
 Carrier14_Pos2_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2000
@@ -169,7 +180,7 @@ Carrier14_Pos2_96WellPCRPlate2000uL_1mLChannel:
   Labware Name: 2000uL Corning 96 Well PCR Plate
   Lid Sequence: False
   Deck Position: Carrier14_Pos2
-  Vacuum Compatible: True
+  Vacuum Compatible: 0.45um Self Poured ProA Plate
 
 Carrier14_Pos3_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2000
@@ -180,7 +191,7 @@ Carrier14_Pos3_96WellPCRPlate2000uL_1mLChannel:
   Labware Name: 2000uL Corning 96 Well PCR Plate
   Lid Sequence: False
   Deck Position: Carrier14_Pos3
-  Vacuum Compatible: True
+  Vacuum Compatible: 0.45um Self Poured ProA Plate
 
 Carrier14_Pos4_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2000
@@ -191,7 +202,7 @@ Carrier14_Pos4_96WellPCRPlate2000uL_1mLChannel:
   Labware Name: 2000uL Corning 96 Well PCR Plate
   Lid Sequence: False
   Deck Position: Carrier14_Pos4
-  Vacuum Compatible: True
+  Vacuum Compatible: 0.45um Self Poured ProA Plate
 
 Carrier14_Pos5_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2000
@@ -202,7 +213,7 @@ Carrier14_Pos5_96WellPCRPlate2000uL_1mLChannel:
   Labware Name: 2000uL Corning 96 Well PCR Plate
   Lid Sequence: False
   Deck Position: Carrier14_Pos5
-  Vacuum Compatible: True
+  Vacuum Compatible: 0.45um Self Poured ProA Plate
 
 #Starstedt plates
 

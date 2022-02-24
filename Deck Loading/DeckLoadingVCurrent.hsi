@@ -8,6 +8,7 @@
 #include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Labware\\Labware.hs_"
 #include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration\\Modules\\Pipette\\Module\\Pipette.hs_"
 #include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Commands\\Commands.hs_"
+#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration\\Modules\\Vacuum\\Module\\Vacuum.hs_"
 /* {{ 2 "LibraryInsertLine" "" */ // }} ""
 // {{ 2 "TemplateIncludeBlock" ""
 #include "HSLMETEDLib.hs_"
@@ -37,6 +38,7 @@ function _InitLibrary() {
 LABWARE::_InitLibrary();
 PIPETTE::_InitLibrary();
 COMMANDS::_InitLibrary();
+VACUUM::_InitLibrary();
 // }} ""
 }
 function _ExitLibrary() {
@@ -44,6 +46,7 @@ function _ExitLibrary() {
 LABWARE::_ExitLibrary();
 PIPETTE::_ExitLibrary();
 COMMANDS::_ExitLibrary();
+VACUUM::_ExitLibrary();
 // }} ""
 }
 // {{{ 5 "DoDeckLoading" "Begin"
@@ -79,6 +82,7 @@ private variable UsedTipsDict[];
 private variable VacuumPlate;
 private variable DesaltingArray[];
 private variable IsUsedArray[];
+private variable VacuumPlatesArray[];
 // {{ 5 "DoDeckLoading" "InitLocals"
 // }} ""
 // {{ 1 1 0 "e4d9f153_dcc2_4c39_8819459960dc578c" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
@@ -414,7 +418,29 @@ CT = 0;
 // {{ 103 1 0 "d467c99d_a873_4b8a_a412235646e40a4b" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
-// {{ 104 1 0 "48daafdd_33bc_4c77_ae9ab89dbf4a2839" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
+// {{ 104 1 0 "071db2c3_5236_4be5_b4ad40e462949d32" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{{ 105 1 0 "f171298d_3d30_4bfb_8475777a58e6745e" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+VACUUM::GetVacuumPlateReservations(VacuumPlatesArray);
+// }} ""
+// {{ 106 1 0 "d05fc30f_9ff3_4e7a_9bc47067122df5f4" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
+VacuumPlate=VacuumPlatesArray.GetSize();
+// }} ""
+// {{ 107 1 0 "153eff75_7e78_479a_a88cde9fec689046" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (VacuumPlate != 0)
+{
+// }} ""
+// {{ 108 1 0 "35b620ac_383e_49e2_b8ef13147b268c0f" "{67A8F1C9-6546-41e9-AD2F-3C54F7818853}"
+VacuumPlate=VacuumPlatesArray.GetAt(1-1);
+// }} ""
+// {{ 109 1 0 "153eff75_7e78_479a_a88cde9fec689046" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 110 1 0 "071db2c3_5236_4be5_b4ad40e462949d32" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 111 1 0 "48daafdd_33bc_4c77_ae9ab89dbf4a2839" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.InitCustomDialog( "48daafdd_33bc_4c77_ae9ab89dbf4a2839" );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock1.IsVisible", Tip50 );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock3.IsVisible", Tip300 );
@@ -473,4 +499,4 @@ customDialog2FEB4C1E4223424fABC5D9453A56E09D.ShowCustomDialog();
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-25 14:43$$checksum=9419f28b$$length=084$$
+// $$author=fcnamr-adwmsbc$$valid=0$$time=2022-02-22 09:39$$checksum=4aa16e2a$$length=093$$
