@@ -15,7 +15,7 @@
 #include "HSLPTLLib.hsl"
 // }} ""
 // {{{ 2 "LibraryNamespace" "Begin"
-namespace NOTIFY {
+namespace BACKUP {
 // }} ""
 variable IsInit("False");
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
@@ -347,19 +347,22 @@ DialogOut = customDialog2F2B59741BBA4cf0805C3AA3FBF6A643.GetCustomDialogProperty
 if (DialogOut == 6)
 {
 // }} ""
-// {{ 87 1 0 "34457721_e1b3_4192_95b210d53799a4e0" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{{ 87 1 0 "65ee1db9_70bf_41b7_af80bf95a36386b6" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+DECKLOADINGVCURRENT::DoDeckLoading();
+// }} ""
+// {{ 88 1 0 "34457721_e1b3_4192_95b210d53799a4e0" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{ 88 1 0 "37780d4d_a22c_4683_8f19474034f13086" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 89 1 0 "37780d4d_a22c_4683_8f19474034f13086" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{{ 89 1 0 "d2830bde_915e_4fa9_8c5499db4ed29a54" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 90 1 0 "d2830bde_915e_4fa9_8c5499db4ed29a54" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ID = RETURNIDS::SuccessNoErrors();
 // }} ""
-// {{{ 90 1 0 "f286ba65_2d1e_4aa3_a50a3a9b6f76a31d" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 91 1 0 "f286ba65_2d1e_4aa3_a50a3a9b6f76a31d" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ReturnString = RETURN::CreateReturnString(ID, Translate("Notfy always succeeds"), Translate(""), Translate(""));
 // }} ""
-// {{{ 91 1 0 "c91dd59d_19d7_4955_abcda45204a562ed" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 92 1 0 "c91dd59d_19d7_4955_abcda45204a562ed" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
 // {{{ 5 "SendMessage" "End"
@@ -456,4 +459,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-03-14 16:41$$checksum=222f0261$$length=094$$
+// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-03-14 16:40$$checksum=797765e6$$length=094$$

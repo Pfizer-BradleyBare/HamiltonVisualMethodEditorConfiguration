@@ -3,13 +3,7 @@
 // }} ""
 #include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration\\Modules\\Script\\Configuration\\Script Config.hs_"
 #include "HSLStrLib.hsl"
-#include "HSLUtilLib.hsl"
-#include "HSLTrcLib.hsl"
-#include "FileHandling_HSLFiLibEx\\HSLFilLibEx.hsl"
-#include "HSLFilLib.hsl"
-#include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\PfizerTools\\PfizerToolsVCurrent.hs_"
 #include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Tools\\Tools.hs_"
-#include "HSLUtilLib2.hsl"
 /* {{ 2 "LibraryInsertLine" "" */ // }} ""
 // {{ 2 "TemplateIncludeBlock" ""
 #include "HSLMETEDLib.hs_"
@@ -29,14 +23,12 @@ function Init(  ) void ;
 function _InitLibrary() {
 // {{ 2 "AutoInitBlock" ""
 SCRIPT_CONFIG::_InitLibrary();
-PFIZERTOOLSVCURRENT::_InitLibrary();
 TOOLS::_InitLibrary();
 // }} ""
 }
 function _ExitLibrary() {
 // {{ 2 "AutoExitBlock" ""
 SCRIPT_CONFIG::_ExitLibrary();
-PFIZERTOOLSVCURRENT::_ExitLibrary();
 TOOLS::_ExitLibrary();
 // }} ""
 }
@@ -170,4 +162,4 @@ return (FinalCommand);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2021-12-07 15:49$$checksum=e6f961af$$length=084$$
+// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-03-14 16:40$$checksum=e215c908$$length=094$$
