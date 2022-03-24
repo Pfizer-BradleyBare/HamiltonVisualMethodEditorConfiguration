@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 3/22/2022 11:10:43 AM
+// Generated at 3/23/2022 6:52:56 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -14,10 +14,18 @@ function DoTipLoading( device & ML_STAR ) void { }
 function GetNumUsedTips( variable & o_Dict[] ) void { }
 function Init( device & ML_STAR, variable i_CommandParameterStrings ) variable {  return (0); }
 function ShowTipsDialog(  ) void { }
+global variable PIPETTE_TrackedTipSequencesNumUsed[];
+global variable PIPETTE_TrackedTipSequenceVolumes[];
+global variable PIPETTE_TrackedTipSequencesGeneratedWasteSequence[];
+global variable PIPETTE_TrackedTipSequencesWasteSequence[];
+global variable PIPETTE_IsInit("False");
+global variable PIPETTE_TrackedTipSequenceStrings[];
+global variable PIPETTE_TrackedTipSequencesTipCounter[];
+global variable PIPETTE_TrackedTipSequenceTypes[];
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=fcnamr-adwmsbc$$valid=0$$time=2022-03-22 11:10$$checksum=788d7262$$length=091$$
+// $$author=BAREB$$valid=0$$time=2022-03-23 18:52$$checksum=6a6cc2b7$$length=082$$
