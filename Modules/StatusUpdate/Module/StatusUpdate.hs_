@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 3/23/2022 6:55:30 PM
+// Generated at 3/28/2022 9:41:25 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -10,7 +10,7 @@ function _ExitLibrary() { }
 function DeInit( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function DoCommand( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function Init( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
-global variable STATUS_UPDATE_IsInit;
+global variable STATUS_UPDATE_IsInit("False");
 global variable STATUS_UPDATE_ProgressType;
 } // namespace
 #endif
@@ -18,4 +18,4 @@ global variable STATUS_UPDATE_ProgressType;
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-03-23 18:55$$checksum=93f9b62d$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-03-28 09:41$$checksum=84ef9e10$$length=082$$

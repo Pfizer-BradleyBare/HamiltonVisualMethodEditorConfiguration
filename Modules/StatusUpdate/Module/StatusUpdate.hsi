@@ -17,8 +17,8 @@
 // {{{ 2 "LibraryNamespace" "Begin"
 namespace STATUSUPDATE {
 // }} ""
-global variable STATUS_UPDATE_IsInit;
 global variable STATUS_UPDATE_ProgressType;
+global variable STATUS_UPDATE_IsInit("False");
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
 private function AddProgressDetail( device & ML_STAR, variable i_CommandString ) variable ;
@@ -61,7 +61,6 @@ function Init( device & ML_STAR, variable i_CommandString ) variable {
 // }} ""
 private variable ID;
 private variable ReturnString;
-private variable STATUS_UPDATE_;
 // {{ 5 "Init" "InitLocals"
 // }} ""
 // {{ 66 1 0 "fcdd821f_4a87_43d6_beff134a14ce8704" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
@@ -383,4 +382,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-03-23 18:55$$checksum=3e88eb16$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-03-28 09:41$$checksum=cb68e525$$length=084$$
