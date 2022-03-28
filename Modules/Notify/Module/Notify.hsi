@@ -332,8 +332,8 @@ while (DialogOut == 6)
 {
 loopCounter1 = loopCounter1 + 1;
 // }} ""
-// {{ 84 1 0 "d68eb165_04a5_4ece_95a35906b5d9cadb" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
-customDialog2F2B59741BBA4cf0805C3AA3FBF6A643.InitCustomDialog( "d68eb165_04a5_4ece_95a35906b5d9cadb" );
+// {{ 84 1 0 "cfb3f608_751a_496d_9eb8c3d6f1b8ee05" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
+customDialog2F2B59741BBA4cf0805C3AA3FBF6A643.InitCustomDialog( "cfb3f608_751a_496d_9eb8c3d6f1b8ee05" );
 customDialog2F2B59741BBA4cf0805C3AA3FBF6A643.SetCustomDialogProperty( "Title", Subject );
 customDialog2F2B59741BBA4cf0805C3AA3FBF6A643.SetCustomDialogProperty( "textBlock1.Text", Body );
 customDialog2F2B59741BBA4cf0805C3AA3FBF6A643.ShowCustomDialog();
@@ -456,4 +456,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-03-23 18:32$$checksum=adc50183$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-03-28 14:52$$checksum=dcd470f5$$length=084$$
