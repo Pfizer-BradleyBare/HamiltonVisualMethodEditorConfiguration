@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 1/25/2022 10:00:03 AM
+// Generated at 3/29/2022 8:05:14 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -20,10 +20,20 @@ function GetTipSequenceTypes( variable & o_TipSequenceTypesArray[] ) void { }
 function GetTipSequenceVolumes( variable & o_TipSequenceVolumesArray[] ) void { }
 function GetTipSequenceWasteSequenceStrings( variable & o_TipSequenceWasteSequenceStrings[] ) void { }
 function Init(  ) void { }
+global variable _MODULE_PIPETTE_CONFIG_CoreGripToolSequenceString;
+global variable _MODULE_PIPETTE_CONFIG_TipSequenceCounterStrings[];
+global variable _MODULE_PIPETTE_CONFIG_TipSequenceVolumes[];
+global variable _MODULE_PIPETTE_CONFIG_NumChannels;
+global variable _MODULE_PIPETTE_CONFIG_FlipTubeToolSequenceString;
+global variable _MODULE_PIPETTE_CONFIG_TipSequenceWasteSequenceString[];
+global variable _MODULE_PIPETTE_CONFIG_TipSequenceTypes[];
+global variable _MODULE_PIPETTE_CONFIG_TipSequenceStrings[];
+global variable _MODULE_PIPETTE_CONFIG_MaxPipettingVolume;
+global variable _MODULE_PIPETTE_CONFIG_ChannelString;
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-01-25 10:00$$checksum=13e6344a$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-03-29 08:05$$checksum=eed9baab$$length=082$$

@@ -18,7 +18,7 @@
 // {{{ 2 "LibraryNamespace" "Begin"
 namespace MAGNETIC_BEADS {
 // }} ""
-global variable MAGNETIC_BEADS_IsInit("False");
+global variable _MODULE_MAGNETIC_BEADS_IsInit("False");
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
 function DeInit( device & ML_STAR, variable i_CommandString ) variable ;
@@ -84,8 +84,8 @@ private variable Delmiter;
 private variable SupportedSequenceStringsArray[];
 // {{ 5 "Init" "InitLocals"
 // }} ""
-// {{ 146 1 0 "d93f0893_abad_42f0_b7e6b2737892866a" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-if (MAGNETIC_BEADS_IsInit == "True")
+// {{ 146 1 0 "1040fcdb_b304_4c76_afef2a89ac6d6d52" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (_MODULE_MAGNETIC_BEADS_IsInit == "True")
 {
 // }} ""
 // {{{ 147 1 0 "e4857354_6c4e_466f_93842bf48e5241d3" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
@@ -97,14 +97,14 @@ ReturnString = RETURN::CreateReturnString(ID, Translate("Already Initialized"), 
 // {{{ 149 1 0 "a90f6a72_6712_4977_9cc5cd36bc5e1369" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{ 150 1 0 "d93f0893_abad_42f0_b7e6b2737892866a" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 150 1 0 "1040fcdb_b304_4c76_afef2a89ac6d6d52" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
 // {{ 151 1 0 "511981b7_4432_4177_84de5732eec1098a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 152 1 0 "81eb4957_d8ad_4a8f_811b58065a47c3cd" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-MAGNETIC_BEADS_IsInit = Translate("True");
+// {{ 152 1 0 "06cf7eed_b7ce_411e_828bcf09dc39440c" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+_MODULE_MAGNETIC_BEADS_IsInit = Translate("True");
 // }} ""
 // {{{ 153 1 0 "3ce2ce7b_231d_43ca_88cba5536d1dccd8" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 MAGNETIC_BEADS_CONFIG::Init();
@@ -659,8 +659,8 @@ private variable ReturnString;
 // {{{ 10 1 0 "44046fd2_19be_4183_a1173ff151830d5a" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 Command = COMMANDS::GetCommandStringCommand(i_CommandString);
 // }} ""
-// {{ 11 1 0 "ec15d53b_ef4b_43da_9996b856a5d0730d" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-if (MAGNETIC_BEADS_IsInit != "True")
+// {{ 11 1 0 "8d7ecdfe_a1cf_457e_9bf1dcff13e2c7a1" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (_MODULE_MAGNETIC_BEADS_IsInit != "True")
 {
 // }} ""
 // {{{ 12 1 0 "1e93b207_74c0_431b_b314b9431a3afa31" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
@@ -672,7 +672,7 @@ ReturnString = RETURN::CreateReturnString(ID, Translate("Module not initialized"
 // {{{ 14 1 0 "5c7da8c7_2c73_4b95_b08fd9a7eeb3db99" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{ 15 1 0 "ec15d53b_ef4b_43da_9996b856a5d0730d" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 15 1 0 "8d7ecdfe_a1cf_457e_9bf1dcff13e2c7a1" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
 // {{ 16 1 0 "47d5bcec_8dd1_4e13_9e09b28e1c8fe298" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
@@ -746,8 +746,8 @@ private variable ID;
 private variable ReturnString;
 // {{ 5 "DeInit" "InitLocals"
 // }} ""
-// {{ 1 1 0 "54a309c2_263c_4e44_bfb65f1cd76d70ce" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-if (MAGNETIC_BEADS_IsInit == "True")
+// {{ 1 1 0 "1a8e1bdd_ce0c_4660_96174f0e3577a68f" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (_MODULE_MAGNETIC_BEADS_IsInit == "True")
 {
 // }} ""
 // {{{ 2 1 0 "8a44bae7_7d47_49ac_9ecb901201fabc0d" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
@@ -759,7 +759,7 @@ ReturnString = RETURN::CreateReturnString(ID, Translate("Deinit Successful"), Tr
 // {{{ 4 1 0 "19f05865_8849_4a8e_aa873825bc9e55de" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{ 5 1 0 "54a309c2_263c_4e44_bfb65f1cd76d70ce" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 5 1 0 "1a8e1bdd_ce0c_4660_96174f0e3577a68f" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
 // {{{ 6 1 0 "ba1242c8_3bf7_48da_b6404ee7d418e7e7" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
@@ -829,4 +829,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-03-23 18:30$$checksum=ffa84394$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-03-29 08:00$$checksum=bf532c9c$$length=084$$

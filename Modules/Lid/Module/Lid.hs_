@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 3/23/2022 6:27:17 PM
+// Generated at 3/29/2022 7:55:19 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -10,12 +10,12 @@ function _ExitLibrary() { }
 function DeInit( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function DoCommand( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function Init( device & ML_STAR, variable i_CommandParameterStrings ) variable {  return (0); }
-global variable LID_IsInit("False");
-global variable LID_ReservedLids[];
+global variable _MODULE_LID_ReservedLids[];
+global variable _MODULE_LID_IsInit("False");
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-03-23 18:27$$checksum=51dd2ac9$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-03-29 07:55$$checksum=1eb6b622$$length=082$$

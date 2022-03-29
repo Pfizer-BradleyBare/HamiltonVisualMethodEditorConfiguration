@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 3/23/2022 7:03:11 PM
+// Generated at 3/29/2022 9:05:11 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -10,13 +10,13 @@ function _ExitLibrary() { }
 function DeInit( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function DoCommand( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function Init( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
-global variable VACUUM_VacuumHandles[];
-global variable VACUUM_IsInit("False");
-global variable VACUUM_VacuumReservations[];
+global variable _MODULE_VACUUM_IsInit("False");
+global variable _MODULE_VACUUM_VacuumHandles[];
+global variable _MODULE_VACUUM_VacuumReservations[];
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-03-23 19:03$$checksum=483a877e$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-03-29 09:05$$checksum=c0b56c15$$length=082$$
