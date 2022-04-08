@@ -45,7 +45,7 @@ private function EDIT_Configuration(  ) void {
 // }} ""
 // {{ 5 "EDIT_Configuration" "InitLocals"
 // }} ""
-// {{ 1 1 0 "3aa9b634_d67f_44f3_944f38be66c0d4a4" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 1 1 0 "4f43c2ba_4514_4e83_971da6cdbdad71a6" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 _MODULE_HEATER_CONFIG_AmbientTemp = 0;
 // }} ""
 // {{ 2 1 0 "cf2d8f92_fa96_454e_b3b58e7c91551265" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
@@ -57,10 +57,10 @@ _MODULE_HEATER_CONFIG_TempDelta = 2;
 // {{ 4 1 0 "41407eaf_d0c9_4c2d_8372177a89fc81a2" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 _MODULE_HEATER_CONFIG_ComPorts.SetSize(0);
 // }} ""
-// {{ 5 1 0 "754154c3_f96f_43f8_a389ff6a4526e772" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+// {{ 5 1 0 "1e116cae_470c_4ab5_a64e22bd9f91f775" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 _MODULE_HEATER_CONFIG_ComPorts.AddAsLast(1);
 // }} ""
-// {{ 6 1 0 "47f5adc9_67e6_48a2_bba6d9617bf15719" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+// {{ 6 1 0 "eef0c897_7527_49b0_82ebbaf42f5c87dd" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 _MODULE_HEATER_CONFIG_ComPorts.AddAsLast(2);
 // }} ""
 // {{ 7 1 0 "312645a6_7f61_4ae2_830070353ad555ef" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
@@ -295,4 +295,4 @@ return (_MODULE_HEATER_CONFIG_TempDelta);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-03-28 09:33$$checksum=ca53d057$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-04-08 12:09$$checksum=6b756858$$length=084$$
