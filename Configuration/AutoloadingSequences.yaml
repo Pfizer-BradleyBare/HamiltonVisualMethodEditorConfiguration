@@ -29,6 +29,7 @@ Carrier38_Pos3_96WellPCRPlate200uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier38_Pos3
   Vacuum Compatible: False
+  Desalting Compatible: False
   
 
 Carrier14_Pos3_96WellPCRPlate200uL_1mLChannel:
@@ -41,6 +42,7 @@ Carrier14_Pos3_96WellPCRPlate200uL_1mLChannel:
   Lid Sequence: Carrier14_Pos3_Lid_200uL
   Deck Position: Carrier14_Pos3
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 Carrier14_Pos4_96WellPCRPlate200uL_1mLChannel:
   Max Supported Volume: 225
@@ -52,6 +54,7 @@ Carrier14_Pos4_96WellPCRPlate200uL_1mLChannel:
   Lid Sequence: Carrier14_Pos4_Lid_200uL
   Deck Position: Carrier14_Pos4
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 Carrier14_Pos5_96WellPCRPlate200uL_1mLChannel:
   Max Supported Volume: 225
@@ -63,6 +66,7 @@ Carrier14_Pos5_96WellPCRPlate200uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier14_Pos5
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 #
 # 400uL plates
@@ -78,6 +82,7 @@ Carrier14_Pos3_96WellPCRPlate400uL_1mLChannel:
   Lid Sequence: Carrier14_Pos3_Lid_400uL
   Deck Position: Carrier14_Pos3
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 Carrier14_Pos4_96WellPCRPlate400uL_1mLChannel:
   Max Supported Volume: 450
@@ -89,6 +94,7 @@ Carrier14_Pos4_96WellPCRPlate400uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier14_Pos4
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 Carrier14_Pos5_96WellPCRPlate400uL_1mLChannel:
   Max Supported Volume: 450
@@ -100,6 +106,7 @@ Carrier14_Pos5_96WellPCRPlate400uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier14_Pos5
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 #
 # 1200uL plates
@@ -137,6 +144,7 @@ Carrier14_Pos1_96WellPCRPlate1200uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier14_Pos1
   Vacuum Compatible: Waters Glycoworks HILIC Plate
+  Desalting Compatible: IMCS SizeX Desalt
 
 Carrier14_Pos2_96WellPCRPlate1200uL_1mLChannel:
   Max Supported Volume: 1300
@@ -148,6 +156,7 @@ Carrier14_Pos2_96WellPCRPlate1200uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier14_Pos2
   Vacuum Compatible: Waters Glycoworks HILIC Plate
+  Desalting Compatible: IMCS SizeX Desalt
 
 Carrier14_Pos3_96WellPCRPlate1200uL_1mLChannel:
   Max Supported Volume: 1300
@@ -159,6 +168,7 @@ Carrier14_Pos3_96WellPCRPlate1200uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier14_Pos3
   Vacuum Compatible: Waters Glycoworks HILIC Plate
+  Desalting Compatible: IMCS SizeX Desalt
 
 Carrier14_Pos4_96WellPCRPlate1200uL_1mLChannel:
   Max Supported Volume: 1300
@@ -170,6 +180,7 @@ Carrier14_Pos4_96WellPCRPlate1200uL_1mLChannel:
   Lid Sequence: Carrier14_Pos4_Lid_1200uL
   Deck Position: Carrier14_Pos4
   Vacuum Compatible: Waters Glycoworks HILIC Plate
+  Desalting Compatible: IMCS SizeX Desalt
 
 Carrier14_Pos5_96WellPCRPlate1200uL_1mLChannel:
   Max Supported Volume: 1300
@@ -181,6 +192,7 @@ Carrier14_Pos5_96WellPCRPlate1200uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier14_Pos5
   Vacuum Compatible: Waters Glycoworks HILIC Plate
+  Desalting Compatible: IMCS SizeX Desalt
 
 Carrier38_Pos4_96WellPCRPlate1200uL_1mLChannel:
   Max Supported Volume: 1300
@@ -192,6 +204,7 @@ Carrier38_Pos4_96WellPCRPlate1200uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier38_Pos4
   Vacuum Compatible: Waters Glycoworks HILIC Plate
+  Desalting Compatible: IMCS SizeX Desalt
 
 Carrier38_Pos5_96WellPCRPlate1200uL_1mLChannel:
   Max Supported Volume: 1300
@@ -203,6 +216,7 @@ Carrier38_Pos5_96WellPCRPlate1200uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier38_Pos5
   Vacuum Compatible: Waters Glycoworks HILIC Plate
+  Desalting Compatible: IMCS SizeX Desalt
 
 #2000
 Carrier38_Pos1_96WellPCRPlate2000uL_1mLChannel:
@@ -215,6 +229,19 @@ Carrier38_Pos1_96WellPCRPlate2000uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier38_Pos1
   Vacuum Compatible: 0.45um Self Poured ProA Plate
+  Desalting Compatible: IMCS SizeX Desalt
+
+  Carrier38_Pos4_96WellPCRPlate2000uL_1mLChannel:
+  Max Supported Volume: 2300
+  Dead Volume: 100
+  Storage Condition: False
+  Labware Category: Plate
+  Labware Type: 96 Well PCR Plate
+  Labware Name: 2000uL Corning 96 Well PCR Plate
+  Lid Sequence: False
+  Deck Position: Carrier38_Pos4
+  Vacuum Compatible: 0.45um Self Poured ProA Plate
+  Desalting Compatible: IMCS SizeX Desalt
 
 Carrier14_Pos1_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2300
@@ -226,6 +253,7 @@ Carrier14_Pos1_96WellPCRPlate2000uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier14_Pos1
   Vacuum Compatible: 0.45um Self Poured ProA Plate
+  Desalting Compatible: IMCS SizeX Desalt
 
 Carrier14_Pos2_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2300
@@ -237,6 +265,7 @@ Carrier14_Pos2_96WellPCRPlate2000uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier14_Pos2
   Vacuum Compatible: 0.45um Self Poured ProA Plate
+  Desalting Compatible: IMCS SizeX Desalt
 
 Carrier14_Pos3_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2300
@@ -248,6 +277,7 @@ Carrier14_Pos3_96WellPCRPlate2000uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier14_Pos3
   Vacuum Compatible: 0.45um Self Poured ProA Plate
+  Desalting Compatible: IMCS SizeX Desalt
 
 Carrier14_Pos4_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2300
@@ -259,6 +289,7 @@ Carrier14_Pos4_96WellPCRPlate2000uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier14_Pos4
   Vacuum Compatible: 0.45um Self Poured ProA Plate
+  Desalting Compatible: IMCS SizeX Desalt
 
 Carrier14_Pos5_96WellPCRPlate2000uL_1mLChannel:
   Max Supported Volume: 2300
@@ -270,6 +301,7 @@ Carrier14_Pos5_96WellPCRPlate2000uL_1mLChannel:
   Lid Sequence: False
   Deck Position: Carrier14_Pos5
   Vacuum Compatible: 0.45um Self Poured ProA Plate
+  Desalting Compatible: IMCS SizeX Desalt
 
 #Starstedt plates
 
@@ -314,6 +346,7 @@ E1:
   Lid Sequence: True
   Deck Position: E1
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 E2:
   Max Supported Volume: 1500
@@ -325,6 +358,7 @@ E2:
   Lid Sequence: True
   Deck Position: E2
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 E3:
   Max Supported Volume: 1500
@@ -336,6 +370,7 @@ E3:
   Lid Sequence: True
   Deck Position: E3
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 E4:
   Max Supported Volume: 1500
@@ -347,6 +382,7 @@ E4:
   Lid Sequence: True
   Deck Position: E4
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 E5:
   Max Supported Volume: 1500
@@ -358,6 +394,7 @@ E5:
   Lid Sequence: True
   Deck Position: E5
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 E6:
   Max Supported Volume: 1500
@@ -369,6 +406,7 @@ E6:
   Lid Sequence: True
   Deck Position: E6
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 E7:
   Max Supported Volume: 1500
@@ -380,6 +418,7 @@ E7:
   Lid Sequence: True
   Deck Position: E7
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 E8:
   Max Supported Volume: 1500
@@ -391,6 +430,7 @@ E8:
   Lid Sequence: True
   Deck Position: E8
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F1:
   Max Supported Volume: 1500
@@ -402,6 +442,7 @@ F1:
   Lid Sequence: True
   Deck Position: F1
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F2:
   Max Supported Volume: 1500
@@ -413,6 +454,7 @@ F2:
   Lid Sequence: True
   Deck Position: F2
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F3:
   Max Supported Volume: 1500
@@ -424,6 +466,7 @@ F3:
   Lid Sequence: True
   Deck Position: F3
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F4:
   Max Supported Volume: 1500
@@ -435,6 +478,7 @@ F4:
   Lid Sequence: True
   Deck Position: F4
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F5:
   Max Supported Volume: 1500
@@ -446,6 +490,7 @@ F5:
   Lid Sequence: True
   Deck Position: F5
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F6:
   Max Supported Volume: 1500
@@ -457,6 +502,7 @@ F6:
   Lid Sequence: True
   Deck Position: F6
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F7:
   Max Supported Volume: 1500
@@ -468,6 +514,7 @@ F7:
   Lid Sequence: True
   Deck Position: F7
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F8:
   Max Supported Volume: 1500
@@ -479,6 +526,7 @@ F8:
   Lid Sequence: True
   Deck Position: F8
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F9:
   Max Supported Volume: 1500
@@ -490,6 +538,7 @@ F9:
   Lid Sequence: True
   Deck Position: F9
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F10:
   Max Supported Volume: 1500
@@ -501,6 +550,7 @@ F10:
   Lid Sequence: True
   Deck Position: F10
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F11:
   Max Supported Volume: 1500
@@ -512,6 +562,7 @@ F11:
   Lid Sequence: True
   Deck Position: F11
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F12:
   Max Supported Volume: 1500
@@ -523,6 +574,7 @@ F12:
   Lid Sequence: True
   Deck Position: F12
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F13:
   Max Supported Volume: 1500
@@ -534,6 +586,7 @@ F13:
   Lid Sequence: True
   Deck Position: F13
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F14:
   Max Supported Volume: 1500
@@ -545,6 +598,7 @@ F14:
   Lid Sequence: True
   Deck Position: F14
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F15:
   Max Supported Volume: 1500
@@ -556,6 +610,7 @@ F15:
   Lid Sequence: True
   Deck Position: F15
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F16:
   Max Supported Volume: 1500
@@ -567,6 +622,7 @@ F16:
   Lid Sequence: True
   Deck Position: F16
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F17:
   Max Supported Volume: 1500
@@ -578,6 +634,7 @@ F17:
   Lid Sequence: True
   Deck Position: F17
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F18:
   Max Supported Volume: 1500
@@ -589,6 +646,7 @@ F18:
   Lid Sequence: True
   Deck Position: F18
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F19:
   Max Supported Volume: 1500
@@ -600,6 +658,7 @@ F19:
   Lid Sequence: True
   Deck Position: F19
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F20:
   Max Supported Volume: 1500
@@ -611,6 +670,7 @@ F20:
   Lid Sequence: True
   Deck Position: F20
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F21:
   Max Supported Volume: 1500
@@ -622,6 +682,7 @@ F21:
   Lid Sequence: True
   Deck Position: F21
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F22:
   Max Supported Volume: 1500
@@ -633,6 +694,7 @@ F22:
   Lid Sequence: True
   Deck Position: F22
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F23:
   Max Supported Volume: 1500
@@ -644,6 +706,7 @@ F23:
   Lid Sequence: True
   Deck Position: F23
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F24:
   Max Supported Volume: 1500
@@ -655,6 +718,7 @@ F24:
   Lid Sequence: True
   Deck Position: F24
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F25:
   Max Supported Volume: 1500
@@ -666,6 +730,7 @@ F25:
   Lid Sequence: True
   Deck Position: F25
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F26:
   Max Supported Volume: 1500
@@ -677,6 +742,7 @@ F26:
   Lid Sequence: True
   Deck Position: F26
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F27:
   Max Supported Volume: 1500
@@ -688,6 +754,7 @@ F27:
   Lid Sequence: True
   Deck Position: F27
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F28:
   Max Supported Volume: 1500
@@ -699,6 +766,7 @@ F28:
   Lid Sequence: True
   Deck Position: F28
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F29:
   Max Supported Volume: 1500
@@ -710,6 +778,7 @@ F29:
   Lid Sequence: True
   Deck Position: F29
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F30:
   Max Supported Volume: 1500
@@ -721,6 +790,7 @@ F30:
   Lid Sequence: True
   Deck Position: F30
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F31:
   Max Supported Volume: 1500
@@ -732,6 +802,7 @@ F31:
   Lid Sequence: True
   Deck Position: F31
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 F32:
   Max Supported Volume: 1500
@@ -743,6 +814,7 @@ F32:
   Lid Sequence: True
   Deck Position: F32
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C1:
   Max Supported Volume: 14000
@@ -754,6 +826,7 @@ C1:
   Lid Sequence: False
   Deck Position: C1
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C2:
   Max Supported Volume: 14000
@@ -765,6 +838,7 @@ C2:
   Lid Sequence: False
   Deck Position: C2
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C3:
   Max Supported Volume: 14000
@@ -776,6 +850,7 @@ C3:
   Lid Sequence: False
   Deck Position: C3
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C4:
   Max Supported Volume: 14000
@@ -787,6 +862,7 @@ C4:
   Lid Sequence: False
   Deck Position: C4
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C5:
   Max Supported Volume: 14000
@@ -798,6 +874,7 @@ C5:
   Lid Sequence: False
   Deck Position: C5
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C6:
   Max Supported Volume: 14000
@@ -809,6 +886,7 @@ C6:
   Lid Sequence: False
   Deck Position: C6
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C7:
   Max Supported Volume: 14000
@@ -820,6 +898,7 @@ C7:
   Lid Sequence: False
   Deck Position: C7
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C8:
   Max Supported Volume: 14000
@@ -831,6 +910,7 @@ C8:
   Lid Sequence: False
   Deck Position: C8
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C9:
   Max Supported Volume: 14000
@@ -842,6 +922,7 @@ C9:
   Lid Sequence: False
   Deck Position: C9
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C10:
   Max Supported Volume: 14000
@@ -853,6 +934,7 @@ C10:
   Lid Sequence: False
   Deck Position: C10
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C11:
   Max Supported Volume: 14000
@@ -864,6 +946,7 @@ C11:
   Lid Sequence: False
   Deck Position: C11
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C12:
   Max Supported Volume: 14000
@@ -875,6 +958,7 @@ C12:
   Lid Sequence: False
   Deck Position: C12
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C13:
   Max Supported Volume: 14000
@@ -886,6 +970,7 @@ C13:
   Lid Sequence: False
   Deck Position: C13
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C14:
   Max Supported Volume: 14000
@@ -897,6 +982,7 @@ C14:
   Lid Sequence: False
   Deck Position: C14
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C15:
   Max Supported Volume: 14000
@@ -908,6 +994,7 @@ C15:
   Lid Sequence: False
   Deck Position: C15
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C16:
   Max Supported Volume: 14000
@@ -919,6 +1006,7 @@ C16:
   Lid Sequence: False
   Deck Position: C16
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C17:
   Max Supported Volume: 14000
@@ -930,6 +1018,7 @@ C17:
   Lid Sequence: False
   Deck Position: C17
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C18:
   Max Supported Volume: 14000
@@ -941,6 +1030,7 @@ C18:
   Lid Sequence: False
   Deck Position: C18
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C19:
   Max Supported Volume: 14000
@@ -952,6 +1042,7 @@ C19:
   Lid Sequence: False
   Deck Position: C19
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C20:
   Max Supported Volume: 14000
@@ -963,6 +1054,7 @@ C20:
   Lid Sequence: False
   Deck Position: C20
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C21:
   Max Supported Volume: 14000
@@ -974,6 +1066,7 @@ C21:
   Lid Sequence: False
   Deck Position: C21
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C22:
   Max Supported Volume: 14000
@@ -985,6 +1078,7 @@ C22:
   Lid Sequence: False
   Deck Position: C22
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C23:
   Max Supported Volume: 14000
@@ -996,6 +1090,7 @@ C23:
   Lid Sequence: False
   Deck Position: C23
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 C24:
   Max Supported Volume: 14000
@@ -1007,6 +1102,7 @@ C24:
   Lid Sequence: False
   Deck Position: C24
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 R1:
   Max Supported Volume: 50000
@@ -1018,6 +1114,7 @@ R1:
   Lid Sequence: False
   Deck Position: R1
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 R2:
   Max Supported Volume: 50000
@@ -1029,6 +1126,7 @@ R2:
   Lid Sequence: False
   Deck Position: R2
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 R3:
   Max Supported Volume: 50000
@@ -1040,6 +1138,7 @@ R3:
   Lid Sequence: False
   Deck Position: R3
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 R4:
   Max Supported Volume: 50000
@@ -1051,6 +1150,7 @@ R4:
   Lid Sequence: False
   Deck Position: R4
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 R5:
   Max Supported Volume: 50000
@@ -1062,6 +1162,7 @@ R5:
   Lid Sequence: False
   Deck Position: R5
   Vacuum Compatible: False
+  Desalting Compatible: False
 
 T5:
   Max Supported Volume: 200000
@@ -1073,6 +1174,7 @@ T5:
   Lid Sequence: False
   Deck Position: Carrier38_Pos1
   Vacuum Compatible: False
+  Desalting Compatible: IMCS SizeX Desalt
 
 T4:
   Max Supported Volume: 200000
@@ -1084,6 +1186,7 @@ T4:
   Lid Sequence: False
   Deck Position: Carrier38_Pos2
   Vacuum Compatible: False
+  Desalting Compatible: IMCS SizeX Desalt
 
 T10:
   Max Supported Volume: 200000
@@ -1095,6 +1198,7 @@ T10:
   Lid Sequence: False
   Deck Position: Carrier14_Pos1
   Vacuum Compatible: False
+  Desalting Compatible: IMCS SizeX Desalt
 
 T9:
   Max Supported Volume: 200000
@@ -1106,3 +1210,4 @@ T9:
   Lid Sequence: False
   Deck Position: Carrier14_Pos2
   Vacuum Compatible: False
+  Desalting Compatible: IMCS SizeX Desalt

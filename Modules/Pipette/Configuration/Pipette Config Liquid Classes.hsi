@@ -10,9 +10,9 @@
 // {{{ 2 "LibraryNamespace" "Begin"
 namespace PIPETTE_CONFIG_LIQUID_CLASSES {
 // }} ""
-variable LiquidClassVolumes[];
-variable LiquidClassClasses[];
-variable LiquidClassLiquidCategories[];
+global variable _MODULE_PIPETTE_CONFIG_LiquidClassLiquidCategories[];
+global variable _MODULE_PIPETTE_CONFIG_LiquidClassVolumes[];
+global variable _MODULE_PIPETTE_CONFIG_LiquidClassClasses[];
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
 function EDIT_ConfigurationLiquidClasses(  ) void ;
@@ -36,47 +36,47 @@ function EDIT_ConfigurationLiquidClasses(  ) void {
 // {{ 1 1 0 "d1a5506b_f24e_4bf1_84e96671d5a3e8f5" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 2 1 0 "d3faf560_4fa8_4de4_997b23a3dcff028d" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
-LiquidClassVolumes.SetSize(0);
+// {{ 2 1 0 "1c09d73f_d128_49ea_b9c315e98cb704fb" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+_MODULE_PIPETTE_CONFIG_LiquidClassVolumes.SetSize(0);
 // }} ""
-// {{ 3 1 0 "e3702034_7760_4053_9b7c437ad9b4c58c" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-LiquidClassVolumes.AddAsLast(5);
+// {{ 3 1 0 "93f136ef_9db9_4acd_9206acb6f09bc534" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_PIPETTE_CONFIG_LiquidClassVolumes.AddAsLast(5);
 // }} ""
-// {{ 4 1 0 "866c36a6_4835_4d1d_a196bb90e08269b6" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-LiquidClassVolumes.AddAsLast(50);
+// {{ 4 1 0 "5c510cdd_5029_4ebe_b32ed40d5dd4ab86" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_PIPETTE_CONFIG_LiquidClassVolumes.AddAsLast(50);
 // }} ""
-// {{ 5 1 0 "87101b29_24b1_4bd2_837dfd3238e9b7bf" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-LiquidClassVolumes.AddAsLast(300);
+// {{ 5 1 0 "097b635a_72aa_44b0_8ca09f4292d6b681" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_PIPETTE_CONFIG_LiquidClassVolumes.AddAsLast(300);
 // }} ""
-// {{ 6 1 0 "c04ed72a_3fc8_4d88_90b73eff27860d89" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-LiquidClassVolumes.AddAsLast(1000);
+// {{ 6 1 0 "070e98b4_5102_4061_b9d43d390aea772a" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_PIPETTE_CONFIG_LiquidClassVolumes.AddAsLast(1000);
 // }} ""
 // {{ 7 1 0 "22af56e5_4563_4d9b_ba65287aedb6c2bf" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 8 1 0 "4397ca9a_0fb9_411c_af42eee306b2f055" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
-LiquidClassLiquidCategories.SetSize(0);
+// {{ 8 1 0 "a9dd73d2_3a35_40e0_b360af8f87ab9222" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+_MODULE_PIPETTE_CONFIG_LiquidClassLiquidCategories.SetSize(0);
 // }} ""
-// {{ 9 1 0 "439460ea_92d4_471d_82f36b4273d8b09e" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-LiquidClassLiquidCategories.AddAsLast(Translate("Water"));
+// {{ 9 1 0 "2528f5a2_1941_4955_98f47f970ef07f17" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_PIPETTE_CONFIG_LiquidClassLiquidCategories.AddAsLast(Translate("Water"));
 // }} ""
 // {{ 10 1 0 "58d0c32f_7611_4482_a914c54681cd1f4a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 11 1 0 "778df641_899b_42bb_af15d20b4a5b0fd6" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-LiquidClassClasses = HSLExtensions::Array2D::Create(1, 4);
+// {{{ 11 1 0 "436fc6a2_f4e5_427f_bb87e38aa0349193" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+_MODULE_PIPETTE_CONFIG_LiquidClassClasses = HSLExtensions::Array2D::Create(1, 4);
 // }} ""
-// {{{ 12 1 0 "5ee407f8_7838_4bb3_8ff2c694d1ce34ac" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(LiquidClassClasses, 1, 1, Translate("Tip_50_TrisTweenBuffer_SurfaceEmpty_Normalization"));
+// {{{ 12 1 0 "37da46a7_0b97_4665_80f027b75b7418a7" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_LiquidClassClasses, 1, 1, Translate("Tip_50_TrisTweenBuffer_SurfaceEmpty_Normalization"));
 // }} ""
-// {{{ 13 1 0 "ccb60dc4_24db_4450_bd9613d4ebf39b78" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(LiquidClassClasses, 1, 2, Translate("Tip_50ul_Water_DispenseSurface_Empty"));
+// {{{ 13 1 0 "f54f841a_e57f_4330_8d1c65627645765f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_LiquidClassClasses, 1, 2, Translate("Tip_50ul_Water_DispenseSurface_Empty"));
 // }} ""
-// {{{ 14 1 0 "6de597f8_a76e_4d4d_bf2e40d1d8079e50" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(LiquidClassClasses, 1, 3, Translate("StandardVolume_Water_DispenseSurface_Empty"));
+// {{{ 14 1 0 "1d5e86e7_d506_4115_a01b609038c5c22f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_LiquidClassClasses, 1, 3, Translate("StandardVolume_Water_DispenseSurface_Empty"));
 // }} ""
-// {{{ 15 1 0 "ace10c92_6b6e_4218_b75c5a5dcfe35b36" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(LiquidClassClasses, 1, 4, Translate("HighVolume_Water_DispenseSurface_Empty"));
+// {{{ 15 1 0 "ef8b6963_4ba7_48df_bd4f5e7734dd5428" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_LiquidClassClasses, 1, 4, Translate("HighVolume_Water_DispenseSurface_Empty"));
 // }} ""
 // {{{ 5 "EDIT_ConfigurationLiquidClasses" "End"
 }
@@ -87,8 +87,8 @@ function GetLiquidClassVolumes( variable & o_LiquidClassVolumes[] ) void {
 // {{ 5 "GetLiquidClassVolumes" "InitLocals"
 o_LiquidClassVolumes.SetSize( 0);
 // }} ""
-// {{ 21 1 0 "3f4ae28a_650c_4e22_947b0881b3ae9f05" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
-o_LiquidClassVolumes=LiquidClassVolumes;
+// {{ 21 1 0 "5116695f_7685_4dc8_85ad4fa840185239" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_LiquidClassVolumes=_MODULE_PIPETTE_CONFIG_LiquidClassVolumes;
 // }} ""
 // {{{ 5 "GetLiquidClassVolumes" "End"
 }
@@ -99,8 +99,8 @@ function GetLiquidClassCategories( variable & o_LiquidClassCategories[] ) void {
 // {{ 5 "GetLiquidClassCategories" "InitLocals"
 o_LiquidClassCategories.SetSize( 0);
 // }} ""
-// {{ 17 1 0 "900e7cbe_cc13_40a0_b04e7566826e51a4" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
-o_LiquidClassCategories=LiquidClassLiquidCategories;
+// {{ 17 1 0 "5b6aeb12_fb0b_4df8_b18fe0a4b9a265d9" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_LiquidClassCategories=_MODULE_PIPETTE_CONFIG_LiquidClassLiquidCategories;
 // }} ""
 // {{{ 5 "GetLiquidClassCategories" "End"
 }
@@ -111,8 +111,8 @@ function GetLiquidClassClasses( variable & o_LiquidClassClasses[] ) void {
 // {{ 5 "GetLiquidClassClasses" "InitLocals"
 o_LiquidClassClasses.SetSize( 0);
 // }} ""
-// {{ 19 1 0 "b087f043_33fb_406e_a650510ef6ef7d70" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
-o_LiquidClassClasses=LiquidClassClasses;
+// {{ 19 1 0 "179ba13a_51c5_4c80_8ce58fa2a11b7a30" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_LiquidClassClasses=_MODULE_PIPETTE_CONFIG_LiquidClassClasses;
 // }} ""
 // {{{ 5 "GetLiquidClassClasses" "End"
 }
@@ -121,4 +121,4 @@ o_LiquidClassClasses=LiquidClassClasses;
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-18 15:29$$checksum=e5c465e2$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-03-29 08:07$$checksum=b2d6997c$$length=084$$
