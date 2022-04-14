@@ -66,17 +66,17 @@ LiquidClassLiquidCategories.AddAsLast(Translate("Water"));
 // {{{ 11 1 0 "778df641_899b_42bb_af15d20b4a5b0fd6" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 LiquidClassClasses = HSLExtensions::Array2D::Create(1, 4);
 // }} ""
-// {{{ 12 1 0 "5ee407f8_7838_4bb3_8ff2c694d1ce34ac" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(LiquidClassClasses, 1, 1, Translate("Tip_50_TrisTweenBuffer_SurfaceEmpty_Normalization"));
+// {{{ 12 1 0 "de8c3dd3_5891_448f_93d467c57214183a" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(LiquidClassClasses, 1, 1, Translate("Tip_50_TrisTweenBuffer_SurfaceEmpty_Normalization_WithFilter"));
 // }} ""
-// {{{ 13 1 0 "ccb60dc4_24db_4450_bd9613d4ebf39b78" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(LiquidClassClasses, 1, 2, Translate("Tip_50ul_Water_DispenseSurface_Empty"));
+// {{{ 13 1 0 "7c2b55ed_6ab8_454f_b673b6f3f4600bde" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(LiquidClassClasses, 1, 2, Translate("Tip_50ul_Water_DispenseSurface_Empty_WithFilter"));
 // }} ""
-// {{{ 14 1 0 "6de597f8_a76e_4d4d_bf2e40d1d8079e50" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(LiquidClassClasses, 1, 3, Translate("StandardVolume_Water_DispenseSurface_Empty"));
+// {{{ 14 1 0 "56cfa782_c098_499b_b4192290661a10e4" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(LiquidClassClasses, 1, 3, Translate("StandardVolume_Water_DispenseSurface_Empty_WithFilter"));
 // }} ""
-// {{{ 15 1 0 "ace10c92_6b6e_4218_b75c5a5dcfe35b36" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(LiquidClassClasses, 1, 4, Translate("HighVolume_Water_DispenseSurface_Empty"));
+// {{{ 15 1 0 "ef546e39_81c3_49fb_a9f4bf832f001aa9" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(LiquidClassClasses, 1, 4, Translate("HighVolume_Water_DispenseSurface_Empty_WithFilter"));
 // }} ""
 // {{{ 5 "EDIT_ConfigurationLiquidClasses" "End"
 }
@@ -121,4 +121,4 @@ o_LiquidClassClasses=LiquidClassClasses;
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-01-18 15:29$$checksum=e5c465e2$$length=084$$
+// $$author=FCNCHVGRD-PDAMI$$valid=0$$time=2022-04-14 07:06$$checksum=dad17344$$length=094$$

@@ -81,7 +81,6 @@ private variable ReturnString;
 private variable PlateName;
 private variable LabwareTypeGetterTemp[];
 private variable Delmiter;
-private variable SupportedSequenceStringsArray[];
 // {{ 5 "Init" "InitLocals"
 // }} ""
 // {{ 146 1 0 "95b6ddce_efec_4c62_b23e8509bd695393" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
@@ -144,108 +143,92 @@ NumPlateTypes=PlateTypeArray.GetSize();
 // {{{ 164 1 0 "e4dbf8c0_6dc1_44f8_9255ced8a3d1c4d1" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 MAGNETIC_BEADS_CONFIG::GetSupportedPlateTypesArray(SupportedPlateTypesArray);
 // }} ""
-// {{{ 165 1 0 "f4c57073_753e_4f16_899e23c192a2fc63" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-MAGNETIC_BEADS_CONFIG::GetSupportedPlateTypesSequenceStringsArray(SupportedSequenceStringsArray);
-// }} ""
-// {{ 166 1 0 "76b4447a_7beb_477a_acac8eaa41379928" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
+// {{ 165 1 0 "76b4447a_7beb_477a_acac8eaa41379928" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
 NumSupportedPlateTypes=SupportedPlateTypesArray.GetSize();
 // }} ""
-// {{ 167 1 0 "2f936501_2bbe_4daf_80ca655893c8b266" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
-{
-for(Counter = 0; Counter < NumSupportedPlateTypes;)
-{
-Counter = Counter + 1;
-// }} ""
-// {{{ 168 1 0 "e18bc989_a81f_4507_8bac7b19d59fb967" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-LABWARE::AddSingleLabware(SupportedSequenceStringsArray.ElementAt( Counter -1), SupportedSequenceStringsArray.ElementAt( Counter -1), Translate(""), Translate("96 Well PCR Plate"), SupportedPlateTypesArray.ElementAt( Counter -1), Translate("Plate"), Translate(""), Translate(""));
-// }} ""
-// {{ 169 1 0 "2f936501_2bbe_4daf_80ca655893c8b266" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
-}
-}
-// }} ""
-// {{ 170 1 0 "c1ad1a17_0538_4319_817fd1a39ab28962" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+// {{ 166 1 0 "c1ad1a17_0538_4319_817fd1a39ab28962" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 NotSupportedTypes.SetSize(0);
 // }} ""
-// {{{ 171 1 0 "f1bfc916_bbc1_4c74_8336c26cb1d24f71" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 167 1 0 "f1bfc916_bbc1_4c74_8336c26cb1d24f71" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 TrcTrace(Translate("PostModule"), Translate(""));
 // }} ""
-// {{ 172 1 0 "2c17ead0_4cfc_4d00_8cfdef17f2272340" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 168 1 0 "2c17ead0_4cfc_4d00_8cfdef17f2272340" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 {
 for(Counter = 0; Counter < NumPlateTypes;)
 {
 Counter = Counter + 1;
 // }} ""
-// {{ 173 1 0 "f7679211_50d6_4476_a17bbcd16d4490cc" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 169 1 0 "f7679211_50d6_4476_a17bbcd16d4490cc" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 {
 for(Counter2 = 0; Counter2 < NumSupportedPlateTypes;)
 {
 Counter2 = Counter2 + 1;
 // }} ""
-// {{{ 174 1 0 "9bd79003_79f9_4bf2_ae2c067714013a99" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 170 1 0 "9bd79003_79f9_4bf2_ae2c067714013a99" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 TrcTrace(Translate("Counter 2 Loop"), Translate(""));
 // }} ""
-// {{ 175 1 0 "e0f3ef75_1fee_43e9_b11c705c0e3b04b5" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 171 1 0 "e0f3ef75_1fee_43e9_b11c705c0e3b04b5" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 if (PlateTypeArray.ElementAt( Counter -1) == SupportedPlateTypesArray.ElementAt( Counter2 -1))
 {
 // }} ""
-// {{ 176 1 0 "8cf68db6_e697_4c92_b1bd231102e6d46d" "{B31F3533-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 172 1 0 "8cf68db6_e697_4c92_b1bd231102e6d46d" "{B31F3533-5D80-11d4-A5EB-0050DA737D89}"
 break;
 // }} ""
-// {{ 177 1 0 "e0f3ef75_1fee_43e9_b11c705c0e3b04b5" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 173 1 0 "e0f3ef75_1fee_43e9_b11c705c0e3b04b5" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{{ 178 1 0 "0b3377d5_2a5c_444b_a4c310f0166d6421" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 174 1 0 "0b3377d5_2a5c_444b_a4c310f0166d6421" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 TrcTrace(Translate("Counter 2 Loop 2"), Translate(""));
 // }} ""
-// {{ 179 1 0 "ba8a251a_70f9_451d_bd24c8f0ea61d378" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 175 1 0 "ba8a251a_70f9_451d_bd24c8f0ea61d378" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 if (Counter2 == NumSupportedPlateTypes)
 {
 // }} ""
-// {{ 180 1 0 "0b9cbaff_7a42_4625_b83ec16ab31e378a" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+// {{ 176 1 0 "0b9cbaff_7a42_4625_b83ec16ab31e378a" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 NotSupportedTypes.AddAsLast(PlateTypeArray.ElementAt( Counter -1));
 // }} ""
-// {{ 181 1 0 "ba8a251a_70f9_451d_bd24c8f0ea61d378" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 177 1 0 "ba8a251a_70f9_451d_bd24c8f0ea61d378" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{ 182 1 0 "f7679211_50d6_4476_a17bbcd16d4490cc" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
-}
-}
-// }} ""
-// {{ 183 1 0 "2c17ead0_4cfc_4d00_8cfdef17f2272340" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 178 1 0 "f7679211_50d6_4476_a17bbcd16d4490cc" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 }
 }
 // }} ""
-// {{ 184 1 0 "843f2782_1983_4ecc_a3d72e646c9eaa76" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
+// {{ 179 1 0 "2c17ead0_4cfc_4d00_8cfdef17f2272340" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+}
+}
+// }} ""
+// {{ 180 1 0 "843f2782_1983_4ecc_a3d72e646c9eaa76" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
 NumNotSupported=NotSupportedTypes.GetSize();
 // }} ""
-// {{ 185 1 0 "06106fac_bbaa_4eb7_acf9cd757e48f084" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 181 1 0 "06106fac_bbaa_4eb7_acf9cd757e48f084" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 if (NumNotSupported == 0)
 {
 // }} ""
-// {{{ 186 1 0 "84da2b07_6095_42f5_94faca579aa9b351" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 182 1 0 "84da2b07_6095_42f5_94faca579aa9b351" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ID = RETURNIDS::SuccessNoErrors();
 // }} ""
-// {{{ 187 1 0 "efa48747_1203_4125_acf5060aea184ba0" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 183 1 0 "efa48747_1203_4125_acf5060aea184ba0" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ReturnValue = RETURN::CreateReturnString(ID, Translate("All Plate types were supported"), Translate(""), Translate(""));
 // }} ""
-// {{ 188 1 0 "06106fac_bbaa_4eb7_acf9cd757e48f084" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 184 1 0 "06106fac_bbaa_4eb7_acf9cd757e48f084" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 else
 {
 // }} ""
-// {{{ 189 1 0 "f912c7e7_64c1_47cb_886fa438b3f52599" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 185 1 0 "f912c7e7_64c1_47cb_886fa438b3f52599" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 UnsupportedTypesString = TOOLS::ArrayToDelimitedList(Delimiter, NotSupportedTypes);
 // }} ""
-// {{{ 190 1 0 "bd1b6272_a266_4f7b_84e94219daacea32" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 186 1 0 "bd1b6272_a266_4f7b_84e94219daacea32" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ID = RETURNIDS::FailNotPossible();
 // }} ""
-// {{{ 191 1 0 "f1d058b6_f7de_4796_8fa2ba67e43340ee" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 187 1 0 "f1d058b6_f7de_4796_8fa2ba67e43340ee" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ReturnValue = RETURN::CreateReturnString(ID, Translate("Found unsupported plate types AS UnsupportedPlateTypes."), Translate("Response"), UnsupportedTypesString);
 // }} ""
-// {{ 192 1 0 "06106fac_bbaa_4eb7_acf9cd757e48f084" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 188 1 0 "06106fac_bbaa_4eb7_acf9cd757e48f084" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{{ 193 1 0 "f6a510f3_7b50_452b_8e6eefcfb1427413" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 189 1 0 "f6a510f3_7b50_452b_8e6eefcfb1427413" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnValue);
 // }} ""
 // {{{ 5 "Init" "End"
@@ -779,6 +762,7 @@ private function GetMagneticRackPlateTransportType( device & ML_STAR, variable i
 // }} ""
 private variable PlateName;
 private variable ID;
+private variable i_CommandParameterStrings;
 private variable ReturnString;
 private variable PlateType;
 private variable LabwareTypeGetterTemp[];
@@ -829,4 +813,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=FCNCHVGRD-PDAMI$$valid=0$$time=2022-03-07 14:36$$checksum=1acc560b$$length=094$$
+// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-02-03 13:13$$checksum=dfe73959$$length=094$$
