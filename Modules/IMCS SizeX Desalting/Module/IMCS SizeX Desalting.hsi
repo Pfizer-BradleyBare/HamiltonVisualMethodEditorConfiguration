@@ -1393,8 +1393,8 @@ private variable NumRacks;
 private variable NumParents;
 private variable Temp[];
 private variable Racks[];
-private dialog customDialogE9AD34BF77D54ad2B9A997994328D714;
-private variable _Desalt_TipType;
+private dialog customDialogF94ECA8C30F34f2c9D198F002E8D22A2;
+private variable _MODULE_IMCS_SIZEX_DESALTING_TipType;
 // {{ 5 "Init" "InitLocals"
 // }} ""
 // {{ 255 1 0 "5b69637f_854d_4f1b_8be2f1a0e967e1ed" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
@@ -1504,16 +1504,16 @@ abort;
 // {{ 288 1 0 "746f04c4_c4fe_4dd2_8ce4eb2751d36189" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{ 289 1 0 "f11b79db_f92d_487d_9946c750b7505045" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 289 1 0 "08c9dfec_51dc_4c90_9159f3bfb3611616" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
+customDialogF94ECA8C30F34f2c9D198F002E8D22A2.InitCustomDialog( "08c9dfec_51dc_4c90_9159f3bfb3611616" );
+customDialogF94ECA8C30F34f2c9D198F002E8D22A2.ShowCustomDialog();
+_MODULE_IMCS_SIZEX_DESALTING_TipType = customDialogF94ECA8C30F34f2c9D198F002E8D22A2.GetCustomDialogProperty( "comboBox1.SelectedIndex" );
+// }} ""
+// {{ 290 1 0 "f11b79db_f92d_487d_9946c750b7505045" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 MECC::TraceComment(Translate("Desalt module initialization succeeded"));
 // }} ""
-// {{ 290 1 0 "934e4c2e_dfaf_4438_834955cb4af806d9" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 291 1 0 "934e4c2e_dfaf_4438_834955cb4af806d9" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 _MODULE_IMCS_SIZEX_DESALTING_IsInit = Translate("True");
-// }} ""
-// {{ 291 1 0 "9812c916_2d53_416e_bb23a06b110e5a9c" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
-customDialogE9AD34BF77D54ad2B9A997994328D714.InitCustomDialog( "9812c916_2d53_416e_bb23a06b110e5a9c" );
-customDialogE9AD34BF77D54ad2B9A997994328D714.ShowCustomDialog();
-_Desalt_TipType = customDialogE9AD34BF77D54ad2B9A997994328D714.GetCustomDialogProperty( "comboBox1.SelectedIndex" );
 // }} ""
 // {{{ 292 1 0 "aa0002da_63aa_4047_a7f6cef05af3259b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ID = RETURNIDS::SuccessNoErrors();
@@ -1553,4 +1553,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-04-14 11:20$$checksum=18fe1d9c$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-04-14 13:28$$checksum=cf3d1615$$length=084$$
