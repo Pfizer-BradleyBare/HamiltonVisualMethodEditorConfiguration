@@ -19,6 +19,25 @@
 #####################################################
 
 
+##
+## 390uL UV Plates
+##
+Carrier38_Pos3_CorningCostar96WellUVPlate360uL:
+  Max Supported Volume: 390
+  Dead Volume: 10
+  Storage Condition: False
+  Labware Category: Plate
+  Labware Type: 96 Well UV Plate
+  Labware Name: 400uL Corning Costar 96 Well UV Plate
+  Lid Sequence: False
+  Deck Position: Carrier38_Pos3
+  Vacuum Compatible: False
+  Desalting Compatible: False
+
+##
+## 200uL plates
+##
+
 Carrier38_Pos3_96WellPCRPlate200uL_1mLChannel:
   Max Supported Volume: 225
   Dead Volume: 10

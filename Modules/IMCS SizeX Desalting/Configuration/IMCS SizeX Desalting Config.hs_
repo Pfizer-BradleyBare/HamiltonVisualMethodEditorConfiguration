@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 4/12/2022 9:55:24 PM
+// Generated at 4/14/2022 12:08:12 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -16,17 +16,18 @@ function GetPipetteTipDropoffSequence(  ) variable {  return (0); }
 function GetPipetteTipSequences( variable & o_PipetteTipSequenceStrings[] ) void { }
 function GetPipetteTipTypes( variable & o_PipetteTipTypeStrings[] ) void { }
 function Init(  ) void { }
-global variable _MODULE_IMCS_SIZEX_DESALTING_IMCSSampleSequences[];
-global variable _MODULE_IMCS_SIZEX_DESALTING_SupportedPipetteTipSequenceStrings[];
-global variable _MODULE_IMCS_SIZEX_DESALTING_IMCSRackSequences[];
-global variable _MODULE_IMCS_SIZEX_DESALTING_SupportedPipetteTipTypes[];
-global variable _MODULE_IMCS_SIZEX_DESALTING_TipSupportRackSequence;
-global variable _MODULE_IMCS_SIZEX_DESALTING_SupportedPipetteTipRackSequences[];
-global variable _MODULE_IMCS_SIZEX_DESALTING_IMCSLiquidHandlingParameters[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSRackSequences[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSSampleSequences[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSLiquidHandlingParameters[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipRackSequences[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipTypes[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipSupportRackSequence;
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipSequenceStrings[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSElutionMethods[];
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-04-12 21:55$$checksum=f9852246$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-04-14 12:08$$checksum=ee8a9b07$$length=082$$
