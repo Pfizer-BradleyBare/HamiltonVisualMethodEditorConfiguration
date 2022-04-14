@@ -131,28 +131,6 @@ Carrier14_Pos5_96WellPCRPlate400uL_1mLChannel:
 # 1200uL plates
 #
 
-Carrier38_Pos1_96WellPCRPlate1200uL_1mLChannel:
-  Max Supported Volume: 1300
-  Dead Volume: 50
-  Storage Condition: False
-  Labware Category: Plate
-  Labware Type: 96 Well PCR Plate
-  Labware Name: 1200uL DeepWell 96 Well PCR Plate
-  Lid Sequence: False
-  Deck Position: Carrier38_Pos1
-  Vacuum Compatible: Waters Glycoworks HILIC Plate
-
-Carrier38_Pos2_96WellPCRPlate1200uL_1mLChannel:
-  Max Supported Volume: 1300
-  Dead Volume: 50
-  Storage Condition: False
-  Labware Category: Plate
-  Labware Type: 96 Well PCR Plate
-  Labware Name: 1200uL DeepWell 96 Well PCR Plate
-  Lid Sequence: False
-  Deck Position: Carrier38_Pos2
-  Vacuum Compatible: Waters Glycoworks HILIC Plate
-
 Carrier14_Pos1_96WellPCRPlate1200uL_1mLChannel:
   Max Supported Volume: 1300
   Dead Volume: 50

@@ -117,8 +117,8 @@ HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripOpenWidth, 
 // {{{ 25 1 0 "b9900325_f77b_4979_aab5dbb91cddf821" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripOpenWidth, 1, 6, 85);
 // }} ""
-// {{{ 26 1 0 "19a106fc_45cc_4135_b3c9c09ac3be1cc2" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripOpenWidth, 1, 6, 85);
+// {{{ 26 1 0 "ae3c80d8_1cf8_4731_b20c04fe7c01abb0" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripOpenWidth, 1, 7, 85);
 // }} ""
 // {{ 27 1 0 "ead95778_f3b7_4963_afa1395e58e95260" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -147,8 +147,8 @@ HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripCloseWidth,
 // {{{ 35 1 0 "62cb1f4a_297c_4ef4_b57ee251642a5e2a" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripCloseWidth, 1, 6, 75);
 // }} ""
-// {{{ 36 1 0 "39e22877_6177_4878_9453b977bb64b12a" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripCloseWidth, 1, 7, 80.5);
+// {{{ 36 1 0 "24908e4a_a706_4745_b54857b0305d479f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripCloseWidth, 1, 7, 75);
 // }} ""
 // {{ 37 1 0 "98a718d4_8db2_4334_ba7382ab88cbe1af" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -177,7 +177,7 @@ HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripHeight, 1, 
 // {{{ 45 1 0 "c366e819_9215_47ea_be5d007ad08e500b" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripHeight, 1, 6, 10);
 // }} ""
-// {{{ 46 1 0 "484abdb7_2ee6_4ff8_9a3dcdeb095bc1ee" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 46 1 0 "a353cf37_5d28_4d81_b0d43c6c967c9a44" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripHeight, 1, 7, 4);
 // }} ""
 // {{{ 5 "EDIT_Configuration" "End"
@@ -320,4 +320,4 @@ return (_MODULE_TRANSPORT_CONFIG_CoreGripToolSequenceString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-04-14 15:57$$checksum=6f9206b6$$length=084$$
+// $$author=FCNCHVGRD-PDAMI$$valid=0$$time=2022-04-14 16:44$$checksum=b87a028a$$length=094$$
