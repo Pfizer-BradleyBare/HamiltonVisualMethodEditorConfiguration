@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 PPL2.STL,edna.trujillo@pfizer.com,4176641172,354914b9.Pfizer.onmicrosoft.com@amer.teams.ms
+=======
+e-mail.hamilton.ch,Email@email.com, xxx-xxx-xxxx, xxxxxxxxx, ect.,system@hamilton.ch
+>>>>>>> bc04d8679acb3141542a80b77f1f38635c70e13b

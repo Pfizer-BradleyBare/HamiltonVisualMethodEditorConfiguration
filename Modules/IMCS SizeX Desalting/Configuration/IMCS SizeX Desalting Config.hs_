@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 4/14/2022 12:08:12 PM
+// Generated at 4/19/2022 12:04:20 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -17,9 +17,11 @@ function GetPipetteTipSequences( variable & o_PipetteTipSequenceStrings[] ) void
 function GetPipetteTipTypes( variable & o_PipetteTipTypeStrings[] ) void { }
 function Init(  ) void { }
 global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSRackSequences[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipWasteSequence[];
 global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSSampleSequences[];
 global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSLiquidHandlingParameters[];
 global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipRackSequences[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipRackTypes[];
 global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipTypes[];
 global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipSupportRackSequence;
 global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipSequenceStrings[];
@@ -30,4 +32,4 @@ global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSElutionMethods[];
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-04-14 12:08$$checksum=ee8a9b07$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-04-19 12:04$$checksum=4fcdd963$$length=082$$
