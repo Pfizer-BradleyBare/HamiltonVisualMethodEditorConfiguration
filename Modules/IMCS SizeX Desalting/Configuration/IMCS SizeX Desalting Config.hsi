@@ -20,16 +20,21 @@ global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipTypes[];
 global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipSequenceStrings[];
 global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipRackTypes[];
 global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipWasteSequence[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipSizes[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSCarrierPos[];
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
 function EDIT_Configuration(  ) void ;
+function GetIMCSCarrierPosStrings( variable & o_CarrierPosStrings[] ) void ;
 function GetIMCSRackSequences( variable & o_IMCSRackSequenceStrings[] ) void ;
 function GetIMCSSampleSequences( variable & o_IMCSSampleSequenceStrings[] ) void ;
 function GetLiquidHandlingParameters( variable & o_LiquidHandlingParametersStrings[] ) void ;
 function GetPipetteRackSequences( variable & o_PipetteRackSequenceStrings[] ) void ;
 function GetPipetteTipDropoffSequence(  ) variable ;
 function GetPipetteTipSequences( variable & o_PipetteTipSequenceStrings[] ) void ;
+function GetPipetteTipSizes( variable & o_PipetteTipSizeStrings[] ) void ;
 function GetPipetteTipTypes( variable & o_PipetteTipTypeStrings[] ) void ;
+function GetPipetteTipWasteSequenceStrings( variable & o_PipetteTipWasteStrings[] ) void ;
 function Init(  ) void ;
 // }} ""
 function _InitLibrary() {
@@ -43,7 +48,6 @@ function _ExitLibrary() {
 // {{{ 5 "EDIT_Configuration" "Begin"
 function EDIT_Configuration(  ) void {
 // }} ""
-private variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSCarrierPos[];
 // {{ 5 "EDIT_Configuration" "InitLocals"
 // }} ""
 // {{ 1 1 0 "5bbdad6a_10ae_429d_b09259a1cc92d3b7" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
@@ -55,14 +59,14 @@ _MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipSupportRackSequence = Translate("Carrier3
 // {{ 3 1 0 "487237e7_0dc6_403a_bf6b9174fade390f" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 4 1 0 "ed49b2de_2474_4a38_8d375acb495c2c0f" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
-_MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipTypes.SetSize(0);
+// {{ 4 1 0 "1198bbf2_eb99_42e0_bcf72f3a63aab343" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+_MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipSizes.SetSize(0);
 // }} ""
-// {{ 5 1 0 "4c8aeb34_1380_4079_8c17816990a48687" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-_MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipTypes.AddAsLast(Translate("Standard"));
+// {{ 5 1 0 "59476667_2625_4647_b2446bf29617c59f" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipSizes.AddAsLast(Translate("Standard"));
 // }} ""
-// {{ 6 1 0 "a31e8c05_d283_4a7d_981b00a084a95947" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-_MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipTypes.AddAsLast(Translate("Slim"));
+// {{ 6 1 0 "138a6285_6040_4294_a996a305aba81ade" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipSizes.AddAsLast(Translate("Slim"));
 // }} ""
 // {{ 7 1 0 "50b1e4b0_179d_4e1a_ace379fffd244f9a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -166,7 +170,7 @@ _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSElutionMethods.AddAsLast(Translate("MAM/
 // {{ 40 1 0 "2052fe26_1538_4d91_878cb4b16aa0838d" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSElutionMethods.AddAsLast(Translate("HCP/Proteomics"));
 // }} ""
-// {{ 41 1 0 "94f577fb_e4b5_4bc5_bb236e720aa802d8" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 41 1 0 "d425ac6f_95b9_4a5e_82e5a70ec183a2e9" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
 // {{{ 42 1 0 "b5b9ea89_6ee0_4139_b4317fc1b388526d" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
@@ -324,7 +328,7 @@ function Init(  ) void {
 // }} ""
 // {{ 5 "Init" "InitLocals"
 // }} ""
-// {{{ 106 1 0 "48ba0b0d_baad_4f44_a7fe69e0c65eeb8d" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 112 1 0 "48ba0b0d_baad_4f44_a7fe69e0c65eeb8d" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 EDIT_Configuration();
 // }} ""
 // {{{ 5 "Init" "End"
@@ -335,7 +339,7 @@ function GetPipetteTipDropoffSequence(  ) variable {
 // }} ""
 // {{ 5 "GetPipetteTipDropoffSequence" "InitLocals"
 // }} ""
-// {{{ 100 1 0 "9505d9d6_69f0_4c24_bd6fbac7c72cd527" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 102 1 0 "9505d9d6_69f0_4c24_bd6fbac7c72cd527" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (_MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipSupportRackSequence);
 // }} ""
 // {{{ 5 "GetPipetteTipDropoffSequence" "End"
@@ -347,7 +351,7 @@ function GetLiquidHandlingParameters( variable & o_LiquidHandlingParametersStrin
 // {{ 5 "GetLiquidHandlingParameters" "InitLocals"
 o_LiquidHandlingParametersStrings.SetSize( 0);
 // }} ""
-// {{ 96 1 0 "9d6d7922_c950_45d5_964fa0f9951062f1" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 98 1 0 "9d6d7922_c950_45d5_964fa0f9951062f1" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_LiquidHandlingParametersStrings=_MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSLiquidHandlingParameters;
 // }} ""
 // {{{ 5 "GetLiquidHandlingParameters" "End"
@@ -359,7 +363,7 @@ function GetIMCSRackSequences( variable & o_IMCSRackSequenceStrings[] ) void {
 // {{ 5 "GetIMCSRackSequences" "InitLocals"
 o_IMCSRackSequenceStrings.SetSize( 0);
 // }} ""
-// {{ 92 1 0 "fc257968_2e14_441e_afcd5bee4c824a2c" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 94 1 0 "fc257968_2e14_441e_afcd5bee4c824a2c" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_IMCSRackSequenceStrings=_MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSRackSequences;
 // }} ""
 // {{{ 5 "GetIMCSRackSequences" "End"
@@ -371,7 +375,7 @@ function GetIMCSSampleSequences( variable & o_IMCSSampleSequenceStrings[] ) void
 // {{ 5 "GetIMCSSampleSequences" "InitLocals"
 o_IMCSSampleSequenceStrings.SetSize( 0);
 // }} ""
-// {{ 94 1 0 "b9a4f2d9_8aac_40d6_a4c80cc829dbf9d7" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 96 1 0 "b9a4f2d9_8aac_40d6_a4c80cc829dbf9d7" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_IMCSSampleSequenceStrings=_MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSSampleSequences;
 // }} ""
 // {{{ 5 "GetIMCSSampleSequences" "End"
@@ -383,7 +387,7 @@ function GetPipetteRackSequences( variable & o_PipetteRackSequenceStrings[] ) vo
 // {{ 5 "GetPipetteRackSequences" "InitLocals"
 o_PipetteRackSequenceStrings.SetSize( 0);
 // }} ""
-// {{ 98 1 0 "666b528e_7dfa_4d99_91c01d3b093a9706" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 100 1 0 "666b528e_7dfa_4d99_91c01d3b093a9706" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_PipetteRackSequenceStrings=_MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipRackSequences;
 // }} ""
 // {{{ 5 "GetPipetteRackSequences" "End"
@@ -395,7 +399,7 @@ function GetPipetteTipSequences( variable & o_PipetteTipSequenceStrings[] ) void
 // {{ 5 "GetPipetteTipSequences" "InitLocals"
 o_PipetteTipSequenceStrings.SetSize( 0);
 // }} ""
-// {{ 102 1 0 "0281b504_4991_417e_902b692e1ad582ef" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 104 1 0 "0281b504_4991_417e_902b692e1ad582ef" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_PipetteTipSequenceStrings=_MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipSequenceStrings;
 // }} ""
 // {{{ 5 "GetPipetteTipSequences" "End"
@@ -407,14 +411,50 @@ function GetPipetteTipTypes( variable & o_PipetteTipTypeStrings[] ) void {
 // {{ 5 "GetPipetteTipTypes" "InitLocals"
 o_PipetteTipTypeStrings.SetSize( 0);
 // }} ""
-// {{ 104 1 0 "b510177a_38c5_4b31_9d6a953a3cc835fb" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
-o_PipetteTipTypeStrings=_MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipTypes;
+// {{ 108 1 0 "ba2bf82a_add5_4ce2_b020babfe63e9eb4" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_PipetteTipTypeStrings=_MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipRackTypes;
 // }} ""
 // {{{ 5 "GetPipetteTipTypes" "End"
+}
+// }} ""
+// {{{ 5 "GetPipetteTipSizes" "Begin"
+function GetPipetteTipSizes( variable & o_PipetteTipSizeStrings[] ) void {
+// }} ""
+// {{ 5 "GetPipetteTipSizes" "InitLocals"
+o_PipetteTipSizeStrings.SetSize( 0);
+// }} ""
+// {{ 106 1 0 "890b3eb0_082e_4bc8_9eb89b91e84e72ce" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_PipetteTipSizeStrings=_MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipSizes;
+// }} ""
+// {{{ 5 "GetPipetteTipSizes" "End"
+}
+// }} ""
+// {{{ 5 "GetIMCSCarrierPosStrings" "Begin"
+function GetIMCSCarrierPosStrings( variable & o_CarrierPosStrings[] ) void {
+// }} ""
+// {{ 5 "GetIMCSCarrierPosStrings" "InitLocals"
+o_CarrierPosStrings.SetSize( 0);
+// }} ""
+// {{ 92 1 0 "5ed235ed_db97_418e_90d4aba88f5f572d" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_CarrierPosStrings=_MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSCarrierPos;
+// }} ""
+// {{{ 5 "GetIMCSCarrierPosStrings" "End"
+}
+// }} ""
+// {{{ 5 "GetPipetteTipWasteSequenceStrings" "Begin"
+function GetPipetteTipWasteSequenceStrings( variable & o_PipetteTipWasteStrings[] ) void {
+// }} ""
+// {{ 5 "GetPipetteTipWasteSequenceStrings" "InitLocals"
+o_PipetteTipWasteStrings.SetSize( 0);
+// }} ""
+// {{ 110 1 0 "94e2d18a_6779_4e31_8138175e6e2c20a5" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_PipetteTipWasteStrings=_MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipWasteSequence;
+// }} ""
+// {{{ 5 "GetPipetteTipWasteSequenceStrings" "End"
 }
 // }} ""
 /* {{ 2 "SubmethodInsertLine" "" */ // }} ""
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-04-19 12:04$$checksum=0a7a2466$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-04-20 14:25$$checksum=5793b9fd$$length=084$$
