@@ -52,7 +52,6 @@ private variable Len;
 private variable RR;
 private variable Tip50;
 private variable PlateName;
-private variable TipSlim300;
 private variable Plate;
 private variable NumLabware;
 private variable Counter;
@@ -228,8 +227,8 @@ RR = StrConcat2(RR, EvalExpression);
 // {{ 49 1 0 "32cad2ea_8b91_4d6b_90e45cb74b48eda3" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{{ 50 1 0 "f5c7fed3_9384_48a4_bfc67ea1b2b94633" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-FindVal = StrFind(Loading, Translate("F"));
+// {{{ 50 1 0 "7a35d9c7_dae6_480b_a5c58e03bd81a5b3" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+FindVal = StrFind(Loading, Translate("T"));
 // }} ""
 // {{ 51 1 0 "688c13ac_b4c6_4ae1_848cca099c009f34" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 if (FindVal == 0)
@@ -337,8 +336,8 @@ CT = 0;
 // {{ 83 1 0 "d467c99d_a873_4b8a_a412235646e40a4b" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
-// {{ 84 1 0 "419e0e8c_642c_46b9_baab97b68680304e" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
-customDialog2FEB4C1E4223424fABC5D9453A56E09D.InitCustomDialog( "419e0e8c_642c_46b9_baab97b68680304e" );
+// {{ 84 1 0 "30d05f86_1381_43cb_838c2bd437186848" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
+customDialog2FEB4C1E4223424fABC5D9453A56E09D.InitCustomDialog( "30d05f86_1381_43cb_838c2bd437186848" );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock37.IsVisible", FT_Cold );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock37.Text", FT_Cold );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock40.Text", CT );
@@ -349,7 +348,6 @@ customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock38.IsVisible", FT_Cold );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock39.IsVisible", CT );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock46.IsVisible", RR );
-customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock47.IsVisible", FT_Ambient );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock47.Text", FT_Ambient );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock1.IsVisible", Carrier5_Pos1 );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock1.Text", Carrier5_Pos1 );
@@ -392,4 +390,4 @@ customDialog2FEB4C1E4223424fABC5D9453A56E09D.ShowCustomDialog();
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-02-22 09:56$$checksum=c0d82ee7$$length=084$$
+// $$author=FCNCHVGRD-PDAMI$$valid=0$$time=2022-04-26 14:07$$checksum=f8dc662a$$length=094$$

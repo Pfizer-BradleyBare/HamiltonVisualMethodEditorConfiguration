@@ -133,6 +133,204 @@ T2:
   Deck Position: T2
   Vacuum Compatible: False
 
+T3:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T3
+  Vacuum Compatible: False
+
+T4:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T4
+  Vacuum Compatible: False
+
+T5:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T5
+  Vacuum Compatible: False
+
+T6:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T6
+  Vacuum Compatible: False
+
+T7:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T7
+  Vacuum Compatible: False
+
+T8:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T8
+  Vacuum Compatible: False
+
+T9:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T9
+  Vacuum Compatible: False
+
+T10:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T10
+  Vacuum Compatible: False
+
+T11:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T11
+  Vacuum Compatible: False
+
+T12:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T12
+  Vacuum Compatible: False
+
+T13:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T13
+  Vacuum Compatible: False
+
+T14:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T14
+  Vacuum Compatible: False
+
+T15:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T15
+  Vacuum Compatible: False
+
+T16:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T16
+  Vacuum Compatible: False
+
+T17:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T17
+  Vacuum Compatible: False
+
+T18:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T18
+  Vacuum Compatible: False
+
+T19:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T19
+  Vacuum Compatible: False
+
+T20:
+  Max Supported Volume: 1500
+  Dead Volume: 150
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T20
+  Vacuum Compatible: False
+
 #C1:
 #  Max Supported Volume: 14000
 #  Dead Volume: 500

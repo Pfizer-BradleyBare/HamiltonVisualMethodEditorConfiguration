@@ -57,80 +57,62 @@ TempDelta = 2;
 // {{ 4 1 0 "007f94c3_d815_4800_af99fd9f12838d19" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 ComPorts.SetSize(0);
 // }} ""
-// {{ 5 1 0 "724a222a_9894_4689_a8fe8f0a1e3ebc96" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+// {{ 5 1 0 "8aa18b1c_a4ac_4e08_adfd3d29cd3f07ac" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 ComPorts.AddAsLast(1);
 // }} ""
-// {{ 6 1 0 "bf87f68e_df03_4574_96c005d064e8ba36" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-ComPorts.AddAsLast(2);
-// }} ""
-// {{ 7 1 0 "312645a6_7f61_4ae2_830070353ad555ef" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 6 1 0 "312645a6_7f61_4ae2_830070353ad555ef" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 8 1 0 "6d4e8d7c_5b34_48bb_9078ac731d982985" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+// {{ 7 1 0 "6d4e8d7c_5b34_48bb_9078ac731d982985" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 HeaterIDs.SetSize(0);
 // }} ""
-// {{ 9 1 0 "83043429_33ab_46d0_80bc357a67d12c7f" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+// {{ 8 1 0 "83043429_33ab_46d0_80bc357a67d12c7f" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 HeaterIDs.AddAsLast(Translate("Heater 1"));
 // }} ""
-// {{ 10 1 0 "35fe254e_b30b_4571_804e301c13a30d33" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-HeaterIDs.AddAsLast(Translate("Heater 2"));
-// }} ""
-// {{ 11 1 0 "16263212_acd2_4eb1_8956e1b2641db08a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 9 1 0 "16263212_acd2_4eb1_8956e1b2641db08a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 12 1 0 "45d50e65_8ae0_42f1_88c87afaee280641" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+// {{ 10 1 0 "45d50e65_8ae0_42f1_88c87afaee280641" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 HeaterTypes.SetSize(0);
 // }} ""
-// {{ 13 1 0 "462e0326_83bc_4143_b91b83e4984e749e" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+// {{ 11 1 0 "462e0326_83bc_4143_b91b83e4984e749e" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 HeaterTypes.AddAsLast(Translate("HeaterShaker"));
 // }} ""
-// {{ 14 1 0 "3fe846bc_821d_4dea_851a53ce90808609" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-HeaterTypes.AddAsLast(Translate("HeaterShaker"));
-// }} ""
-// {{ 15 1 0 "f8b80797_7fa7_40e6_b841674855895473" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 12 1 0 "f8b80797_7fa7_40e6_b841674855895473" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 16 1 0 "708d5265_6c08_4b40_92aba619ede01323" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 13 1 0 "708d5265_6c08_4b40_92aba619ede01323" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 SupportedPlateTypes = HSLExtensions::Array2D::Create(2, 1);
 // }} ""
-// {{{ 17 1 0 "2eee6191_7999_42d8_83a06e24596e15b1" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 14 1 0 "2eee6191_7999_42d8_83a06e24596e15b1" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::InitializeAllValues(SupportedPlateTypes, Translate(""));
 // }} ""
-// {{{ 18 1 0 "619fa329_147d_4141_b91a9a2f99ee57c9" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 15 1 0 "619fa329_147d_4141_b91a9a2f99ee57c9" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(SupportedPlateTypes, 1, 1, Translate("200uL Biorad 96 Well PCR Plate"));
 // }} ""
-// {{{ 19 1 0 "b1b497eb_b37b_4783_96e7d2b187b16ad5" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(SupportedPlateTypes, 2, 1, Translate("200uL Biorad 96 Well PCR Plate"));
-// }} ""
-// {{ 20 1 0 "4e0629ab_9f19_4505_b0dd9d7b8f7e82d1" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 16 1 0 "4e0629ab_9f19_4505_b0dd9d7b8f7e82d1" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 21 1 0 "8c566f40_2ddc_434a_b5e7c8237a509ebb" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 17 1 0 "8c566f40_2ddc_434a_b5e7c8237a509ebb" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 LidSequences = HSLExtensions::Array2D::Create(2, 1);
 // }} ""
-// {{{ 22 1 0 "b830154a_5695_4bd8_aba6a5081ac0bc2e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 18 1 0 "b830154a_5695_4bd8_aba6a5081ac0bc2e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::InitializeAllValues(LidSequences, Translate(""));
 // }} ""
-// {{{ 23 1 0 "8a0c22d6_b793_41ca_a04104a0a6b37213" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 19 1 0 "8a0c22d6_b793_41ca_a04104a0a6b37213" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(LidSequences, 1, 1, Translate("_HHS1_Lid_200uL"));
 // }} ""
-// {{{ 24 1 0 "c56fc159_e3e5_4641_bbc15e375b573a8e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(LidSequences, 2, 1, Translate("_HHS2_Lid_200uL"));
-// }} ""
-// {{ 25 1 0 "26e3946e_c273_4aa0_b5a027450f6a413a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 20 1 0 "26e3946e_c273_4aa0_b5a027450f6a413a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 26 1 0 "ee25a15a_24e3_4ddc_81d3b52e258d9026" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 21 1 0 "ee25a15a_24e3_4ddc_81d3b52e258d9026" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 PlateSequences = HSLExtensions::Array2D::Create(2, 1);
 // }} ""
-// {{{ 27 1 0 "86b886f1_637f_4456_82b7d71c6a804481" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 22 1 0 "86b886f1_637f_4456_82b7d71c6a804481" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::InitializeAllValues(PlateSequences, Translate(""));
 // }} ""
-// {{{ 28 1 0 "6a9af6e7_4924_4ef3_8c3cb8f26d2061b2" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 23 1 0 "6a9af6e7_4924_4ef3_8c3cb8f26d2061b2" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(PlateSequences, 1, 1, Translate("_HHS1_BioRad200uL96WellPCRPlate"));
-// }} ""
-// {{{ 29 1 0 "c7b12c5d_8852_4b87_b07360b941013a2e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(PlateSequences, 2, 1, Translate("_HHS2_BioRad200uL96WellPCRPlate"));
 // }} ""
 // {{{ 5 "EDIT_Configuration" "End"
 }
@@ -141,7 +123,7 @@ function GetComPorts( variable & o_ComPorts[] ) void {
 // {{ 5 "GetComPorts" "InitLocals"
 o_ComPorts.SetSize( 0);
 // }} ""
-// {{ 33 1 0 "2a85ce9e_56ba_45a1_9090c2b6d0d63015" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 27 1 0 "2a85ce9e_56ba_45a1_9090c2b6d0d63015" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_ComPorts=ComPorts;
 // }} ""
 // {{{ 5 "GetComPorts" "End"
@@ -153,7 +135,7 @@ function GetHeaterTypes( variable & o_HeaterTypes[] ) void {
 // {{ 5 "GetHeaterTypes" "InitLocals"
 o_HeaterTypes.SetSize( 0);
 // }} ""
-// {{ 37 1 0 "ff71265b_b9b3_4857_b2ef829101a65a59" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 31 1 0 "ff71265b_b9b3_4857_b2ef829101a65a59" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_HeaterTypes=HeaterTypes;
 // }} ""
 // {{{ 5 "GetHeaterTypes" "End"
@@ -165,7 +147,7 @@ function GetSupportedPlateTypes( variable & o_SupportedPlateTypes[] ) void {
 // {{ 5 "GetSupportedPlateTypes" "InitLocals"
 o_SupportedPlateTypes.SetSize( 0);
 // }} ""
-// {{ 46 1 0 "5a8a4988_fbd0_44aa_b4cba0582a98ef6f" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 40 1 0 "5a8a4988_fbd0_44aa_b4cba0582a98ef6f" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_SupportedPlateTypes=SupportedPlateTypes;
 // }} ""
 // {{{ 5 "GetSupportedPlateTypes" "End"
@@ -177,7 +159,7 @@ function GetPlateSequenceStrings( variable & o_PlateSequenceStrings[] ) void {
 // {{ 5 "GetPlateSequenceStrings" "InitLocals"
 o_PlateSequenceStrings.SetSize( 0);
 // }} ""
-// {{ 44 1 0 "1b935ff9_560f_48bd_96367de81e2c57a2" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 38 1 0 "1b935ff9_560f_48bd_96367de81e2c57a2" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_PlateSequenceStrings=PlateSequences;
 // }} ""
 // {{{ 5 "GetPlateSequenceStrings" "End"
@@ -189,7 +171,7 @@ function GetLidSequenceStrings( variable & o_LidSequenceStrings[] ) void {
 // {{ 5 "GetLidSequenceStrings" "InitLocals"
 o_LidSequenceStrings.SetSize( 0);
 // }} ""
-// {{ 39 1 0 "590a5d53_41c4_4e10_96634a5454ee9bb9" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 33 1 0 "590a5d53_41c4_4e10_96634a5454ee9bb9" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_LidSequenceStrings=LidSequences;
 // }} ""
 // {{{ 5 "GetLidSequenceStrings" "End"
@@ -201,7 +183,7 @@ function GetHeaterIDs( variable & o_HeaterIDs[] ) void {
 // {{ 5 "GetHeaterIDs" "InitLocals"
 o_HeaterIDs.SetSize( 0);
 // }} ""
-// {{ 35 1 0 "384f1960_953d_40d4_924e28c7226710e1" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+// {{ 29 1 0 "384f1960_953d_40d4_924e28c7226710e1" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
 o_HeaterIDs=HeaterIDs;
 // }} ""
 // {{{ 5 "GetHeaterIDs" "End"
@@ -212,7 +194,7 @@ function Init(  ) void {
 // }} ""
 // {{ 5 "Init" "InitLocals"
 // }} ""
-// {{{ 50 1 0 "80836925_c3f4_4078_bd827465168b107a" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 44 1 0 "80836925_c3f4_4078_bd827465168b107a" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 EDIT_Configuration();
 // }} ""
 // {{{ 5 "Init" "End"
@@ -223,7 +205,7 @@ function GetAmbientTemp(  ) variable {
 // }} ""
 // {{ 5 "GetAmbientTemp" "InitLocals"
 // }} ""
-// {{{ 31 1 0 "5f2229cb_7d2f_47eb_851c2de06464af77" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 25 1 0 "5f2229cb_7d2f_47eb_851c2de06464af77" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (AmbientTemp);
 // }} ""
 // {{{ 5 "GetAmbientTemp" "End"
@@ -235,10 +217,10 @@ function GetNumHeaters(  ) variable {
 private variable NumHeaters;
 // {{ 5 "GetNumHeaters" "InitLocals"
 // }} ""
-// {{ 41 1 0 "a2905994_eed8_44cd_ac89881d33360b67" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
+// {{ 35 1 0 "a2905994_eed8_44cd_ac89881d33360b67" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
 NumHeaters=HeaterIDs.GetSize();
 // }} ""
-// {{{ 42 1 0 "15f37c46_ef91_4206_a07718cba11bf360" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 36 1 0 "15f37c46_ef91_4206_a07718cba11bf360" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (NumHeaters);
 // }} ""
 // {{{ 5 "GetNumHeaters" "End"
@@ -249,7 +231,7 @@ function GetTempDelta(  ) variable {
 // }} ""
 // {{ 5 "GetTempDelta" "InitLocals"
 // }} ""
-// {{{ 48 1 0 "7773e850_8620_4bbf_bcf3d61340614a97" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 42 1 0 "7773e850_8620_4bbf_bcf3d61340614a97" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (TempDelta);
 // }} ""
 // {{{ 5 "GetTempDelta" "End"
@@ -259,4 +241,4 @@ return (TempDelta);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-02-22 09:35$$checksum=90b09c2a$$length=084$$
+// $$author=FCNCHVGRD-PDAMI$$valid=0$$time=2022-04-26 15:50$$checksum=4548025d$$length=094$$
