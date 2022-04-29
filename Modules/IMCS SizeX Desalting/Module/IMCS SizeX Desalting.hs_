@@ -1,33 +1,34 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 4/19/2022 11:48:25 AM
+// Generated at 4/29/2022 8:56:53 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
 namespace IMCS_SIZEX_DESALTING {
 function _InitLibrary() { }
 function _ExitLibrary() { }
+function DoCommand( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function GetDeckLoadingInfo( variable & ReservationPositions[], variable & ReservationNumTipsRequired[], variable & ReservtionIMCSVolume[] ) void { }
 function IMCSTips_Equl( device & ML_STAR, sequence & Tips_Seq ) void { }
 function IMCSTips_Process( device & ML_STAR, sequence & Tips_Seq, sequence & _SeqDesaltSolution ) void { }
 function IMCS_Init( sequence & BufferTroughSeq, sequence & WasteTroughSeq, sequence & ElutionPlateSeq, sequence & IMCSRack1Seq, sequence & IMCSRack2Seq, sequence & IMCSTips1Seq, sequence & IMCSTips2Seq, sequence & Tips300Seq, sequence & TipSupportSeq_1mL, sequence & TipSupportSeq_96Head, sequence & TipSupportResetSeq_96Head, variable NumSets, variable SizeXTip, variable StartPos, variable EndPos, variable TipType, variable Tip300Counter, sequence & waste300NTR, sequence & COREGripTool, sequence & Tip300_NTR_Waste ) void { }
 function IMCS_Print(  ) void { }
-global variable _MODULE_IMCS_SIZEX_DESALTING_SourceStringsArray[];
-global variable _MODULE_IMCS_SIZEX_DESALTING_PositionsStringsArray[];
+function Init( device & ML_STAR, variable CommandString ) variable {  return (0); }
+function Process( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+global variable _MODULE_IMCS_SIZEX_DESALTING_ReservationSources[];
 global variable _MODULE_IMCS_SIZEX_DESALTING_IsInit("False");
-global variable _MODULE_IMCS_SIZEX_DESALTING_ParentStringsArray[];
 global variable _MODULE_IMCS_SIZEX_DESALTING_Reservations[];
-global variable _MODULE_IMCS_SIZEX_DESALTING_VolumesStringsArray[];
-global variable _MODULE_IMCS_SIZEX_DESALTING_MethodsStringsArray[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_ReservationElutionIndices[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_ReservationSizeIndices[];
 global variable _MODULE_IMCS_SIZEX_DESALTING_ReservationVolumes[];
-global variable _MODULE_IMCS_SIZEX_DESALTING_TipType;
-global variable _MODULE_IMCS_SIZEX_DESALTING_DestinationStringsArray[];
-global variable _MODULE_IMCS_SIZEX_DESALTING_WastePlateStringsArray[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_ReservationBuffers[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_ReservationDestinations[];
 global variable _MODULE_IMCS_SIZEX_DESALTING_BufferPlatesStringsArray[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_ReservationWastes[];
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-04-19 11:48$$checksum=9d285e5c$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-04-29 08:56$$checksum=703fc618$$length=082$$
