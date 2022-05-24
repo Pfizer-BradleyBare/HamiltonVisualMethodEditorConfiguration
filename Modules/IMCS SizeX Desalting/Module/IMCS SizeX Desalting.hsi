@@ -33,41 +33,7 @@
 // {{{ 2 "LibraryNamespace" "Begin"
 namespace IMCS_SIZEX_DESALTING {
 // }} ""
-variable _var_EndPos;
-variable _var_EquilibrationDispenseHeight;
-variable _var_StartPos;
-variable _var_ChaserDispense;
-variable _var_SEC_Dispense_FAST;
-variable _var_SampleVolume;
-variable _var_SizeXType;
-variable _var_NumSets;
-variable _var_SampleDispenseHeight;
-variable _var_ChaserVolume;
-variable _var_FullDispense;
-variable _var_SEC_Dispense_SLOW;
-variable _var_SampleDispense;
-variable _var_EquilibrationVolume;
-sequence _Seq_TipSupportReset_96Head;
-sequence _Seq_TipSupport_1mL;
-sequence _Seq_Slim300;
-sequence _Seq_BufferTrough;
 sequence _Seq_TipSupport_96Head;
-sequence _Seq_ElutionPlate;
-sequence _Seq_WasteTrough;
-sequence _Seq_IMCSTips1;
-sequence _Seq_IMCSTips2;
-sequence _Seq_IMCSRack1;
-sequence _Seq_IMCSRack2;
-variable _var_ChaserDispenseHeight;
-variable _var_SampleDispenseHeightIncrement_96Core;
-variable _var_WasteDispenseHeightIncrement_96Core;
-variable _var_WasteDispenseHeight_96Core;
-variable _var_SampleDispenseHeight_96Core;
-variable _var_Tip300Counter;
-sequence _seq_Tip300_NTR_Waste;
-sequence _seq_waste300NTR;
-sequence _seq_CoreGripTool;
-variable _var_TipType("SLIM");
 global variable _MODULE_IMCS_SIZEX_DESALTING_IsInit("False");
 global variable _MODULE_IMCS_SIZEX_DESALTING_Reservations[];
 global variable _MODULE_IMCS_SIZEX_DESALTING_ReservationSources[];
@@ -813,9 +779,6 @@ private variable LabwareNameOutArray[];
 private variable LabwareNameInArray[];
 private variable VolumeHeightsOutArray[];
 private variable VolumeHeightsInArray[];
-private variable OutArray[];
-private variable InArray[];
-private variable DispensedVolumeHeight;
 private sequence SequenceOut[];
 private variable SequenceIn[];
 private variable SampleDipenseLiquidClass;
@@ -1414,7 +1377,7 @@ return (ReturnString);
 if (Command == "Equilibrate")
 {
 // }} ""
-// {{{ 8 1 0 "e581c957_c973_435f_8840da7372202a64" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 8 1 0 "87187bbb_592b_40c2_840a76e4c9dbe308" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ReturnString = Equilibrate(ML_STAR, i_CommandString);
 // }} ""
 // {{{ 9 1 0 "336157a7_5f06_4a64_9c6109e4490c8992" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
@@ -1427,8 +1390,8 @@ return (ReturnString);
 if (Command == "Process")
 {
 // }} ""
-// {{{ 12 1 0 "3334d472_e9f2_4e31_b6bd870694951904" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-Process(ML_STAR, i_CommandString);
+// {{{ 12 1 0 "789b54cc_1bcf_4730_8f8503e870182dac" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+ReturnString = Process(ML_STAR, i_CommandString);
 // }} ""
 // {{{ 13 1 0 "1617c930_dfc3_45f0_a217e0827c85a3de" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
@@ -1458,9 +1421,7 @@ private sequence SequenceOut[];
 private variable CoreGripToolSequenceString;
 private variable NumReservations;
 private variable ParentString;
-private variable DispenseHeight;
 private variable DispensedVolume;
-private variable FullDispensedVolume;
 private variable TipPickupSequenceString;
 private variable TipDropOffSequenceString;
 private variable Counter;
@@ -1476,7 +1437,6 @@ private variable WellVolume;
 private variable GeneratedWasteSequenceString;
 private variable RackIndex;
 private variable PosID;
-private variable loopCounter1;
 private variable StartPosition;
 private variable FullDipenseLiquidClass;
 private variable ParentIndex;
@@ -2276,4 +2236,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-05-02 18:33$$checksum=437086ce$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-05-24 09:22$$checksum=d8bfc914$$length=084$$

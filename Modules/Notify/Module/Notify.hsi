@@ -110,6 +110,7 @@ private file FileHandle;
 private file _Path_Contacts;
 private variable ConfigRoot;
 private variable ContactsFile;
+private variable ShowLoadPrevious;
 // {{ 5 "GetContacts" "InitLocals"
 // }} ""
 // {{{ 24 1 0 "c616f5b3_bea6_4f39_8d93a74c24d37a45" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
@@ -217,8 +218,8 @@ StrTrimRight(ContactInfo, Translate(","));
 // {{ 52 1 0 "833ae904_66f3_4760_92a650d51cf83c24" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{ 53 1 0 "e98d0984_0c09_419e_8cafa55be6d7ea38" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
-customDialog97A53509CBDA4a4691C54DD7DCA935C5.InitCustomDialog( "e98d0984_0c09_419e_8cafa55be6d7ea38" );
+// {{ 53 1 0 "97f4d142_53af_49fd_9be412518deadb85" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
+customDialog97A53509CBDA4a4691C54DD7DCA935C5.InitCustomDialog( "97f4d142_53af_49fd_9be412518deadb85" );
 customDialog97A53509CBDA4a4691C54DD7DCA935C5.SetCustomDialogProperty( "textBox1.Text", ContactInfo );
 customDialog97A53509CBDA4a4691C54DD7DCA935C5.ShowCustomDialog();
 Return = customDialog97A53509CBDA4a4691C54DD7DCA935C5.GetCustomDialogProperty( "ReturnValue" );
@@ -466,4 +467,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-05-07 09:11$$checksum=b72c6c5d$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-05-24 11:29$$checksum=095d2a79$$length=084$$

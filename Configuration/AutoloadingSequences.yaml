@@ -225,11 +225,6 @@ Autoloading:
     Lid Sequence: False
     Deck Position: Carrier38_Pos1
 
-  Carrier38_Pos4_96WellPCRPlate2000uL_1mLChannel:
-    Labware Name: 2000uL Corning 96 Well PCR Plate
-    Lid Sequence: False
-    Deck Position: Carrier38_Pos4
-
   Carrier14_Pos1_96WellPCRPlate2000uL_1mLChannel:
     Labware Name: 2000uL Corning 96 Well PCR Plate
     Lid Sequence: False
