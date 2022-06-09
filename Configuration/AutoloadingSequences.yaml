@@ -146,11 +146,6 @@ Autoloading:
     Lid Sequence: False
     Deck Position: Carrier38_Pos3
 
-  Carrier38_Pos4_96WellPCRPlate200uL_1mLChannel:
-    Labware Name: 200uL Biorad 96 Well PCR Plate
-    Lid Sequence: False
-    Deck Position: Carrier38_Pos4
-
   Carrier14_Pos3_96WellPCRPlate200uL_1mLChannel:
     Labware Name: 200uL Biorad 96 Well PCR Plate
     Lid Sequence: Carrier14_Pos3_Lid_200uL
