@@ -295,8 +295,6 @@ private variable SourcePositionsArray[];
 private variable DestinationPositionsArray[];
 private sequence DestinationSequencesArray[];
 private sequence SourceSequencesArray[];
-private variable MixParametersString;
-private variable MixParameterStringsArray[];
 private variable TransferVolumesArray[];
 private variable MixParametersArray[];
 private variable CurrentDestinationWellVolumesString;
@@ -382,12 +380,7 @@ private variable TipSequenceStrings[];
 private variable ID;
 private variable ReturnString;
 private variable TipSequenceString;
-private variable LiquidClassString;
-private variable LiquidClassesArray[];
-private variable LiquidClassStringsArray[];
 private variable TipSequenceStringsArray[];
-private variable LiquidClass1000[];
-private variable LiquidClass300[];
 private variable LiquidClass50[];
 private variable TipSequence1000;
 private variable TipSequence300;
@@ -3211,4 +3204,4 @@ COMMANDS::ArraysToDictionary(Keys, Values, o_TipInfoDict);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-06-09 13:41$$checksum=44f1c62c$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-06-10 18:30$$checksum=f4b09232$$length=084$$
