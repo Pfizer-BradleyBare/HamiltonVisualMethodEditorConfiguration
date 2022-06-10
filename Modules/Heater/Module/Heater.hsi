@@ -1205,12 +1205,14 @@ return (ReturnString);
 if (HeaterTypes.ElementAt( Counter -1) == "HeaterShaker")
 {
 // }} ""
+/* {{ 1 "" "0" */ if(0){  /* }} "" */
 // {{{ 145 1 0 "d1bdadf9_a4d9_4927_8f34347506e97811" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLHamHeaterShaker::StopTempCtrl(_MODULE_HEATER_HeaterHandles.ElementAt( Counter -1));
 // }} ""
 // {{{ 146 1 0 "d1630f22_f3f4_4d6d_958012d745466435" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLHamHeaterShaker::StartTempCtrl(_MODULE_HEATER_HeaterHandles.ElementAt( Counter -1), Temp, 0);
 // }} ""
+/* {{ 1 "" "1" */ } /* }} "" */
 // {{ 147 1 0 "8d41e50d_9db4_41dc_9b169947777cc462" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
@@ -1218,12 +1220,14 @@ HSLHamHeaterShaker::StartTempCtrl(_MODULE_HEATER_HeaterHandles.ElementAt( Counte
 if (HeaterTypes.ElementAt( Counter -1) == "HeaterCooler")
 {
 // }} ""
+/* {{ 1 "" "0" */ if(0){  /* }} "" */
 // {{{ 149 1 0 "c83c62eb_81db_40fb_bc1990bbcb806261" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HamiltonHeaterCooler::StopTemperatureControl(_MODULE_HEATER_HeaterHandles.ElementAt( Counter -1));
 // }} ""
 // {{{ 150 1 0 "4a324716_e5c0_4133_b48b543cfc6702cd" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HamiltonHeaterCooler::SetTemperature(_MODULE_HEATER_HeaterHandles.ElementAt( Counter -1), 0, 100, Temp, 0, 0);
 // }} ""
+/* {{ 1 "" "1" */ } /* }} "" */
 // {{ 151 1 0 "ae891879_c687_42ca_81581a92c40974af" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
@@ -1823,4 +1827,4 @@ o_HeatersInfoList.AddAsLast(OutputString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-05-26 21:56$$checksum=5182b029$$length=084$$
+// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-06-10 11:03$$checksum=aca0f96f$$length=094$$
