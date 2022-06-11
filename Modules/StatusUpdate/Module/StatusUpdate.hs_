@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 3/29/2022 8:22:25 AM
+// Generated at 6/10/2022 10:12:30 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -18,4 +18,4 @@ global variable _MODULE_STATUS_UPDATE_ProgressType;
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-03-29 08:22$$checksum=014057d4$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-06-10 22:12$$checksum=327f4dff$$length=082$$
