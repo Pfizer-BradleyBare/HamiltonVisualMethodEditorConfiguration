@@ -165,7 +165,7 @@ COMMANDS::ParseCommandParametersString(i_CommandString, Dict);
 // {{{ 9 1 0 "85367549_cb71_4b0f_8f009e62c12b03fa" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 COMMANDS::GetDictionaryItem(Dict, Translate("PercentComplete"), PercentComplete);
 // }} ""
-// {{ 10 1 0 "104ea058_8c98_454e_a8a4bc843cc05fa3" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 10 1 0 "00089705_e19a_45d6_879a78e28b63b05d" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 ProgressPerStep = 10;
 // }} ""
 // {{{ 11 1 0 "03ee5e4c_2d13_4450_914c01beff820f13" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
@@ -399,4 +399,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-06-10 22:12$$checksum=97508552$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-06-11 09:36$$checksum=e595b6f2$$length=084$$
