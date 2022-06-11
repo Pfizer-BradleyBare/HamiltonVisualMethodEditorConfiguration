@@ -232,12 +232,11 @@ FTR1000 = NumbersArray.ElementAt( Counter -1);
 }
 }
 // }} ""
-// {{ 51 1 0 "a3c18eb7_14ac_47b1_a5ed064797514229" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
-customDialogB195F2DEEDAA45809EE33DE7B41B169C.InitCustomDialog( "a3c18eb7_14ac_47b1_a5ed064797514229" );
+// {{ 51 1 0 "72448d67_be59_4bed_8e306b3d41272caf" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
+customDialogB195F2DEEDAA45809EE33DE7B41B169C.InitCustomDialog( "72448d67_be59_4bed_8e306b3d41272caf" );
 customDialogB195F2DEEDAA45809EE33DE7B41B169C.SetCustomDialogProperty( "Tip50.Text", NTR50 );
 customDialogB195F2DEEDAA45809EE33DE7B41B169C.SetCustomDialogProperty( "Tip300.Text", NTR300 );
 customDialogB195F2DEEDAA45809EE33DE7B41B169C.SetCustomDialogProperty( "Slim300.Text", FTR1000 );
-customDialogB195F2DEEDAA45809EE33DE7B41B169C.SetCustomDialogProperty( "SizeX.Text", FTR300 );
 customDialogB195F2DEEDAA45809EE33DE7B41B169C.ShowCustomDialog();
 // }} ""
 // {{{ 5 "EDIT_TipsDialog" "End"
@@ -361,4 +360,4 @@ _MODULE_PIPETTE_CONFIG_TipSequenceVolumes.AddAsLast(1000);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-05-24 08:25$$checksum=466480cc$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-06-11 11:47$$checksum=41bbd6d5$$length=084$$

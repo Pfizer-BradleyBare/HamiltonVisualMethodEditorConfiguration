@@ -2539,8 +2539,8 @@ loopCounter1 = loopCounter1 + 1;
 // {{{ 219 1 0 "845ed219_8341_4f8c_954426c05bf57a2a" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 TipCount::Edit2(TempTipSequence, _MODULE_PIPETTE_TrackedTipSequencesTipCounter.ElementAt( Counter -1), ML_STAR, 10000);
 // }} ""
-// {{{ 220 1 0 "c5ae6108_74b3_456d_8477756e75c62551" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-NumTipsLoaded = SeqGetTotal(TipSequence);
+// {{{ 220 1 0 "20af9cae_8d3d_4224_a41766c454acdfc4" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+NumTipsLoaded = SeqGetTotal(TempTipSequence);
 // }} ""
 // {{ 221 1 0 "98ed185e_5a7a_4b10_a0a8e2224df9baef" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 if (NumTipsRequired <= NumTipsLoaded)
@@ -3204,4 +3204,4 @@ COMMANDS::ArraysToDictionary(Keys, Values, o_TipInfoDict);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-06-10 18:30$$checksum=f4b09232$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-06-11 11:42$$checksum=fbc4017d$$length=084$$
