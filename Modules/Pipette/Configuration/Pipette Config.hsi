@@ -159,6 +159,7 @@ private variable NumItems;
 private variable Counter;
 private variable NumbersArray[];
 private variable SequenceStringsArray[];
+private dialog customDialogA5BE6BEDEABF41c0A5A37F4DF494F75D;
 // {{ 5 "EDIT_TipsDialog" "InitLocals"
 // }} ""
 // {{ 30 1 0 "41ad2f3b_98cf_44c3_80e16186096cd37f" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
@@ -232,12 +233,13 @@ FTR1000 = NumbersArray.ElementAt( Counter -1);
 }
 }
 // }} ""
-// {{ 51 1 0 "72448d67_be59_4bed_8e306b3d41272caf" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
-customDialogB195F2DEEDAA45809EE33DE7B41B169C.InitCustomDialog( "72448d67_be59_4bed_8e306b3d41272caf" );
-customDialogB195F2DEEDAA45809EE33DE7B41B169C.SetCustomDialogProperty( "Tip50.Text", NTR50 );
-customDialogB195F2DEEDAA45809EE33DE7B41B169C.SetCustomDialogProperty( "Tip300.Text", NTR300 );
-customDialogB195F2DEEDAA45809EE33DE7B41B169C.SetCustomDialogProperty( "Slim300.Text", FTR1000 );
-customDialogB195F2DEEDAA45809EE33DE7B41B169C.ShowCustomDialog();
+// {{ 51 1 0 "13024c51_b406_4ddc_a74f8b59df724e29" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
+customDialogA5BE6BEDEABF41c0A5A37F4DF494F75D.InitCustomDialog( "13024c51_b406_4ddc_a74f8b59df724e29" );
+customDialogA5BE6BEDEABF41c0A5A37F4DF494F75D.SetCustomDialogProperty( "Tip50.Text", NTR50 );
+customDialogA5BE6BEDEABF41c0A5A37F4DF494F75D.SetCustomDialogProperty( "Tip300.Text", NTR300 );
+customDialogA5BE6BEDEABF41c0A5A37F4DF494F75D.SetCustomDialogProperty( "Slim300.Text", FTR1000 );
+customDialogA5BE6BEDEABF41c0A5A37F4DF494F75D.SetCustomDialogProperty( "SizeX.Text", FTR300 );
+customDialogA5BE6BEDEABF41c0A5A37F4DF494F75D.ShowCustomDialog();
 // }} ""
 // {{{ 5 "EDIT_TipsDialog" "End"
 }
@@ -360,4 +362,4 @@ _MODULE_PIPETTE_CONFIG_TipSequenceVolumes.AddAsLast(1000);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-06-11 11:47$$checksum=41bbd6d5$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-06-13 14:03$$checksum=e31e4201$$length=084$$
