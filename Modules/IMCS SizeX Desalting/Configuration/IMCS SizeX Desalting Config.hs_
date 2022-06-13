@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 1/7/2022 4:42:25 PM
+// Generated at 6/11/2022 3:27:05 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -8,18 +8,36 @@ namespace IMCS_SIZEX_DESALTING_CONFIG {
 function _InitLibrary() { }
 function _ExitLibrary() { }
 function EDIT_Configuration(  ) void { }
-function GetIMCSRackSequences( variable & i_IMCSRackSequences[] ) void { }
-function GetIMCSSampleSequenceStrings( variable & i_IMCSSampleSequences[] ) void { }
-function GetLiquidHandlingParameters( variable & i_LiquidHandlingParameters[] ) void { }
-function GetSupportedIMCSTipsPerRack( variable & i_SupportedIMCSTipsPerRack[] ) void { }
-function GetSupportedRackTipTypes( variable & i_SupportedRackTipTypes[] ) void { }
-function GetSupportedRackTipTypesSupportRackSequenceStrings( variable & i_SupportedRackTipTypesSupportRackSequenceStrings[] ) void { }
-function GetTipSupportRackSequenceString(  ) variable {  return (0); }
+function GetCoreGripToolSequenceString(  ) variable {  return (0); }
+function GetIMCSCarrierPosStrings( variable & o_CarrierPosStrings[] ) void { }
+function GetIMCSElutionMethodStrings( variable & o_ElutionMethods[] ) void { }
+function GetIMCSRackSequences( variable & o_IMCSRackSequenceStrings[] ) void { }
+function GetIMCSSampleSequences( variable & o_IMCSSampleSequenceStrings[] ) void { }
+function GetIMCSTipVolumes( variable & o_IMCSTipSizeStrings[] ) void { }
+function GetLiquidHandlingParameters( variable & o_LiquidHandlingParametersStrings[] ) void { }
+function GetPipettePickupSequence(  ) variable {  return (0); }
+function GetPipetteTipDropoffSequence(  ) variable {  return (0); }
+function GetPipetteTipSequence(  ) variable {  return (0); }
+function GetPipetteTipType(  ) variable {  return (0); }
+function GetPipetteTipWasteSequenceString(  ) variable {  return (0); }
 function Init(  ) void { }
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipSequenceString;
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSRackSequences[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSSampleSequences[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSLiquidHandlingParameters[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSTipVolumes[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_SupportedPipetteTipTypes[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipPickupRackSequence;
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipSequenceWasteSequenceString;
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipSupportRackSequence;
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipSequenceType;
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSElutionMethods[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSCarrierPos[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_CONFIG_CoreGripToolSequenceString;
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-01-07 16:42$$checksum=200397c8$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-06-11 15:27$$checksum=42dbb121$$length=082$$

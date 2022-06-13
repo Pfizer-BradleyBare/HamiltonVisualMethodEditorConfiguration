@@ -17,8 +17,8 @@
 // {{{ 2 "LibraryNamespace" "Begin"
 namespace TRANSPORT {
 // }} ""
-sequence GripperSequence;
-variable IsInit("False");
+global variable _MODULE_TRANSPORT_IsInit("False");
+global sequence _MODULE_TRANSPORT_GripperSequence;
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
 private function CoreTransport( device & ML_Star, sequence SourceSequence, sequence DestinationSequence, variable TransportType, variable LabwareType, variable Park, variable CheckExists ) void ;
@@ -67,8 +67,8 @@ private variable GripperSequenceString;
 private variable ID;
 // {{ 5 "Init" "InitLocals"
 // }} ""
-// {{ 57 1 0 "49e92909_1edc_4822_92aa56a85d6f44ac" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-if (IsInit == "True")
+// {{ 57 1 0 "1c656f2b_e8ae_4190_bb17cde5359224a6" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (_MODULE_TRANSPORT_IsInit == "True")
 {
 // }} ""
 // {{{ 58 1 0 "75d8d7a3_4290_4e86_b58c0c4de76f2223" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
@@ -80,7 +80,7 @@ ReturnString = RETURN::CreateReturnString(ID, Translate("Already Initialized"), 
 // {{{ 60 1 0 "a89ad111_9d68_4410_a793f3c3d08d60f4" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{ 61 1 0 "49e92909_1edc_4822_92aa56a85d6f44ac" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 61 1 0 "1c656f2b_e8ae_4190_bb17cde5359224a6" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
 // {{ 62 1 0 "4ed8b5c7_d627_4fa7_950a5aed4812da3b" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
@@ -116,14 +116,14 @@ MECC::TraceComment(Translate("***** Checking Transport module sequences for vali
 // {{ 72 1 0 "82dae658_5ae0_4310_ac3ce286b33aeddb" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
-// {{{ 73 1 0 "9c55d107_df09_4af4_a844f95eb5195a2e" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 73 1 0 "ed0937b9_b75b_4dd3_b36ae1bee75b45ac" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 GripperSequenceString = TRANSPORT_CONFIG::GetCoreGripToolSequenceString();
 // }} ""
-// {{{ 74 1 0 "87fbe01e_292c_4954_aa7a01c7ef27d6f4" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-DevGetSequenceRef(ML_STAR, GripperSequenceString, GripperSequence);
+// {{{ 74 1 0 "79a5b4df_6e70_4240_916a78da5590e269" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+DevGetSequenceRef(ML_STAR, GripperSequenceString, _MODULE_TRANSPORT_GripperSequence);
 // }} ""
-// {{ 75 1 0 "6cdb2f56_a622_4af4_b545870ca9c4ba62" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-IsInit = Translate("True");
+// {{ 75 1 0 "1027dafc_197e_480c_b7e343afe7e8a22c" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+_MODULE_TRANSPORT_IsInit = Translate("True");
 // }} ""
 // {{{ 76 1 0 "d56faa87_2125_42ad_84fc2933ec7fbb57" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 ID = RETURNIDS::SuccessNoErrors();
@@ -420,10 +420,10 @@ OpenWidth=LabwareGripOpenWidthsArray.GetAt(LabwareType-1);
 // {{ 30 1 0 "ef615f48_f000_4726_a6cbce92d3964d30" "{67A8F1C9-6546-41e9-AD2F-3C54F7818853}"
 GripHeight=LabwareGripHeightsArray.GetAt(LabwareType-1);
 // }} ""
-// {{ 31 1 0 "6e245032_9470_4f74_9c4bff422130c8e0" "ML_Star:{A108628C-BEB7-4CB6-99FD-8523302C700F}"
+// {{ 31 1 0 "073cbba3_d9d3_425c_bdc54999e23224db" "ML_Star:{A108628C-BEB7-4CB6-99FD-8523302C700F}"
 {
 	variable arrRetValues[];
-	arrRetValues = ML_Star._A108628C_BEB7_4CB6_99FD_8523302C700F("6e245032_9470_4f74_9c4bff422130c8e0"); // ZSwapGetPlate
+	arrRetValues = ML_Star._A108628C_BEB7_4CB6_99FD_8523302C700F("073cbba3_d9d3_425c_bdc54999e23224db"); // ZSwapGetPlate
 }
 // }} ""
 // {{ 32 1 0 "c3f9edb5_89c8_4a84_b1136fc1e6c62dfd" "ML_Star:{9DF3DD4B-3B5E-4750-8989-04458D1B134B}"
@@ -446,8 +446,8 @@ private variable ID;
 // {{{ 43 1 0 "98683fe0_7b09_4a5f_9a6091704e15e547" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 Command = COMMANDS::GetCommandStringCommand(i_CommandString);
 // }} ""
-// {{ 44 1 0 "a7d0bdef_7396_4fa8_9bbebd82c7ae0dee" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-if (IsInit != "True")
+// {{ 44 1 0 "85bc69d6_21bf_4377_9a9e380d24eb8fd1" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (_MODULE_TRANSPORT_IsInit != "True")
 {
 // }} ""
 // {{{ 45 1 0 "5658d1eb_d8e9_4e9e_bc3de659a90180c4" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
@@ -459,7 +459,7 @@ ReturnString = RETURN::CreateReturnString(ID, Translate("Module not initialized"
 // {{{ 47 1 0 "f6f874ba_6707_41c4_93e391277e56b5d3" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{ 48 1 0 "a7d0bdef_7396_4fa8_9bbebd82c7ae0dee" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 48 1 0 "85bc69d6_21bf_4377_9a9e380d24eb8fd1" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
 // {{ 49 1 0 "658a7823_0e65_4126_99e3b4ff6c5c0785" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
@@ -494,8 +494,8 @@ private variable ID;
 private variable ReturnString;
 // {{ 5 "DeInit" "InitLocals"
 // }} ""
-// {{ 34 1 0 "0728b09b_9e7f_4aaf_a5222eb1976dfe15" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-if (IsInit == "True")
+// {{ 34 1 0 "0f4cc32e_e6a6_474d_b5eb6109313b0390" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (_MODULE_TRANSPORT_IsInit == "True")
 {
 // }} ""
 // {{{ 35 1 0 "c31f2ff5_2624_4d29_b5878def8e7cbfb0" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
@@ -507,7 +507,7 @@ ReturnString = RETURN::CreateReturnString(ID, Translate("Deinit Successful"), Tr
 // {{{ 37 1 0 "753f0dd4_1156_4ab4_8ac14c0b32945635" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (ReturnString);
 // }} ""
-// {{ 38 1 0 "0728b09b_9e7f_4aaf_a5222eb1976dfe15" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 38 1 0 "0f4cc32e_e6a6_474d_b5eb6109313b0390" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
 // {{{ 39 1 0 "436fef24_cdb3_460c_ab2a68438d8c7283" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
@@ -526,4 +526,4 @@ return (ReturnString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-01-26 15:28$$checksum=44d075a2$$length=094$$
+// $$author=BAREB$$valid=0$$time=2022-03-29 08:42$$checksum=bd7fb320$$length=084$$

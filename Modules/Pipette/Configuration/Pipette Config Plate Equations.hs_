@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 2/22/2022 7:41:59 PM
+// Generated at 4/15/2022 11:17:10 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -12,10 +12,14 @@ function GetNumSegments( variable & o_NumSegments[] ) void { }
 function GetPlateTypes( variable & o_PlateTypes[] ) void { }
 function GetSegmentEquations( variable & o_SegmentEquations[] ) void { }
 function GetSegmentHeights( variable & o_SegmentHeights[] ) void { }
+global variable _MODULE_PIPETTE_CONFIG_SegmentEquations[];
+global variable _MODULE_PIPETTE_CONFIG_PlateTypes[];
+global variable _MODULE_PIPETTE_CONFIG_SegmentHeights[];
+global variable _MODULE_PIPETTE_CONFIG_NumSegments[];
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=fcnamr-adwmsbc$$valid=0$$time=2022-02-22 19:41$$checksum=13cde40f$$length=091$$
+// $$author=FCNCHVGRD-PDAMI$$valid=0$$time=2022-04-15 11:17$$checksum=fe91265c$$length=092$$

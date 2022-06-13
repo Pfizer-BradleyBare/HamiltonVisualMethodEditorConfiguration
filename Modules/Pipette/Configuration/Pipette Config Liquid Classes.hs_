@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 2/18/2022 12:54:32 PM
+// Generated at 3/29/2022 8:07:31 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -11,10 +11,13 @@ function EDIT_ConfigurationLiquidClasses(  ) void { }
 function GetLiquidClassCategories( variable & o_LiquidClassCategories[] ) void { }
 function GetLiquidClassClasses( variable & o_LiquidClassClasses[] ) void { }
 function GetLiquidClassVolumes( variable & o_LiquidClassVolumes[] ) void { }
+global variable _MODULE_PIPETTE_CONFIG_LiquidClassLiquidCategories[];
+global variable _MODULE_PIPETTE_CONFIG_LiquidClassClasses[];
+global variable _MODULE_PIPETTE_CONFIG_LiquidClassVolumes[];
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-02-18 12:54$$checksum=7e3517f0$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-03-29 08:07$$checksum=27923d35$$length=082$$

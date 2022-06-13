@@ -1,1 +1,2 @@
-Run Complete...,...Hello, your run is complete. If you chose to dilute into ACN then expect about 380uL of sample. If not, expect about 70uL of sample.
+Time to Desalt...,...The samples are ready for desalting. Get on it! 
+

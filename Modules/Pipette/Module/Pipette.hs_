@@ -1,23 +1,33 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 2/8/2022 2:58:18 PM
+// Generated at 6/11/2022 11:42:49 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
 namespace PIPETTE {
 function _InitLibrary() { }
 function _ExitLibrary() { }
-function AddUsedTips( variable TipSequenceString, variable TipSequenceType, variable TipSequenceVolume, variable TipSequenceCounterString, variable TipSequenceWasteSequenceString, variable NumTips ) void { }
+function AddUsedTips( variable TipSequenceString, variable TipSequenceType, variable TipSequenceVolume, variable TipSequenceWasteSequenceString, variable NumTips ) void { }
+function CalculateVolumeHeights( variable & i_PlateTypes[], variable & i_Volumes[], variable & o_CalculatedHeights[] ) variable {  return (0); }
 function DeInit( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function DoCommand( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function DoTipLoading( device & ML_STAR ) void { }
 function GetNumUsedTips( variable & o_Dict[] ) void { }
+function GetTipSequenceInfo( variable i_TipSequenceString, variable & o_TipInfoDict[] ) void { }
 function Init( device & ML_STAR, variable i_CommandParameterStrings ) variable {  return (0); }
 function ShowTipsDialog(  ) void { }
+global variable _MODULE_PIPETTE_TrackedTipSequenceVolumes[];
+global variable _MODULE_PIPETTE_IsInit("False");
+global variable _MODULE_PIPETTE_TrackedTipSequencesNumUsed[];
+global variable _MODULE_PIPETTE_TrackedTipSequenceStrings[];
+global variable _MODULE_PIPETTE_TrackedTipSequencesTipCounter[];
+global variable _MODULE_PIPETTE_TrackedTipSequenceTypes[];
+global variable _MODULE_PIPETTE_TrackedTipSequencesGeneratedWasteSequence[];
+global variable _MODULE_PIPETTE_TrackedTipSequencesWasteSequence[];
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-02-08 14:58$$checksum=f8482cf8$$length=092$$
+// $$author=BAREB$$valid=0$$time=2022-06-11 11:42$$checksum=323c7997$$length=082$$

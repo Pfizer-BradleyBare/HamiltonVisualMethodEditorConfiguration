@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 2/8/2022 11:08:00 AM
+// Generated at 6/10/2022 10:20:17 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -9,13 +9,17 @@ function _InitLibrary() { }
 function _ExitLibrary() { }
 function DeInit( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function DoCommand( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+function GetHeatersInfo( variable & o_HeatersInfoList[] ) void { }
 function GetReservationHeaterTransportType( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function GetReservationLidTransportType( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function Init( device & ML_STAR, variable i_CommandParameterStrings ) variable {  return (0); }
+global variable _MODULE_HEATER_HeaterHandles[];
+global variable _MODULE_HEATER_IsInit("False");
+global variable _MODULE_HEATER_HeaterReservations[];
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-02-08 11:08$$checksum=cff9dcda$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-06-10 22:20$$checksum=7157e242$$length=082$$
