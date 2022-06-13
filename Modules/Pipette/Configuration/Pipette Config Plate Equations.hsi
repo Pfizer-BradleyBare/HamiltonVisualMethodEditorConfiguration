@@ -41,8 +41,8 @@ function EDIT_ConfigurationPlateEquations(  ) void {
 // {{ 2 1 0 "f2756d5c_1967_4427_8bd183b8a4b95f57" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 _MODULE_PIPETTE_CONFIG_PlateTypes.SetSize(0);
 // }} ""
-// {{ 3 1 0 "d8c493cd_8475_4f10_a01f78c5a2d6d289" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-_MODULE_PIPETTE_CONFIG_PlateTypes.AddAsLast(Translate("200uL Biorad 96 Well PCR Plate"));
+// {{ 3 1 0 "86593b66_f282_4bcb_9c53d5b20195d763" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_PIPETTE_CONFIG_PlateTypes.AddAsLast(Translate("200uL Clear ABgene 96 Well PCR Plate"));
 // }} ""
 // {{ 4 1 0 "a3a19fab_e49c_45f9_a6103f11efcbe41c" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 _MODULE_PIPETTE_CONFIG_PlateTypes.AddAsLast(Translate("400uL Thermo 96 Well PCR Plate"));
@@ -59,7 +59,7 @@ _MODULE_PIPETTE_CONFIG_PlateTypes.AddAsLast(Translate("0.45um Self Poured ProA P
 // {{ 8 1 0 "a795b337_9a9f_4d0c_93de1bca0fd4a861" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 _MODULE_PIPETTE_CONFIG_PlateTypes.AddAsLast(Translate("Waters Glycoworks HILIC Plate"));
 // }} ""
-// {{ 9 1 0 "24bac88a_2558_4a75_b7134253c95fc813" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+// {{ 9 1 0 "adc1f887_1fed_4ffd_b437a8bbfe081df4" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
 _MODULE_PIPETTE_CONFIG_PlateTypes.AddAsLast(Translate("400uL Corning Costar 96 Well UV Plate"));
 // }} ""
 // {{ 10 1 0 "fc9bc86c_b8d0_48e0_8918be4bb2d3d040" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
@@ -101,8 +101,8 @@ HSLExtensions::Array2D::InitializeAllValues(_MODULE_PIPETTE_CONFIG_SegmentHeight
 // {{{ 22 1 0 "6e0875e5_8b68_44b7_983cbef719d22456" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_SegmentHeights, 1, 1, Translate("0"));
 // }} ""
-// {{{ 23 1 0 "06e06452_367d_409f_846becc6df19adad" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_SegmentHeights, 1, 2, Translate("14.68"));
+// {{{ 23 1 0 "0830df93_6728_4112_94da8c4488c2455e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_SegmentHeights, 1, 2, Translate("15"));
 // }} ""
 // {{{ 24 1 0 "031bc5db_2a64_480d_9c771e297e697949" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_SegmentHeights, 2, 1, Translate("3"));
@@ -155,8 +155,8 @@ HSLExtensions::Array2D::InitializeAllValues(_MODULE_PIPETTE_CONFIG_SegmentEquati
 // {{{ 40 1 0 "8d571159_4cf2_47dd_9179f519f7aaf3e0" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_SegmentEquations, 1, 1, Translate("x * 2.3562"));
 // }} ""
-// {{{ 41 1 0 "b61acff7_8d6c_4c76_91aae35bd511a852" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_SegmentEquations, 1, 2, Translate("x * 16.4934"));
+// {{{ 41 1 0 "adf13a43_5fa9_45bf_8e719869cd40e4f1" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_SegmentEquations, 1, 2, Translate("x * 14.5953"));
 // }} ""
 // {{{ 42 1 0 "74488723_b572_4821_a261d1b6b86b420d" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_SegmentEquations, 2, 1, Translate("x * 18.9150"));
@@ -252,4 +252,4 @@ o_SegmentEquations=_MODULE_PIPETTE_CONFIG_SegmentEquations;
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=FCNCHVGRD-PDAMI$$valid=0$$time=2022-04-15 11:17$$checksum=6966f7ab$$length=094$$
+// $$author=BAREB$$valid=0$$time=2022-06-13 11:21$$checksum=637a9f2b$$length=084$$

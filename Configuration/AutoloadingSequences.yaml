@@ -30,7 +30,7 @@ LabwareInfo:
     Vacuum Compatible: False
     IMCS SizeX Desalting Compatible: False
 
-  200uL Biorad 96 Well PCR Plate:
+  200uL Clear ABgene 96 Well PCR Plate:
     Labware Category: Plate
     Labware Type: 96 Well PCR Plate
     Storage Condition: False
@@ -129,41 +129,44 @@ LabwareInfo:
     Vacuum Compatible: False
     IMCS SizeX Desalting Compatible: True
 
+
+
 Autoloading:
   ##
   ## 390uL UV Plates
   ##
-  Carrier38_Pos3_CorningCostar96WellUVPlate360uL:
+  Carrier38_Pos3_Corning200uL96WellUVPlate:
     Labware Name: 400uL Corning Costar 96 Well UV Plate
     Lid Sequence: False
     Deck Position: Carrier38_Pos3
 
   ##
-  ## 200uL plates
+  ## 200uL Plates
   ##
-  Carrier38_Pos3_96WellPCRPlate200uL_1mLChannel:
-    Labware Name: 200uL Biorad 96 Well PCR Plate
-    Lid Sequence: False
-    Deck Position: Carrier38_Pos3
 
-  Carrier14_Pos3_96WellPCRPlate200uL_1mLChannel:
-    Labware Name: 200uL Biorad 96 Well PCR Plate
+  Carrier14_Pos3_ABgene200uLPCR:
+    Labware Name: 200uL Clear ABgene 96 Well PCR Plate
     Lid Sequence: Carrier14_Pos3_Lid_200uL
     Deck Position: Carrier14_Pos3
 
-  Carrier14_Pos4_96WellPCRPlate200uL_1mLChannel:
-    Labware Name: 200uL Biorad 96 Well PCR Plate
+  Carrier14_Pos4_ABgene200uLPCR:
+    Labware Name: 200uL Clear ABgene 96 Well PCR Plate
     Lid Sequence: Carrier14_Pos4_Lid_200uL
     Deck Position: Carrier14_Pos4
 
-  Carrier14_Pos5_96WellPCRPlate200uL_1mLChannel:
-    Labware Name: 200uL Biorad 96 Well PCR Plate
-    Lid Sequence: False
+  Carrier14_Pos5_ABgene200uLPCR:
+    Labware Name: 200uL Clear ABgene 96 Well PCR Plate
+    Lid Sequence: Carrier14_Pos5_Lid_200uL
     Deck Position: Carrier14_Pos5
 
-  #
-  # 400uL plates
-  #
+  Carrier38_Pos3_ABgene200uLPCR:
+    Labware Name: 200uL Clear ABgene 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos3
+
+  ##
+  ## 400uL plates
+  ##
 
   Carrier14_Pos3_96WellPCRPlate400uL_1mLChannel:
     Labware Name: 400uL Thermo 96 Well PCR Plate
@@ -180,9 +183,23 @@ Autoloading:
     Lid Sequence: False
     Deck Position: Carrier14_Pos5
 
-  #
-  # 1200uL plates
-  #
+  ##
+  ## 1200uL plates
+  ##
+  Carrier38_Pos3_96WellPCRPlate1200uL_1mLChannel:
+    Labware Name: 1200uL DeepWell 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos3
+
+  Carrier14_Pos5_96WellPCRPlate1200uL_1mLChannel:
+    Labware Name: 1200uL DeepWell 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier14_Pos5
+
+  Carrier38_Pos5_96WellPCRPlate1200uL_1mLChannel:
+    Labware Name: 1200uL DeepWell 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos5
 
   Carrier14_Pos1_96WellPCRPlate1200uL_1mLChannel:
     Labware Name: 1200uL DeepWell 96 Well PCR Plate
@@ -194,36 +211,38 @@ Autoloading:
     Lid Sequence: False
     Deck Position: Carrier14_Pos2
 
-  Carrier14_Pos3_96WellPCRPlate1200uL_1mLChannel:
-    Labware Name: 1200uL DeepWell 96 Well PCR Plate
-    Lid Sequence: False
-    Deck Position: Carrier14_Pos3
-
-  Carrier14_Pos4_96WellPCRPlate1200uL_1mLChannel:
-    Labware Name: 1200uL DeepWell 96 Well PCR Plate
-    Lid Sequence: Carrier14_Pos4_Lid_1200uL
-    Deck Position: Carrier14_Pos4
-
-  Carrier14_Pos5_96WellPCRPlate1200uL_1mLChannel:
-    Labware Name: 1200uL DeepWell 96 Well PCR Plate
-    Lid Sequence: False
-    Deck Position: Carrier14_Pos5
-
   Carrier38_Pos4_96WellPCRPlate1200uL_1mLChannel:
     Labware Name: 1200uL DeepWell 96 Well PCR Plate
     Lid Sequence: False
     Deck Position: Carrier38_Pos4
 
-  Carrier38_Pos5_96WellPCRPlate1200uL_1mLChannel:
-    Labware Name: 1200uL DeepWell 96 Well PCR Plate
-    Lid Sequence: False
-    Deck Position: Carrier38_Pos5
-
-  #2000
+  ##
+  ## 2000
+  ##
   Carrier38_Pos1_96WellPCRPlate2000uL_1mLChannel:
     Labware Name: 2000uL Corning 96 Well PCR Plate
     Lid Sequence: False
     Deck Position: Carrier38_Pos1
+
+  Carrier38_Pos2_96WellPCRPlate2000uL_1mLChannel:
+    Labware Name: 2000uL Corning 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos2
+
+  Carrier38_Pos3_96WellPCRPlate2000uL_1mLChannel:
+    Labware Name: 2000uL Corning 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos3
+
+  Carrier38_Pos4_96WellPCRPlate2000uL_1mLChannel:
+    Labware Name: 2000uL Corning 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos4
+
+  Carrier38_Pos5_96WellPCRPlate2000uL_1mLChannel:
+    Labware Name: 2000uL Corning 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos5
 
   Carrier14_Pos1_96WellPCRPlate2000uL_1mLChannel:
     Labware Name: 2000uL Corning 96 Well PCR Plate
@@ -249,29 +268,10 @@ Autoloading:
     Labware Name: 2000uL Corning 96 Well PCR Plate
     Lid Sequence: False
     Deck Position: Carrier14_Pos5
-
-  #Starstedt plates
-
-  #Carrier14_Pos5_56VialStarstedtRack200uL_1mLChannel:
-  #  Max Supported Volume: 200
-  #  Storage Condition: False
-  #  Labware Category: Plate
-  #  Labware Type: Starstedt 56 Well Plate
-  #  Labware Name: 200uL Starstedt Tube Plate
-  #  Lid Sequence: False
-  #  Deck Position: Carrier14_Pos5
-
-  #Carrier14_Pos5_56VialStarstedtRack2000uL_1mLChannel:
-  #  Max Supported Volume: 2000
-  #  Storage Condition: False
-  #  Labware Category: Plate
-  #  Labware Type: Starstedt 56 Well Plate
-  #  Labware Name: 2000uL Starstedt Tube Plate
-  #  Lid Sequence: False
-  #  Deck Position: Carrier14_Pos5
-
-  #LC Vial plates
-
+ 
+  ##
+  ##LC Vial plates
+  ##
   #Carrier14_Pos5_48VialLCRack_1mLChannel:
   #  Max Supported Volume: 2000
   #  Storage Condition: False
@@ -303,6 +303,7 @@ Autoloading:
     Lid Sequence: True
     Deck Position: E4
 
+
   E5:
     Labware Name: Hamilton 1.5mL FlipTube Cold
     Lid Sequence: True
@@ -313,6 +314,7 @@ Autoloading:
     Lid Sequence: True
     Deck Position: E6
 
+
   E7:
     Labware Name: Hamilton 1.5mL FlipTube Cold
     Lid Sequence: True
@@ -322,6 +324,11 @@ Autoloading:
     Labware Name: Hamilton 1.5mL FlipTube Cold
     Lid Sequence: True
     Deck Position: E8
+
+  EA:
+    Labware Name: Hamilton 1.5mL FlipTube Cold
+    Lid Sequence: True
+    Deck Position: EA
 
   F1:
     Labware Name: Hamilton 1.5mL FlipTube
@@ -397,6 +404,7 @@ Autoloading:
     Labware Name: Hamilton 1.5mL FlipTube
     Lid Sequence: True
     Deck Position: F15
+    Vacuum Compatible: False
 
   F16:
     Labware Name: Hamilton 1.5mL FlipTube

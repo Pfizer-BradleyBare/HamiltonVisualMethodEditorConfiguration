@@ -51,8 +51,8 @@ private function EDIT_Configuration(  ) void {
 // {{ 2 1 0 "72e52e3b_c2d5_4068_a142580ba8c864dc" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 _MODULE_VACUUM_CONFIG_VacuumComPorts.SetSize(0);
 // }} ""
-// {{ 3 1 0 "9e72ca46_a59f_4701_b548ce54170a2d22" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-_MODULE_VACUUM_CONFIG_VacuumComPorts.AddAsLast(1);
+// {{ 3 1 0 "ef88d5d1_919b_4c25_81defa8ba76f5b75" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_VACUUM_CONFIG_VacuumComPorts.AddAsLast(5);
 // }} ""
 // {{ 4 1 0 "a6e073fa_da34_44be_b834016afe1df523" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -93,8 +93,8 @@ _MODULE_VACUUM_CONFIG_SupportedVacuumPlateSequences = HSLExtensions::Array2D::Cr
 // {{{ 16 1 0 "29b53056_7604_4ded_8bab477c2e2a76c7" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumPlateSequences, 1, 1, Translate("_Vacuum_ProASelfPoured045um"));
 // }} ""
-// {{{ 17 1 0 "53347e06_3565_4812_9ae28fbc9c19ce6a" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumPlateSequences, 1, 2, Translate("_Vacuum_GlycoworksHILIC"));
+// {{{ 17 1 0 "7e74e629_e0e2_4853_a8791f2ddb70660b" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumPlateSequences, 1, 2, Translate("Waters Glycoworks HILIC Plate"));
 // }} ""
 // {{ 18 1 0 "e226a1b2_81fd_4690_9e69b9cd7f103fb3" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -258,4 +258,4 @@ o_SupportedVacuumCollectionPlateTypes=_MODULE_VACUUM_CONFIG_SupportedVacuumColle
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-03-29 09:01$$checksum=808a60f1$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-06-13 11:15$$checksum=60be2654$$length=084$$

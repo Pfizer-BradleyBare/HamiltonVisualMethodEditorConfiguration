@@ -49,8 +49,8 @@ _MODULE_MAGNETIC_BEADS_CONFIG_MinimumCondenseTimeSeconds = Translate("0");
 // {{ 3 1 0 "e14b696b_5b36_4f68_8fb38b270ae10eef" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 _MODULE_MAGNETIC_BEADS_CONFIG_SupportedPlateTypes.SetSize(0);
 // }} ""
-// {{ 4 1 0 "74bd8f3e_fd84_4353_b30521fffe2d7280" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-_MODULE_MAGNETIC_BEADS_CONFIG_SupportedPlateTypes.AddAsLast(Translate("200uL Biorad 96 Well PCR Plate"));
+// {{ 4 1 0 "cfa5466d_ea08_4026_bbf2b12cafb845b7" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_MAGNETIC_BEADS_CONFIG_SupportedPlateTypes.AddAsLast(Translate("200uL Clear ABgene 96 Well PCR Plate"));
 // }} ""
 // {{ 5 1 0 "f6031f04_7448_4ace_ba2d0fbde7de26be" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -177,4 +177,4 @@ o_SupportedLiquidClassVolumes=_MODULE_MAGNETIC_BEADS_CONFIG_SupportedLiquidClass
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-03-29 07:59$$checksum=a8dc3e5b$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-06-13 11:20$$checksum=f4a25daf$$length=084$$
