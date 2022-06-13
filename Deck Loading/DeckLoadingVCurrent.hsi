@@ -31,6 +31,12 @@ global variable Carrier14_Pos4;
 global variable Carrier14_Pos5;
 global variable SizeX100_1;
 global variable SizeX100_2;
+global variable VacuumPos1;
+global variable MagRackPos1;
+global variable DesaltingPos1;
+global variable DesaltingPos2;
+global variable DesaltingPos3;
+global variable DesaltingPos4;
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
 function DoDeckLoading(  ) void ;
@@ -81,20 +87,12 @@ private variable VolumeList[];
 private variable PlateNameList[];
 private variable LoadingList[];
 private variable UsedTipsDict[];
-private variable VacuumPlate;
-private variable MagneticRackVisibility;
-private variable MagRackPos1;
 private variable CounterString;
 private variable NumMagRacks;
 private variable MagneticRackInfo[];
-private variable VacuumPos1;
 private variable NumVacuumPlates;
-private variable DesaltingPos1;
 private variable NumDesaltingPositions;
-private variable DesaltingPos2;
 private variable NumTipsString;
-private variable DesaltingPos3;
-private variable DesaltingPos4;
 private variable VacuumPlateName;
 private variable VacuumInfoArray[];
 private variable DesaltInfoArray[];
@@ -485,14 +483,14 @@ CT = 0;
 // {{ 119 1 0 "d467c99d_a873_4b8a_a412235646e40a4b" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
-// {{ 120 1 0 "ce16cd5f_26c1_412b_a80a8301a14bbffd" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
-customDialog2FEB4C1E4223424fABC5D9453A56E09D.InitCustomDialog( "ce16cd5f_26c1_412b_a80a8301a14bbffd" );
+// {{ 120 1 0 "ce437dee_886b_40fb_a8f57ed63b0a2d09" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
+customDialog2FEB4C1E4223424fABC5D9453A56E09D.InitCustomDialog( "ce437dee_886b_40fb_a8f57ed63b0a2d09" );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock1.IsVisible", Tip50 );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock3.IsVisible", Tip300 );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock5.IsVisible", Tip1000 );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock9.IsVisible", Tip1000 );
-customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock10.IsVisible", DesaltingPos1 );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock10.Text", DesaltingPos1 );
+customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock10.IsVisible", DesaltingPos1 );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock11.IsVisible", TipSlim300 );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock2.IsVisible", Tip50 );
 customDialog2FEB4C1E4223424fABC5D9453A56E09D.SetCustomDialogProperty( "textBlock12.IsVisible", TipSlim300 );
@@ -547,4 +545,4 @@ customDialog2FEB4C1E4223424fABC5D9453A56E09D.ShowCustomDialog();
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-06-13 13:53$$checksum=44e164d4$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-06-13 15:10$$checksum=bb247a60$$length=084$$

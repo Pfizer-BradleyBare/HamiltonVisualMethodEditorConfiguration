@@ -156,7 +156,7 @@ Autoloading:
 
   Carrier14_Pos5_ABgene200uLPCR:
     Labware Name: 200uL Clear ABgene 96 Well PCR Plate
-    Lid Sequence: Carrier14_Pos5_Lid_200uL
+    Lid Sequence: False #Carrier14_Pos5_Lid_200uL
     Deck Position: Carrier14_Pos5
 
   Carrier38_Pos3_ABgene200uLPCR:
