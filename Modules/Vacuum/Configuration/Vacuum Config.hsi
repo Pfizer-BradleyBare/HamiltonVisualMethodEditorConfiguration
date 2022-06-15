@@ -93,8 +93,8 @@ _MODULE_VACUUM_CONFIG_SupportedVacuumPlateSequences = HSLExtensions::Array2D::Cr
 // {{{ 16 1 0 "29b53056_7604_4ded_8bab477c2e2a76c7" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumPlateSequences, 1, 1, Translate("_Vacuum_ProASelfPoured045um"));
 // }} ""
-// {{{ 17 1 0 "7e74e629_e0e2_4853_a8791f2ddb70660b" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumPlateSequences, 1, 2, Translate("Waters Glycoworks HILIC Plate"));
+// {{{ 17 1 0 "8f127684_8a34_4f2b_9b8571e47a6072e5" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumPlateSequences, 1, 2, Translate("_Vacuum_GlycoworksPlate"));
 // }} ""
 // {{ 18 1 0 "e226a1b2_81fd_4690_9e69b9cd7f103fb3" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -105,7 +105,7 @@ _MODULE_VACUUM_CONFIG_SupportedVacuumCollectionPlateSequences = HSLExtensions::A
 // {{{ 20 1 0 "96ff6b3d_353c_4f94_b1c0bc749e0cfba5" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumCollectionPlateSequences, 1, 1, Translate("_Vacuum_96WellPCRPlate2000uL"));
 // }} ""
-// {{{ 21 1 0 "b20292a9_e36e_4a2f_8e454cb3484a528d" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 21 1 0 "3d206ca4_e93d_4ba9_b91d3ce62606d965" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumCollectionPlateSequences, 1, 2, Translate("_Vacuum_96WellPCRPlate1200uL"));
 // }} ""
 // {{ 22 1 0 "6beb02b6_1192_4b45_9856c59c76f2359d" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
@@ -258,4 +258,4 @@ o_SupportedVacuumCollectionPlateTypes=_MODULE_VACUUM_CONFIG_SupportedVacuumColle
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-06-13 11:15$$checksum=60be2654$$length=084$$
+// $$author=fcnamr-adwmsbc$$valid=0$$time=2022-06-14 14:30$$checksum=c7ee9bec$$length=093$$
