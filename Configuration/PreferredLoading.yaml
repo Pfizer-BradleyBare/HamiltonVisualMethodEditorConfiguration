@@ -19,15 +19,17 @@
 
 Sample: 
   Preferred Sequences:
-      - Carrier38_Pos3_96WellPCRPlate200uL_1mLChannel
-      - Carrier14_Pos5_56VialStarstedtRack200uL_1mLChannel
-      - Carrier14_Pos5_56VialStarstedtRack2000uL_1mLChannel   
+      - Carrier38_Pos3_BioRad200uL96WellPCRPlate
 
 Denaturation: 
   Preferred Sequences:
-      - Carrier14_Pos3_96WellPCRPlate200uL_1mLChannel
-      - Carrier14_Pos3_96WellPCRPlate400uL_1mLChannel
-      - Carrier14_Pos4_96WellPCRPlate1200uL_1mLChannel
+      - Carrier14_Pos3_BioRad200uL96WellPCRPlate
+      - Carrier14_Pos4_BioRad200uL96WellPCRPlate
+      - Carrier14_Pos5_BioRad200uL96WellPCRPlate
+      - Carrier14_Pos3_ThermoNunc400uL96WellPCRPlate
+      - Carrier14_Pos4_ThermoNunc400uL96WellPCRPlate
+      - Carrier14_Pos5_ThermoNunc400uL96WellPCRPlate
+
 
 Water: 
   Preferred Sequences:

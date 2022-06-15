@@ -30,7 +30,7 @@ LabwareInfo:
     Vacuum Compatible: False
     IMCS SizeX Desalting Compatible: False
 
-  200uL Clear ABgene 96 Well PCR Plate:
+  200uL Biorad 96 Well PCR Plate:
     Labware Category: Plate
     Labware Type: 96 Well PCR Plate
     Storage Condition: False
@@ -143,145 +143,223 @@ Autoloading:
   ##
   ## 200uL Plates
   ##
+#Carrier38
+  Carrier38_Pos1_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: Carrier38_Pos1_BioRad200uL96WellPCRPlate_Lid
+    Deck Position: Carrier38_Pos1
 
-  Carrier14_Pos3_ABgene200uLPCR:
-    Labware Name: 200uL Clear ABgene 96 Well PCR Plate
-    Lid Sequence: Carrier14_Pos3_Lid_200uL
+  Carrier38_Pos2_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: Carrier38_Pos2_BioRad200uL96WellPCRPlate_Lid
+    Deck Position: Carrier38_Pos2
+
+  Carrier38_Pos3_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: Carrier38_Pos3_BioRad200uL96WellPCRPlate_Lid
+    Deck Position: Carrier38_Pos3
+
+  Carrier38_Pos4_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: Carrier38_Pos4_BioRad200uL96WellPCRPlate_Lid
+    Deck Position: Carrier38_Pos4
+
+  Carrier38_Pos5_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: Carrier38_Pos5_BioRad200uL96WellPCRPlate_Lid
+    Deck Position: Carrier38_Pos5
+
+#Carrier14
+  Carrier14_Pos1_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: Carrier14_Pos2_BioRad200uL96WellPCRPlate_Lid
+    Deck Position: Carrier14_Pos2
+
+  Carrier14_Pos2_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: Carrier14_Pos3_BioRad200uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos3
 
-  Carrier14_Pos4_ABgene200uLPCR:
-    Labware Name: 200uL Clear ABgene 96 Well PCR Plate
-    Lid Sequence: Carrier14_Pos4_Lid_200uL
+  Carrier14_Pos3_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: Carrier14_Pos3_BioRad200uL96WellPCRPlate_Lid
+    Deck Position: Carrier14_Pos3
+
+  Carrier14_Pos4_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: Carrier14_Pos4_BioRad200uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos4
 
-  Carrier14_Pos5_ABgene200uLPCR:
-    Labware Name: 200uL Clear ABgene 96 Well PCR Plate
-    Lid Sequence: False #Carrier14_Pos5_Lid_200uL
+  Carrier14_Pos5_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: Carrier14_Pos5_BioRad200uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos5
-
-  Carrier38_Pos3_ABgene200uLPCR:
-    Labware Name: 200uL Clear ABgene 96 Well PCR Plate
-    Lid Sequence: False
-    Deck Position: Carrier38_Pos3
 
   ##
   ## 400uL plates
   ##
-
-  Carrier14_Pos3_96WellPCRPlate400uL_1mLChannel:
+#Carrier38
+  Carrier38_Pos1_ThermoNunc400uL96WellPCRPlate:
     Labware Name: 400uL Thermo 96 Well PCR Plate
-    Lid Sequence: Carrier14_Pos3_Lid_400uL
+    Lid Sequence: Carrier38_Pos1_ThermoNunc400uL96WellPCRPlate_Lid
+    Deck Position: Carrier38_Pos1
+
+  Carrier38_Pos2_ThermoNunc400uL96WellPCRPlate:
+    Labware Name: 400uL Thermo 96 Well PCR Plate
+    Lid Sequence: Carrier38_Pos2_ThermoNunc400uL96WellPCRPlate_Lid
+    Deck Position: Carrier38_Pos2
+
+  Carrier38_Pos3_ThermoNunc400uL96WellPCRPlate:
+    Labware Name: 400uL Thermo 96 Well PCR Plate
+    Lid Sequence: Carrier38_Pos3_ThermoNunc400uL96WellPCRPlate_Lid
+    Deck Position: Carrier38_Pos3
+
+  Carrier38_Pos4_ThermoNunc400uL96WellPCRPlate:
+    Labware Name: 400uL Thermo 96 Well PCR Plate
+    Lid Sequence: Carrier38_Pos4_ThermoNunc400uL96WellPCRPlate_Lid
+    Deck Position: Carrier38_Pos4
+
+  Carrier38_Pos5_ThermoNunc400uL96WellPCRPlate:
+    Labware Name: 400uL Thermo 96 Well PCR Plate
+    Lid Sequence: Carrier38_Pos5_ThermoNunc400uL96WellPCRPlate_Lid
+    Deck Position: Carrier38_Pos5
+
+#Carrier14
+  Carrier14_Pos1_ThermoNunc400uL96WellPCRPlate:
+    Labware Name: 400uL Thermo 96 Well PCR Plate
+    Lid Sequence: Carrier14_Pos1_ThermoNunc400uL96WellPCRPlate_Lid
+    Deck Position: Carrier14_Pos1
+
+  Carrier14_Pos2_ThermoNunc400uL96WellPCRPlate:
+    Labware Name: 400uL Thermo 96 Well PCR Plate
+    Lid Sequence: Carrier14_Pos2_ThermoNunc400uL96WellPCRPlate_Lid
+    Deck Position: Carrier14_Pos2
+
+  Carrier14_Pos3_ThermoNunc400uL96WellPCRPlate:
+    Labware Name: 400uL Thermo 96 Well PCR Plate
+    Lid Sequence: Carrier14_Pos3_ThermoNunc400uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos3
 
-  Carrier14_Pos4_96WellPCRPlate400uL_1mLChannel:
+  Carrier14_Pos4_ThermoNunc400uL96WellPCRPlate:
     Labware Name: 400uL Thermo 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier14_Pos4_ThermoNunc400uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos4
 
-  Carrier14_Pos5_96WellPCRPlate400uL_1mLChannel:
+  Carrier14_Pos5_ThermoNunc400uL96WellPCRPlate:
     Labware Name: 400uL Thermo 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier14_Pos5_ThermoNunc400uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos5
 
   ##
   ## 1200uL plates
   ##
-  Carrier38_Pos3_96WellPCRPlate1200uL_1mLChannel:
+#Carrier 38
+  Carrier38_Pos1_ThermoABGene1200uL96WellPCRPlate:
     Labware Name: 1200uL DeepWell 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier38_Pos1_ThermoABGene1200uL96WellPCRPlate_Lid
+    Deck Position: Carrier38_Pos1
+
+  Carrier38_Pos2_ThermoABGene1200uL96WellPCRPlate:
+    Labware Name: 1200uL DeepWell 96 Well PCR Plate
+    Lid Sequence: Carrier38_Pos2_ThermoABGene1200uL96WellPCRPlate_Lid
+    Deck Position: Carrier38_Pos2
+
+  Carrier38_Pos3_ThermoABGene1200uL96WellPCRPlate:
+    Labware Name: 1200uL DeepWell 96 Well PCR Plate
+    Lid Sequence: Carrier38_Pos3_ThermoABGene1200uL96WellPCRPlate_Lid
     Deck Position: Carrier38_Pos3
 
-  Carrier14_Pos5_96WellPCRPlate1200uL_1mLChannel:
+  Carrier38_Pos4_ThermoABGene1200uL96WellPCRPlate:
     Labware Name: 1200uL DeepWell 96 Well PCR Plate
-    Lid Sequence: False
-    Deck Position: Carrier14_Pos5
+    Lid Sequence: Carrier38_Pos4_ThermoABGene1200uL96WellPCRPlate_Lid
+    Deck Position: Carrier38_Pos4
 
-  Carrier38_Pos5_96WellPCRPlate1200uL_1mLChannel:
+  Carrier38_Pos5_ThermoABGene1200uL96WellPCRPlate:
     Labware Name: 1200uL DeepWell 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier38_Pos5_ThermoABGene1200uL96WellPCRPlate_Lid
     Deck Position: Carrier38_Pos5
 
-  Carrier14_Pos1_96WellPCRPlate1200uL_1mLChannel:
+#Carrier 14
+  Carrier14_Pos1_ThermoABGene1200uL96WellPCRPlate:
     Labware Name: 1200uL DeepWell 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier14_Pos1_ThermoABGene1200uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos1
 
-  Carrier14_Pos2_96WellPCRPlate1200uL_1mLChannel:
+  Carrier14_Pos2_ThermoABGene1200uL96WellPCRPlate:
     Labware Name: 1200uL DeepWell 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier14_Pos2_ThermoABGene1200uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos2
 
-  Carrier38_Pos4_96WellPCRPlate1200uL_1mLChannel:
+  Carrier14_Pos3_ThermoABGene1200uL96WellPCRPlate:
     Labware Name: 1200uL DeepWell 96 Well PCR Plate
-    Lid Sequence: False
-    Deck Position: Carrier38_Pos4
+    Lid Sequence: Carrier14_Pos3_ThermoABGene1200uL96WellPCRPlate_Lid
+    Deck Position: Carrier14_Pos3
+
+  Carrier14_Pos4_ThermoABGene1200uL96WellPCRPlate:
+    Labware Name: 1200uL DeepWell 96 Well PCR Plate
+    Lid Sequence: Carrier14_Pos4_ThermoABGene1200uL96WellPCRPlate_Lid
+    Deck Position: Carrier14_Pos4
+
+  Carrier14_Pos5_ThermoABGene1200uL96WellPCRPlate:
+    Labware Name: 1200uL DeepWell 96 Well PCR Plate
+    Lid Sequence: Carrier14_Pos5_ThermoABGene1200uL96WellPCRPlate_Lid
+    Deck Position: Carrier14_Pos5
+
 
   ##
   ## 2000
   ##
-  Carrier38_Pos1_96WellPCRPlate2000uL_1mLChannel:
+#Carrier38
+  Carrier38_Pos1_CorningCostar2000uL96WellPCRPlate:
     Labware Name: 2000uL Corning 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier38_Pos1_CorningCostar2000uL96WellPCRPlate_Lid
     Deck Position: Carrier38_Pos1
 
-  Carrier38_Pos2_96WellPCRPlate2000uL_1mLChannel:
+  Carrier38_Pos2_CorningCostar2000uL96WellPCRPlate:
     Labware Name: 2000uL Corning 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier38_Pos2_CorningCostar2000uL96WellPCRPlate_Lid
     Deck Position: Carrier38_Pos2
 
-  Carrier38_Pos3_96WellPCRPlate2000uL_1mLChannel:
+  Carrier38_Pos3_CorningCostar2000uL96WellPCRPlate:
     Labware Name: 2000uL Corning 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier38_Pos3_CorningCostar2000uL96WellPCRPlate_Lid
     Deck Position: Carrier38_Pos3
 
-  Carrier38_Pos4_96WellPCRPlate2000uL_1mLChannel:
+  Carrier38_Pos4_CorningCostar2000uL96WellPCRPlate:
     Labware Name: 2000uL Corning 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier38_Pos4_CorningCostar2000uL96WellPCRPlate_Lid
     Deck Position: Carrier38_Pos4
 
-  Carrier38_Pos5_96WellPCRPlate2000uL_1mLChannel:
+  Carrier38_Pos5_CorningCostar2000uL96WellPCRPlate:
     Labware Name: 2000uL Corning 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier38_Pos5_CorningCostar2000uL96WellPCRPlate_Lid
     Deck Position: Carrier38_Pos5
-
-  Carrier14_Pos1_96WellPCRPlate2000uL_1mLChannel:
+ 
+#Carrier14
+  Carrier14_Pos1_CorningCostar2000uL96WellPCRPlate:
     Labware Name: 2000uL Corning 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier14_Pos1_CorningCostar2000uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos1
 
-  Carrier14_Pos2_96WellPCRPlate2000uL_1mLChannel:
+  Carrier14_Pos2_CorningCostar2000uL96WellPCRPlate:
     Labware Name: 2000uL Corning 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier14_Pos2_CorningCostar2000uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos2
 
-  Carrier14_Pos3_96WellPCRPlate2000uL_1mLChannel:
+  Carrier14_Pos3_CorningCostar2000uL96WellPCRPlate:
     Labware Name: 2000uL Corning 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier14_Pos3_CorningCostar2000uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos3
 
-  Carrier14_Pos4_96WellPCRPlate2000uL_1mLChannel:
+  Carrier14_Pos4_CorningCostar2000uL96WellPCRPlate:
     Labware Name: 2000uL Corning 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier14_Pos4_CorningCostar2000uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos4
 
-  Carrier14_Pos5_96WellPCRPlate2000uL_1mLChannel:
+  Carrier14_Pos5_CorningCostar2000uL96WellPCRPlate:
     Labware Name: 2000uL Corning 96 Well PCR Plate
-    Lid Sequence: False
+    Lid Sequence: Carrier14_Pos5_CorningCostar2000uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos5
- 
-  ##
-  ##LC Vial plates
-  ##
-  #Carrier14_Pos5_48VialLCRack_1mLChannel:
-  #  Max Supported Volume: 2000
-  #  Storage Condition: False
-  #  Labware Category: Plate
-  #  Labware Type: Waters TRV 48 Well Plate
-  #  Labware Name: 2000uL Water Total Recovery Vial Plate
-  #  Lid Sequence: False
-  #  Deck Position: Carrier14_Pos5
-
-  #Reagents
 
   E1:
     Labware Name: Hamilton 1.5mL FlipTube Cold
