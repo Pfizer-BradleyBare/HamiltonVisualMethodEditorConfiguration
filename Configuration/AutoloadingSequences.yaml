@@ -253,22 +253,8 @@ Autoloading:
   ##
   ## 1200uL plates
   ##
-<<<<<<< HEAD
 #Carrier 38
   Carrier38_Pos1_ThermoABGene1200uL96WellPCRPlate:
-=======
-  Carrier38_Pos5_96WellPCRPlate1200uL_1mLChannel:
-    Labware Name: 1200uL DeepWell 96 Well PCR Plate
-    Lid Sequence: False
-    Deck Position: Carrier38_Pos5
-
-  Carrier38_Pos4_96WellPCRPlate1200uL_1mLChannel:
-    Labware Name: 1200uL DeepWell 96 Well PCR Plate
-    Lid Sequence: False
-    Deck Position: Carrier38_Pos4
-
-  Carrier38_Pos3_96WellPCRPlate1200uL_1mLChannel:
->>>>>>> fe5379fae53017c4ea57bcf826bb36e81cc54d2e
     Labware Name: 1200uL DeepWell 96 Well PCR Plate
     Lid Sequence: Carrier38_Pos1_ThermoABGene1200uL96WellPCRPlate_Lid
     Deck Position: Carrier38_Pos1
@@ -288,7 +274,6 @@ Autoloading:
     Lid Sequence: Carrier38_Pos4_ThermoABGene1200uL96WellPCRPlate_Lid
     Deck Position: Carrier38_Pos4
 
-<<<<<<< HEAD
   Carrier38_Pos5_ThermoABGene1200uL96WellPCRPlate:
     Labware Name: 1200uL DeepWell 96 Well PCR Plate
     Lid Sequence: Carrier38_Pos5_ThermoABGene1200uL96WellPCRPlate_Lid
@@ -296,9 +281,6 @@ Autoloading:
 
 #Carrier 14
   Carrier14_Pos1_ThermoABGene1200uL96WellPCRPlate:
-=======
-  Carrier14_Pos1_96WellPCRPlate1200uL_1mLChannel:
->>>>>>> fe5379fae53017c4ea57bcf826bb36e81cc54d2e
     Labware Name: 1200uL DeepWell 96 Well PCR Plate
     Lid Sequence: Carrier14_Pos1_ThermoABGene1200uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos1
@@ -308,7 +290,6 @@ Autoloading:
     Lid Sequence: Carrier14_Pos2_ThermoABGene1200uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos2
 
-<<<<<<< HEAD
   Carrier14_Pos3_ThermoABGene1200uL96WellPCRPlate:
     Labware Name: 1200uL DeepWell 96 Well PCR Plate
     Lid Sequence: Carrier14_Pos3_ThermoABGene1200uL96WellPCRPlate_Lid
@@ -323,8 +304,6 @@ Autoloading:
     Labware Name: 1200uL DeepWell 96 Well PCR Plate
     Lid Sequence: Carrier14_Pos5_ThermoABGene1200uL96WellPCRPlate_Lid
     Deck Position: Carrier14_Pos5
-=======
->>>>>>> fe5379fae53017c4ea57bcf826bb36e81cc54d2e
 
 
   ##
