@@ -69,8 +69,8 @@ _MODULE_VACUUM_CONFIG_VacuumManifoldParkSequences.AddAsLast(Translate("_Vacuum_M
 // {{ 8 1 0 "677d1c02_0cf6_46a1_9656fc4ff0c17ea6" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 _MODULE_VACUUM_CONFIG_VacuumManifoldSequences.SetSize(0);
 // }} ""
-// {{ 9 1 0 "cabf4755_e42b_4040_9dd095ef70ef15a1" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-_MODULE_VACUUM_CONFIG_VacuumManifoldSequences.AddAsLast(Translate("_Vacuum_Manifold"));
+// {{ 9 1 0 "29d8e3da_1fe9_4349_a97208187106213d" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_VACUUM_CONFIG_VacuumManifoldSequences.AddAsLast(Translate("_Vacuum_ManifoldVacuum"));
 // }} ""
 // {{ 10 1 0 "dbe49a49_3e9a_4734_b576de218cbca22b" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -90,11 +90,11 @@ HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumPlateNames
 // {{{ 15 1 0 "27792e4b_ec87_48e4_a1bea8f32b7f52d8" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 _MODULE_VACUUM_CONFIG_SupportedVacuumPlateSequences = HSLExtensions::Array2D::Create(1, 2);
 // }} ""
-// {{{ 16 1 0 "29b53056_7604_4ded_8bab477c2e2a76c7" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumPlateSequences, 1, 1, Translate("_Vacuum_ProASelfPoured045um"));
+// {{{ 16 1 0 "af53b65e_ac20_4893_bac963ca209c8942" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumPlateSequences, 1, 1, Translate("_Vacuum_ProASelfPoured045uM"));
 // }} ""
-// {{{ 17 1 0 "8f127684_8a34_4f2b_9b8571e47a6072e5" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumPlateSequences, 1, 2, Translate("_Vacuum_GlycoworksPlate"));
+// {{{ 17 1 0 "2dd9a708_436c_4f0c_a15521646408e0d0" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumPlateSequences, 1, 2, Translate("_Vacuum_GlycoworksHILICPlate"));
 // }} ""
 // {{ 18 1 0 "e226a1b2_81fd_4690_9e69b9cd7f103fb3" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -102,11 +102,11 @@ HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumPlateSeque
 // {{{ 19 1 0 "5e3088d3_e2a4_4c1b_9c70fcf724f4fb03" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 _MODULE_VACUUM_CONFIG_SupportedVacuumCollectionPlateSequences = HSLExtensions::Array2D::Create(1, 2);
 // }} ""
-// {{{ 20 1 0 "96ff6b3d_353c_4f94_b1c0bc749e0cfba5" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumCollectionPlateSequences, 1, 1, Translate("_Vacuum_96WellPCRPlate2000uL"));
+// {{{ 20 1 0 "24f7e19d_49e2_4a26_ac806467ead1d897" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumCollectionPlateSequences, 1, 1, Translate("_Vacuum_CorningCostar2000uL96WellPCRPlate"));
 // }} ""
-// {{{ 21 1 0 "3d206ca4_e93d_4ba9_b91d3ce62606d965" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumCollectionPlateSequences, 1, 2, Translate("_Vacuum_96WellPCRPlate1200uL"));
+// {{{ 21 1 0 "3cd8ded9_6d38_4563_8d19deef5b9db3d3" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_VACUUM_CONFIG_SupportedVacuumCollectionPlateSequences, 1, 2, Translate("_Vacuum_ThermoABGene1200uL96WellPCRPlate"));
 // }} ""
 // {{ 22 1 0 "6beb02b6_1192_4b45_9856c59c76f2359d" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -258,4 +258,4 @@ o_SupportedVacuumCollectionPlateTypes=_MODULE_VACUUM_CONFIG_SupportedVacuumColle
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=fcnamr-adwmsbc$$valid=0$$time=2022-06-14 14:30$$checksum=c7ee9bec$$length=093$$
+// $$author=BAREB$$valid=0$$time=2022-06-15 12:43$$checksum=64c5dfda$$length=084$$
