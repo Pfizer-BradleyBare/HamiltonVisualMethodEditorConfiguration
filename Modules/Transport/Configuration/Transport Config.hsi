@@ -72,8 +72,8 @@ HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_TransportableLabware, 
 // {{{ 10 1 0 "54d78f97_5099_48dd_826f2d885c40311f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_TransportableLabware, 1, 2, Translate("Vacuum"));
 // }} ""
-// {{{ 11 1 0 "d38bcfd1_dbc5_4303_b27d5e9b343d411b" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_TransportableLabware, 1, 3, Translate("200uL Clear ABgene 96 Well PCR Plate"));
+// {{{ 11 1 0 "3b077160_3ef9_4d0d_ade26a68665c0df9" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_TransportableLabware, 1, 3, Translate("200uL Biorad 96 Well PCR Plate"));
 // }} ""
 // {{{ 12 1 0 "bdec5682_0f52_41ed_9483a42f953e30ae" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_TransportableLabware, 1, 4, Translate("400uL Thermo 96 Well PCR Plate"));
@@ -305,4 +305,4 @@ return (_MODULE_TRANSPORT_CONFIG_CoreGripToolSequenceString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-06-13 11:16$$checksum=9bd71031$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-06-15 12:39$$checksum=37a07843$$length=084$$
