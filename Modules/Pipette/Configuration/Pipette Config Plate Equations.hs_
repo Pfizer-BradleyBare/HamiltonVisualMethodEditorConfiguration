@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 6/13/2022 11:21:03 AM
+// Generated at 6/15/2022 5:24:39 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -22,4 +22,4 @@ global variable _MODULE_PIPETTE_CONFIG_NumSegments[];
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-06-13 11:21$$checksum=95074cbb$$length=082$$
+// $$author=fcnamr-adwmsbc$$valid=0$$time=2022-06-15 17:24$$checksum=988f1de0$$length=091$$

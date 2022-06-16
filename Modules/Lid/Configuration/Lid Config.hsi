@@ -51,11 +51,11 @@ _MODULE_LID_CONFIG_LidIDs.AddAsLast(Translate("Lid 2"));
 // {{ 6 1 0 "18194469_411a_436a_a275a0288e2367d9" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 _MODULE_LID_CONFIG_LidSequenceString.SetSize(0);
 // }} ""
-// {{ 7 1 0 "a2da3f8d_b149_40c8_a3771d219804d5d7" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-_MODULE_LID_CONFIG_LidSequenceString.AddAsLast(Translate("Lid1_Home"));
+// {{ 7 1 0 "2e98e8d4_6cb3_4027_8f45d4506699e455" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_LID_CONFIG_LidSequenceString.AddAsLast(Translate("_Lid1_Home"));
 // }} ""
-// {{ 8 1 0 "2ad9e61b_d6f4_47c4_97ae23cc8b2edb5d" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-_MODULE_LID_CONFIG_LidSequenceString.AddAsLast(Translate("Lid2_Home"));
+// {{ 8 1 0 "52d5cba2_285e_4a2c_a10a77aed34275dc" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_LID_CONFIG_LidSequenceString.AddAsLast(Translate("_Lid2_Home"));
 // }} ""
 // {{{ 5 "EDIT_Configuration" "End"
 }
@@ -114,4 +114,4 @@ return (NumLids);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-03-28 19:42$$checksum=7dfe2b84$$length=084$$
+// $$author=fcnamr-adwmsbc$$valid=0$$time=2022-06-15 13:55$$checksum=b046d3b2$$length=093$$

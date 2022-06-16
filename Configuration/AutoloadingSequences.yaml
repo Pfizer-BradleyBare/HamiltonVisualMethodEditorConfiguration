@@ -714,10 +714,56 @@ Autoloading:
     Lid Sequence: False
     Deck Position: R5
 
-  T5:
+  Carrier38_Pos1_Axygen200mLReagentTrough:
     Labware Name: 200mL Reagent Trough
     Lid Sequence: False
     Deck Position: Carrier38_Pos1
+
+  Carrier38_Pos2_Axygen200mLReagentTrough:
+    Labware Name: 200mL Reagent Trough
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos2
+
+  Carrier38_Pos3_Axygen200mLReagentTrough:
+    Labware Name: 200mL Reagent Trough
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos3
+
+  Carrier38_Pos4_Axygen200mLReagentTrough:
+    Labware Name: 200mL Reagent Trough
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos4
+
+  Carrier38_Pos5_Axygen200mLReagentTrough:
+    Labware Name: 200mL Reagent Trough
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos5
+
+  Carrier14_Pos1_Axygen200mLReagentTrough:
+    Labware Name: 200mL Reagent Trough
+    Lid Sequence: False
+    Deck Position: Carrier14_Pos1
+
+  Carrier14_Pos2_Axygen200mLReagentTrough:
+    Labware Name: 200mL Reagent Trough
+    Lid Sequence: False
+    Deck Position: Carrier14_Pos2
+
+  Carrier14_Pos3_Axygen200mLReagentTrough:
+    Labware Name: 200mL Reagent Trough
+    Lid Sequence: False
+    Deck Position: Carrier14_Pos3
+
+  Carrier14_Pos4_Axygen200mLReagentTrough:
+    Labware Name: 200mL Reagent Trough
+    Lid Sequence: False
+    Deck Position: Carrier14_Pos4
+
+  Carrier14_Pos5_Axygen200mLReagentTrough:
+    Labware Name: 200mL Reagent Trough
+    Lid Sequence: False
+    Deck Position: Carrier14_Pos5
+  
 
   T4:
     Labware Name: 200mL Reagent Trough

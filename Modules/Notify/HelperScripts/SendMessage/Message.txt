@@ -1,2 +1,1 @@
-Time to Desalt...,...The samples are ready for desalting. Get on it! 
-
+Hamilton Desalting Finished...,...Desalting Complete. Please measure concentrations in the Desalting plate then enter the concentrations in the Desalting Concentration column in the worklist. Finally, hit OK after placing the Desalting plate back on deck.
