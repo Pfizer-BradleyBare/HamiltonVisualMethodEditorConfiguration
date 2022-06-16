@@ -108,8 +108,8 @@ HSLExtensions::Array2D::SetValue(_MODULE_HEATER_CONFIG_SupportedPlateTypes, 1, 3
 // {{{ 21 1 0 "0fa32974_b2f2_488c_9a085e7e72905ed8" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_HEATER_CONFIG_SupportedPlateTypes, 1, 4, Translate("2000uL Corning 96 Well PCR Plate"));
 // }} ""
-// {{{ 22 1 0 "f3261f21_795e_432c_b08110c47cec9d35" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_HEATER_CONFIG_SupportedPlateTypes, 2, 1, Translate("200uL Biora 96 Well PCR Plate"));
+// {{{ 22 1 0 "c6a7ea1c_ad75_4fd1_b5d9ff9ef3329041" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_HEATER_CONFIG_SupportedPlateTypes, 2, 1, Translate("200uL Biorad 96 Well PCR Plate"));
 // }} ""
 // {{{ 23 1 0 "b3ec843a_50bb_4c92_8590537e9d632aae" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_HEATER_CONFIG_SupportedPlateTypes, 2, 2, Translate("400uL Thermo 96 Well PCR Plate"));
@@ -313,4 +313,4 @@ return (_MODULE_HEATER_CONFIG_TempDelta);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-06-16 10:33$$checksum=495c3cc5$$length=084$$
+// $$author=fcnamr-adwmsbc$$valid=0$$time=2022-06-16 12:09$$checksum=98a7798c$$length=093$$
