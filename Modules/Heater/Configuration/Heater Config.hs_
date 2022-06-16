@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 6/16/2022 9:40:11 AM
+// Generated at 6/16/2022 10:33:16 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -31,4 +31,4 @@ global variable _MODULE_HEATER_CONFIG_ComPorts[];
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=fcnamr-adwmsbc$$valid=0$$time=2022-06-16 09:40$$checksum=f412fb14$$length=091$$
+// $$author=BAREB$$valid=0$$time=2022-06-16 10:33$$checksum=59a7a138$$length=082$$
