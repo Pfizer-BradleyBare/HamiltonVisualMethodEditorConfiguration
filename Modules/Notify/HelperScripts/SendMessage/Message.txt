@@ -1,2 +1,1 @@
-Time to Desalt...,...The samples are ready for desalting. Get on it! 
-
+Was the error corrected?...,...Before clicking ok please ensure the error is corrected. Otherwise we have to go through this process again.
