@@ -16,13 +16,13 @@ CarrierArray = [
     "email.uscc.net",
     "mailmymobile.net"]
 
-ContactsPath = "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\EmailContacts\\Contacts.txt"
+ContactsPath = "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration\\Modules\\Notify\\HelperScripts\\SendMessage\\Contacts.txt"
 Handle = open(ContactsPath, "r")
 Contacts = Handle.read().split(',')
 Handle.close()
 #Pull contacts from the file
 
-MessagePath = "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\EmailContacts\\Message.txt"
+MessagePath = "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration\\Modules\\Notify\\HelperScripts\\SendMessage\\Message.txt"
 Handle = open(MessagePath, "r")
 Message = Handle.read().split('...,...')
 Handle.close()

@@ -62,32 +62,32 @@ _MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipSupportRackSequence = Translate("Carrier3
 // {{ 3 1 0 "2de7a799_f393_4d33_a059f6f948939bfd" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 4 1 0 "602f7780_6639_4c69_8caf9c12434b642b" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-_MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipPickupRackSequence = Translate("Carrier32_Pos1_TipSupportRack_300Standard_96CoreHead");
+// {{ 4 1 0 "c5b17050_8d6e_4b54_bae43680f88f97d8" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+_MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipPickupRackSequence = Translate("Carrier32_Pos1_TipSupportRack_300Slim_96CoreHead");
 // }} ""
 // {{ 5 1 0 "50b1e4b0_179d_4e1a_ace379fffd244f9a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 6 1 0 "24756689_c413_4371_985fb8ab63806429" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-_MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipSequenceString = Translate("seq_Tips_NTR_300ul");
+// {{ 6 1 0 "32f91893_df25_4198_93a70e8eaa7d5f04" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+_MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipSequenceString = Translate("MAM_Slim300_Tips");
 // }} ""
 // {{ 7 1 0 "aca6b2b7_c9e5_49e3_a32b2250d459fa81" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 8 1 0 "120053f1_935e_4963_87a2b13a349691ca" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-_MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipSequenceType = Translate("NTR");
+// {{ 8 1 0 "8a922f1e_08c4_4938_98b81542f7115101" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+_MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipSequenceType = Translate("FTR");
 // }} ""
 // {{ 9 1 0 "01acd9a0_aafa_4b5e_995b6e4a3366ee0d" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 10 1 0 "ae612f5a_2e9a_4dbf_a33b6055aa1a6fd1" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-_MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipSequenceWasteSequenceString = Translate("Tip300_NTR_Waste");
+// {{ 10 1 0 "f87fd74c_7eb7_4528_87715407bac9caf4" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+_MODULE_IMCS_SIZEX_DESALTING_CONFIG_TipSequenceWasteSequenceString = Translate("False");
 // }} ""
 // {{ 11 1 0 "87c2124a_c3e6_4804_a9aaa19d7e125ab6" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 12 1 0 "3343d775_be7f_483d_8aca3cafa934efb2" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-_MODULE_IMCS_SIZEX_DESALTING_CONFIG_CoreGripToolSequenceString = Translate("seq_COREGripTool");
+// {{ 12 1 0 "3eae4961_181d_46cb_93fefc1afc974671" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+_MODULE_IMCS_SIZEX_DESALTING_CONFIG_CoreGripToolSequenceString = Translate("False");
 // }} ""
 // {{ 13 1 0 "29aee869_888e_4da9_b73e1841ecd2d941" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -158,6 +158,7 @@ _MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSLiquidHandlingParameters = HSLExtensions
 // {{ 35 1 0 "73cb9297_9451_41c8_ae57ba13e17ef77f" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
+/* {{ 1 "" "0" */ if(0){  /* }} "" */
 // {{{ 36 1 0 "6114f6b2_7233_4f5d_9d7ca59aa1d1e3bc" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array3D::SetValue(_MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSLiquidHandlingParameters, 1, 1, 1, Translate("IMCS_SEC_T1_FastDispense"));
 // }} ""
@@ -227,10 +228,10 @@ HSLExtensions::Array3D::SetValue(_MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSLiquidH
 // {{{ 58 1 0 "85f57a23_39e6_4c8e_ad46927f3dbae1b3" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array3D::SetValue(_MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSLiquidHandlingParameters, 2, 1, 11, 100);
 // }} ""
+/* {{ 1 "" "1" */ } /* }} "" */
 // {{ 59 1 0 "84118c30_9cab_45d1_ba0df5641f679285" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-/* {{ 1 "" "0" */ if(0){  /* }} "" */
 // {{{ 60 1 0 "2c230d44_bc74_419d_be71b20f4fe44dc1" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array3D::SetValue(_MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSLiquidHandlingParameters, 1, 1, 1, Translate("IMCS_SEC_T1_FastDispense"));
 // }} ""
@@ -300,7 +301,6 @@ HSLExtensions::Array3D::SetValue(_MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSLiquidH
 // {{{ 82 1 0 "4df49b09_0c64_4cac_94677da21bb6ddf2" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array3D::SetValue(_MODULE_IMCS_SIZEX_DESALTING_CONFIG_IMCSLiquidHandlingParameters, 2, 1, 11, 100);
 // }} ""
-/* {{ 1 "" "1" */ } /* }} "" */
 // {{{ 5 "EDIT_Configuration" "End"
 }
 // }} ""
@@ -457,4 +457,4 @@ return (_MODULE_IMCS_SIZEX_DESALTING_CONFIG_CoreGripToolSequenceString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=fcnamr-adwmsbc$$valid=0$$time=2022-06-15 17:18$$checksum=4105b006$$length=093$$
+// $$author=fcnamr-adwmsbc$$valid=0$$time=2022-06-17 09:24$$checksum=32b7cdcb$$length=093$$
