@@ -58,8 +58,8 @@ _MODULE_MAGNETIC_BEADS_CONFIG_SupportedPlateTypes.AddAsLast(Translate("200uL Bio
 // {{ 6 1 0 "76b6e288_5e39_4da0_b955c13d8226ae8d" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
 _MODULE_MAGNETIC_BEADS_CONFIG_SupportedPlateTypesSequenceString.SetSize(0);
 // }} ""
-// {{ 7 1 0 "1632c185_ac66_4496_be73b9b10ec7e5ff" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-_MODULE_MAGNETIC_BEADS_CONFIG_SupportedPlateTypesSequenceString.AddAsLast(Translate("_MagneticBeads_200uL"));
+// {{ 7 1 0 "130c5f60_f149_497d_96e8fd1a5dd1f475" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_MAGNETIC_BEADS_CONFIG_SupportedPlateTypesSequenceString.AddAsLast(Translate("_MagneticRack1_BioRad200uL96WellPCRPlate"));
 // }} ""
 // {{ 8 1 0 "efecb9ff_e27c_4d3d_99c27f78929fa827" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -76,7 +76,7 @@ _MODULE_MAGNETIC_BEADS_CONFIG_SupportedLiquidClassVolumes.AddAsLast(300);
 // {{{ 12 1 0 "db275d87_d7e3_480d_a56e60be069c6f52" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 _MODULE_MAGNETIC_BEADS_CONFIG_CondensedBeadsLiquidClassStrings = HSLExtensions::Array2D::Create(1, 1);
 // }} ""
-// {{{ 13 1 0 "b01475d7_bd62_41d9_bebe1e12be474d58" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 13 1 0 "afba2435_dee0_419b_88d65e347c71b9ca" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_MAGNETIC_BEADS_CONFIG_CondensedBeadsLiquidClassStrings, 1, 1, Translate("MagneticBeads_300uL_CondensedBeadsLiquidRemovalClass"));
 // }} ""
 // {{ 14 1 0 "a2b5f559_caa9_4616_8b39e515f67027ac" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
@@ -85,7 +85,7 @@ HSLExtensions::Array2D::SetValue(_MODULE_MAGNETIC_BEADS_CONFIG_CondensedBeadsLiq
 // {{{ 15 1 0 "9587c5cf_d918_449c_a1834cce6d19f618" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 _MODULE_MAGNETIC_BEADS_CONFIG_GeneralLiquidTransferLiquidClassStrings = HSLExtensions::Array2D::Create(1, 1);
 // }} ""
-// {{{ 16 1 0 "02b188cc_9a64_48b8_978be19e898d4f49" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 16 1 0 "54ec5432_b750_4a6d_a1f8f13d3a6d3cc0" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_MAGNETIC_BEADS_CONFIG_GeneralLiquidTransferLiquidClassStrings, 1, 1, Translate("MagneticBeads_300uL_GeneralLiquidTransferClass"));
 // }} ""
 // {{{ 5 "EDIT_Configuration" "End"
@@ -177,4 +177,4 @@ o_SupportedLiquidClassVolumes=_MODULE_MAGNETIC_BEADS_CONFIG_SupportedLiquidClass
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-03-29 07:59$$checksum=a8dc3e5b$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-06-20 11:21$$checksum=95252b2e$$length=084$$

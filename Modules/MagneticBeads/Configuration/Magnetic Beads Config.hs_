@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 3/29/2022 7:59:18 AM
+// Generated at 6/20/2022 11:21:38 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -27,4 +27,4 @@ global variable _MODULE_MAGNETIC_BEADS_CONFIG_MinimumCondenseTimeSeconds;
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-03-29 07:59$$checksum=a8dc8cc2$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-06-20 11:21$$checksum=d41f52ac$$length=082$$
