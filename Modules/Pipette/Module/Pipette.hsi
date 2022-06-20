@@ -1376,10 +1376,10 @@ VISUAL_NTR_LIBRARY::Channels_TipCounter_Write(ML_STAR, TipSequence, _MODULE_PIPE
 	arrRetValues = ML_STAR._541143F5_7FA2_11D3_AD85_0004ACB1DCB2("8efc44f0_1b62_4e5e_bb6a5cf78ebf7c26"); // Aspirate
 }
 // }} ""
-// {{ 751 1 0 "ce75edb3_96a0_4937_8efa534daef4d9e6" "ML_STAR:{541143F8-7FA2-11D3-AD85-0004ACB1DCB2}"
+// {{ 751 1 0 "610a42de_4b37_4625_9d244844a11ed7be" "ML_STAR:{541143F8-7FA2-11D3-AD85-0004ACB1DCB2}"
 {
 	variable arrRetValues[];
-	arrRetValues = ML_STAR._541143F8_7FA2_11D3_AD85_0004ACB1DCB2("ce75edb3_96a0_4937_8efa534daef4d9e6"); // Dispense
+	arrRetValues = ML_STAR._541143F8_7FA2_11D3_AD85_0004ACB1DCB2("610a42de_4b37_4625_9d244844a11ed7be"); // Dispense
 }
 // }} ""
 // {{ 752 1 0 "9b7fe770_bdd6_4b73_a6d21cd34e8ac234" "ML_STAR:{541143FC-7FA2-11D3-AD85-0004ACB1DCB2}"
@@ -3208,4 +3208,4 @@ COMMANDS::ArraysToDictionary(Keys, Values, o_TipInfoDict);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-06-20 12:11$$checksum=7823e7fa$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-06-20 13:58$$checksum=9ce5a181$$length=084$$

@@ -66,17 +66,17 @@ _MODULE_PIPETTE_CONFIG_LiquidClassLiquidCategories.AddAsLast(Translate("Water"))
 // {{{ 11 1 0 "436fc6a2_f4e5_427f_bb87e38aa0349193" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 _MODULE_PIPETTE_CONFIG_LiquidClassClasses = HSLExtensions::Array2D::Create(1, 4);
 // }} ""
-// {{{ 12 1 0 "37da46a7_0b97_4665_80f027b75b7418a7" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_LiquidClassClasses, 1, 1, Translate("Tip_50_TrisTweenBuffer_SurfaceEmpty_Normalization"));
+// {{{ 12 1 0 "61fe3ea2_8a6d_4b7f_af9bbbaec3d9659e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_LiquidClassClasses, 1, 1, Translate("Tip_50_TrisTweenBuffer_SurfaceEmpty_Normalization_WithFilter"));
 // }} ""
-// {{{ 13 1 0 "f54f841a_e57f_4330_8d1c65627645765f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_LiquidClassClasses, 1, 2, Translate("Tip_50ul_Water_DispenseSurface_Empty"));
+// {{{ 13 1 0 "4393b463_3791_4f60_b4b928e958b6066f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_LiquidClassClasses, 1, 2, Translate("Tip_50ul_Water_DispenseSurface_Empty_WithFilter"));
 // }} ""
-// {{{ 14 1 0 "1d5e86e7_d506_4115_a01b609038c5c22f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_LiquidClassClasses, 1, 3, Translate("StandardVolume_Water_DispenseSurface_Empty"));
+// {{{ 14 1 0 "ace49804_d515_432d_9a5c281f9916c4ac" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_LiquidClassClasses, 1, 3, Translate("StandardVolume_Water_DispenseSurface_Empty_WithFilter"));
 // }} ""
-// {{{ 15 1 0 "ef8b6963_4ba7_48df_bd4f5e7734dd5428" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_LiquidClassClasses, 1, 4, Translate("HighVolume_Water_DispenseSurface_Empty"));
+// {{{ 15 1 0 "10538dba_63b9_4681_98ad7e3884e916f2" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_PIPETTE_CONFIG_LiquidClassClasses, 1, 4, Translate("HighVolume_Water_DispenseSurface_Empty_WithFilter"));
 // }} ""
 // {{{ 5 "EDIT_ConfigurationLiquidClasses" "End"
 }
@@ -121,4 +121,4 @@ o_LiquidClassClasses=_MODULE_PIPETTE_CONFIG_LiquidClassClasses;
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-03-29 08:07$$checksum=b2d6997c$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-06-20 13:58$$checksum=ce3efc02$$length=084$$
