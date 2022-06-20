@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 4/13/2022 4:39:28 PM
+// Generated at 5/24/2022 11:29:05 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -9,11 +9,13 @@ function _InitLibrary() { }
 function _ExitLibrary() { }
 function DeInit( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function DoCommand( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+function GetContacts( variable AutoLoadPreviousContacts ) void { }
 function Init( device & ML_STAR, variable i_CommandParameterStrings ) variable {  return (0); }
+global variable _MODULE_NOTIFY_IsInit("False");
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=FCNCHVGRD-PDAMI$$valid=0$$time=2022-04-13 16:39$$checksum=0348c078$$length=092$$
+// $$author=BAREB$$valid=0$$time=2022-05-24 11:29$$checksum=c7d5c3a9$$length=082$$

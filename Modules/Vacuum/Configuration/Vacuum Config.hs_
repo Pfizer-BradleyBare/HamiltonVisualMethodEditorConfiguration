@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 2/8/2022 9:34:43 AM
+// Generated at 3/29/2022 9:01:23 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -16,10 +16,18 @@ function GetVacuumManifoldSequenceStrings( variable & o_VacuumManifoldSequenceSt
 function GetVacuumParkSequenceStrings( variable & o_VacuumParkSequenceStrings[] ) void { }
 function GetVacuumPressureLevels( variable & o_VacuumPressureLevels[] ) void { }
 function Init(  ) void { }
+global variable _MODULE_VACUUM_CONFIG_SupportedVacuumCollectionPlateSequences[];
+global variable _MODULE_VACUUM_CONFIG_SupportedVacuumPlateNames[];
+global variable _MODULE_VACUUM_CONFIG_VacuumManifoldSequences[];
+global variable _MODULE_VACUUM_CONFIG_SupportedVacuumCollectionPlateTypes[];
+global variable _MODULE_VACUUM_CONFIG_VacuumComPorts[];
+global variable _MODULE_VACUUM_CONFIG_SupportedVacuumPlateSequences[];
+global variable _MODULE_VACUUM_CONFIG_VacuumPressureLevels[];
+global variable _MODULE_VACUUM_CONFIG_VacuumManifoldParkSequences[];
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-02-08 09:34$$checksum=eae4b276$$length=092$$
+// $$author=BAREB$$valid=0$$time=2022-03-29 09:01$$checksum=4ce6bbea$$length=082$$

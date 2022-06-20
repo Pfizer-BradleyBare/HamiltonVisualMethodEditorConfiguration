@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 4/26/2022 3:50:34 PM
+// Generated at 4/14/2022 3:50:57 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -17,10 +17,18 @@ function GetPlateSequenceStrings( variable & o_PlateSequenceStrings[] ) void { }
 function GetSupportedPlateTypes( variable & o_SupportedPlateTypes[] ) void { }
 function GetTempDelta(  ) variable {  return (0); }
 function Init(  ) void { }
+global variable _MODULE_HEATER_CONFIG_AmbientTemp;
+global variable _MODULE_HEATER_CONFIG_HeaterIDs[];
+global variable _MODULE_HEATER_CONFIG_HeaterTypes[];
+global variable _MODULE_HEATER_CONFIG_PlateSequences[];
+global variable _MODULE_HEATER_CONFIG_TempDelta;
+global variable _MODULE_HEATER_CONFIG_LidSequences[];
+global variable _MODULE_HEATER_CONFIG_SupportedPlateTypes[];
+global variable _MODULE_HEATER_CONFIG_ComPorts[];
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=FCNCHVGRD-PDAMI$$valid=0$$time=2022-04-26 15:50$$checksum=ce62a79c$$length=092$$
+// $$author=BAREB$$valid=0$$time=2022-04-14 15:50$$checksum=3932b5fc$$length=082$$

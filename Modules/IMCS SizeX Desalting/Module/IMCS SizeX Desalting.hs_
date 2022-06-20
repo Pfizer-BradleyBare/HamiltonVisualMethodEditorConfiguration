@@ -1,20 +1,29 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 2/16/2022 4:38:47 PM
+// Generated at 6/16/2022 10:56:10 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
 namespace IMCS_SIZEX_DESALTING {
 function _InitLibrary() { }
 function _ExitLibrary() { }
-function IMCSTips_Equl( device & ML_STAR, sequence & Tips_Seq ) void { }
-function IMCSTips_Process( device & ML_STAR, sequence & Tips_Seq, sequence & _SeqDesaltSolution ) void { }
-function IMCS_Init( sequence & BufferTroughSeq, sequence & WasteTroughSeq, sequence & ElutionPlateSeq, sequence & IMCSRack1Seq, sequence & IMCSRack2Seq, sequence & IMCSTips1Seq, sequence & IMCSTips2Seq, sequence & Tips300Seq, sequence & TipSupportSeq_1mL, sequence & TipSupportSeq_96Head, sequence & TipSupportResetSeq_96Head, variable NumSets, variable SizeXTip, variable StartPos, variable EndPos, variable TipType, variable Tip300Counter, sequence & waste300NTR, sequence & COREGripTool, sequence & Tip300_NTR_Waste ) void { }
-function IMCS_Print(  ) void { }
+function DoCommand( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+function GetDeckLoadingInfo( variable & OutputNumTipsPerPosition[] ) void { }
+function Init( device & ML_STAR, variable CommandString ) variable {  return (0); }
+function Process( device & ML_STAR, variable CommandString ) variable {  return (0); }
+global variable _MODULE_IMCS_SIZEX_DESALTING_ReservationSources[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_IsInit("False");
+global variable _MODULE_IMCS_SIZEX_DESALTING_Reservations[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_ReservationElutionIndices[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_ReservationSizeIndices[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_ReservationPositions[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_ReservationBuffers[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_ReservationWastes[];
+global variable _MODULE_IMCS_SIZEX_DESALTING_ReservationDestinations[];
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-02-16 16:38$$checksum=1d532801$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-06-16 10:56$$checksum=29b5933d$$length=082$$

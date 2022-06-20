@@ -3,12 +3,7 @@
 // }} ""
 #include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorConfiguration\\Modules\\Script\\Configuration\\Script Config.hs_"
 #include "HSLStrLib.hsl"
-#include "HSLUtilLib.hsl"
-#include "HSLTrcLib.hsl"
-#include "FileHandling_HSLFiLibEx\\HSLFilLibEx.hsl"
-#include "HSLFilLib.hsl"
 #include "C:\\Program Files (x86)\\HAMILTON\\BAREB\\Script\\HamiltonVisualMethodEditor\\HamiltonVisualMethodEditorMethod\\Library\\Tools\\Tools.hs_"
-#include "HSLUtilLib2.hsl"
 /* {{ 2 "LibraryInsertLine" "" */ // }} ""
 // {{ 2 "TemplateIncludeBlock" ""
 #include "HSLMETEDLib.hs_"
@@ -167,4 +162,4 @@ return (FinalCommand);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=FCNCHVGRD-PDAMI$$valid=0$$time=2022-04-13 16:26$$checksum=7c1857ee$$length=094$$
+// $$author=fcnchvgrd-pdami$$valid=0$$time=2022-03-14 16:40$$checksum=e215c908$$length=094$$

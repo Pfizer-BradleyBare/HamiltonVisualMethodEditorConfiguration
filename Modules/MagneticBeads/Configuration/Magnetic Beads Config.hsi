@@ -10,12 +10,12 @@
 // {{{ 2 "LibraryNamespace" "Begin"
 namespace MAGNETIC_BEADS_CONFIG {
 // }} ""
-variable MinimumCondenseTimeSeconds;
-variable SupportedPlateTypesSequenceString[];
-variable SupportedPlateTypes[];
-variable GeneralLiquidTransferLiquidClassStrings[];
-variable CondensedBeadsLiquidClassStrings[];
-variable SupportedLiquidClassVolumes[];
+global variable _MODULE_MAGNETIC_BEADS_CONFIG_MinimumCondenseTimeSeconds;
+global variable _MODULE_MAGNETIC_BEADS_CONFIG_SupportedLiquidClassVolumes[];
+global variable _MODULE_MAGNETIC_BEADS_CONFIG_GeneralLiquidTransferLiquidClassStrings[];
+global variable _MODULE_MAGNETIC_BEADS_CONFIG_SupportedPlateTypesSequenceString[];
+global variable _MODULE_MAGNETIC_BEADS_CONFIG_SupportedPlateTypes[];
+global variable _MODULE_MAGNETIC_BEADS_CONFIG_CondensedBeadsLiquidClassStrings[];
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
 function EDIT_Configuration(  ) void ;
@@ -40,53 +40,53 @@ function EDIT_Configuration(  ) void {
 // }} ""
 // {{ 5 "EDIT_Configuration" "InitLocals"
 // }} ""
-// {{ 1 1 0 "0eb00cfe_221f_4f50_b1d79d687e8fdbdf" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-MinimumCondenseTimeSeconds = Translate("0");
+// {{ 1 1 0 "ba8174f9_58ed_4202_a20f25fdb1273c2a" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+_MODULE_MAGNETIC_BEADS_CONFIG_MinimumCondenseTimeSeconds = Translate("0");
 // }} ""
 // {{ 2 1 0 "2b8047bd_df4d_4c82_b6aad35e3d7b0b5a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 3 1 0 "712de184_a2cb_4486_a03df0a58673c8c0" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
-SupportedPlateTypes.SetSize(0);
+// {{ 3 1 0 "e14b696b_5b36_4f68_8fb38b270ae10eef" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+_MODULE_MAGNETIC_BEADS_CONFIG_SupportedPlateTypes.SetSize(0);
 // }} ""
-// {{ 4 1 0 "65480005_56ef_437d_b79427e016762c48" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-SupportedPlateTypes.AddAsLast(Translate("200uL Biorad 96 Well PCR Plate"));
+// {{ 4 1 0 "74bd8f3e_fd84_4353_b30521fffe2d7280" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_MAGNETIC_BEADS_CONFIG_SupportedPlateTypes.AddAsLast(Translate("200uL Biorad 96 Well PCR Plate"));
 // }} ""
 // {{ 5 1 0 "f6031f04_7448_4ace_ba2d0fbde7de26be" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 6 1 0 "f05e0e53_7c84_440c_826437f1e30e7fb2" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
-SupportedPlateTypesSequenceString.SetSize(0);
+// {{ 6 1 0 "76b6e288_5e39_4da0_b955c13d8226ae8d" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+_MODULE_MAGNETIC_BEADS_CONFIG_SupportedPlateTypesSequenceString.SetSize(0);
 // }} ""
-// {{ 7 1 0 "cf7a3473_7f90_4257_9fcb33ffcaa3c36e" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-SupportedPlateTypesSequenceString.AddAsLast(Translate("_MagneticRack1_BioRad200uL96WellPCRPlate"));
+// {{ 7 1 0 "1632c185_ac66_4496_be73b9b10ec7e5ff" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_MAGNETIC_BEADS_CONFIG_SupportedPlateTypesSequenceString.AddAsLast(Translate("_MagneticBeads_200uL"));
 // }} ""
 // {{ 8 1 0 "efecb9ff_e27c_4d3d_99c27f78929fa827" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 9 1 0 "c7908b59_1c05_4b31_b4cb9b342290bc18" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
-SupportedLiquidClassVolumes.SetSize(0);
+// {{ 9 1 0 "75d78cf4_8db5_4371_96c836415df27e3c" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+_MODULE_MAGNETIC_BEADS_CONFIG_SupportedLiquidClassVolumes.SetSize(0);
 // }} ""
-// {{ 10 1 0 "b7ee13cc_96cb_47d7_a7a5a1693c6c0820" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-SupportedLiquidClassVolumes.AddAsLast(300);
+// {{ 10 1 0 "d373eea0_8376_4f0f_aee8bfb68d189c8f" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_MAGNETIC_BEADS_CONFIG_SupportedLiquidClassVolumes.AddAsLast(300);
 // }} ""
 // {{ 11 1 0 "33b8370d_4805_45d9_85d822b217e1cc6a" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 12 1 0 "11153a04_8ba6_4812_b834acf3dda989a1" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-CondensedBeadsLiquidClassStrings = HSLExtensions::Array2D::Create(1, 1);
+// {{{ 12 1 0 "db275d87_d7e3_480d_a56e60be069c6f52" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+_MODULE_MAGNETIC_BEADS_CONFIG_CondensedBeadsLiquidClassStrings = HSLExtensions::Array2D::Create(1, 1);
 // }} ""
-// {{{ 13 1 0 "edac95ac_eea3_4b66_a0c3cc1581e6b823" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(CondensedBeadsLiquidClassStrings, 1, 1, Translate("MagneticBeads_300uL_CondensedBeadsLiquidRemovalClass"));
+// {{{ 13 1 0 "b01475d7_bd62_41d9_bebe1e12be474d58" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_MAGNETIC_BEADS_CONFIG_CondensedBeadsLiquidClassStrings, 1, 1, Translate("MagneticBeads_300uL_CondensedBeadsLiquidRemovalClass"));
 // }} ""
 // {{ 14 1 0 "a2b5f559_caa9_4616_8b39e515f67027ac" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 15 1 0 "efe40c5a_81f8_4d79_bc6d9ed268155992" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-GeneralLiquidTransferLiquidClassStrings = HSLExtensions::Array2D::Create(1, 1);
+// {{{ 15 1 0 "9587c5cf_d918_449c_a1834cce6d19f618" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+_MODULE_MAGNETIC_BEADS_CONFIG_GeneralLiquidTransferLiquidClassStrings = HSLExtensions::Array2D::Create(1, 1);
 // }} ""
-// {{{ 16 1 0 "6dc1425d_55ae_4586_bf5cffdaa7584632" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(GeneralLiquidTransferLiquidClassStrings, 1, 1, Translate("MagneticBeads_300uL_GeneralLiquidTransferClass"));
+// {{{ 16 1 0 "02b188cc_9a64_48b8_978be19e898d4f49" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_MAGNETIC_BEADS_CONFIG_GeneralLiquidTransferLiquidClassStrings, 1, 1, Translate("MagneticBeads_300uL_GeneralLiquidTransferClass"));
 // }} ""
 // {{{ 5 "EDIT_Configuration" "End"
 }
@@ -108,8 +108,8 @@ function GetSupportedPlateTypesArray( variable & o_SupportedPlateTypesArray[] ) 
 // {{ 5 "GetSupportedPlateTypesArray" "InitLocals"
 o_SupportedPlateTypesArray.SetSize( 0);
 // }} ""
-// {{ 26 1 0 "edafe236_1a94_4bcc_9e016ed78d37f199" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
-o_SupportedPlateTypesArray=SupportedPlateTypes;
+// {{ 26 1 0 "c27822bd_ccf0_42dc_b682627dbb0c2e6e" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_SupportedPlateTypesArray=_MODULE_MAGNETIC_BEADS_CONFIG_SupportedPlateTypes;
 // }} ""
 // {{{ 5 "GetSupportedPlateTypesArray" "End"
 }
@@ -119,8 +119,8 @@ function GetMinimumCondenseTimeSeconds( variable o_MinimumCondenseTimeSeconds ) 
 // }} ""
 // {{ 5 "GetMinimumCondenseTimeSeconds" "InitLocals"
 // }} ""
-// {{ 22 1 0 "afbff22d_d888_4a6e_a58df046831f3888" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-o_MinimumCondenseTimeSeconds = MinimumCondenseTimeSeconds;
+// {{ 22 1 0 "e9d9a39c_28ee_47ee_9bcb32fc53bfc354" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+o_MinimumCondenseTimeSeconds = _MODULE_MAGNETIC_BEADS_CONFIG_MinimumCondenseTimeSeconds;
 // }} ""
 // {{{ 5 "GetMinimumCondenseTimeSeconds" "End"
 }
@@ -131,8 +131,8 @@ function GetSupportedPlateTypesSequenceStringsArray( variable & o_SupportedPlate
 // {{ 5 "GetSupportedPlateTypesSequenceStringsArray" "InitLocals"
 o_SupportedPlateTypesSequenceStringsArray.SetSize( 0);
 // }} ""
-// {{ 28 1 0 "0271c411_b9cd_4301_8920034ffdb51f70" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
-o_SupportedPlateTypesSequenceStringsArray=SupportedPlateTypesSequenceString;
+// {{ 28 1 0 "78b31dc6_e14b_4e30_aa0916b63717adf6" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_SupportedPlateTypesSequenceStringsArray=_MODULE_MAGNETIC_BEADS_CONFIG_SupportedPlateTypesSequenceString;
 // }} ""
 // {{{ 5 "GetSupportedPlateTypesSequenceStringsArray" "End"
 }
@@ -143,8 +143,8 @@ function GetGeneralLiquidTransferLiquidClassStrings( variable & o_GeneralLiquidT
 // {{ 5 "GetGeneralLiquidTransferLiquidClassStrings" "InitLocals"
 o_GeneralLiquidTransferLiquidClassStrings.SetSize( 0);
 // }} ""
-// {{ 20 1 0 "f7a50d2f_a3b8_4e09_80ce2037515c0461" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
-o_GeneralLiquidTransferLiquidClassStrings=GeneralLiquidTransferLiquidClassStrings;
+// {{ 20 1 0 "a5e9e7c0_e5dc_4b94_bddc6cf6f2867f2c" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_GeneralLiquidTransferLiquidClassStrings=_MODULE_MAGNETIC_BEADS_CONFIG_GeneralLiquidTransferLiquidClassStrings;
 // }} ""
 // {{{ 5 "GetGeneralLiquidTransferLiquidClassStrings" "End"
 }
@@ -155,8 +155,8 @@ function GetCondensedBeadsLiquidClassStrings( variable & o_CondensedBeadsLiquidC
 // {{ 5 "GetCondensedBeadsLiquidClassStrings" "InitLocals"
 o_CondensedBeadsLiquidClassStrings.SetSize( 0);
 // }} ""
-// {{ 18 1 0 "293eabd2_fd04_429c_b38ab60c7cf3bf6f" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
-o_CondensedBeadsLiquidClassStrings=CondensedBeadsLiquidClassStrings;
+// {{ 18 1 0 "0b4d609f_dd6f_4005_ba0ff74e334801eb" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_CondensedBeadsLiquidClassStrings=_MODULE_MAGNETIC_BEADS_CONFIG_CondensedBeadsLiquidClassStrings;
 // }} ""
 // {{{ 5 "GetCondensedBeadsLiquidClassStrings" "End"
 }
@@ -167,8 +167,8 @@ function GetSupportedLiquidClassVolumes( variable & o_SupportedLiquidClassVolume
 // {{ 5 "GetSupportedLiquidClassVolumes" "InitLocals"
 o_SupportedLiquidClassVolumes.SetSize( 0);
 // }} ""
-// {{ 24 1 0 "0bd468ed_55fe_46f2_8f7aa855d8cbe220" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
-o_SupportedLiquidClassVolumes=SupportedLiquidClassVolumes;
+// {{ 24 1 0 "2140a29f_767e_4162_92f7daba19ef8337" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_SupportedLiquidClassVolumes=_MODULE_MAGNETIC_BEADS_CONFIG_SupportedLiquidClassVolumes;
 // }} ""
 // {{{ 5 "GetSupportedLiquidClassVolumes" "End"
 }
@@ -177,4 +177,4 @@ o_SupportedLiquidClassVolumes=SupportedLiquidClassVolumes;
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-02-16 16:44$$checksum=31f0c957$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-03-29 07:59$$checksum=a8dc3e5b$$length=084$$

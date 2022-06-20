@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 4/14/2022 9:20:07 AM
+// Generated at 4/14/2022 4:44:25 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -16,10 +16,16 @@ function GetNumTransportTypes(  ) variable {  return (0); }
 function GetTransportTypes( variable & o_TransportTypes[] ) void { }
 function GetTransportableLabwares( variable & o_TransportableLabwares[] ) void { }
 function Init(  ) void { }
+global variable _MODULE_TRANSPORT_CONFIG_LabwareGripHeight[];
+global variable _MODULE_TRANSPORT_CONFIG_TransportTypes[];
+global variable _MODULE_TRANSPORT_CONFIG_CoreGripToolSequenceString;
+global variable _MODULE_TRANSPORT_CONFIG_TransportableLabware[];
+global variable _MODULE_TRANSPORT_CONFIG_LabwareGripCloseWidth[];
+global variable _MODULE_TRANSPORT_CONFIG_LabwareGripOpenWidth[];
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=FCNCHVGRD-PDAMI$$valid=0$$time=2022-04-14 09:20$$checksum=1475a2ae$$length=092$$
+// $$author=FCNCHVGRD-PDAMI$$valid=0$$time=2022-04-14 16:44$$checksum=a9294f8e$$length=092$$

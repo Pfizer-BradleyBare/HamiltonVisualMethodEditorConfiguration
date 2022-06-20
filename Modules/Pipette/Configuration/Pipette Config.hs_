@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 2/16/2022 5:23:49 PM
+// Generated at 6/11/2022 11:47:09 AM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -14,16 +14,25 @@ function GetCoreGripToolSequenceString(  ) variable {  return (0); }
 function GetFlipTubeToolSequenceString(  ) variable {  return (0); }
 function GetMaxPipettingVolume(  ) variable {  return (0); }
 function GetNumChannels(  ) variable {  return (0); }
-function GetTipSequenceCounterStrings( variable & o_TipCounterStrings[] ) void { }
 function GetTipSequenceStrings( variable & o_TipSequenceStringsArray[] ) void { }
 function GetTipSequenceTypes( variable & o_TipSequenceTypesArray[] ) void { }
 function GetTipSequenceVolumes( variable & o_TipSequenceVolumesArray[] ) void { }
 function GetTipSequenceWasteSequenceStrings( variable & o_TipSequenceWasteSequenceStrings[] ) void { }
 function Init(  ) void { }
+global variable _MODULE_PIPETTE_CONFIG_CoreGripToolSequenceString;
+global variable _MODULE_PIPETTE_CONFIG_TipSequenceVolumes[];
+global variable _MODULE_PIPETTE_CONFIG_TipSequenceCounterStrings[];
+global variable _MODULE_PIPETTE_CONFIG_NumChannels;
+global variable _MODULE_PIPETTE_CONFIG_FlipTubeToolSequenceString;
+global variable _MODULE_PIPETTE_CONFIG_TipSequenceWasteSequenceString[];
+global variable _MODULE_PIPETTE_CONFIG_TipSequenceTypes[];
+global variable _MODULE_PIPETTE_CONFIG_TipSequenceStrings[];
+global variable _MODULE_PIPETTE_CONFIG_MaxPipettingVolume;
+global variable _MODULE_PIPETTE_CONFIG_ChannelString;
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=BAREB$$valid=0$$time=2022-02-16 17:23$$checksum=0effa049$$length=082$$
+// $$author=BAREB$$valid=0$$time=2022-06-11 11:47$$checksum=db8ceb7c$$length=082$$

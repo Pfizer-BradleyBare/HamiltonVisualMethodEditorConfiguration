@@ -10,8 +10,8 @@
 // {{{ 2 "LibraryNamespace" "Begin"
 namespace LID_CONFIG {
 // }} ""
-variable LidSequenceString[];
-variable LidIDs[];
+global variable _MODULE_LID_CONFIG_LidIDs[];
+global variable _MODULE_LID_CONFIG_LidSequenceString[];
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{{ 2 "SubmethodForwardDeclaration" ""
 private function EDIT_Configuration(  ) void ;
@@ -36,20 +36,26 @@ private function EDIT_Configuration(  ) void {
 // {{ 1 1 0 "5712c9b6_c1e6_4f31_b132a8c5e22b648c" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 2 1 0 "2a2b6925_7252_4347_bf79163e040deccf" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
-LidIDs.SetSize(0);
+// {{ 2 1 0 "d3d7f914_bbd7_4da7_a67ee91f69221eb6" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+_MODULE_LID_CONFIG_LidIDs.SetSize(0);
 // }} ""
-// {{ 3 1 0 "72891be0_0e49_410b_800600a4cdb8cd81" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-LidIDs.AddAsLast(Translate("Lid 1"));
+// {{ 3 1 0 "94af44d1_7859_425f_bbb8865ba817d920" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_LID_CONFIG_LidIDs.AddAsLast(Translate("Lid 1"));
 // }} ""
-// {{ 4 1 0 "41b41bae_bdef_4484_94506b8e9a18807e" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 4 1 0 "0fec290b_aaad_4dfe_a769320052cec7c7" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_LID_CONFIG_LidIDs.AddAsLast(Translate("Lid 2"));
+// }} ""
+// {{ 5 1 0 "41b41bae_bdef_4484_94506b8e9a18807e" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 5 1 0 "aaabfe26_e211_4bc0_a9decbf4e13a0b87" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
-LidSequenceString.SetSize(0);
+// {{ 6 1 0 "18194469_411a_436a_a275a0288e2367d9" "{4900C1F7-0FB7-4033-8253-760BDB9354DC}"
+_MODULE_LID_CONFIG_LidSequenceString.SetSize(0);
 // }} ""
-// {{ 6 1 0 "03e4ca85_d65a_4ca9_a8ed7a1172d989d6" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-LidSequenceString.AddAsLast(Translate("Lid1_Home"));
+// {{ 7 1 0 "a2da3f8d_b149_40c8_a3771d219804d5d7" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_LID_CONFIG_LidSequenceString.AddAsLast(Translate("Lid1_Home"));
+// }} ""
+// {{ 8 1 0 "2ad9e61b_d6f4_47c4_97ae23cc8b2edb5d" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+_MODULE_LID_CONFIG_LidSequenceString.AddAsLast(Translate("Lid2_Home"));
 // }} ""
 // {{{ 5 "EDIT_Configuration" "End"
 }
@@ -59,7 +65,7 @@ function Init(  ) void {
 // }} ""
 // {{ 5 "Init" "InitLocals"
 // }} ""
-// {{{ 15 1 0 "330b873b_d44a_437f_acc55448174eebac" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 17 1 0 "330b873b_d44a_437f_acc55448174eebac" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 EDIT_Configuration();
 // }} ""
 // {{{ 5 "Init" "End"
@@ -71,8 +77,8 @@ function GetLidIDs( variable & o_LidIDs[] ) void {
 // {{ 5 "GetLidIDs" "InitLocals"
 o_LidIDs.SetSize( 0);
 // }} ""
-// {{ 8 1 0 "02e6e614_681e_4418_8d67bd1a2f5e0be9" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
-o_LidIDs=LidIDs;
+// {{ 10 1 0 "9635f0bf_768d_4515_8da020c3a8cfff69" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_LidIDs=_MODULE_LID_CONFIG_LidIDs;
 // }} ""
 // {{{ 5 "GetLidIDs" "End"
 }
@@ -83,8 +89,8 @@ function GetLidSequenceStrings( variable & o_LidSequenceStrings[] ) void {
 // {{ 5 "GetLidSequenceStrings" "InitLocals"
 o_LidSequenceStrings.SetSize( 0);
 // }} ""
-// {{ 10 1 0 "54feadeb_3c68_4c72_b06135b2c008b822" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
-o_LidSequenceStrings=LidSequenceString;
+// {{ 12 1 0 "7d1f2a08_891a_4ae6_949a1517ba2b88fb" "{DB5A2B39-67F2-4a78-A78F-DAF3FB056366}"
+o_LidSequenceStrings=_MODULE_LID_CONFIG_LidSequenceString;
 // }} ""
 // {{{ 5 "GetLidSequenceStrings" "End"
 }
@@ -95,10 +101,10 @@ function GetNumLids(  ) variable {
 private variable NumLids;
 // {{ 5 "GetNumLids" "InitLocals"
 // }} ""
-// {{ 12 1 0 "ccd027b6_a2fe_401c_a4cfbfdcd8306b20" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
-NumLids=LidIDs.GetSize();
+// {{ 14 1 0 "9439113f_29b4_4acc_a9662d567bba3ea2" "{72EACF88-8D49-43e3-92C8-2F90E81E3260}"
+NumLids=_MODULE_LID_CONFIG_LidIDs.GetSize();
 // }} ""
-// {{{ 13 1 0 "ae7d516c_01d8_4821_81c4e83a8003dd30" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 15 1 0 "ae7d516c_01d8_4821_81c4e83a8003dd30" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return (NumLids);
 // }} ""
 // {{{ 5 "GetNumLids" "End"
@@ -108,4 +114,4 @@ return (NumLids);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-02-22 09:33$$checksum=ae94f299$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-03-28 19:42$$checksum=7dfe2b84$$length=084$$

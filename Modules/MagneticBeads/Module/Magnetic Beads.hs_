@@ -1,6 +1,6 @@
 
 // this ALWAYS GENERATED file contains the sub-method library header
-// Generated at 3/7/2022 2:36:18 PM
+// Generated at 6/11/2022 2:51:47 PM
 
 #pragma once
 #ifndef HSL_RUNTIME
@@ -9,11 +9,13 @@ function _InitLibrary() { }
 function _ExitLibrary() { }
 function DeInit( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
 function DoCommand( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+function GetDeckLoadingInfo( variable & OutputMagneticRacksArray[] ) void { }
 function Init( device & ML_STAR, variable i_CommandString ) variable {  return (0); }
+global variable _MODULE_MAGNETIC_BEADS_IsInit("False");
 } // namespace
 #endif
 
 #ifdef HSL_RUNTIME
 #include __filename__ ".hsi"
 #endif
-// $$author=FCNCHVGRD-PDAMI$$valid=0$$time=2022-03-07 14:36$$checksum=29190bfd$$length=092$$
+// $$author=BAREB$$valid=0$$time=2022-06-11 14:51$$checksum=fc43b973$$length=082$$

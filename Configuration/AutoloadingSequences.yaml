@@ -18,406 +18,254 @@
 #####################################################
 #####################################################
 
+LabwareInfo:
+  200uL Biorad 96 Well PCR Plate:
+    Labware Category: Plate
+    Labware Type: 96 Well PCR Plate
+    Storage Condition: False
+    Labware Columns: 12
+    Labware Rows: 8
+    Max Supported Volume: 225
+    Dead Volume: 10
+    Vacuum Compatible: False
+    IMCS SizeX Desalting Compatible: False
 
-Carrier35_Pos5_BioRad200uL96WellPCRPlate:
-  Max Supported Volume: 225
-  Dead Volume: 10
-  Storage Condition: False
-  Labware Category: Plate
-  Labware Type: 96 Well PCR Plate
-  Labware Name: 200uL Biorad 96 Well PCR Plate
-  Lid Sequence: False
-  Deck Position: Carrier35_Pos5
-  Vacuum Compatible: False
+  2000uL Corning 96 Well PCR Plate:
+    Labware Category: Plate
+    Labware Type: 96 Well PCR Plate
+    Storage Condition: False
+    Labware Columns: 12
+    Labware Rows: 8
+    Max Supported Volume: 2300
+    Dead Volume: 100
+    Vacuum Compatible: 0.45um Self Poured ProA Plate
+    IMCS SizeX Desalting Compatible: True
 
-Carrier35_Pos4_BioRad200uL96WellPCRPlate:
-  Max Supported Volume: 225
-  Dead Volume: 10
-  Storage Condition: False
-  Labware Category: Plate
-  Labware Type: 96 Well PCR Plate
-  Labware Name: 200uL Biorad 96 Well PCR Plate
-  Lid Sequence: False
-  Deck Position: Carrier35_Pos4
-  Vacuum Compatible: False
+  Open 1.5mL Flip Top Tube:
+    Labware Category: Reagent
+    Labware Type: Flip Top Tube
+    Storage Condition: Ambient
+    Labware Columns: 1
+    Labware Rows: 1
+    Max Supported Volume: 1500
+    Dead Volume: 150
+    Vacuum Compatible: False
+    IMCS SizeX Desalting Compatible: False
 
-Carrier35_Pos3_BioRad200uL96WellPCRPlate:
-  Max Supported Volume: 225
-  Dead Volume: 10
-  Storage Condition: False
-  Labware Category: Plate
-  Labware Type: 96 Well PCR Plate
-  Labware Name: 200uL Biorad 96 Well PCR Plate
-  Lid Sequence: False
-  Deck Position: Carrier35_Pos3
-  Vacuum Compatible: False
+  Open 1.5mL Flip Top Tube.:
+    Labware Category: Reagent
+    Labware Type: Flip Top Tube
+    Storage Condition: Ambient
+    Labware Columns: 1
+    Labware Rows: 1
+    Max Supported Volume: 1500
+    Dead Volume: 10
+    Vacuum Compatible: False
+    IMCS SizeX Desalting Compatible: False
+    
+  15mL Centrifuge Tube:
+    Labware Category: Reagent
+    Labware Type: 15mL Centrifuge Tube
+    Storage Condition: Ambient
+    Labware Columns: 1
+    Labware Rows: 1
+    Max Supported Volume: 14000
+    Dead Volume: 500
+    Vacuum Compatible: False
+    IMCS SizeX Desalting Compatible: False
 
-Carrier5_Pos4_BioRad200uL96WellPCRPlate:
-  Max Supported Volume: 225
-  Dead Volume: 10
-  Storage Condition: False
-  Labware Category: Plate
-  Labware Type: 96 Well PCR Plate
-  Labware Name: 200uL Biorad 96 Well PCR Plate
-  Lid Sequence: False
-  Deck Position: Carrier5_Pos4
-  Vacuum Compatible: False
+  60mL Reagent Reservior:
+    Labware Category: Reagent
+    Labware Type: 60mL Reagent Reservior
+    Storage Condition: Ambient
+    Labware Columns: 1
+    Labware Rows: 8
+    Max Supported Volume: 50000
+    Dead Volume: 2500
+    Vacuum Compatible: False
+    IMCS SizeX Desalting Compatible: False
 
-Carrier5_Pos3_BioRad200uL96WellPCRPlate:
-  Max Supported Volume: 225
-  Dead Volume: 10
-  Storage Condition: False
-  Labware Category: Plate
-  Labware Type: 96 Well PCR Plate
-  Labware Name: 200uL Biorad 96 Well PCR Plate
-  Lid Sequence: False
-  Deck Position: Carrier5_Pos3
-  Vacuum Compatible: False
+Autoloading:
 
-Carrier5_Pos2_BioRad200uL96WellPCRPlate:
-  Max Supported Volume: 225
-  Dead Volume: 10
-  Storage Condition: False
-  Labware Category: Plate
-  Labware Type: 96 Well PCR Plate
-  Labware Name: 200uL Biorad 96 Well PCR Plate
-  Lid Sequence: False
-  Deck Position: Carrier5_Pos2
-  Vacuum Compatible: False
+  ##
+  ## 200uL plates
+  ##
+  Carrier35_Pos5_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier35_Pos5
 
-Carrier5_Pos1_BioRad200uL96WellPCRPlate:
-  Max Supported Volume: 225
-  Dead Volume: 10
-  Storage Condition: False
-  Labware Category: Plate
-  Labware Type: 96 Well PCR Plate
-  Labware Name: 200uL Biorad 96 Well PCR Plate
-  Lid Sequence: False
-  Deck Position: Carrier5_Pos1
-  Vacuum Compatible: False
+  Carrier35_Pos4_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier35_Pos4
 
+  Carrier35_Pos3_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier35_Pos3
 
-#2000uL plates
-Carrier5_Pos1_BioRad200uL96WellPCRPlate:
-  Max Supported Volume: 2500
-  Dead Volume: 50
-  Storage Condition: False
-  Labware Category: Plate
-  Labware Type: 96 Well PCR Plate
-  Labware Name: 2000uL Corning 96 Well PCR Plate
-  Lid Sequence: False
-  Deck Position: Carrier5_Pos1
-  Vacuum Compatible: False
+  Carrier5_Pos4_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier5_Pos4
 
-#Reagents
+  Carrier5_Pos3_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier5_Pos3
 
-T1:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T1
-  Vacuum Compatible: False
+  Carrier5_Pos2_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier5_Pos2
 
-T2:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T2
-  Vacuum Compatible: False
+  Carrier5_Pos1_BioRad200uL96WellPCRPlate:
+    Labware Name: 200uL Biorad 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier5_Pos1
 
-T4:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T4
-  Vacuum Compatible: False
+  #2000
+  Carrier5_Pos1_BioRad200uL96WellPCRPlate:
+    Labware Name: 2000uL Corning 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier5_Pos1
 
-T5:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T5
-  Vacuum Compatible: False
+  #Reagents
 
-T6:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T6
-  Vacuum Compatible: False
+  T1:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T1
 
-T7:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T7
-  Vacuum Compatible: False
+  T2:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T2
 
-T8:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T8
-  Vacuum Compatible: False
+  T4:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T4
 
-T9:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T9
-  Vacuum Compatible: False
+  T5:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T5
 
-T10:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T10
-  Vacuum Compatible: False
+  T6:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T6
 
-T11:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T11
-  Vacuum Compatible: False
+  T7:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T7
 
-T12:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T12
-  Vacuum Compatible: False
+  T8:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T8
 
-T13:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T13
-  Vacuum Compatible: False
+  T9:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T9
 
-T14:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T14
-  Vacuum Compatible: False
+  T10:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T10
 
-T15:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T15
-  Vacuum Compatible: False
+  T11:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T11
 
-T16:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T16
-  Vacuum Compatible: False
+  T12:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T12
 
-T17:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T17
-  Vacuum Compatible: False
+  T13:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T13
 
-T18:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T18
-  Vacuum Compatible: False
+  T14:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T14
 
-T19:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T19
-  Vacuum Compatible: False
+  T15:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T15
 
-T20:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T20
-  Vacuum Compatible: False
+  T16:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T16
 
-T3:
-  Max Supported Volume: 1500
-  Dead Volume: 10
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T3
-  Vacuum Compatible: False
+  T17:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T17
 
-#C1:
-#  Max Supported Volume: 14000
-#  Dead Volume: 500
-#  Storage Condition: Ambient
-#  Labware Category: Reagent
-#  Labware Type: 15mL Centrifuge Tube
-#  Labware Name: 15mL Centrifuge Tube
-#  Lid Sequence: False
-#  Deck Position: C1
-#  Vacuum Compatible: False
+  T18:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T18
 
+  T19:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T19
 
-R1:
-  Max Supported Volume: 50000
-  Dead Volume: 2500
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: 60mL Reagent Reservior
-  Labware Name: 60mL Reagent Reservior
-  Lid Sequence: False
-  Deck Position: R1
-  Vacuum Compatible: False
+  T20:
+    Labware Name: Open 1.5mL Flip Top Tube
+    Lid Sequence: False
+    Deck Position: T20
 
-R2:
-  Max Supported Volume: 50000
-  Dead Volume: 2500
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: 60mL Reagent Reservior
-  Labware Name: 60mL Reagent Reservior
-  Lid Sequence: False
-  Deck Position: R2
-  Vacuum Compatible: False
+  T3:
+    Labware Name: Open 1.5mL Flip Top Tube.
+    Lid Sequence: False
+    Deck Position: T3
 
-R3:
-  Max Supported Volume: 50000
-  Dead Volume: 2500
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: 60mL Reagent Reservior
-  Labware Name: 60mL Reagent Reservior
-  Lid Sequence: False
-  Deck Position: R3
-  Vacuum Compatible: False
+  R1:
+    Labware Name: 60mL Reagent Reservior
+    Lid Sequence: False
+    Deck Position: R1
 
-R4:
-  Max Supported Volume: 50000
-  Dead Volume: 2500
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: 60mL Reagent Reservior
-  Labware Name: 60mL Reagent Reservior
-  Lid Sequence: False
-  Deck Position: R4
-  Vacuum Compatible: False
+  R2:
+    Labware Name: 60mL Reagent Reservior
+    Lid Sequence: False
+    Deck Position: R2
 
-R5:
-  Max Supported Volume: 50000
-  Dead Volume: 2500
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: 60mL Reagent Reservior
-  Labware Name: 60mL Reagent Reservior
-  Lid Sequence: False
-  Deck Position: R5
-  Vacuum Compatible: False
+  R3:
+    Labware Name: 60mL Reagent Reservior
+    Lid Sequence: False
+    Deck Position: R3
 
-R6:
-  Max Supported Volume: 50000
-  Dead Volume: 2500
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: 60mL Reagent Reservior
-  Labware Name: 60mL Reagent Reservior
-  Lid Sequence: False
-  Deck Position: R6
-  Vacuum Compatible: False
+  R4:
+    Labware Name: 60mL Reagent Reservior
+    Lid Sequence: False
+    Deck Position: R4
 
-R7:
-  Max Supported Volume: 50000
-  Dead Volume: 2500
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: 60mL Reagent Reservior
-  Labware Name: 60mL Reagent Reservior
-  Lid Sequence: False
-  Deck Position: R7
-  Vacuum Compatible: False
+  R5:
+    Labware Name: 60mL Reagent Reservior
+    Lid Sequence: False
+    Deck Position: R5
+
+  R6:
+    Labware Name: 60mL Reagent Reservior
+    Lid Sequence: False
+    Deck Position: R6
+
+  R7:
+    Labware Name: 60mL Reagent Reservior
+    Lid Sequence: False
+    Deck Position: R7
 
 
