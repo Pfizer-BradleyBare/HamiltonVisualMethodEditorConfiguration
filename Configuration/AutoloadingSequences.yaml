@@ -133,17 +133,6 @@ T2:
   Deck Position: T2
   Vacuum Compatible: False
 
-T3:
-  Max Supported Volume: 1500
-  Dead Volume: 150
-  Storage Condition: Ambient
-  Labware Category: Reagent
-  Labware Type: Flip Top Tube
-  Labware Name: Open 1.5mL Flip Top Tube
-  Lid Sequence: False
-  Deck Position: T3
-  Vacuum Compatible: False
-
 T4:
   Max Supported Volume: 1500
   Dead Volume: 150
@@ -329,6 +318,17 @@ T20:
   Labware Name: Open 1.5mL Flip Top Tube
   Lid Sequence: False
   Deck Position: T20
+  Vacuum Compatible: False
+
+T3:
+  Max Supported Volume: 1500
+  Dead Volume: 10
+  Storage Condition: Ambient
+  Labware Category: Reagent
+  Labware Type: Flip Top Tube
+  Labware Name: Open 1.5mL Flip Top Tube
+  Lid Sequence: False
+  Deck Position: T3
   Vacuum Compatible: False
 
 #C1:
