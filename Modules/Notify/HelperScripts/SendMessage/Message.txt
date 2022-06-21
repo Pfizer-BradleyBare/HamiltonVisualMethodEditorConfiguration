@@ -1,1 +1,1 @@
-Was the error corrected?...,...Before clicking ok please ensure the error is corrected. Otherwise we have to go through this process again.
+Time to start thermocycling step...,...Please thermocycle the Annealing Plate. Once Themocycling is complete, load the plate back on the deck and press OK.
