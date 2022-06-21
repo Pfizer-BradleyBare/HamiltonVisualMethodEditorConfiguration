@@ -1227,7 +1227,7 @@ TipSequence1000 = TipSequenceStringsArray.ElementAt( Counter -1);
 // {{ 707 1 0 "9f9d0d22_69c7_4546_9d57753d7e3d2cd3" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
-// {{{ 708 1 0 "233c8b2c_08bd_4cae_87b61d18f7e6ce0b" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 708 1 0 "621f903c_afb7_48fa_926b8bc919e87a9e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 DevGetSequenceRef(ML_STAR, Translate("Waste"), TipWaste);
 // }} ""
 // {{ 709 1 0 "a35ff901_3372_433e_bd0bd96cdcec7f8b" "{586C3429-F931-405f-9938-928E22C90BFA}"
@@ -1370,22 +1370,22 @@ VISUAL_NTR_LIBRARY::Channels_TipCounter_Write(ML_STAR, TipSequence, _MODULE_PIPE
 	arrRetValues = ML_STAR._541143FA_7FA2_11D3_AD85_0004ACB1DCB2("1387640b_88db_4c35_be078166358244c3"); // TipPickUp
 }
 // }} ""
-// {{ 750 1 0 "8efc44f0_1b62_4e5e_bb6a5cf78ebf7c26" "ML_STAR:{541143F5-7FA2-11D3-AD85-0004ACB1DCB2}"
+// {{ 750 1 0 "5a6cb5b1_c6d7_4e9f_af8b9c9283f8edb7" "ML_STAR:{541143F5-7FA2-11D3-AD85-0004ACB1DCB2}"
 {
 	variable arrRetValues[];
-	arrRetValues = ML_STAR._541143F5_7FA2_11D3_AD85_0004ACB1DCB2("8efc44f0_1b62_4e5e_bb6a5cf78ebf7c26"); // Aspirate
+	arrRetValues = ML_STAR._541143F5_7FA2_11D3_AD85_0004ACB1DCB2("5a6cb5b1_c6d7_4e9f_af8b9c9283f8edb7"); // Aspirate
 }
 // }} ""
-// {{ 751 1 0 "610a42de_4b37_4625_9d244844a11ed7be" "ML_STAR:{541143F8-7FA2-11D3-AD85-0004ACB1DCB2}"
+// {{ 751 1 0 "ce75edb3_96a0_4937_8efa534daef4d9e6" "ML_STAR:{541143F8-7FA2-11D3-AD85-0004ACB1DCB2}"
 {
 	variable arrRetValues[];
-	arrRetValues = ML_STAR._541143F8_7FA2_11D3_AD85_0004ACB1DCB2("610a42de_4b37_4625_9d244844a11ed7be"); // Dispense
+	arrRetValues = ML_STAR._541143F8_7FA2_11D3_AD85_0004ACB1DCB2("ce75edb3_96a0_4937_8efa534daef4d9e6"); // Dispense
 }
 // }} ""
-// {{ 752 1 0 "9b7fe770_bdd6_4b73_a6d21cd34e8ac234" "ML_STAR:{541143FC-7FA2-11D3-AD85-0004ACB1DCB2}"
+// {{ 752 1 0 "75181520_b0a7_4f28_bef54ab6ac02e52e" "ML_STAR:{541143FC-7FA2-11D3-AD85-0004ACB1DCB2}"
 {
 	variable arrRetValues[];
-	arrRetValues = ML_STAR._541143FC_7FA2_11D3_AD85_0004ACB1DCB2("9b7fe770_bdd6_4b73_a6d21cd34e8ac234"); // TipEject
+	arrRetValues = ML_STAR._541143FC_7FA2_11D3_AD85_0004ACB1DCB2("75181520_b0a7_4f28_bef54ab6ac02e52e"); // TipEject
 }
 // }} ""
 // {{ 753 1 0 "967cd719_0fe7_4cfb_a861848a1153a4dd" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
@@ -1480,10 +1480,10 @@ VISUAL_NTR_LIBRARY::Channels_TipCounter_Write(ML_STAR, TipSequence, _MODULE_PIPE
 	arrRetValues = ML_STAR._541143F8_7FA2_11D3_AD85_0004ACB1DCB2("bd3ec2dd_7b6c_4ff8_ad8eea4b53678fcd"); // Dispense
 }
 // }} ""
-// {{ 774 1 0 "2b91e437_4aea_4809_90c966198bfd9018" "ML_STAR:{541143FC-7FA2-11D3-AD85-0004ACB1DCB2}"
+// {{ 774 1 0 "b52ee8e2_0223_4627_bcd8664b9bcd0aa3" "ML_STAR:{541143FC-7FA2-11D3-AD85-0004ACB1DCB2}"
 {
 	variable arrRetValues[];
-	arrRetValues = ML_STAR._541143FC_7FA2_11D3_AD85_0004ACB1DCB2("2b91e437_4aea_4809_90c966198bfd9018"); // TipEject
+	arrRetValues = ML_STAR._541143FC_7FA2_11D3_AD85_0004ACB1DCB2("b52ee8e2_0223_4627_bcd8664b9bcd0aa3"); // TipEject
 }
 // }} ""
 // {{ 775 1 0 "29620aca_2ff0_43da_b072c8ff5bdddf2d" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
@@ -1562,10 +1562,10 @@ Index = PFIZERTOOLSVCURRENT::GetIndex(1, DispenseSequence1000);
 	arrRetValues = ML_STAR._541143F8_7FA2_11D3_AD85_0004ACB1DCB2("15f5b304_9149_4d1f_878a3136244bc231"); // Dispense
 }
 // }} ""
-// {{ 791 1 0 "b7825917_b682_4d48_a984712ba0812019" "ML_STAR:{541143FC-7FA2-11D3-AD85-0004ACB1DCB2}"
+// {{ 791 1 0 "591c1074_41f4_4a33_97910e3898e11fa9" "ML_STAR:{541143FC-7FA2-11D3-AD85-0004ACB1DCB2}"
 {
 	variable arrRetValues[];
-	arrRetValues = ML_STAR._541143FC_7FA2_11D3_AD85_0004ACB1DCB2("b7825917_b682_4d48_a984712ba0812019"); // TipEject
+	arrRetValues = ML_STAR._541143FC_7FA2_11D3_AD85_0004ACB1DCB2("591c1074_41f4_4a33_97910e3898e11fa9"); // TipEject
 }
 // }} ""
 // {{ 792 1 0 "82ce5b4c_e2f8_44c7_b4123af517a5ea77" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
@@ -3208,4 +3208,4 @@ COMMANDS::ArraysToDictionary(Keys, Values, o_TipInfoDict);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=BAREB$$valid=0$$time=2022-06-20 13:58$$checksum=9ce5a181$$length=084$$
+// $$author=BAREB$$valid=0$$time=2022-06-20 19:27$$checksum=46363a40$$length=084$$
