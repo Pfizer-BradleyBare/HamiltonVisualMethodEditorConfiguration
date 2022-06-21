@@ -1,2 +1,1 @@
-Time to Desalt...,...The samples are ready for desalting. Get on it! 
-
+Method Completed Successfully...,...Method is complete. Before clicking OK, you can still check the deck layout if you need help locating the final plate. Once you click OK, the method will shut down then close.
