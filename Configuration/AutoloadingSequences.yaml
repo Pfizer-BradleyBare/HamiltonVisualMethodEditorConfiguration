@@ -71,7 +71,7 @@ LabwareInfo:
     Labware Rows: 8
     Max Supported Volume: 2300
     Dead Volume: 100
-    Vacuum Compatible: 0.45um Self Poured ProA Plate
+    Vacuum Compatible: 0.45um Self Poured ProA Plate, Nunc 2AB Filter Plate
     IMCS SizeX Desalting Compatible: True
 
   Hamilton 1.5mL FlipTube Cold:
@@ -224,6 +224,26 @@ Autoloading:
     Labware Name: 2000uL Corning 96 Well PCR Plate
     Lid Sequence: False
     Deck Position: Carrier38_Pos1
+
+  Carrier38_Pos2_96WellPCRPlate2000uL_1mLChannel:
+    Labware Name: 2000uL Corning 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos2
+
+  Carrier38_Pos3_96WellPCRPlate2000uL_1mLChannel:
+    Labware Name: 2000uL Corning 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos3
+
+  Carrier38_Pos4_96WellPCRPlate2000uL_1mLChannel:
+    Labware Name: 2000uL Corning 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos4
+
+  Carrier38_Pos5_96WellPCRPlate2000uL_1mLChannel:
+    Labware Name: 2000uL Corning 96 Well PCR Plate
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos5
 
   Carrier14_Pos1_96WellPCRPlate2000uL_1mLChannel:
     Labware Name: 2000uL Corning 96 Well PCR Plate
