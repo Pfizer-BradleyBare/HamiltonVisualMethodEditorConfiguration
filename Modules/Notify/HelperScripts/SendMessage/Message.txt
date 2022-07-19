@@ -1,1 +1,1 @@
-Was the error corrected?...,...Before clicking ok please ensure the error is corrected. Otherwise we have to go through this process again.
+Method Completed Successfully...,...Method is complete. Before clicking OK, you can still check the deck layout if you need help locating the final plate. Once you click OK, the method will shut down then close.
