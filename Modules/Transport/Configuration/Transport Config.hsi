@@ -132,8 +132,8 @@ HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripCloseWidth,
 // {{{ 30 1 0 "625c8067_930b_40f5_ba64c3521ce534a1" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripCloseWidth, 1, 4, 75);
 // }} ""
-// {{{ 31 1 0 "cf7482ac_038f_4b53_a0b8dd017f3d1be9" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripCloseWidth, 1, 5, 75);
+// {{{ 31 1 0 "5ead7327_ac78_4048_be1954a80400642a" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripCloseWidth, 1, 5, 73);
 // }} ""
 // {{{ 32 1 0 "62cb1f4a_297c_4ef4_b57ee251642a5e2a" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 HSLExtensions::Array2D::SetValue(_MODULE_TRANSPORT_CONFIG_LabwareGripCloseWidth, 1, 6, 75);
@@ -305,4 +305,4 @@ return (_MODULE_TRANSPORT_CONFIG_CoreGripToolSequenceString);
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=fcnamr-adwmsbc$$valid=0$$time=2022-06-15 14:22$$checksum=e806de55$$length=093$$
+// $$author=fcnamr-adwmsbc$$valid=0$$time=2022-07-18 10:05$$checksum=16d325b2$$length=093$$

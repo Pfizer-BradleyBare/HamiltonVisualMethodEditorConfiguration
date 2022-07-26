@@ -129,9 +129,37 @@ LabwareInfo:
     Vacuum Compatible: False
     IMCS SizeX Desalting Compatible: True
 
+  Waters 2000uL Total Recovery Vial Rack:
+    Labware Category: Plate
+    Labware Type: 48 Well LC Vial Rack
+    Storage Condition: Ambient
+    Labware Columns: 8
+    Labware Rows: 6
+    Max Supported Volume: 2000
+    Dead Volume: 10
+    Vacuum Compatible: False
+    IMCS SizeX Desalting Compatible: False
 
 
 Autoloading:
+  
+  ##
+  ## Waters TRV rack
+  ##
+  Carrier38_Pos5_Waters2000uLTRV48WellPCRPlate:
+    Labware Name: Waters 2000uL Total Recovery Vial Rack
+    Lid Sequence: False
+    Deck Position: Carrier38_Pos5
+
+  Carrier14_Pos4_Waters2000uLTRV48WellPCRPlate:
+    Labware Name: Waters 2000uL Total Recovery Vial Rack
+    Lid Sequence: False
+    Deck Position: Carrier14_Pos4
+
+  Carrier14_Pos5_Waters2000uLTRV48WellPCRPlate:
+    Labware Name: Waters 2000uL Total Recovery Vial Rack
+    Lid Sequence: False
+    Deck Position: Carrier14_Pos5
   ##
   ## 390uL UV Plates
   ##
@@ -172,13 +200,13 @@ Autoloading:
 #Carrier14
   Carrier14_Pos1_BioRad200uL96WellPCRPlate:
     Labware Name: 200uL Biorad 96 Well PCR Plate
-    Lid Sequence: Carrier14_Pos2_BioRad200uL96WellPCRPlate_Lid
-    Deck Position: Carrier14_Pos2
+    Lid Sequence: Carrier14_Pos1_BioRad200uL96WellPCRPlate_Lid
+    Deck Position: Carrier14_Pos1
 
   Carrier14_Pos2_BioRad200uL96WellPCRPlate:
     Labware Name: 200uL Biorad 96 Well PCR Plate
-    Lid Sequence: Carrier14_Pos3_BioRad200uL96WellPCRPlate_Lid
-    Deck Position: Carrier14_Pos3
+    Lid Sequence: Carrier14_Pos2_BioRad200uL96WellPCRPlate_Lid
+    Deck Position: Carrier14_Pos2
 
   Carrier14_Pos3_BioRad200uL96WellPCRPlate:
     Labware Name: 200uL Biorad 96 Well PCR Plate
